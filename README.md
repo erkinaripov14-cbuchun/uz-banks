@@ -1,6 +1,6 @@
 # uz-banks — O'zbekiston banklarining kredit va omonatlari
 
-32 ta O'zbekiston bankining kredit va omonat mahsulotlari: foiz, muddat, summa va valyuta —
+30 ta O'zbekiston bankining kredit va omonat mahsulotlari: foiz, muddat, summa va valyuta —
 faqat bankning o'z saytidan.
 
 **Sayt: https://erkinaripov14-cbuchun.github.io/uz-banks/**

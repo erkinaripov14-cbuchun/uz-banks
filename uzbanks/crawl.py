@@ -17,7 +17,7 @@ SKIP_RE = re.compile(
     r"|[?&](q|filter|credit|credit_name|sort|page|currency|term|replenishment|capitalization|open|fr)=",
     re.I)
 # Yuridik shaxslar / tadbirkorlar bo'limlari — mahsulot shu belgiga qarab "yuridik" deb ajratiladi
-BUSINESS_RE = re.compile(r"/(corporate|small-business|legal|juristic|yuridik[-_]shaxslar\w*|business|biznes-uchun)(/|$)", re.I)
+BUSINESS_RE = re.compile(r"/(corporate|corporate-customers|small-business|legal|juristic|yuridik[-_]shaxslar\w*|business|biznes-uchun)(/|$)", re.I)
 
 # Sahifadagi barcha havolalar, ular joylashgan "kartochka" matni bilan birga
 JS_LINKS = r"""

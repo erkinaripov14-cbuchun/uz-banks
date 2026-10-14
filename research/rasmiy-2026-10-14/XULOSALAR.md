@@ -1,6 +1,6 @@
 # O'zbekiston banklari: kreditlar va omonatlar — asosiy xulosalar
 
-Manba: faqat bank saytlari, 2026-10-14. 216 ta mahsulot, 32 ta bank. To'liq jadval: [banklar_kredit_omonat_rasmiy.xlsx](banklar_kredit_omonat_rasmiy.xlsx).
+Manba: faqat bank saytlari, 2026-10-14. 213 ta mahsulot, 30 ta bank. To'liq jadval: [banklar_kredit_omonat_rasmiy.xlsx](banklar_kredit_omonat_rasmiy.xlsx).
 
 ## Asosiy xulosalar
 
@@ -119,7 +119,6 @@ Manba: faqat bank saytlari, 2026-10-14. 216 ta mahsulot, 32 ta bank. To'liq jadv
 
 ## Ma'lumot topilmagan joylar
 
-- **Hi-Tech Bank:** Jismoniy shaxslar uchun kreditlar topilmadi
 - **InFinBank:** Rasmiy sayti infinbank.com (.uz emas)
 - **Ipak Yo'li banki:** So'm omonatlari topilmadi
 - **Kapitalbank:** kapitalbank.uz da kredit stavkalari topilmadi (bankning chakana sayti kapital24.uz da onlayn mikroqarz 27%)
@@ -127,7 +126,6 @@ Manba: faqat bank saytlari, 2026-10-14. 216 ta mahsulot, 32 ta bank. To'liq jadv
 - **O'zmilliybank (NBU):** Kredit stavkalari faqat 2024 yilgi e'londan
 - **Octobank:** Omonat stavkalari topilmadi
 - **Smartbank:** Omonat stavkasi yo'q; sayt 'Openbank' nomida
-- **Turkiston bank:** Faqat yuridik shaxslar uchun eski depozitlar; kreditlar topilmadi
 - **Universal bank:** So'm omonatlari topilmadi
 - **Uzum Bank:** Omonat stavkalari rasmiy saytda topilmadi (tariflar 13.10.2026 dan yangilangan)
 - **Xalq banki:** Faqat 1 ta omonat va 2024 yilgi kredit hujjati topildi
