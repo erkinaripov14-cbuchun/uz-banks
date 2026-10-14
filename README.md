@@ -122,8 +122,11 @@ Jarayon nima qiladi:
 2. `research/live.py` natijani `research/live/latest.json` ga yozadi;
 3. `research/build.py` saytni qayta yasaydi, o'zgarishni `main` ga commit qiladi va Pages'ni qayta joylaydi.
 
-Skraper topgan mahsulotlar saytning **Yangi topilganlar** bo'limida chiqadi (ma'lumot bo'lmasa, bo'lim ko'rinmaydi). Ular sahifa matnidan avtomatik
-ajratilgani uchun qo'lda tekshirilgan jadvaldan aniqligi pastroq. Skraperning to'liq natijasi (Excel, JSON)
+Skraper bank saytidagi "Kreditlar" va "Omonatlar" bo'limlariga kirib, ichidagi har bir mahsulot sahifasini va kartochkasini
+o'qiydi — jismoniy va yuridik shaxslar bo'limlarini ham (yuridiklar alohida belgilanadi). Natija (`research/merge.py`)
+qo'lda tekshirilgan jadval bilan solishtiriladi: bir xil mahsulot bitta qator bo'ladi va "saytda hozir" foizi yonida
+ko'rsatiladi, yangi mahsulot "saytdan avtomatik" belgisi bilan qo'shiladi. Saytdagi Kreditlar va Omonatlar jadvallarida
+"Jismoniy shaxslar / Yuridik shaxslar va tadbirkorlar" tanlovi bor; banklar bo'yicha sonlar shu umumiy ro'yxatdan hisoblanadi. Skraperning to'liq natijasi (Excel, JSON)
 jarayon sahifasida `scraper-output` artifakti sifatida yuklab olinadi.
 
 ## Natijalarni qayta yasash

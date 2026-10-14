@@ -16,22 +16,32 @@ from openpyxl.utils import get_column_letter
 sys.path.insert(0, str(Path(__file__).parent))
 from data_rasmiy import GAPS, ROWS  # noqa: E402
 import xulosalar  # noqa: E402
+import merge  # noqa: E402
 
 OUT = Path(__file__).parent / "rasmiy-2026-10-14"
-HEAD = ["Bank", "Toifa", "Mahsulot", "Foiz min, %", "Foiz max, %", "Muddat", "Summa", "Valyuta",
-        "Sayt", "Sana", "Izoh", "Manba havolasi"]
-WIDTHS = [26, 14, 38, 11, 11, 18, 18, 9, 20, 11, 60, 50]
+HEAD = ["Bank", "Kim uchun", "Toifa", "Mahsulot", "Foiz min, %", "Foiz max, %", "Saytda hozir, %", "Muddat",
+        "Summa", "Valyuta", "Manba", "Sana", "Izoh", "Havola"]
+WIDTHS = [26, 12, 14, 38, 10, 10, 13, 18, 18, 9, 14, 11, 50, 50]
+MERGED = merge.merged_rows()
+SEGMENT = {"jismoniy": "Jismoniy", "yuridik": "Yuridik"}
 
 
 def rows(kind):
-    out = [r for r in ROWS if r[1] == kind]
-    return sorted(out, key=lambda r: (r[0], r[2], -(r[5] if r[5] is not None else r[4] or 0)))
+    out = [r for r in MERGED if r["type"] == kind]
+    return sorted(out, key=lambda r: (r["bank"], r["segment"], r["cat"], -(r["hi"] if r["hi"] is not None else r["lo"] or 0)))
+
+
+def _live_txt(r):
+    lv = r.get("live")
+    if not lv:
+        return ""
+    return f"{lv['lo']:g}" if lv["lo"] == lv["hi"] else f"{lv['lo']:g}–{lv['hi']:g}"
 
 
 def as_list(r):
-    bank, _, cat, name, lo, hi, term, amount, cur, url, date, note = r
-    host = (urlparse(url).hostname or "").removeprefix("www.")
-    return [bank, cat, name, lo, hi, term, amount, cur, host, date, note, url]
+    src = "Qo'lda tekshirilgan" if r["source"] == "tekshirilgan" else "Saytdan avtomatik"
+    return [r["bank"], SEGMENT[r["segment"]], r["cat"], r["name"], r["lo"], r["hi"], _live_txt(r), r["term"],
+            r["amount"], r["cur"], src, r["date"], r["note"], r["url"]]
 
 
 def sheet(wb, title, header, data, widths):
@@ -129,14 +139,12 @@ SITE_DIRS = [Path(__file__).parent.parent / "site", Path(__file__).parent.parent
 def write_site():
     """site/index.html — Artifact uchun (skeletsiz); docs/index.html — GitHub Pages uchun to'liq hujjat."""
     sites = {}
-    for b in {r[0] for r in ROWS}:
-        hosts = Counter(".".join((urlparse(r[9]).hostname or "").split(".")[-2:]) for r in ROWS if r[0] == b)
+    for b in {r["bank"] for r in MERGED}:
+        hosts = Counter(".".join((urlparse(r["url"]).hostname or "").split(".")[-2:]) for r in MERGED if r["bank"] == b)
         sites[b] = hosts.most_common(1)[0][0]
     data = {
         "generated": "2026-10-14",
-        "rows": [{"bank": r[0], "type": r[1], "cat": r[2], "name": r[3], "lo": r[4], "hi": r[5], "term": r[6],
-                  "amount": r[7], "cur": r[8], "url": r[9], "date": r[10], "note": r[11],
-                  "stale": xulosalar.is_stale(r)} for r in ROWS],
+        "rows": MERGED,
         "points": xulosalar.KEY_POINTS,
         "rankings": xulosalar.rankings(),
         "notes": xulosalar.NOTES,
@@ -146,7 +154,7 @@ def write_site():
         "excel": PAGES_URL + EXCEL_NAME,
         # Administrator paroli SHA-256 xeshi (parolning o'zi repoda saqlanmaydi)
         "adminHash": "6ec2f9f12dba6ee672f9e6c5d15daf4fdd036b59949138e61bcc521065cc2da1",
-        "live": json.loads(LIVE.read_text(encoding="utf-8")) if LIVE.exists() else None,
+        "live": merge.live_meta(),
     }
     blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     page = (Path(__file__).parent / "site_template.html").read_text(encoding="utf-8").replace("/*DATA*/null", blob)
@@ -175,18 +183,20 @@ def main():
             csv.writer(f).writerows([HEAD, *data])
 
     summary = []
-    for b in sorted({r[0] for r in ROWS}):
-        mine = [r for r in ROWS if r[0] == b]
-        k = [r for r in mine if r[1] == "K"]
-        o = [r for r in mine if r[1] == "O"]
-        rated = lambda xs: [x for x in xs if x[4] is not None or x[5] is not None]
-        uzs = [x for x in rated(o) if x[8] == "UZS"]
-        fx = [x for x in rated(o) if x[8] != "UZS"]
-        site = ".".join((urlparse(mine[0][9]).hostname or "").split(".")[-2:])
-        summary.append([b, len(k), _rng(rated(k)), len(o), _rng(uzs), _rng(fx), GAPS.get(b, ""), site])
-    sheet(wb, "Banklar xulosasi", ["Bank", "Kredit mahsulotlari", "Kredit foizi, %", "Omonat mahsulotlari",
-                                   "So'm omonat, %", "Valyuta omonat, %", "Kamchilik", "Sayt"],
-          summary, [28, 11, 15, 11, 14, 14, 60, 24])
+    for b in sorted({r["bank"] for r in MERGED}):
+        mine = [r for r in MERGED if r["bank"] == b]
+        k = [r for r in mine if r["type"] == "K"]
+        kj = [r for r in k if r["segment"] == "jismoniy"]
+        o = [r for r in mine if r["type"] == "O"]
+        as_t = lambda xs: [(None, None, None, None, x["lo"], x["hi"]) for x in xs if x["lo"] is not None or x["hi"] is not None]
+        uzs = as_t([x for x in o if x["cur"] == "UZS"])
+        fx = as_t([x for x in o if x["cur"] != "UZS"])
+        site = ".".join((urlparse(mine[0]["url"]).hostname or "").split(".")[-2:])
+        summary.append([b, len(kj), len(k) - len(kj), _rng(as_t(k)), len(o), _rng(uzs), _rng(fx),
+                        sum(r["source"] == "avtomatik" for r in mine), GAPS.get(b, ""), site])
+    sheet(wb, "Banklar xulosasi", ["Bank", "Kredit (jismoniy)", "Kredit (yuridik)", "Kredit foizi, %", "Omonatlar",
+                                   "So'm omonat, %", "Valyuta omonat, %", "Saytdan avtomatik", "Kamchilik", "Sayt"],
+          summary, [28, 11, 11, 15, 11, 14, 14, 12, 60, 24])
     sheet(wb, "Izoh", ["Muhim"], [[t] for t in [
         "Ma'lumot 2026-10-14 da faqat banklarning o'z rasmiy saytlaridan olindi (qidiruv har bir bank domeni bilan cheklangan).",
         "Agregatorlar (bank.uz, depozit.uz, bankxizmatlari.uz) va yangilik saytlari ishlatilmagan.",

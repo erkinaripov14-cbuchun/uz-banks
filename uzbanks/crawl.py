@@ -16,7 +16,7 @@ SKIP_RE = re.compile(
     r"feedback|contacts?|vacanc\w*|news|press|yangiliklar)(/|$)"
     r"|[?&](q|filter|credit|credit_name|sort|page|currency|term|replenishment|capitalization|open|fr)=",
     re.I)
-# Yuridik shaxslar bo'limlari (jismoniy shaxslar mahsulotlari kerak)
+# Yuridik shaxslar / tadbirkorlar bo'limlari — mahsulot shu belgiga qarab "yuridik" deb ajratiladi
 BUSINESS_RE = re.compile(r"/(corporate|small-business|legal|juristic|yuridik[-_]shaxslar\w*|business|biznes-uchun)(/|$)", re.I)
 
 # Sahifadagi barcha havolalar, ular joylashgan "kartochka" matni bilan birga
@@ -31,7 +31,9 @@ JS_LINKS = r"""
     if (other) break;
     card = el; best = t;
   }
-  return {href: a.href, text: (a.innerText || a.title || a.getAttribute('aria-label') || '').trim(), card: best};
+  // Sahifa mazmunidagi havola (menyu, header, footer emas) — ro'yxat sahifasidagi mahsulot kartochkalari shu
+  const content = !a.closest('header, nav, footer, [role=navigation], [class*=menu], [class*=Menu], [class*=footer], [class*=header], [class*=breadcrumb]');
+  return {href: a.href, text: (a.innerText || a.title || a.getAttribute('aria-label') || '').trim(), card: best, content};
 })
 """
 
@@ -99,8 +101,13 @@ async def _goto(page, url, timeout):
         await page.wait_for_timeout(300)
 
 
+def segment_of(url):
+    """'yuridik' (yuridik shaxslar, tadbirkorlar) yoki 'jismoniy'."""
+    return "yuridik" if BUSINESS_RE.search(urlparse(url).path + "/") else "jismoniy"
+
+
 def _wanted(url, site, lang):
-    if not same_site(url, site) or not url.startswith("http") or SKIP_RE.search(url) or BUSINESS_RE.search(url):
+    if not same_site(url, site) or not url.startswith("http") or SKIP_RE.search(url):
         return False
     lg = lang_of(url)
     return lg is None or lang is None or lg == lang or (lang == "uz" and lg == "uz-latn")
@@ -160,12 +167,13 @@ async def scrape_bank(browser, bank, sections, max_pages=40, lang="uz", timeout=
             queues[s] += [u for u in found[s] if _wanted(u, site, lang)]
 
         for sec in sections:
-            seen, todo, n = set(), list(queues[sec]), 0
+            # (url, chuqurlik): 0 — bo'lim sahifasi (menyudan yoki qo'lda berilgan), 1+ — undagi mahsulotlar
+            seen, todo, n = set(), [(u, 0) for u in queues[sec]], 0
             while todo and n < max_pages:
                 if time.monotonic() - started > budget:
                     result["errors"].append(f"Vaqt limiti ({budget} s) tugadi — {sec} qisman yig'ildi")
                     break
-                url = todo.pop(0)
+                url, depth = todo.pop(0)
                 key = normalize(url)
                 if key in seen:
                     continue
@@ -191,16 +199,20 @@ async def scrape_bank(browser, bank, sections, max_pages=40, lang="uz", timeout=
                         continue
                     child_path = urlparse(href).path.rstrip("/")
                     is_child = base_path and child_path.startswith(base_path + "/")
-                    if is_child or classify_link(href, ln["text"]) == sec:
-                        children.append(href)
-                        if is_child and ln["card"]:
-                            cards.append({"url": href, "text": ln["card"], **_short(summarize(ln["card"]))})
+                    # Bo'lim sahifasida mazmundagi har bir havola — mahsulot kartochkasi bo'lishi mumkin
+                    in_section = depth == 0 and ln.get("content")
+                    if is_child or in_section or classify_link(href, ln["text"]) == sec:
+                        children.append((href, depth + 1))
+                        if (is_child or in_section) and ln["card"]:
+                            cards.append({"url": href, "text": ln["card"], "segment": segment_of(href),
+                                          **_short(summarize(ln["card"]))})
                 todo += children
 
                 full = summarize(text + "\n" + "\n".join(" | ".join(r) for t in tables for r in t))
                 result[sec].append({
                     "url": page.url, "title": title["h1"] or title["doc"], "doc_title": title["doc"],
                     "kind": "listing" if len(cards) >= 2 else "product",
+                    "segment": segment_of(page.url),
                     **full,
                     "cards": _dedupe_cards(cards),
                     "tables": tables,
