@@ -91,17 +91,12 @@ def same_site(url, site):
     return _host(url) == _host(site)
 
 
-async def _goto(page, url, timeout, wait_js=False):
+async def _goto(page, url, timeout):
     await page.goto(url, wait_until="domcontentloaded", timeout=timeout)
     try:
         await page.wait_for_load_state("networkidle", timeout=min(timeout, 6000))
     except Exception:
         pass
-    if wait_js:   # JS bilan keyin chiziladigan saytlar (banks.json da "wait_js": true): havolalar paydo bo'lishini kutish
-        try:
-            await page.wait_for_function("document.links.length > 10", timeout=min(timeout, 20000))
-        except Exception:
-            pass
     # lazy-load qilinadigan kartochkalar uchun pastgacha aylantirish
     for _ in range(2):
         await page.mouse.wheel(0, 4000)
@@ -151,7 +146,7 @@ async def scrape_bank(browser, bank, sections, max_pages=40, lang="uz", timeout=
         starts = [site] + ([site.rstrip("/") + f"/{lang}"] if lang else [])
         for url in starts:
             try:
-                await _goto(page, url, timeout, bank.get("wait_js", False))
+                await _goto(page, url, timeout)
                 links += await page.evaluate(JS_LINKS)
                 ok = True
             except Exception as e:
@@ -187,7 +182,7 @@ async def scrape_bank(browser, bank, sections, max_pages=40, lang="uz", timeout=
                 seen.add(key)
                 n += 1
                 try:
-                    await _goto(page, url, timeout, bank.get("wait_js", False))
+                    await _goto(page, url, timeout)
                     title = await page.evaluate(JS_TITLE)
                     text = await page.evaluate(JS_TEXT)
                     tables = await page.evaluate(JS_TABLES)
