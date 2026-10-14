@@ -25,6 +25,8 @@ jobs:
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # keyinroq main ni pull qilish uchun to'liq tarix
 
       - uses: actions/setup-python@v5
         with:
@@ -46,6 +48,10 @@ jobs:
           fi
           python scrape.py "${ARGS[@]}"
 
+      - name: Eng so'nggi kodni olish
+        # Skraper ishlayotganda main o'zgargan bo'lishi mumkin: sayt eng yangi shablon bilan yasalsin va push rad etilmasin
+        run: git pull --ff-only origin main
+
       - name: Saytni qayta yasash
         run: |
           python research/live.py output/run/all.json
@@ -62,6 +68,7 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "Ma'lumot avtomatik yangilandi ($(date -u +%Y-%m-%d))"
+            git pull --rebase origin main
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
