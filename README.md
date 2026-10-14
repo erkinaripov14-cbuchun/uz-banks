@@ -3,6 +3,8 @@
 32 ta O'zbekiston bankining kredit va omonat mahsulotlari: foiz, muddat, summa va valyuta —
 faqat bankning o'z saytidan.
 
+**Sayt: https://erkinaripov14-cbuchun.github.io/uz-banks/**
+
 ## Natijalar
 
 | Fayl | Nima bor |
@@ -95,7 +97,8 @@ pytest -q        # lokal test-sayt ustida, internet kerak emas
 ## Sayt
 
 `docs/index.html` — bitta mustaqil HTML fayl (barcha ma'lumot ichida). Brauzerda to'g'ridan-to'g'ri
-ochish mumkin. GitHub Pages orqali joylash: repo **Settings → Pages → Branch: `main`, papka: `/docs`**.
+ochish mumkin. GitHub Pages'da `main` branch'ining `/docs` papkasidan joylangan:
+https://erkinaripov14-cbuchun.github.io/uz-banks/ — `main` ga push qilingandan keyin avtomatik yangilanadi.
 `site/index.html` — shu sahifaning Claude Artifact uchun versiyasi.
 
 ## Natijalarni qayta yasash
