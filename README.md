@@ -103,10 +103,11 @@ https://erkinaripov14-cbuchun.github.io/uz-banks/ — `main` ga push qilingandan
 
 ## Avtomatik yangilash
 
-Saytdagi **"Yangilash"** tugmasi sahifani eng so'nggi ma'lumot bilan qayta yuklaydi (tashrif buyuruvchilar uchun).
-Ma'lumotni bank saytlaridan qayta yig'ish uchun sayt pastidagi **"Ma'lumotni qayta yig'ish (administrator uchun)"**
-havolasi GitHub Actions'dagi [Ma'lumotni yangilash](.github/workflows/update.yml) jarayonini ochadi. U yerda **Run workflow** ni bosing
-(repoga yozish huquqi kerak; ixtiyoriy ravishda faqat ayrim banklarni yozish mumkin, masalan `hamkorbank,nbu`).
+Tashrif buyuruvchilar ma'lumotni yangilay olmaydi: saytda ular uchun faqat ko'rish, grafiklar va **Excel yuklab olish** bor.
+Administrator sayt pastidagi **"Administrator"** havolasini bosib, parol bilan kiradi; shundan keyin
+**"Ma'lumotni yangilash"** tugmasi GitHub Actions'dagi [Ma'lumotni yangilash](.github/workflows/update.yml)
+jarayonini ochadi. U yerda **Run workflow** ni bosing
+(parol faqat sahifadagi ko'rinishni ochadi — jarayonni haqiqatda faqat repoga yozish huquqi bor GitHub hisobi ishga tushira oladi; ixtiyoriy ravishda faqat ayrim banklarni yozish mumkin, masalan `hamkorbank,nbu`).
 Jarayon har dushanba 08:17 (Toshkent) da o'zi ham ishlaydi.
 
 Jarayon nima qiladi:

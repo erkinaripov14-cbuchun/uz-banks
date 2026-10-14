@@ -121,6 +121,8 @@ def write_markdown(path):
 
 
 LIVE = Path(__file__).parent / "live" / "latest.json"
+PAGES_URL = "https://erkinaripov14-cbuchun.github.io/uz-banks/"
+EXCEL_NAME = "banklar_kredit_omonat.xlsx"
 SITE_DIRS = [Path(__file__).parent.parent / "site", Path(__file__).parent.parent / "docs"]
 
 
@@ -141,6 +143,9 @@ def write_site():
         "gaps": GAPS,
         "sites": sites,
         "repo": "erkinaripov14-cbuchun/uz-banks",
+        "excel": PAGES_URL + EXCEL_NAME,
+        # Administrator paroli SHA-256 xeshi (parolning o'zi repoda saqlanmaydi)
+        "adminHash": "6ec2f9f12dba6ee672f9e6c5d15daf4fdd036b59949138e61bcc521065cc2da1",
         "live": json.loads(LIVE.read_text(encoding="utf-8")) if LIVE.exists() else None,
     }
     blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
@@ -151,9 +156,11 @@ def write_site():
     full = ('<!doctype html>\n<html lang="uz">\n<head>\n<meta charset="utf-8">\n'
             '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
             '<style>[hidden]{display:none!important} body{margin:0} img{max-width:100%}</style>\n'
-            + page.replace("<header class=\"hero\">", "</head>\n<body>\n<header class=\"hero\">", 1)
+            + page.replace("<header class=\"top\">", "</head>\n<body>\n<header class=\"top\">", 1)
             + "\n</body>\n</html>\n")
     (SITE_DIRS[1] / "index.html").write_text(full, encoding="utf-8")
+    # Saytdagi "Excel yuklab olish" tugmasi uchun nusxa (GitHub Pages docs/ dan beradi)
+    (SITE_DIRS[1] / EXCEL_NAME).write_bytes((OUT / "banklar_kredit_omonat_rasmiy.xlsx").read_bytes())
 
 
 def main():
