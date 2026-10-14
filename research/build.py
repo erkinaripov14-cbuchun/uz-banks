@@ -13,6 +13,7 @@ from openpyxl.utils import get_column_letter
 
 sys.path.insert(0, str(Path(__file__).parent))
 from data_rasmiy import GAPS, ROWS  # noqa: E402
+import xulosalar  # noqa: E402
 
 OUT = Path(__file__).parent / "rasmiy-2026-10-14"
 HEAD = ["Bank", "Toifa", "Mahsulot", "Foiz min, %", "Foiz max, %", "Muddat", "Summa", "Valyuta",
@@ -60,10 +61,68 @@ def _rng(xs):
     return f"{lo:g}" if lo == hi else f"{lo:g} – {hi:g}"
 
 
+def summary_sheet(wb):
+    ws = wb.create_sheet("Xulosalar", 0)
+    bold, title = Font(bold=True), Font(bold=True, size=14)
+    head_font, head_fill = Font(bold=True, color="FFFFFF"), PatternFill("solid", fgColor="1F4E78")
+    wrap = Alignment(wrap_text=True, vertical="top")
+    ws.append(["O'zbekiston banklari: kreditlar va omonatlar — asosiy xulosalar"])
+    ws["A1"].font = title
+    ws.append([f"Manba: faqat bank saytlari, 2026-10-14. {len(ROWS)} ta mahsulot, {len({r[0] for r in ROWS})} ta bank."])
+    ws.append([])
+    for topic, text in xulosalar.KEY_POINTS:
+        ws.append([topic, text])
+        r = ws.max_row
+        ws.cell(r, 1).font = bold
+        ws.merge_cells(start_row=r, start_column=2, end_row=r, end_column=6)
+        ws.cell(r, 2).alignment = wrap
+        ws.row_dimensions[r].height = 15 * (len(text) // 95 + 1)
+    for name, header, data in xulosalar.tables():
+        ws.append([])
+        ws.append([name])
+        ws.cell(ws.max_row, 1).font = Font(bold=True, size=12)
+        ws.append(header)
+        for c in ws[ws.max_row]:
+            c.font, c.fill = head_font, head_fill
+        for row in data:
+            ws.append(row)
+            link = ws.cell(ws.max_row, len(row))
+            link.hyperlink, link.style = link.value, "Hyperlink"
+            for c in ws[ws.max_row][:-1]:
+                c.alignment = wrap
+    ws.append([])
+    ws.append(["Eslatmalar"])
+    ws.cell(ws.max_row, 1).font = bold
+    for t in xulosalar.NOTES:
+        ws.append(["", t])
+    for i, w in enumerate([28, 40, 12, 18, 20, 55], 1):
+        ws.column_dimensions[get_column_letter(i)].width = w
+
+
+def write_markdown(path):
+    lines = ["# O'zbekiston banklari: kreditlar va omonatlar — asosiy xulosalar", "",
+             f"Manba: faqat bank saytlari, 2026-10-14. {len(ROWS)} ta mahsulot, "
+             f"{len({r[0] for r in ROWS})} ta bank. To'liq jadval: "
+             "[banklar_kredit_omonat_rasmiy.xlsx](banklar_kredit_omonat_rasmiy.xlsx).", "",
+             "## Asosiy xulosalar", ""]
+    lines += [f"- **{t}.** {x}" for t, x in xulosalar.KEY_POINTS]
+    for name, header, data in xulosalar.tables():
+        lines += ["", f"## {name}", "", "| " + " | ".join(header[:-1]) + " |",
+                  "|" + "---|" * (len(header) - 1)]
+        for r in data:
+            cells = [str(c) for c in r[:-1]]
+            cells[1] = f"[{cells[1]}]({r[-1]})"
+            lines.append("| " + " | ".join(cells) + " |")
+    lines += ["", "## Eslatmalar", ""] + [f"- {t}" for t in xulosalar.NOTES]
+    lines += ["", "## Ma'lumot topilmagan joylar", ""] + [f"- **{b}:** {t}" for b, t in sorted(GAPS.items())]
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     wb = Workbook()
     wb.remove(wb.active)
+    summary_sheet(wb)
     for kind, title in (("K", "Kreditlar"), ("O", "Omonatlar")):
         data = [as_list(r) for r in rows(kind)]
         sheet(wb, title, HEAD, data, WIDTHS)
@@ -94,6 +153,7 @@ def main():
         "Yangilash: python scrape.py (bank saytlariga kirish mumkin bo'lgan kompyuterda) yoki python research/build.py.",
     ]], [140])
     wb.save(OUT / "banklar_kredit_omonat_rasmiy.xlsx")
+    write_markdown(OUT / "XULOSALAR.md")
     print(f"{OUT}/banklar_kredit_omonat_rasmiy.xlsx: {len(summary)} bank, "
           f"{len(rows('K'))} kredit, {len(rows('O'))} omonat")
 
