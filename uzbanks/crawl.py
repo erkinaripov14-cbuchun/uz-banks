@@ -219,6 +219,8 @@ async def scrape_bank(browser, bank, sections, max_pages=40, lang="uz", timeout=
                     "text": text[:20000],
                 })
                 log(f"  [{bank['id']}] {sec}: {(title['h1'] or title['doc'])[:60]!r} {page.url}")
+                if not (title["h1"] or title["doc"]):   # sarlavhasiz sahifa — nima ochilganini logda ko'rish uchun
+                    log(f"    ? matn {len(text)} belgi, havola {len(links)}: {' '.join(text.split())[:200]!r}")
     except Exception as e:
         result["errors"].append(f"{e.__class__.__name__}: {e}")
     finally:
