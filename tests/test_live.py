@@ -34,3 +34,18 @@ def test_convert_drops_generic_pages_noise_and_duplicates():
     ], "deposits": [page("Omonat", 22, 22), page("Yillik omonat", 22, 80)]}]
     rows = convert(results)
     assert [(r["name"], r["lo"], r["hi"]) for r in rows] == [("Avtokredit", 24, 26), ("Uzavto 0%", 0, 0)]
+
+
+def test_rates_ignore_down_payment_penalty_and_early_withdrawal():
+    def r(lo, hi, ctx):
+        return {"min": lo, "max": hi, "context": ctx}
+    credit = {"url": "https://t.uz/ipoteka", "title": "Ipoteka krediti", "kind": "product", "rate_min": 10, "rate_max": 50,
+              "currencies": ["UZS"], "term_min_months": 12, "term_max_months": 240, "rates": [
+                  r(17, 19, "Foiz stavkasi: yillik 17–19%"), r(25, 25, "Boshlang'ich badal 25%"),
+                  r(50, 50, "jarima 50%"), r(10, 10, "qarz yuki 10%")]}
+    deposit = {"url": "https://t.uz/omonat/eur", "title": "Yevro Onlayn", "kind": "product", "rate_min": 1, "rate_max": 10,
+               "currencies": ["UZS", "EUR"], "rates": [r(2, 2, "yillik 2%"), r(1, 1, "muddatidan oldin yechilsa 1%")]}
+    box = {"url": "https://t.uz/x", "title": "Depozit yacheykalari", "kind": "product", "rate_min": 20, "rate_max": 20, "rates": []}
+    rows = convert([{"bank": "B", "scraped_at": "2026-10-14", "credits": [credit], "deposits": [deposit, box]}])
+    assert [(x["name"], x["lo"], x["hi"], x["cat"], x["cur"]) for x in rows] == [
+        ("Ipoteka krediti", 17, 19, "Ipoteka", "UZS"), ("Yevro Onlayn", 2, 2, "Valyuta omonat", "EUR")]

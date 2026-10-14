@@ -104,10 +104,17 @@ https://erkinaripov14-cbuchun.github.io/uz-banks/ — `main` ga push qilingandan
 ## Avtomatik yangilash
 
 Tashrif buyuruvchilar ma'lumotni yangilay olmaydi: saytda ular uchun faqat ko'rish, grafiklar va **Excel yuklab olish** bor.
-Administrator sayt pastidagi **"Administrator"** havolasini bosib, parol bilan kiradi; shundan keyin
-**"Ma'lumotni yangilash"** tugmasi GitHub Actions'dagi [Ma'lumotni yangilash](.github/workflows/update.yml)
-jarayonini ochadi. U yerda **Run workflow** ni bosing
-(parol faqat sahifadagi ko'rinishni ochadi — jarayonni haqiqatda faqat repoga yozish huquqi bor GitHub hisobi ishga tushira oladi; ixtiyoriy ravishda faqat ayrim banklarni yozish mumkin, masalan `hamkorbank,nbu`).
+
+Administrator sayt pastidagi **"Administrator"** havolasini bosib, parol bilan kiradi va **"Ma'lumotni yangilash"**
+tugmasini bosadi — sayt GitHub API orqali [Ma'lumotni yangilash](.github/workflows/update.yml) jarayonini o'zi ishga tushiradi
+va holatini ko'rsatib turadi. Buning uchun har bir qurilmada bir marta GitHub tokeni kiritiladi:
+
+- [Fine-grained token](https://github.com/settings/personal-access-tokens/new) yarating: Repository access → faqat `uz-banks`,
+  Permissions → **Actions: Read and write** (boshqa ruxsat kerak emas).
+- Token faqat shu brauzerda, admin paroli bilan shifrlangan (PBKDF2 + AES-GCM) holda saqlanadi; saytga ham, repoga ham tushmaydi.
+- Bu faqat asosiy saytda (github.io) ishlaydi.
+
+Jarayonni GitHub'ning o'zidan ham ishga tushirish mumkin: Actions → **Run workflow** (ixtiyoriy ravishda faqat ayrim banklar, masalan `hamkorbank,nbu`).
 Jarayon har dushanba 08:17 (Toshkent) da o'zi ham ishlaydi.
 
 Jarayon nima qiladi:
