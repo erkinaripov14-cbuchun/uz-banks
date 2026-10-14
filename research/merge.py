@@ -44,11 +44,16 @@ def _live_rows():
     out = []
     for r in json.loads(LIVE.read_text(encoding="utf-8"))["rows"]:
         # Eski yozilgan fayllar uchun ham bugungi qoidalar qo'llanadi
-        if live_rules.GENERIC_TITLES.match(r["name"]) or live_rules.NOT_PRODUCT.search(r["name"]):
+        name = live_rules.clean_title(r["name"])
+        if not name or live_rules.GENERIC_TITLES.match(name) or live_rules.NOT_PRODUCT.search(name):
             continue
+        r = {**r, "name": name}
+        seg = r.get("segment") or live_rules._segment(r)
+        if r["type"] == "K" and seg == "yuridik" and r["cat"] in ("Iste'mol", "Mikroqarz"):
+            r["cat"] = "Biznes"
         if not live_rules._plausible(r["type"], r["lo"], r["hi"], r["cur"], r["cat"]):
             continue
-        out.append({**r, "segment": r.get("segment") or live_rules._segment(r)})
+        out.append({**r, "segment": seg})
     return out
 
 

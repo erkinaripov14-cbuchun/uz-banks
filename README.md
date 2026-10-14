@@ -111,7 +111,10 @@ va holatini ko'rsatib turadi. Buning uchun har bir qurilmada bir marta GitHub to
 
 - [Fine-grained token](https://github.com/settings/personal-access-tokens/new) yarating: Repository access → faqat `uz-banks`,
   Permissions → **Actions: Read and write** (boshqa ruxsat kerak emas).
-- Token faqat shu brauzerda, admin paroli bilan shifrlangan (PBKDF2 + AES-GCM) holda saqlanadi; saytga ham, repoga ham tushmaydi.
+- Token admin paroli bilan shifrlanadi (PBKDF2 + AES-GCM) va shu brauzerda saqlanadi.
+- **Bitta tugma, har qanday qurilmada:** admin bo'limida "Barcha qurilmalarda ishlashi uchun kod olish" bilan shifrlangan
+  kodni olib, `research/admin_token.json` ga yozing va saytni qayta yasang (`python research/build.py`). Shundan keyin
+  istalgan qurilmada parol → "Ma'lumotni yangilash". Kod parolsiz ochilmaydi; tokenning o'zi repoda saqlanmaydi.
 - Bu faqat asosiy saytda (github.io) ishlaydi.
 
 Jarayonni GitHub'ning o'zidan ham ishga tushirish mumkin: Actions → **Run workflow** (ixtiyoriy ravishda faqat ayrim banklar, masalan `hamkorbank,nbu`).

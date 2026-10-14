@@ -77,3 +77,10 @@ def test_stricter_plausibility():
     assert not _plausible("K", 50, 50, "UZS", "Ipoteka")
     assert _plausible("K", 0, 0, "UZS", "Avtokredit")
     assert _plausible("O", 7, 7, "USD") and _plausible("O", 20, 22)
+
+
+def test_card_titles_skip_amount_and_slogan_lines():
+    from live import clean_title
+    assert clean_title("Сумма микрозайма") == "" and clean_title("Bazaviy stavka + 5,0%") == ""
+    assert clean_title("Bizda har bir kishi uchun katta tanlov mavjud") == ""
+    assert clean_title("“Mahalla loyihasi”\nkrediti") == "“Mahalla loyihasi” krediti"

@@ -131,6 +131,7 @@ def write_markdown(path):
 
 
 LIVE = Path(__file__).parent / "live" / "latest.json"
+ADMIN_TOKEN = Path(__file__).parent / "admin_token.json"
 PAGES_URL = "https://erkinaripov14-cbuchun.github.io/uz-banks/"
 EXCEL_NAME = "banklar_kredit_omonat.xlsx"
 SITE_DIRS = [Path(__file__).parent.parent / "site", Path(__file__).parent.parent / "docs"]
@@ -154,6 +155,8 @@ def write_site():
         "excel": PAGES_URL + EXCEL_NAME,
         # Administrator paroli SHA-256 xeshi (parolning o'zi repoda saqlanmaydi)
         "adminHash": "6ec2f9f12dba6ee672f9e6c5d15daf4fdd036b59949138e61bcc521065cc2da1",
+        # Admin paroli bilan shifrlangan GitHub token (PBKDF2 + AES-GCM). Parolsiz ochib bo'lmaydi.
+        "adminTokenBlob": json.loads(ADMIN_TOKEN.read_text(encoding="utf-8")) if ADMIN_TOKEN.exists() else None,
         "live": merge.live_meta(),
     }
     blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
