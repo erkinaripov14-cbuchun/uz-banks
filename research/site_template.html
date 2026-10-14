@@ -150,6 +150,15 @@ h3 { font: 600 16px/1.35 var(--font-body); margin: 0; }
 .field.grow { flex: 1 1 220px; }
 .field.grow input { width: 100%; }
 .count { font: 500 13px var(--font-mono); color: var(--muted); }
+.segbtns { display: inline-flex; flex-wrap: wrap; gap: 4px; padding: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; justify-self: start; max-width: 100%; }
+.segbtns button { appearance: none; border: 0; background: none; font: 600 14px var(--font-body); color: var(--muted); padding: 8px 14px; border-radius: 7px; cursor: pointer; }
+.segbtns button[aria-pressed="true"] { background: var(--accent); color: var(--surface); }
+.segbtns button[aria-pressed="true"] .n { color: inherit; opacity: .8; }
+.segbtns .n { font: 500 12px var(--font-mono); margin-left: 4px; color: var(--faint); }
+.src-tag { display: inline-block; font: 500 11px/1.6 var(--font-body); padding: 0 6px; border-radius: 4px; margin-top: 4px; }
+.src-tag.auto { background: var(--warn-soft); color: var(--warn); }
+.src-tag.ok { background: var(--deposit-soft); color: var(--fg); }
+.livev { display: block; font: 500 12px var(--font-mono); color: var(--muted); margin-top: 4px; }
 .tablebox { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
 table { border-collapse: collapse; width: 100%; min-width: 860px; }
 th, td { text-align: left; padding: 11px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
@@ -182,7 +191,7 @@ td.src .d { display: block; }
 .bankcard dt { color: var(--muted); }
 .bankcard dd { margin: 0; text-align: right; font: 500 14px var(--font-mono); font-variant-numeric: tabular-nums; }
 .bankcard .gap { font-size: 13px; color: var(--warn); background: var(--warn-soft); border-radius: 6px; padding: 6px 8px; }
-.bankcard .links { display: flex; gap: 14px; font-size: 14px; }
+.bankcard .links { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 14px; }
 .bankcard .links button { all: unset; cursor: pointer; color: var(--accent); font-weight: 500; text-decoration: underline; text-underline-offset: 2px; }
 
 /* Admin */
@@ -256,7 +265,6 @@ footer p { margin: 0; max-width: 80ch; }
     <button role="tab" id="t-omonatlar" aria-controls="omonatlar" data-tab="omonatlar">Omonatlar <span class="n" id="n-o"></span></button>
     <button role="tab" id="t-kreditlar" aria-controls="kreditlar" data-tab="kreditlar">Kreditlar <span class="n" id="n-k"></span></button>
     <button role="tab" id="t-banklar" aria-controls="banklar" data-tab="banklar">Banklar <span class="n" id="n-b"></span></button>
-    <button role="tab" id="t-avtomatik" aria-controls="avtomatik" data-tab="avtomatik" hidden>Yangi topilganlar <span class="n" id="n-a"></span></button>
     <button role="tab" id="t-admin" aria-controls="admin" data-tab="admin" hidden>Administrator</button>
   </div>
 </nav>
@@ -279,10 +287,15 @@ footer p { margin: 0; max-width: 80ch; }
     </section>
 
     <section role="tabpanel" id="omonatlar" aria-labelledby="t-omonatlar" hidden>
+      <div class="segbtns" role="group" aria-label="Kim uchun" data-for="o">
+        <button type="button" data-seg="jismoniy" aria-pressed="true">Jismoniy shaxslar <span class="n" id="o-nj"></span></button>
+        <button type="button" data-seg="yuridik" aria-pressed="false">Yuridik shaxslar va tadbirkorlar <span class="n" id="o-ny"></span></button>
+      </div>
       <div class="filters">
         <div class="field grow"><label for="o-q">Qidirish</label><input id="o-q" type="search" placeholder="Bank yoki omonat nomi"></div>
         <div class="field"><label for="o-cur">Valyuta</label><select id="o-cur"></select></div>
         <div class="field"><label for="o-bank">Bank</label><select id="o-bank"></select></div>
+        <div class="field"><label for="o-src">Manba</label><select id="o-src"><option value="">Hammasi</option><option value="tekshirilgan">Qo'lda tekshirilgan</option><option value="avtomatik">Saytdan avtomatik</option></select></div>
         <label class="check"><input id="o-stale" type="checkbox" checked> Eski sahifalarni yashirish</label>
       </div>
       <div class="count" id="o-count"></div>
@@ -290,10 +303,15 @@ footer p { margin: 0; max-width: 80ch; }
     </section>
 
     <section role="tabpanel" id="kreditlar" aria-labelledby="t-kreditlar" hidden>
+      <div class="segbtns" role="group" aria-label="Kim uchun" data-for="k">
+        <button type="button" data-seg="jismoniy" aria-pressed="true">Jismoniy shaxslar <span class="n" id="k-nj"></span></button>
+        <button type="button" data-seg="yuridik" aria-pressed="false">Yuridik shaxslar va tadbirkorlar <span class="n" id="k-ny"></span></button>
+      </div>
       <div class="filters">
         <div class="field grow"><label for="k-q">Qidirish</label><input id="k-q" type="search" placeholder="Bank yoki kredit nomi"></div>
         <div class="field"><label for="k-cat">Kredit turi</label><select id="k-cat"></select></div>
         <div class="field"><label for="k-bank">Bank</label><select id="k-bank"></select></div>
+        <div class="field"><label for="k-src">Manba</label><select id="k-src"><option value="">Hammasi</option><option value="tekshirilgan">Qo'lda tekshirilgan</option><option value="avtomatik">Saytdan avtomatik</option></select></div>
         <label class="check"><input id="k-stale" type="checkbox" checked> Eski sahifalarni yashirish</label>
         <label class="check"><input id="k-zero" type="checkbox"> 0% aksiyalarni yashirish</label>
       </div>
@@ -303,18 +321,6 @@ footer p { margin: 0; max-width: 80ch; }
 
     <section role="tabpanel" id="banklar" aria-labelledby="t-banklar" hidden>
       <div class="banks" id="banks"></div>
-    </section>
-
-    <section role="tabpanel" id="avtomatik" aria-labelledby="t-avtomatik" hidden>
-      <p class="intro" id="a-note" style="margin:0"></p>
-      <div class="filters">
-        <div class="field grow"><label for="a-q">Qidirish</label><input id="a-q" type="search" placeholder="Bank yoki mahsulot nomi"></div>
-        <div class="field"><label for="a-type">Turi</label><select id="a-type"><option value="">Hammasi</option><option value="O">Omonatlar</option><option value="K">Kreditlar</option></select></div>
-        <div class="field"><label for="a-bank">Bank</label><select id="a-bank"></select></div>
-        <input id="a-stale" type="checkbox" hidden>
-      </div>
-      <div class="count" id="a-count"></div>
-      <div class="tablebox"><table id="a-table"></table></div>
     </section>
 
     <section role="tabpanel" id="admin" aria-labelledby="t-admin" hidden>
@@ -392,7 +398,6 @@ const deposits = DATA.rows.filter((r) => r.type === "O");
 const credits = DATA.rows.filter((r) => r.type === "K");
 const banks = [...new Set(DATA.rows.map((r) => r.bank))].sort((a, b) => a.localeCompare(b));
 const live = DATA.live;
-const liveRows = live ? live.rows : [];
 const lastUpdate = live ? live.updated : DATA.generated;
 
 /* Header */
@@ -436,7 +441,7 @@ $("#ranks").innerHTML = DATA.rankings.map((k) => {
 $("#notes").innerHTML = DATA.notes.map((n) => `<li>${esc(n)}</li>`).join("");
 
 /* Analysis charts: one bar (or range) per bank, best offer in the category */
-const fresh = (r) => !r.stale;
+const fresh = (r) => !r.stale && r.source === "tekshirilgan" && r.segment === "jismoniy";
 function bestPerBank(rows, pick, better) {
   const m = new Map();
   rows.forEach((r) => {
@@ -526,6 +531,7 @@ const COLS = [
   { key: "src", label: "Manba", val: (r) => host(r.url) },
 ];
 
+const segOf = { o: "jismoniy", k: "jismoniy" };
 function makeTable(prefix, rows, kind, extra) {
   const state = { sort: "rate", dir: kind === "dep" ? -1 : 1 };
   const table = $(`#${prefix}-table`);
@@ -538,7 +544,9 @@ function makeTable(prefix, rows, kind, extra) {
     const hideStale = $(`#${prefix}-stale`).checked;
     return rows.filter((r) =>
       (!q || (r.bank + " " + r.name + " " + r.note).toLowerCase().includes(q)) &&
-      (!bank || r.bank === bank) && (!hideStale || !r.stale) && extra(r));
+      (!bank || r.bank === bank) && (!hideStale || !r.stale) && extra(r) &&
+      (!segOf[prefix] || r.segment === segOf[prefix]) &&
+      (!$(`#${prefix}-src`) || !$(`#${prefix}-src`).value || r.source === $(`#${prefix}-src`).value));
   }
   function sortKey(r) {
     if (state.sort === "rate") {
@@ -562,10 +570,10 @@ function makeTable(prefix, rows, kind, extra) {
         <td class="bank">${esc(r.bank)}</td>
         <td class="prod"><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>${r.note ? `<span class="note">${esc(r.note)}</span>` : ""}</td>
         ${catCol ? `<td class="cat"><span class="tag">${esc(r.cat)}</span></td>` : ""}
-        <td class="ratecell"><span class="rate ${kindOf(r)}">${fmtRate(r)}</span>${bar(r, kindOf(r))}${kindOf(r) === "dep" && r.cur !== "UZS" ? ` <span class="tag">${esc(r.cur)}</span>` : ""}</td>
+        <td class="ratecell"><span class="rate ${kindOf(r)}">${fmtRate(r)}</span>${bar(r, kindOf(r))}${kindOf(r) === "dep" && r.cur !== "UZS" ? ` <span class="tag">${esc(r.cur)}</span>` : ""}${r.live ? `<span class="livev" title="Saytdan ${esc(r.live.date)} da avtomatik o'qilgan">saytda: ${fmtRate(r.live)}</span>` : ""}</td>
         <td class="small term">${esc(r.term)}</td>
         <td class="small amount">${esc(r.amount)}</td>
-        <td class="small src">${esc(host(r.url))}${r.date ? `<span class="d">${esc(r.date)}</span>` : ""}${r.stale ? ` <span class="tag old">eski</span>` : ""}</td>
+        <td class="small src">${esc(host(r.url))}${r.date ? `<span class="d">${esc(r.date)}</span>` : ""}${r.stale ? ` <span class="tag old">eski</span>` : ""}<br><span class="src-tag ${r.source === "avtomatik" ? "auto" : "ok"}">${r.source === "avtomatik" ? "saytdan avtomatik" : "qo'lda tekshirilgan"}</span></td>
       </tr>`).join("");
     table.innerHTML = `<thead><tr>${head}</tr></thead><tbody>${body ||
       `<tr><td class="empty" colspan="${COLS.length + (catCol ? 1 : 0)}">Bu filtrlarga mos mahsulot yo'q. Qidiruv yoki filtrni o'zgartiring.</td></tr>`}</tbody>`;
@@ -583,23 +591,27 @@ function makeTable(prefix, rows, kind, extra) {
     if (el.matches("input, select")) el.addEventListener("input", render);
   });
   render();
-  return { setBank(b) { $(`#${prefix}-bank`).value = b; render(); } };
+  const seg = document.querySelector(`.segbtns[data-for="${prefix}"]`);
+  if (seg) {
+    $(`#${prefix}-nj`).textContent = rows.filter((r) => r.segment === "jismoniy").length;
+    $(`#${prefix}-ny`).textContent = rows.filter((r) => r.segment === "yuridik").length;
+    seg.addEventListener("click", (e) => {
+      const b = e.target.closest("button[data-seg]");
+      if (!b) return;
+      segOf[prefix] = b.dataset.seg;
+      seg.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+      render();
+    });
+  }
+  return { setBank(b, segment) {
+    $(`#${prefix}-bank`).value = b;
+    if (segment && seg) seg.querySelector(`[data-seg="${segment}"]`).click(); else render();
+  } };
 }
 
 const depTable = makeTable("o", deposits, "dep", (r) => !$("#o-cur").value || r.cur === $("#o-cur").value);
 const creTable = makeTable("k", credits, "cre", (r) =>
   (!$("#k-cat").value || r.cat === $("#k-cat").value) && !($("#k-zero").checked && hi(r) === 0));
-
-/* Newly found (automatic check) — the tab appears only when there is data */
-if (liveRows.length) {
-  $("#t-avtomatik").hidden = false;
-  $("#n-a").textContent = liveRows.length;
-  $("#a-note").textContent =
-    `${niceDate(live.updated)} kuni bank saytlari avtomatik qayta o'qildi: ${live.banks_ok} ta bankdan ${liveRows.length} ta mahsulot topildi. ` +
-    `Bu raqamlar sahifa matnidan avtomatik olingan, shuning uchun boshqa bo'limlardagidan kamroq aniq bo'lishi mumkin — havola orqali tekshiring.`;
-  options($("#a-bank"), [...new Set(liveRows.map((r) => r.bank))].sort(), "Hamma banklar");
-  makeTable("a", liveRows, "mix", (r) => !$("#a-type").value || r.type === $("#a-type").value);
-}
 
 /* Banks */
 function range(rs, pick) {
@@ -611,25 +623,30 @@ function range(rs, pick) {
 $("#banks").innerHTML = banks.map((b) => {
   const rs = DATA.rows.filter((r) => r.bank === b);
   const k = rs.filter((r) => r.type === "K"), o = rs.filter((r) => r.type === "O");
+  const kj = k.filter((r) => r.segment === "jismoniy"), ky = k.filter((r) => r.segment === "yuridik");
+  const oj = o.filter((r) => r.segment === "jismoniy"), oy = o.filter((r) => r.segment === "yuridik");
   const site = DATA.sites[b];
   return `<article class="bankcard">
     <header><h3>${esc(b)}</h3><a class="site" href="https://${esc(site)}" target="_blank" rel="noopener">${esc(site)}</a></header>
     <dl>
-      <dt>So'm omonat</dt><dd>${range(o, (r) => r.cur === "UZS")}</dd>
-      <dt>Valyuta omonat</dt><dd>${range(o, (r) => r.cur !== "UZS")}</dd>
-      <dt>Kreditlar</dt><dd>${range(k, (r) => hi(r) > 0)}</dd>
+      <dt>So'm omonat</dt><dd>${range(oj, (r) => r.cur === "UZS")}</dd>
+      <dt>Valyuta omonat</dt><dd>${range(oj, (r) => r.cur !== "UZS")}</dd>
+      <dt>Kredit (jismoniy)</dt><dd>${range(kj, (r) => hi(r) > 0)}</dd>
+      <dt>Kredit (yuridik)</dt><dd>${range(ky, (r) => hi(r) > 0)}</dd>
     </dl>
-    ${DATA.gaps[b] ? `<div class="gap">${esc(DATA.gaps[b])}</div>` : ""}
+    ${DATA.gaps[b] && !rs.some((r) => r.source === "avtomatik") ? `<div class="gap">${esc(DATA.gaps[b])}</div>` : ""}
     <div class="links">
-      ${o.length ? `<button data-go="omonatlar" data-bank="${esc(b)}">${o.length} ta omonat</button>` : ""}
-      ${k.length ? `<button data-go="kreditlar" data-bank="${esc(b)}">${k.length} ta kredit</button>` : ""}
+      ${oj.length ? `<button data-go="omonatlar" data-seg="jismoniy" data-bank="${esc(b)}">${oj.length} ta omonat</button>` : ""}
+      ${kj.length ? `<button data-go="kreditlar" data-seg="jismoniy" data-bank="${esc(b)}">${kj.length} ta kredit</button>` : ""}
+      ${ky.length ? `<button data-go="kreditlar" data-seg="yuridik" data-bank="${esc(b)}">${ky.length} ta yuridik kredit</button>` : ""}
+      ${oy.length ? `<button data-go="omonatlar" data-seg="yuridik" data-bank="${esc(b)}">${oy.length} ta yuridik depozit</button>` : ""}
     </div>
   </article>`;
 }).join("");
 $("#banks").addEventListener("click", (e) => {
   const b = e.target.closest("button[data-go]");
   if (!b) return;
-  (b.dataset.go === "omonatlar" ? depTable : creTable).setBank(b.dataset.bank);
+  (b.dataset.go === "omonatlar" ? depTable : creTable).setBank(b.dataset.bank, b.dataset.seg);
   show(b.dataset.go);
   document.querySelector("nav.tabs").scrollIntoView();
 });
@@ -752,7 +769,7 @@ $("#admin-open").addEventListener("click", () => {
 });
 
 /* Tabs */
-const TABS = ["xulosalar", "tahlil", "omonatlar", "kreditlar", "banklar", "avtomatik"].filter((t) => !$("#t-" + t).hidden);
+const TABS = ["xulosalar", "tahlil", "omonatlar", "kreditlar", "banklar"].filter((t) => !$("#t-" + t).hidden);
 function show(id, push = true) {
   if (!TABS.includes(id)) id = "xulosalar";
   [...TABS, "admin"].forEach((t) => {

@@ -41,7 +41,7 @@ jobs:
         env:
           ONLY: ${{ inputs.only }}
         run: |
-          ARGS=(--out output/run --max-pages 25 --concurrency 6 --timeout 45)
+          ARGS=(--out output/run --max-pages 40 --concurrency 6 --timeout 45 --budget 420)
           if [ -n "$ONLY" ]; then
             [[ "$ONLY" =~ ^[a-z0-9_,]+$ ]] || { echo "Noto'g'ri bank ro'yxati: $ONLY"; exit 1; }
             ARGS+=(--only "$ONLY")

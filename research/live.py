@@ -57,7 +57,7 @@ NOT_RATE_WORDS = re.compile(
     r"keshbek|cashback|кешбэк|komissiya|комисси|chegirma|скидк|soliq|налог|qarz yuki|долговой нагруз|"
     r"ulush|доля|qoplash|покрыти|garov|залог|sug.urta|страхов|inflyatsiya|инфляц", re.I)
 FX_TITLE = re.compile(r"dollar|usd|\$|yevro|evro|euro|eur|€|valyuta|валют|доллар|евро", re.I)
-NOT_PRODUCT = re.compile(r"yacheyka|ячейк|seyf|сейф|ijara qutisi", re.I)
+NOT_PRODUCT = re.compile(r"yacheyka|ячейк|seyf|сейф|ijara qutisi|arxiv|архив|archive", re.I)
 
 
 def _rates(p, kind):
@@ -74,7 +74,7 @@ def _rates(p, kind):
     if not use:
         return None
     lo, hi = min(r["min"] for r in use), max(r["max"] for r in use)
-    if hi - lo > 15:   # oralig'i juda keng — sahifada turli narsalar aralashgan, ishonchsiz
+    if hi - lo > 10:   # oralig'i juda keng — sahifada turli narsalar aralashgan, ishonchsiz
         return None
     return lo, hi
 
@@ -88,11 +88,38 @@ GENERIC_TITLES = re.compile(
     r"omonatlar va depozitlar|barchasi omonatlar haqida|xorijiy valyutada|milliy valyutada|вклады|кредиты)$", re.I)
 
 
-def _plausible(kind, lo, hi):
-    """Matndan olingan foiz real bo'lishi kerak: omonat 0.5–35%, kredit 5–60% (0% aksiya — alohida)."""
+BUSINESS_URL = re.compile(r"/(corporate|small-business|legal|juristic|yuridik[-_]shaxslar\w*|business|biznes-uchun)(/|$)", re.I)
+
+
+def _segment(p):
+    return p.get("segment") or ("yuridik" if BUSINESS_URL.search(re.sub(r"^https?://[^/]+", "", p["url"]) + "/") else "jismoniy")
+
+
+def _plausible(kind, lo, hi, cur="UZS", cat=""):
+    """Matndan olingan foiz real bo'lishi kerak; aks holda qator saytga chiqmaydi."""
+    if hi - lo > 10:
+        return False
     if kind == "O":
-        return 0.5 <= lo <= hi <= 35
-    return (lo == hi == 0) or (5 <= lo <= hi <= 60)
+        return (3 <= lo <= hi <= 30) if cur == "UZS" else (0.5 <= lo <= hi <= 12)
+    if lo == hi == 0:          # 0% aksiya (masalan, avtokredit)
+        return True
+    return 10 <= lo <= hi <= (35 if cat == "Ipoteka" else 50)
+
+
+def _items(bank, section):
+    """Mahsulot sahifalari + ro'yxat sahifalaridagi kartochkalar (alohida sahifasi o'qilmagan bo'lsa)."""
+    pages = bank.get(section, [])
+    product_urls = {p["url"].rstrip("/") for p in pages if p.get("kind") == "product"}
+    for p in pages:
+        if p.get("kind") == "product":
+            yield p
+            continue
+        for c in p.get("cards") or []:
+            if c["url"].rstrip("/") in product_urls or c.get("rate_min") is None:
+                continue
+            lines = [l.strip() for l in c["text"].splitlines() if l.strip()]
+            title = next((l for l in lines if len(l) > 3 and not re.match(r"^[\d.,%\s–-]+$", l)), "")
+            yield {**c, "title": title[:120], "kind": "card"}
 
 
 def convert(results):
@@ -100,37 +127,35 @@ def convert(results):
     for bank in results:
         date = (bank.get("scraped_at") or "")[:10]
         for section, kind in (("credits", "K"), ("deposits", "O")):
-            for p in bank.get(section, []):
-                # Ro'yxat sahifalarida bir nechta mahsulot foizi aralash — faqat mahsulot sahifalari
-                if p.get("kind") != "product" or p.get("rate_min") is None:
+            for p in _items(bank, section):
+                if p.get("rate_min") is None:
                     continue
                 title = (p.get("title") or "").strip()
                 if not title or GENERIC_TITLES.match(title) or NOT_PRODUCT.search(title):
                     continue
                 rng = _rates(p, kind) if p.get("rates") is not None else (p["rate_min"], p["rate_max"])
-                if not rng or not _plausible(kind, *rng):
+                if not rng:
                     continue
                 lo, hi = rng
+                cur = p.get("currencies") or []
+                if kind == "O" and FX_TITLE.search(f"{title} {p['url']}"):
+                    cur = [c for c in cur if c != "UZS"] or ["USD"]
+                cur1 = "UZS" if not cur or "UZS" in cur else cur[0]
+                cat = _category(section, f"{title} {p['url']}", cur)
+                if not _plausible(kind, lo, hi, cur1, cat):
+                    continue
                 key = (bank["bank"], title.lower(), lo, hi)
                 if key in seen:
                     continue
                 seen.add(key)
-                cur = p.get("currencies") or []
-                if kind == "O" and FX_TITLE.search(f"{title} {p['url']}"):
-                    cur = [c for c in cur if c != "UZS"] or ["USD"]
-                cat = _category(section, f"{title} {p['url']}", cur)
                 tmax = p.get("term_max_months")
                 long_ok = cat in ("Ipoteka", "Ta'lim") or kind == "O"
                 term = _months(p.get("term_min_months"), tmax) if tmax is None or tmax <= 120 or long_ok else ""
                 rows.append({
-                    "bank": bank["bank"], "type": kind,
-                    "cat": cat,
-                    "name": title[:120],
-                    "lo": lo, "hi": hi,
-                    "term": term,
+                    "bank": bank["bank"], "type": kind, "cat": cat, "segment": _segment(p),
+                    "name": title[:120], "lo": lo, "hi": hi, "term": term,
                     "amount": _amount(p.get("amount_min"), p.get("amount_max")),
-                    "cur": "UZS" if not cur or "UZS" in cur else cur[0],
-                    "url": p["url"], "date": date, "note": "", "stale": False,
+                    "cur": cur1, "url": p["url"], "date": date, "note": "", "stale": False,
                 })
     return rows
 

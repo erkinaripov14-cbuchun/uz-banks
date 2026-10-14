@@ -49,3 +49,31 @@ def test_rates_ignore_down_payment_penalty_and_early_withdrawal():
     rows = convert([{"bank": "B", "scraped_at": "2026-10-14", "credits": [credit], "deposits": [deposit, box]}])
     assert [(x["name"], x["lo"], x["hi"], x["cat"], x["cur"]) for x in rows] == [
         ("Ipoteka krediti", 17, 19, "Ipoteka", "UZS"), ("Yevro Onlayn", 2, 2, "Valyuta omonat", "EUR")]
+
+
+def test_listing_cards_become_products_with_segment():
+    results = [{"bank": "B", "scraped_at": "2026-10-14", "credits": [
+        {"url": "https://t.uz/uz/corporate/crediting/", "title": "Kreditlar", "kind": "listing", "rate_min": 18, "rate_max": 30,
+         "cards": [
+             {"url": "https://t.uz/uz/corporate/crediting/aylanma/", "text": "Aylanma kredit\n22% dan\n36 oygacha",
+              "rate_min": 22, "rate_max": 22, "currencies": ["UZS"], "term_min_months": 36, "term_max_months": 36,
+              "amount_min": None, "amount_max": None},
+             {"url": "https://t.uz/uz/corporate/crediting/invest/", "text": "Invest\n18%", "rate_min": 18, "rate_max": 18,
+              "currencies": ["UZS"]},
+         ]},
+        # bu kartochkaning o'z sahifasi o'qilgan — kartochka emas, sahifa olinadi
+        {"url": "https://t.uz/uz/corporate/crediting/invest", "title": "Invest krediti", "kind": "product",
+         "rate_min": 19, "rate_max": 19, "currencies": ["UZS"], "rates": [{"min": 19, "max": 19, "context": "yillik 19%"}]},
+    ]}]
+    rows = convert(results)
+    assert sorted((r["name"], r["lo"], r["segment"]) for r in rows) == [
+        ("Aylanma kredit", 22, "yuridik"), ("Invest krediti", 19, "yuridik")]
+
+
+def test_stricter_plausibility():
+    from live import _plausible
+    assert not _plausible("O", 6, 18, "USD")        # dollar omonat 18% — so'mdagi stavka aralashgan
+    assert not _plausible("K", 6, 19, "UZS", "Iste'mol")
+    assert not _plausible("K", 50, 50, "UZS", "Ipoteka")
+    assert _plausible("K", 0, 0, "UZS", "Avtokredit")
+    assert _plausible("O", 7, 7, "USD") and _plausible("O", 20, 22)

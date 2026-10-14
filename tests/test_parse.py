@@ -44,8 +44,12 @@ def test_skip_and_business_urls():
     assert not _wanted("https://bank.uz/uz/private/crediting/request/?credit=X", site, "uz")
     assert not _wanted("https://bank.uz/uz/services/calculators/", site, "uz")
     assert not _wanted("https://bank.uz/uz/private/deposit/?currency=USD&filter=yes", site, "uz")
-    assert not _wanted("https://bank.uz/uz/corporate/crediting/", site, "uz")
-    assert not _wanted("https://bank.uz/uz/small-business/deposits/", site, "uz")
+    # yuridik shaxslar bo'limlari ham o'qiladi, lekin "yuridik" deb belgilanadi
+    from uzbanks.crawl import segment_of
+    assert _wanted("https://bank.uz/uz/corporate/crediting/", site, "uz")
+    assert segment_of("https://bank.uz/uz/corporate/crediting/") == "yuridik"
+    assert segment_of("https://bank.uz/uz/small-business/deposits/x") == "yuridik"
+    assert segment_of("https://bank.uz/uz/private/crediting/avto/") == "jismoniy"
     assert not _wanted("https://cabinet.bank.uz/", site, "uz")
     assert not _wanted("https://bank.uz/oz/private/deposit/", site, "uz")
     assert not _wanted("https://bank.uz/qr/private/crediting/", site, "uz")
