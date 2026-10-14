@@ -40,7 +40,9 @@ JS_LINKS = r"""
 # Ko'rinadigan matn + yashirin tab/akkordeon panellari matni
 JS_TEXT = r"""
 () => {
-  const root = document.querySelector('main') || document.body;
+  const main = document.querySelector('main');
+  // <main> ichida faqat vidjet bo'lsa (asosiy matn tashqarida) — butun sahifa
+  const root = main && (main.innerText || '').length > 200 ? main : document.body;
   let text = root.innerText || '';
   const hidden = document.querySelectorAll('[role=tabpanel], .tab-pane, details, [class*=accordion], [class*=collapse], [class*=tab-content]');
   for (const el of hidden) {
@@ -89,12 +91,17 @@ def same_site(url, site):
     return _host(url) == _host(site)
 
 
-async def _goto(page, url, timeout):
+async def _goto(page, url, timeout, wait_js=False):
     await page.goto(url, wait_until="domcontentloaded", timeout=timeout)
     try:
         await page.wait_for_load_state("networkidle", timeout=min(timeout, 6000))
     except Exception:
         pass
+    if wait_js:   # JS bilan keyin chiziladigan saytlar (banks.json da "wait_js": true): havolalar paydo bo'lishini kutish
+        try:
+            await page.wait_for_function("document.links.length > 10", timeout=min(timeout, 20000))
+        except Exception:
+            pass
     # lazy-load qilinadigan kartochkalar uchun pastgacha aylantirish
     for _ in range(2):
         await page.mouse.wheel(0, 4000)
@@ -144,7 +151,7 @@ async def scrape_bank(browser, bank, sections, max_pages=40, lang="uz", timeout=
         starts = [site] + ([site.rstrip("/") + f"/{lang}"] if lang else [])
         for url in starts:
             try:
-                await _goto(page, url, timeout)
+                await _goto(page, url, timeout, bank.get("wait_js", False))
                 links += await page.evaluate(JS_LINKS)
                 ok = True
             except Exception as e:
@@ -180,7 +187,7 @@ async def scrape_bank(browser, bank, sections, max_pages=40, lang="uz", timeout=
                 seen.add(key)
                 n += 1
                 try:
-                    await _goto(page, url, timeout)
+                    await _goto(page, url, timeout, bank.get("wait_js", False))
                     title = await page.evaluate(JS_TITLE)
                     text = await page.evaluate(JS_TEXT)
                     tables = await page.evaluate(JS_TABLES)
