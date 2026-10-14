@@ -6,6 +6,7 @@ Natija research/live/latest.json ga yoziladi. Ma'lumot yetarli bo'lmasa (masalan
 ochilmagan bo'lsa), eski latest.json o'zgarmaydi.
 """
 import json
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -49,8 +50,22 @@ def _amount(lo, hi):
     return f"{_money(hi)} gacha" if lo == hi else f"{_money(lo)} – {_money(hi)}"
 
 
+# Mahsulot nomi emas: ro'yxat, xizmat va xato sahifalari
+GENERIC_TITLES = re.compile(
+    r"^(kredit(lar)?|kreditlash|kredit mahsulotlari|omonat(lar)?|depozit(lar)?|amanatlar|jismoniy shaxslar\w*|"
+    r"kalkulyator\w*|savol[- ]javob\w*|talabnoma\w*|ariza\w*|saytdan qidirish|qidiruv|404|"
+    r"xizmat sifatini baholang|доступ запрещён|bosh sahifa|asosiy|varaqasi\*?|.{0,3})$", re.I)
+
+
+def _plausible(kind, lo, hi):
+    """Matndan olingan foiz real bo'lishi kerak: omonat 0.5–35%, kredit 5–60% (0% aksiya — alohida)."""
+    if kind == "O":
+        return 0.5 <= lo <= hi <= 35
+    return (lo == hi == 0) or (5 <= lo <= hi <= 60)
+
+
 def convert(results):
-    rows = []
+    rows, seen = [], set()
     for bank in results:
         date = (bank.get("scraped_at") or "")[:10]
         for section, kind in (("credits", "K"), ("deposits", "O")):
@@ -58,11 +73,20 @@ def convert(results):
                 # Ro'yxat sahifalarida bir nechta mahsulot foizi aralash — faqat mahsulot sahifalari
                 if p.get("kind") != "product" or p.get("rate_min") is None:
                     continue
+                title = (p.get("title") or "").strip()
+                if not title or GENERIC_TITLES.match(title):
+                    continue
+                if not _plausible(kind, p["rate_min"], p["rate_max"]):
+                    continue
+                key = (bank["bank"], title.lower(), p["rate_min"], p["rate_max"])
+                if key in seen:
+                    continue
+                seen.add(key)
                 cur = p.get("currencies") or []
                 rows.append({
                     "bank": bank["bank"], "type": kind,
                     "cat": _category(section, f"{p.get('title', '')} {p['url']}", cur),
-                    "name": (p.get("title") or p["url"]).strip()[:120],
+                    "name": title[:120],
                     "lo": p["rate_min"], "hi": p["rate_max"],
                     "term": _months(p.get("term_min_months"), p.get("term_max_months")),
                     "amount": _amount(p.get("amount_min"), p.get("amount_max")),
