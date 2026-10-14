@@ -7,6 +7,7 @@ faqat bankning o'z saytidan.
 
 | Fayl | Nima bor |
 |---|---|
+| [**docs/index.html**](docs/index.html) | Sayt: xulosalar, reytinglar, qidiruv va filtrli jadvallar, banklar kartochkalari |
 | [**XULOSALAR.md**](research/rasmiy-2026-10-14/XULOSALAR.md) | Asosiy xulosalar va reytinglar: eng yuqori omonatlar, eng arzon kreditlar |
 | [banklar_kredit_omonat_rasmiy.xlsx](research/rasmiy-2026-10-14/banklar_kredit_omonat_rasmiy.xlsx) | To'liq jadval: Xulosalar, Kreditlar (113), Omonatlar (103), Banklar xulosasi |
 | [kreditlar.csv](research/rasmiy-2026-10-14/kreditlar.csv), [omonatlar.csv](research/rasmiy-2026-10-14/omonatlar.csv) | Shu ma'lumot CSV da |
@@ -91,10 +92,16 @@ pip install pytest
 pytest -q        # lokal test-sayt ustida, internet kerak emas
 ```
 
+## Sayt
+
+`docs/index.html` — bitta mustaqil HTML fayl (barcha ma'lumot ichida). Brauzerda to'g'ridan-to'g'ri
+ochish mumkin. GitHub Pages orqali joylash: repo **Settings → Pages → Branch: `main`, papka: `/docs`**.
+`site/index.html` — shu sahifaning Claude Artifact uchun versiyasi.
+
 ## Natijalarni qayta yasash
 
 Ma'lumot `research/data_rasmiy.py` da, xulosalar matni `research/xulosalar.py` da.
-Excel, CSV va XULOSALAR.md ni qayta yasash:
+Excel, CSV, XULOSALAR.md va saytni (`docs/`, `site/`) qayta yasash; sayt shabloni `research/site_template.html`:
 
 ```bash
 python research/build.py

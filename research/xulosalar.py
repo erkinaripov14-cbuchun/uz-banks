@@ -92,3 +92,28 @@ NOTES = [
     "Kredit stavkasi mijozga qarab individual belgilanadi — jadvaldagi raqam boshlang'ich stavka.",
     "Muhim qarordan oldin stavkani bankning o'zidan tekshiring.",
 ]
+
+
+def _as_dict(r):
+    return {"bank": r[0], "name": r[3], "lo": r[4], "hi": r[5], "term": r[6], "amount": r[7], "url": r[9]}
+
+
+def rankings():
+    """Saytdagi reyting kartochkalari uchun: tables() bilan bir xil tartib, lekin xom qiymatlar bilan."""
+    dep = lambda uzs: sorted([r for r in ROWS if r[1] == "O" and _hi(r) and not _stale(r) and (r[8] == "UZS") == uzs],
+                             key=lambda r: (-_hi(r), r[0]))
+    cre = lambda cat, rev=False: sorted([r for r in ROWS if r[1] == "K" and r[2] == cat and _lo(r) and not _stale(r)],
+                                        key=(lambda r: (-_hi(r), r[0])) if rev else (lambda r: (_lo(r), r[0])))
+    spec = [("Eng yuqori so'm omonatlar", "O", dep(True)[:10]),
+            ("Eng yuqori valyuta omonatlar", "O", dep(False)[:8]),
+            ("Eng arzon ipoteka", "K", cre("Ipoteka")[:6]),
+            ("Eng arzon avtokredit (0% aksiyalarsiz)", "K", cre("Avtokredit")[:6]),
+            ("Eng arzon mikroqarz (0% aksiyalarsiz)", "K", cre("Mikroqarz")[:8]),
+            ("Eng qimmat mikroqarz", "K", cre("Mikroqarz", True)[:6]),
+            ("Eng arzon iste'mol krediti", "K", cre("Iste'mol")[:5]),
+            ("Eng arzon biznes krediti", "K", cre("Biznes")[:6])]
+    return [{"title": t, "kind": k, "rows": [_as_dict(r) for r in rs]} for t, k, rs in spec]
+
+
+def is_stale(r):
+    return bool(_stale(r))
