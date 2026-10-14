@@ -1,0 +1,133 @@
+# O'zbekiston banklari: kreditlar va omonatlar — asosiy xulosalar
+
+Manba: faqat bank saytlari, 2026-10-14. 216 ta mahsulot, 32 ta bank. To'liq jadval: [banklar_kredit_omonat_rasmiy.xlsx](banklar_kredit_omonat_rasmiy.xlsx).
+
+## Asosiy xulosalar
+
+- **So'm omonatlar.** Ko'pchilik banklarda yillik 16–22%. Eng yuqorisi: Garant bank «Red Line» — 25% (13 oy), Anorbank «SMART 3.0» va Asia Alliance Bank «Strategiya online» — 23% (24 oy), Trastbank «Onlayn-Trast Imkon» (24 oy) va Tenge Bank «Qulay onlayn» (13 oy) — 22%.
+- **Qanday ochish foydaliroq.** Ilova orqali ochilgan omonat odatda filialdagidan 0.5–1% yuqori (NBU, Ipoteka-bank, Mikrokreditbank, Asakabank). Foiz muddat oxirida to'lansa, oyma-oy to'lovdan yuqori bo'ladi (Ipoteka-bank DaroMax: 21% va 18.5%).
+- **Muddatidan oldin yechish.** Deyarli hamma bankda foiz keskin tushadi yoki umuman to'lanmaydi (masalan, Mikrokreditbank «Omonat karta»: 3 oygacha 0%). TBC Bank muddatli omonatini muddatidan oldin yechib bo'lmaydi.
+- **Dollar omonatlar.** Asosan 5–7.5%. Eng yuqorisi Universal bank «Invest 7.5» — 7.5% (18 oy, 200 $ dan). 7% — Davr bank «Optimal» va Turonbank «Turon Oltin» (100 $ dan), Trastbank, Ipak Yo'li, Asia Alliance (onlayn), Anorbank «ELITE» (10 000 $ dan). Eng pasti: Ziraat 1–2%, SQB 3%.
+- **Ipoteka.** 17% dan boshlanadi: Hamkorbank, Agrobank «Xonadon plyus», Ipoteka-bank; subsidiyali «Oson» — 17.5% (badal 15%). Odatda 20–24%, muddat 10–20 yil, boshlang'ich badal 15–26%. Eng qimmati Poytaxt bank «Maskan» — 28–32%.
+- **Avtokredit.** Oddiy stavka 21–27%. Ayrim modellar uchun 0% aksiyalar bor (Hamkorbank, SQB «Uzavto-Imkon», Asia Alliance «Onix va Tracker», Garant bank) — odatda faqat hamkor dilerlar va aniq modellar uchun. OFB «BYD Special Plus» — 12.5% dan.
+- **Mikroqarz.** Stavkalar eng keng oraliqda: 20–49%. Arzonlari: OFB «Green» — 20%, Ipak Yo'li garovli — 21.9% dan, SQB ish haqi loyihasi — 22% dan, Hamkorbank onlayn — 23% dan. Qimmatlari: TBC va Tenge — 49% gacha, Anorbank — 44%, Davr bank — 33–38%, Octobank — 37.9%. Uzum Bank: 30 kunga 0%, keyin to'lovlarga bo'linadi.
+- **Iste'mol va ta'lim krediti.** Iste'mol krediti asosan 22–32% (SQB «Yangicha» — 21.99% dan, ish haqi loyihasi mijozlariga). Ta'lim krediti eng arzon: Hamkorbank va BRB — 14%, 7 yilgacha.
+- **Biznes krediti.** Imtiyozli dasturlar 10–19%: BRB «Invest» — 10% dan, NBU yoshlar uchun — 14%, SQB «Yosh tadbirkor» — 18%, InfinBank — 18.99%. Oddiy biznes kreditlari 21–30%.
+- **Umumiy qoida.** Garov, rasmiy daromad yoki bankda ish haqi loyihasi bo'lsa, kredit stavkasi sezilarli past. Garovsiz onlayn mikroqarz eng qimmat kredit turi.
+
+## Eng yuqori so'm omonatlar
+
+| Bank | Mahsulot | Foiz, % | Muddat | Summa |
+|---|---|---|---|---|
+| Garant bank | [Red Line](https://www.garantbank.uz/uz/news/garant-bankdan-25percent-foiz-stavkasi-bilan-yangi-red-line-som-omonati) | 25 | 13 oy | 1 mln dan |
+| Anorbank | [SMART 3.0](https://www.anorbank.uz/uz/deposit/vklad-smart-3-0-uz/) | 23 | 24 oy |  |
+| Asia Alliance Bank | [Strategiya online](https://aab.uz/uz/private/deposit/) | 23 | 24 oy |  |
+| Aloqabank | [Stimul / Chorak asr](https://aloqabank.uz/uz/private/deposit/stimul/) | 19 – 22 | 18 oy |  |
+| Tenge Bank | [Qulay onlayn](https://tengebank.uz/storage/app/media/tenge24/ozb/1-uz-4-udobnyi-onlain.pdf) | 22 | 13 oy | 1000 so'm dan |
+| Trastbank | [Onlayn-Trast Imkon](https://trustbank.uz/uz/private/deposit/onlayn-trast-imkon/) | 22 | 24 oy |  |
+| Davr bank | [Sharqona-2](https://davrbank.uz/api/files/2796) | 21 | 60 oy |  |
+| Ipoteka-bank | [DaroMax](https://www.ipotekabank.uz/deposits/daromax/) | 18 – 21 | 24 oy | 500 ming dan |
+| Trastbank | [Standart](https://trustbank.uz/uz/private/deposit/standart/) | 21 | 24 oy | 500 ming dan |
+| Aloqabank | [Aloqachi](https://aloqabank.uz/uz/private/deposit/alokachi/) | 15 – 20 | 12–13 oy |  |
+
+## Eng yuqori valyuta omonatlar
+
+| Bank | Mahsulot | Foiz, % | Muddat | Summa |
+|---|---|---|---|---|
+| Universal bank | [Invest 7.5](https://universalbank.uz/deposit/5) | 7.5 | 18 oy | 200 USD dan |
+| Anorbank | [ELITE](https://anorbank.uz/upload/doc/_ELITE_%20omonati-new.pdf) | 7 | 24 oy | 10 000 USD dan |
+| Asia Alliance Bank | [Alliance Grand / Alliance Grand online](https://aab.uz/uz/private/deposit/) | 6 – 7 | 25 oy |  |
+| Davr bank | [Optimal](https://davrbank.uz/uz/deposits/individual-term-deposit-optimal) | 7 | 25 oygacha | 100 USD dan |
+| Ipak Yo'li banki | [Tayanch](https://ipakyulibank.uz/) | 7 | 18 oy |  |
+| Trastbank | [Ishonchli sarmoya](https://trustbank.uz/uz/private/deposit/) | 7 | 24 oy |  |
+| Turonbank | [Turon Oltin](https://turonbank.uz/uz/private/deposit/Turon%20Oltin/) | 7 | 18 oy | 100 USD dan |
+| Aloqabank | [Komfort plyus](https://aloqabank.uz/uz/private/deposit/comfort-plus/) | 6.5 | 24 oy | 100 USD dan |
+
+## Eng arzon ipoteka
+
+| Bank | Mahsulot | Foiz, % | Muddat | Summa |
+|---|---|---|---|---|
+| Agrobank | [Xonadon plyus](https://agrobank.uz/uz/person/loans/mortgage) | 17 | 20 yil |  |
+| Hamkorbank | [Ipoteka](https://hamkorbank.uz/uz/physical/mortgage/) | 17 – 19 | 20 yilgacha |  |
+| Ipoteka-bank | [Ipoteka dasturlari (birlamchi, ikkilamchi, tijorat)](https://www.ipotekabank.uz/mortgage/) | 17 – 24.99 | 20 yilgacha |  |
+| Ipoteka-bank | [Oson (yangi uy, subsidiya bilan)](https://www.ipotekabank.uz/mortgage/oson/) | 17.5 | 20 yilgacha | 420 mln gacha |
+| Agrobank | [Zamonaviy uy](https://agrobank.uz/uz/person/loans/mortgage) | 19.99 | 20 yil |  |
+| Turonbank | [Ipoteka krediti](https://turonbank.uz/uz/private/crediting/ipoteka-krediti/) | 20 | 20 yilgacha |  |
+
+## Eng arzon avtokredit (0% aksiyalarsiz)
+
+| Bank | Mahsulot | Foiz, % | Muddat | Summa |
+|---|---|---|---|---|
+| Orient Finans Bank | [BYD Special Plus](https://ofb.uz/kreditlar/byd-special-plus) | 12.5 | 36 / 60 oy | 800 mln gacha |
+| Orient Finans Bank | [Byudjet tashkilotlari xodimlari uchun](https://ofb.uz/kreditlar/byudjet-tashkilotlari-xodimlari-uchun-avtokredit) | 20.9 | 60 oygacha | 800 mln gacha |
+| Asia Alliance Bank | [Birlamchi (yangi avtomobil)](https://aab.uz/uz/private/crediting/avtokredit-gm/) | 21 – 26 | 60 oygacha |  |
+| Ipak Yo'li banki | [Avtokreditni qayta moliyalashtirish](https://ipakyulibank.uz/physical/kreditlar/qayta-moliyalashtirish/avtokreditni-qayta-moliyalashtirish) | 21 – 24.9 | 12 / 36 / 60 oy |  |
+| Octobank | [Avtokredit 2.0](https://octobank.uz/jismoniy-shaxslarga/avtokredit-20) | 21 – 24 | 60 oygacha |  |
+| Trastbank | [Avtokredit](https://trustbank.uz/uz/private/) | 21 – 24 | 48–60 oy |  |
+
+## Eng arzon mikroqarz (0% aksiyalarsiz)
+
+| Bank | Mahsulot | Foiz, % | Muddat | Summa |
+|---|---|---|---|---|
+| Orient Finans Bank | [Green mikroqarz](https://ofb.uz/kreditlar/green-mikroqarz) | 20 | 36 oygacha | 5–50 mln |
+| Ipak Yo'li banki | [Garov asosida mikroqarz](https://ipakyulibank.uz/physical/kreditlar/garov-asosida-mikroqarz) | 21.9 – 24.9 | 12 / 36 / 60 oy | 100 mln gacha |
+| O'zsanoatqurilishbank (SQB) | [Ish haqi loyihasi uchun mikroqarz](https://sqb.uz/uz/individuals/credits/mikrozaym-salary-uz/) | 22 – 28 | 3–48 oy | 2–100 mln |
+| Ipak Yo'li banki | [Rasmiy daromadi yo'qlar uchun mikroqarz](https://en.ipakyulibank.uz/physical/loans/microloans/microloan-for-the-self-employed) | 22.9 | 60 oygacha | 100 mln gacha |
+| Aloqabank | [Onlayn mikroqarz](https://aloqabank.uz/uz/private/crediting/onlayn-mikroqarz/) | 23 – 28.9 |  | 100 mln gacha |
+| Hamkorbank | [Onlayn kredit](https://hamkorbank.uz/uz/physical/credits/online-credit/) | 23 – 38 | 3 yilgacha | 100 mln gacha |
+| Hamkorbank | [Mikrokredit Plus (avto garovi)](https://hamkorbank.uz/uz/physical/credits/microcredit-plus/) | 23.99 – 25.99 | 60 oygacha | 300 mln gacha |
+| Asakabank | [Mikroqarz](https://old.asakabank.uz/uz/kreditlar/mikroqarz) | 24 – 26 | 12 / 24 oy | 50 mln gacha |
+
+## Eng qimmat mikroqarz
+
+| Bank | Mahsulot | Foiz, % | Muddat | Summa |
+|---|---|---|---|---|
+| TBC Bank | [Onlayn kredit (ilova orqali)](https://tbcbank.uz/product/kredity/) | 28 – 49 | 3–36 oy | 100 mln gacha |
+| Tenge Bank | [Onlayn mikroqarz](https://tengebank.uz/en/credit/mikrozajm-onlajn) | 24.6 – 49 | 6–36 oy | 1–90 mln |
+| TBC Bank | [Mikrokredit](https://tbcbank.uz/product/mikrokredit/) | 29 – 48 |  |  |
+| Anorbank | [Oson pullar 3.0](https://anorbank.uz/uz/credits/available-money-uz/) | 44 | 36 oygacha | 100 mln gacha |
+| Davr bank | [Universal mikroqarz](https://davrbank.uz/uz/loans/4) | 38 | 12 oygacha | 50 mln gacha |
+| Hamkorbank | [Onlayn kredit](https://hamkorbank.uz/uz/physical/credits/online-credit/) | 23 – 38 | 3 yilgacha | 100 mln gacha |
+
+## Eng arzon iste'mol krediti
+
+| Bank | Mahsulot | Foiz, % | Muddat | Summa |
+|---|---|---|---|---|
+| O'zsanoatqurilishbank (SQB) | [Yangicha (ish haqi loyihasi)](https://sqb.uz/uz/individuals/credits/consumer-credit-new-uz/) | 21.99 – 26.99 | 6–60 oy | 200 mln gacha |
+| Biznesni rivojlantirish banki | [Iste'mol krediti](https://brb.uz/jismoniy-shaxslarga/kreditlar/potrebitelskiy-kredit) | 23 – 27 | 5 yilgacha | 200 mln gacha |
+| Madad Invest Bank | [Green Power](https://madadinvestbank.uz/storage/tariflar/%E2%84%96280_0001.pdf) | 24.99 | 60 oygacha | 200 BHM gacha |
+| Smartbank | [Kredit](https://smartbank.uz/useful/faq) | 24.99 – 25.99 |  |  |
+| Hamkorbank | [Iste'mol krediti](https://hamkorbank.uz/uz/physical/credits/) | 26 | 36 oygacha | 200 mln gacha |
+
+## Eng arzon biznes krediti
+
+| Bank | Mahsulot | Foiz, % | Muddat | Summa |
+|---|---|---|---|---|
+| Biznesni rivojlantirish banki | [Invest](https://brb.uz/kreditlar/invest-krediti) | 10 – 25 | 84 oygacha | 100 mlrd ekv. gacha |
+| O'zmilliybank (NBU) | [Yoshlar biznes g'oyalari uchun kredit](https://nbu.uz/yangiliklar/o-zmilliybank-yoshlar-biznes-g-oyalarini-qo-llab-quvvatlashga-kreditlar-ajratadi) | 14 | 7 yil (3 yil imtiyoz) | 100 000 USD ekv. gacha |
+| O'zsanoatqurilishbank (SQB) | [Yosh tadbirkor (18–30 yosh)](https://sqb.uz/uz/individuals/credits/yosh-tadbirkor-mikrozaym-uz/) | 18 | 60 oygacha | 100 mln gacha |
+| InFinBank | [Biznes uchun yangi kredit](https://www.infinbank.com/uz/press/news/2026/08/13842/) | 18.99 | 7 yilgacha | 1 mlrd gacha |
+| Octobank | [Octo-Aylanma](https://octobank.uz/bank-haqida/xabarnomalar/uvedomlenie-ob-izmenenii-usloviy-kreditovaniya-dlya-yuridicheskih-lits) | 20 – 23 |  |  |
+| Aloqabank | [Tadbirkor ayol](https://aloqabank.uz/uz/corporate/crediting/) | 21 – 22 | 24 oy – 7 yil |  |
+
+## Eslatmalar
+
+- Reytinglarga 2025 yildan oldingi va arxivdagi sahifalar kiritilmagan (masalan, Kapitalbank «Maksimal kapital» 25% — 2023).
+- Ma'lumot faqat bank saytlaridan, qidiruv tizimi orqali olingan; ko'p sahifalarda sana yo'q.
+- Kredit stavkasi mijozga qarab individual belgilanadi — jadvaldagi raqam boshlang'ich stavka.
+- Muhim qarordan oldin stavkani bankning o'zidan tekshiring.
+
+## Ma'lumot topilmagan joylar
+
+- **Hi-Tech Bank:** Jismoniy shaxslar uchun kreditlar topilmadi
+- **InFinBank:** Rasmiy sayti infinbank.com (.uz emas)
+- **Ipak Yo'li banki:** So'm omonatlari topilmadi
+- **Kapitalbank:** kapitalbank.uz da kredit stavkalari topilmadi (bankning chakana sayti kapital24.uz da onlayn mikroqarz 27%)
+- **Madad Invest Bank:** Omonatlar topilmadi; yagona kredit tarifi sanasiz
+- **O'zmilliybank (NBU):** Kredit stavkalari faqat 2024 yilgi e'londan
+- **Octobank:** Omonat stavkalari topilmadi
+- **Smartbank:** Omonat stavkasi yo'q; sayt 'Openbank' nomida
+- **Turkiston bank:** Faqat yuridik shaxslar uchun eski depozitlar; kreditlar topilmadi
+- **Universal bank:** So'm omonatlari topilmadi
+- **Uzum Bank:** Omonat stavkalari rasmiy saytda topilmadi (tariflar 13.10.2026 dan yangilangan)
+- **Xalq banki:** Faqat 1 ta omonat va 2024 yilgi kredit hujjati topildi

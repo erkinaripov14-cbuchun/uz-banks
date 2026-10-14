@@ -1,5 +1,29 @@
 # uz-banks — O'zbekiston banklarining kredit va omonatlari
 
+32 ta O'zbekiston bankining kredit va omonat mahsulotlari: foiz, muddat, summa va valyuta —
+faqat bankning o'z saytidan.
+
+## Natijalar
+
+| Fayl | Nima bor |
+|---|---|
+| [**XULOSALAR.md**](research/rasmiy-2026-10-14/XULOSALAR.md) | Asosiy xulosalar va reytinglar: eng yuqori omonatlar, eng arzon kreditlar |
+| [banklar_kredit_omonat_rasmiy.xlsx](research/rasmiy-2026-10-14/banklar_kredit_omonat_rasmiy.xlsx) | To'liq jadval: Xulosalar, Kreditlar (113), Omonatlar (103), Banklar xulosasi |
+| [kreditlar.csv](research/rasmiy-2026-10-14/kreditlar.csv), [omonatlar.csv](research/rasmiy-2026-10-14/omonatlar.csv) | Shu ma'lumot CSV da |
+
+Qisqacha (2026-10-14 holatiga):
+
+- **So'm omonatlar** — asosan 16–22%; eng yuqorisi Garant bank «Red Line» 25% (13 oy), Anorbank «SMART 3.0» va Asia Alliance «Strategiya online» 23% (24 oy).
+- **Dollar omonatlar** — 5–7.5%; eng yuqorisi Universal bank «Invest 7.5» 7.5%.
+- **Ipoteka** — 17% dan (Hamkorbank, Agrobank, Ipoteka-bank); odatda 20–24%.
+- **Avtokredit** — odatda 21–27%; ayrim modellarga 0% aksiyalar.
+- **Mikroqarz** — 20–49%; garovli va ish haqi loyihasidagilar arzonroq, garovsiz onlayn eng qimmat.
+
+Ma'lumot qidiruv tizimi orqali bank saytlaridan olingan, ko'p sahifalar sanasiz — muhim qarordan
+oldin bankning o'zidan tekshiring.
+
+## Skraper
+
 Skript `banks.json` dagi har bir bankning **o'z rasmiy saytiga** kirib, kredit va omonat
 bo'limlarini topadi, har bir mahsulot sahifasini ochadi va quyidagilarni yig'adi:
 
@@ -10,7 +34,7 @@ bo'limlarini topadi, har bir mahsulot sahifasini ochadi va quyidagilarni yig'adi
 - sahifadagi barcha jadvallar (tariflar jadvali odatda shu yerda bo'ladi);
 - sahifaning to'liq matni (yashirin tab/akkordeonlar ham) — hech narsa yo'qolmasligi uchun.
 
-## O'rnatish
+### O'rnatish
 
 ```bash
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
@@ -18,7 +42,7 @@ pip install -r requirements.txt
 playwright install chromium
 ```
 
-## Ishga tushirish
+### Ishga tushirish
 
 ```bash
 python scrape.py                            # hamma banklar, kreditlar + omonatlar
@@ -36,7 +60,7 @@ Natija `output/<sana>/` papkasiga yoziladi:
 | `credits.json`, `deposits.json` | Barcha topilgan sahifalar, jadvallar va foiz/muddat/summa tafsilotlari |
 | `all.json` | Hammasi + sahifalarning to'liq matni |
 
-## `banks.json`
+### `banks.json`
 
 ```json
 {"id": "hamkorbank", "name": "Hamkorbank", "site": "https://hamkorbank.uz"}
@@ -50,7 +74,7 @@ omonat, depozit, кредит, вклад …). Agar biror bankda topa olmasa, U
  "credits": ["/uz/individuals/credits"], "deposits": ["/uz/individuals/deposits"]}
 ```
 
-## Bilish kerak
+### Bilish kerak
 
 - Har bir bank sayti har xil tuzilgan, shuning uchun foiz/muddat/summa matndan **avtomatik**
   ajratiladi. Har bir qatorda saytdagi asl matn parchasi va havola bor — muhim qarordan oldin
@@ -60,20 +84,19 @@ omonat, depozit, кредит, вклад …). Agar biror bankda topa olmasa, U
 - `banks.json` dagi domenlar ochiq manbalardan olingan; bank nomi yoki sayti o'zgargan bo'lsa,
   "Banklar" varag'ida xato chiqadi — faylni tuzating.
 
-## Testlar
+### Testlar
 
 ```bash
 pip install pytest
 pytest -q        # lokal test-sayt ustida, internet kerak emas
 ```
 
-## Rasmiy saytlardan yig'ilgan ma'lumot (2026-10-14)
+## Natijalarni qayta yasash
 
-`research/rasmiy-2026-10-14/banklar_kredit_omonat_rasmiy.xlsx` (va `kreditlar.csv`, `omonatlar.csv`) —
-32 bankning kredit va omonat mahsulotlari, **faqat bankning o'z saytidan** (hamkorbank.uz, nbu.uz, ...).
-Agregator va yangilik saytlari ishlatilmagan; istisno — InfinBank (rasmiy sayti infinbank.com).
-Har bir qatorda sahifa havolasi bor. Ma'lumot `research/data_rasmiy.py` da;
-Excel'ni qayta yasash: `python research/build.py`.
+Ma'lumot `research/data_rasmiy.py` da, xulosalar matni `research/xulosalar.py` da.
+Excel, CSV va XULOSALAR.md ni qayta yasash:
 
-Bu skraper natijasi emas: saytlar qidiruv tizimi orqali o'qilgan, ko'p sahifalar sanasiz,
-shuning uchun qaror qabul qilishdan oldin bankning o'zidan tekshiring.
+```bash
+python research/build.py
+```
+
