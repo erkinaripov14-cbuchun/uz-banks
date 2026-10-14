@@ -50,11 +50,42 @@ def _amount(lo, hi):
     return f"{_money(hi)} gacha" if lo == hi else f"{_money(lo)} – {_money(hi)}"
 
 
+# Foiz qaysi ma'noda yozilgani — matndagi atrofiga qarab
+RATE_WORDS = re.compile(r"foiz|stavka|yillik|годов|ставк|процент|interest|rate", re.I)
+NOT_RATE_WORDS = re.compile(
+    r"badal|взнос|boshlang|первоначал|jarima|penya|пеня|неусто|штраф|muddatidan oldin|досрочн|oldin yech|"
+    r"keshbek|cashback|кешбэк|komissiya|комисси|chegirma|скидк|soliq|налог|qarz yuki|долговой нагруз|"
+    r"ulush|доля|qoplash|покрыти|garov|залог|sug.urta|страхов|inflyatsiya|инфляц", re.I)
+FX_TITLE = re.compile(r"dollar|usd|\$|yevro|evro|euro|eur|€|valyuta|валют|доллар|евро", re.I)
+NOT_PRODUCT = re.compile(r"yacheyka|ячейк|seyf|сейф|ijara qutisi", re.I)
+
+
+def _rates(p, kind):
+    """Sahifadagi foizlardan faqat stavkaga tegishlilarini olish: (min, max) yoki None."""
+    good, plain = [], []
+    for r in p.get("rates") or []:
+        ctx = r.get("context", "")
+        if NOT_RATE_WORDS.search(ctx):
+            continue
+        (good if RATE_WORDS.search(ctx) else plain).append(r)
+    use = good or plain
+    if kind == "O" and any(r["min"] >= 3 for r in use):
+        use = [r for r in use if r["min"] >= 3]  # 1–2% yonida yuqori stavka bo'lsa — bu muddatidan oldin yechish
+    if not use:
+        return None
+    lo, hi = min(r["min"] for r in use), max(r["max"] for r in use)
+    if hi - lo > 15:   # oralig'i juda keng — sahifada turli narsalar aralashgan, ishonchsiz
+        return None
+    return lo, hi
+
+
 # Mahsulot nomi emas: ro'yxat, xizmat va xato sahifalari
 GENERIC_TITLES = re.compile(
     r"^(kredit(lar)?|kreditlash|kredit mahsulotlari|omonat(lar)?|depozit(lar)?|amanatlar|jismoniy shaxslar\w*|"
     r"kalkulyator\w*|savol[- ]javob\w*|talabnoma\w*|ariza\w*|saytdan qidirish|qidiruv|404|"
-    r"xizmat sifatini baholang|доступ запрещён|bosh sahifa|asosiy|varaqasi\*?|.{0,3})$", re.I)
+    r"xizmat sifatini baholang|доступ запрещён|bosh sahifa|asosiy|varaqasi\*?|.{0,3}|"
+    r"avtokreditlar|ipoteka kreditlari|mikroqarzlar|mikrokreditlar|iste.mol kreditlari|"
+    r"omonatlar va depozitlar|barchasi omonatlar haqida|xorijiy valyutada|milliy valyutada|вклады|кредиты)$", re.I)
 
 
 def _plausible(kind, lo, hi):
@@ -74,21 +105,29 @@ def convert(results):
                 if p.get("kind") != "product" or p.get("rate_min") is None:
                     continue
                 title = (p.get("title") or "").strip()
-                if not title or GENERIC_TITLES.match(title):
+                if not title or GENERIC_TITLES.match(title) or NOT_PRODUCT.search(title):
                     continue
-                if not _plausible(kind, p["rate_min"], p["rate_max"]):
+                rng = _rates(p, kind) if p.get("rates") is not None else (p["rate_min"], p["rate_max"])
+                if not rng or not _plausible(kind, *rng):
                     continue
-                key = (bank["bank"], title.lower(), p["rate_min"], p["rate_max"])
+                lo, hi = rng
+                key = (bank["bank"], title.lower(), lo, hi)
                 if key in seen:
                     continue
                 seen.add(key)
                 cur = p.get("currencies") or []
+                if kind == "O" and FX_TITLE.search(f"{title} {p['url']}"):
+                    cur = [c for c in cur if c != "UZS"] or ["USD"]
+                cat = _category(section, f"{title} {p['url']}", cur)
+                tmax = p.get("term_max_months")
+                long_ok = cat in ("Ipoteka", "Ta'lim") or kind == "O"
+                term = _months(p.get("term_min_months"), tmax) if tmax is None or tmax <= 120 or long_ok else ""
                 rows.append({
                     "bank": bank["bank"], "type": kind,
-                    "cat": _category(section, f"{p.get('title', '')} {p['url']}", cur),
+                    "cat": cat,
                     "name": title[:120],
-                    "lo": p["rate_min"], "hi": p["rate_max"],
-                    "term": _months(p.get("term_min_months"), p.get("term_max_months")),
+                    "lo": lo, "hi": hi,
+                    "term": term,
                     "amount": _amount(p.get("amount_min"), p.get("amount_max")),
                     "cur": "UZS" if not cur or "UZS" in cur else cur[0],
                     "url": p["url"], "date": date, "note": "", "stale": False,

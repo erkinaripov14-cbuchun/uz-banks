@@ -189,6 +189,9 @@ td.src .d { display: block; }
 .admin { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 12px; max-width: 520px; }
 .admin form { display: flex; flex-wrap: wrap; gap: 8px; align-items: end; }
 .admin .msg { font-size: 14px; color: var(--credit); min-height: 1.2em; margin: 0; }
+.admin .msg.ok { color: var(--fg); }
+.admin code { font-family: var(--font-mono); font-size: 13px; }
+#admin-panel, #admin-setup, #admin-ready { display: grid; gap: 10px; }
 .admin ol { margin: 0; padding-left: 20px; display: grid; gap: 4px; font-size: 14px; color: var(--muted); }
 .linkbtn { all: unset; cursor: pointer; color: var(--muted); text-decoration: underline; text-underline-offset: 2px; font-size: 13px; }
 
@@ -325,16 +328,29 @@ footer p { margin: 0; max-width: 80ch; }
           <p class="msg" id="admin-msg" role="status"></p>
         </div>
         <div id="admin-panel" hidden>
-          <p style="margin:0">Ma'lumotni bank saytlaridan qayta yig'ish:</p>
-          <ol>
-            <li>"Ma'lumotni yangilash" tugmasini bosing — GitHub sahifasi ochiladi.</li>
-            <li>GitHub hisobingizga kiring va <b>Run workflow</b> ni bosing.</li>
-            <li>20–30 daqiqadan keyin sayt o'zi yangilanadi.</li>
-          </ol>
-          <div class="actions">
-            <a class="btn" id="admin-run" target="_blank" rel="noopener">Ma'lumotni yangilash</a>
-            <a class="btn ghost" id="admin-runs" target="_blank" rel="noopener">Jarayon holati</a>
+          <div id="admin-setup" hidden>
+            <h3>Bir martalik sozlash (shu qurilmada)</h3>
+            <p style="margin:0;color:var(--muted);font-size:14px">Saytdan yangilash uchun GitHub ruxsatnomasi (token) kerak. U faqat shu brauzerda, admin paroli bilan shifrlangan holda saqlanadi — saytga ham, repoga ham yuborilmaydi.</p>
+            <ol>
+              <li><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub'da yangi token yarating</a> (Fine-grained token).</li>
+              <li><b>Repository access</b>: "Only select repositories" → <code>uz-banks</code>.</li>
+              <li><b>Permissions → Actions</b>: "Read and write". Boshqa ruxsat kerak emas.</li>
+              <li>Tokenni nusxalab, quyiga qo'ying va saqlang.</li>
+            </ol>
+            <form id="token-form">
+              <div class="field grow"><label for="admin-token">GitHub token</label><input id="admin-token" type="password" autocomplete="off" placeholder="github_pat_…"></div>
+              <button class="btn" type="submit">Saqlash</button>
+            </form>
           </div>
+          <div id="admin-ready" hidden>
+            <p style="margin:0">Bank saytlarini qayta o'qib, saytni yangilash. Jarayon 15–20 daqiqa davom etadi, keyin sahifani qayta yuklang.</p>
+            <div class="actions">
+              <button class="btn" id="admin-update" type="button">Ma'lumotni yangilash</button>
+              <a class="btn ghost" id="admin-runs" target="_blank" rel="noopener">GitHub'da ko'rish</a>
+              <button class="linkbtn" id="admin-forget" type="button">Tokenni bu qurilmadan o'chirish</button>
+            </div>
+          </div>
+          <p class="msg ok" id="admin-status" role="status"></p>
         </div>
       </div>
     </section>
@@ -625,21 +641,107 @@ $("#highlights").addEventListener("click", (e) => {
   document.querySelector("nav.tabs").scrollIntoView();
 });
 
-/* Administrator: password gate in front of the GitHub update page.
-   The update itself only runs for GitHub accounts with write access to the repository. */
-$("#admin-run").href = `https://github.com/${DATA.repo}/actions/workflows/update.yml`;
-$("#admin-runs").href = `https://github.com/${DATA.repo}/actions`;
+/* Administrator: the password unlocks a GitHub token kept only in this browser (AES-GCM, key from the password).
+   With it the page starts the update workflow through the GitHub API. Visitors without the password see nothing. */
+$("#admin-runs").href = `https://github.com/${DATA.repo}/actions/workflows/update.yml`;
+const TOKEN_KEY = "uzbanks-admin-token";
+const enc = new TextEncoder(), dec = new TextDecoder();
+const b64 = (u8) => btoa(String.fromCharCode(...u8));
+const unb64 = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
+let adminPw = null;
 async function sha256(text) {
-  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+  const buf = await crypto.subtle.digest("SHA-256", enc.encode(text));
   return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+async function keyFrom(pw, salt) {
+  const base = await crypto.subtle.importKey("raw", enc.encode(pw), "PBKDF2", false, ["deriveKey"]);
+  return crypto.subtle.deriveKey({ name: "PBKDF2", salt, iterations: 310000, hash: "SHA-256" },
+    base, { name: "AES-GCM", length: 256 }, false, ["encrypt", "decrypt"]);
+}
+function loadBlob() { try { return JSON.parse(localStorage.getItem(TOKEN_KEY) || "null"); } catch { return null; } }
+async function saveToken(token) {
+  const salt = crypto.getRandomValues(new Uint8Array(16)), iv = crypto.getRandomValues(new Uint8Array(12));
+  const ct = new Uint8Array(await crypto.subtle.encrypt({ name: "AES-GCM", iv }, await keyFrom(adminPw, salt), enc.encode(token)));
+  localStorage.setItem(TOKEN_KEY, JSON.stringify({ salt: b64(salt), iv: b64(iv), ct: b64(ct) }));
+}
+async function readToken() {
+  const blob = loadBlob();
+  if (!blob) return null;
+  const pt = await crypto.subtle.decrypt({ name: "AES-GCM", iv: unb64(blob.iv) },
+    await keyFrom(adminPw, unb64(blob.salt)), unb64(blob.ct));
+  return dec.decode(pt);
+}
+const status = (t) => { $("#admin-status").textContent = t; };
+function adminView() {
+  const has = !!loadBlob();
+  $("#admin-setup").hidden = has;
+  $("#admin-ready").hidden = !has;
+}
+async function gh(token, path, opts = {}) {
+  const r = await fetch(`https://api.github.com/repos/${DATA.repo}${path}`, {
+    ...opts,
+    headers: { Accept: "application/vnd.github+json", Authorization: `Bearer ${token}`, "X-GitHub-Api-Version": "2022-11-28", ...(opts.headers || {}) },
+  });
+  if (!r.ok) throw new Error(r.status === 401 ? "Token yaroqsiz yoki muddati tugagan." :
+    r.status === 403 || r.status === 404 ? "Tokenda bu repo uchun 'Actions: Read and write' ruxsati yo'q." : `GitHub javobi: ${r.status}`);
+  return r.status === 204 ? null : r.json();
+}
+let pollTimer = null;
+async function watchRun(token, since) {
+  clearTimeout(pollTimer);
+  try {
+    const d = await gh(token, "/actions/workflows/update.yml/runs?per_page=1");
+    const run = d.workflow_runs[0];
+    if (!run || new Date(run.created_at) < since) { status("Jarayon navbatga qo'yildi…"); }
+    else if (run.status !== "completed") { status(`Jarayon ishlayapti (${run.status === "queued" ? "navbatda" : "bank saytlari o'qilmoqda"})… Sahifani yopsangiz ham davom etadi.`); }
+    else if (run.conclusion === "success") { status("Tayyor. Bir-ikki daqiqadan keyin sahifani qayta yuklang — yangi ma'lumot chiqadi."); return; }
+    else { status(`Jarayon xato bilan tugadi (${run.conclusion}). "GitHub'da ko'rish" orqali sababini ko'ring.`); return; }
+  } catch (err) { status(err.message); return; }
+  pollTimer = setTimeout(() => watchRun(token, since), 20000);
 }
 $("#admin-form").addEventListener("submit", async (e) => {
   e.preventDefault();
-  const ok = (await sha256($("#admin-pw").value)) === DATA.adminHash;
+  const pw = $("#admin-pw").value;
+  const ok = (await sha256(pw)) === DATA.adminHash;
   $("#admin-msg").textContent = ok ? "" : "Parol noto'g'ri.";
   $("#admin-login").hidden = ok;
   $("#admin-panel").hidden = !ok;
   $("#admin-pw").value = "";
+  if (ok) { adminPw = pw; adminView(); }
+});
+$("#token-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const token = $("#admin-token").value.trim();
+  if (!token) return;
+  status("Token tekshirilmoqda…");
+  try {
+    await gh(token, "/actions/workflows/update.yml");
+    await saveToken(token);
+    $("#admin-token").value = "";
+    status("Token saqlandi. Endi \"Ma'lumotni yangilash\" tugmasi ishlaydi.");
+    adminView();
+  } catch (err) {
+    status(err.message === "Failed to fetch" ? "GitHub'ga ulanib bo'lmadi. Yangilash faqat asosiy saytda (github.io) ishlaydi." : err.message);
+  }
+});
+$("#admin-update").addEventListener("click", async () => {
+  let token;
+  try { token = await readToken(); } catch { status("Tokenni ochib bo'lmadi. Uni o'chirib, qayta saqlang."); return; }
+  if (!token) { adminView(); return; }
+  status("Yangilash so'ralmoqda…");
+  const since = new Date(Date.now() - 5000);
+  try {
+    await gh(token, "/actions/workflows/update.yml/dispatches", { method: "POST", body: JSON.stringify({ ref: "main", inputs: { only: "" } }) });
+    watchRun(token, since);
+  } catch (err) {
+    status(err.message === "Failed to fetch" ? "GitHub'ga ulanib bo'lmadi. Yangilash faqat asosiy saytda (github.io) ishlaydi." : err.message);
+  }
+});
+$("#admin-forget").addEventListener("click", () => {
+  try { localStorage.removeItem(TOKEN_KEY); } catch {}
+  clearTimeout(pollTimer);
+  status("Token bu qurilmadan o'chirildi.");
+  adminView();
 });
 $("#admin-open").addEventListener("click", () => {
   $("#t-admin").hidden = false;
