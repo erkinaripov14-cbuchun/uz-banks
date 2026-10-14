@@ -1,93 +1,125 @@
 <title>Bank stavkalari O'zbekiston</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="32 ta O'zbekiston bankining kredit va omonat stavkalari — faqat bank saytlaridan.">
+<meta name="description" content="O'zbekistondagi 32 bankning omonat va kredit stavkalari bir joyda: qayerda omonat foydaliroq, qayerda kredit arzonroq.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: narrow header band, tab bar, then one working surface per tab (summary / filterable tables / bank grid). */
+/* Layout: lapis hero band with girih pattern and four headline rates, sticky tab bar, then one working surface per tab. */
 :root {
-  --bg: #f3f6f5;
+  --bg: #f4f5f8;
   --surface: #ffffff;
-  --fg: #142327;
-  --muted: #56686c;
-  --line: #d6dfdd;
-  --accent: #0f6f7a;        /* turquoise of Samarkand tilework */
-  --accent-soft: #dcefee;
-  --deposit: #1d7d55;       /* higher is better */
-  --deposit-soft: #dff1e7;
-  --credit: #a8452f;        /* lower is better */
-  --credit-soft: #f6e3dc;
-  --warn: #8a6a12;
-  --warn-soft: #f5ecd0;
-  --track: #e4ebe9;
-  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --fg: #131c2b;
+  --muted: #5a6478;
+  --line: #dde1ea;
+  --accent: #1f4f9a;          /* lapis lazuli */
+  --accent-soft: #e3eaf6;
+  --gold: #c99a2e;            /* gilded tile */
+  --hero-bg: #13284f;
+  --hero-fg: #f4f1e8;
+  --hero-muted: #b9c3d8;
+  --hero-tile: #1b3463;
+  --hero-line: #2e4775;
+  --deposit: #1b7a4f;         /* higher is better */
+  --deposit-soft: #e0f1e8;
+  --credit: #b3432c;          /* lower is better */
+  --credit-soft: #f8e5df;
+  --warn: #8a6510;
+  --warn-soft: #f6edd4;
+  --track: #e6e9f0;
+  --font-display: "Unbounded", "Segoe UI", system-ui, sans-serif;
   --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0e1719; --surface: #152124; --fg: #e3ecea; --muted: #93a6a8; --line: #26373a;
-    --accent: #4fc0c9; --accent-soft: #173539; --deposit: #5fcf98; --deposit-soft: #16352a;
-    --credit: #ec8a72; --credit-soft: #3a2019; --warn: #e2c165; --warn-soft: #3a3118; --track: #22333a;
+    --bg: #0c1220; --surface: #141c2d; --fg: #e6e9f1; --muted: #98a2b8; --line: #263149;
+    --accent: #8db3f2; --accent-soft: #1c2a47; --gold: #e2b955;
+    --hero-bg: #0f1d3a; --hero-fg: #f4f1e8; --hero-muted: #a9b5cd; --hero-tile: #172a50; --hero-line: #2a4170;
+    --deposit: #5fcf97; --deposit-soft: #14352a; --credit: #ef8c73; --credit-soft: #3b211b;
+    --warn: #e5c066; --warn-soft: #3a3018; --track: #232e45;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0e1719; --surface: #152124; --fg: #e3ecea; --muted: #93a6a8; --line: #26373a;
-  --accent: #4fc0c9; --accent-soft: #173539; --deposit: #5fcf98; --deposit-soft: #16352a;
-  --credit: #ec8a72; --credit-soft: #3a2019; --warn: #e2c165; --warn-soft: #3a3118; --track: #22333a;
+  --bg: #0c1220; --surface: #141c2d; --fg: #e6e9f1; --muted: #98a2b8; --line: #263149;
+  --accent: #8db3f2; --accent-soft: #1c2a47; --gold: #e2b955;
+  --hero-bg: #0f1d3a; --hero-fg: #f4f1e8; --hero-muted: #a9b5cd; --hero-tile: #172a50; --hero-line: #2a4170;
+  --deposit: #5fcf97; --deposit-soft: #14352a; --credit: #ef8c73; --credit-soft: #3b211b;
+  --warn: #e5c066; --warn-soft: #3a3018; --track: #232e45;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body { background: var(--bg); color: var(--fg); font: 15px/1.55 var(--font-body); }
 a { color: var(--accent); text-underline-offset: 2px; }
-a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 .wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 
-header.top { border-bottom: 1px solid var(--line); background: var(--surface); }
-header.top .wrap { padding-block: 28px 0; display: grid; gap: 10px; }
-.eyebrow { font: 500 12px/1 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-h1 { font: 800 clamp(28px, 4.4vw, 44px)/1.05 var(--font-display); margin: 0; text-wrap: balance; letter-spacing: -.01em; }
-.lede { margin: 0; color: var(--muted); max-width: 68ch; }
-.stats { display: flex; flex-wrap: wrap; gap: 8px 22px; font: 500 13px var(--font-mono); color: var(--muted); }
-.stats b { color: var(--fg); font-weight: 500; }
-.update { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font-size: 14px; color: var(--muted); }
-.btn { display: inline-flex; align-items: center; gap: 6px; font: 600 14px var(--font-body); padding: 8px 14px; border-radius: 8px; border: 1px solid var(--accent); background: var(--accent); color: var(--surface); text-decoration: none; cursor: pointer; }
-.btn:hover { filter: brightness(1.08); }
-.btn.ghost { background: none; color: var(--accent); }
-.help { flex-basis: 100%; font-size: 13px; }
-.panel-note { margin: 0; color: var(--muted); max-width: 80ch; }
+/* Hero */
+.hero { background-color: var(--hero-bg); color: var(--hero-fg); position: relative; overflow: hidden; }
+.hero::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23d8b45a' stroke-opacity='.16' stroke-width='1.2'%3E%3Cpath d='M48 8l11 29 29 11-29 11-11 29-11-29-29-11 29-11z'/%3E%3Cpath d='M20 20h56v56H20z' transform='rotate(45 48 48)'/%3E%3Cpath d='M20 20h56v56H20z'/%3E%3Ccircle cx='48' cy='48' r='9'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 96px 96px;
+  -webkit-mask-image: linear-gradient(100deg, transparent 30%, #000 85%);
+          mask-image: linear-gradient(100deg, transparent 30%, #000 85%);
+}
+.hero .wrap { position: relative; padding-block: 40px 36px; display: grid; gap: 22px; }
+.eyebrow { font: 500 12px/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
+h1 { font: 700 clamp(28px, 4.6vw, 50px)/1.08 var(--font-display); margin: 0; max-width: 20ch; text-wrap: balance; letter-spacing: -.02em; }
+.lede { margin: 0; color: var(--hero-muted); max-width: 62ch; font-size: 17px; }
+.updated { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; font-size: 14px; color: var(--hero-muted); }
+.updated b { color: var(--hero-fg); font-weight: 500; }
+.refresh { appearance: none; display: inline-flex; align-items: center; gap: 8px; font: 600 14px var(--font-body); color: var(--hero-bg); background: var(--gold); border: 0; border-radius: 999px; padding: 8px 16px; cursor: pointer; }
+.refresh:hover { filter: brightness(1.06); }
+.refresh svg { width: 16px; height: 16px; }
+.refresh.spin svg { animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
 
-nav.tabs { display: flex; gap: 4px; overflow-x: auto; margin-top: 14px; scrollbar-width: none; }
-nav.tabs button { appearance: none; border: 0; background: none; color: var(--muted); font: 600 15px var(--font-body); padding: 10px 14px 12px; border-bottom: 3px solid transparent; cursor: pointer; white-space: nowrap; }
+.highlights { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 4px; }
+.hl { display: grid; gap: 4px; align-content: start; padding: 16px; border-radius: 12px; background: var(--hero-tile); border: 1px solid var(--hero-line); color: var(--hero-fg); text-decoration: none; min-width: 0; }
+.hl:hover { border-color: var(--gold); }
+.hl .k { font: 500 12px var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--hero-muted); }
+.hl .v { font: 700 clamp(30px, 3.6vw, 40px)/1.1 var(--font-display); color: var(--gold); font-variant-numeric: tabular-nums; }
+.hl .w { font-size: 14px; color: var(--hero-fg); }
+.hl .w span { color: var(--hero-muted); }
+
+/* Tabs */
+nav.tabs { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
+nav.tabs .wrap { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; }
+nav.tabs button { appearance: none; border: 0; background: none; color: var(--muted); font: 600 15px var(--font-body); padding: 14px 14px 12px; border-bottom: 3px solid transparent; cursor: pointer; white-space: nowrap; }
 nav.tabs button[aria-selected="true"] { color: var(--fg); border-bottom-color: var(--accent); }
 nav.tabs button:hover { color: var(--fg); }
 nav.tabs .n { font: 500 12px var(--font-mono); color: var(--muted); margin-left: 4px; }
 
-main .wrap { padding-block: 28px 56px; }
-section[role="tabpanel"] { display: grid; gap: 28px; }
-h2 { font: 700 22px/1.2 var(--font-display); margin: 0; text-wrap: balance; }
+main .wrap { padding-block: 32px 56px; }
+section[role="tabpanel"] { display: grid; gap: 28px; scroll-margin-top: 72px; }
+h2 { font: 700 21px/1.25 var(--font-display); margin: 0; text-wrap: balance; letter-spacing: -.01em; }
 h3 { font: 600 16px/1.3 var(--font-body); margin: 0; }
+.intro { margin: -14px 0 0; color: var(--muted); max-width: 70ch; }
 
 /* Summary */
-.points { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 14px 28px; margin: 0; padding: 0; list-style: none; }
-.points li { display: grid; gap: 4px; align-content: start; padding-top: 12px; border-top: 2px solid var(--line); min-width: 0; }
+.points { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 18px 28px; margin: 0; padding: 0; list-style: none; }
+.points li { display: grid; gap: 6px; align-content: start; padding-top: 14px; border-top: 2px solid var(--line); min-width: 0; }
 .points li.dep { border-top-color: var(--deposit); }
 .points li.cre { border-top-color: var(--credit); }
-.points li h3 { font-size: 15px; }
-.points li p { margin: 0; color: var(--fg); }
+.points li h3 { font-size: 15px; display: flex; gap: 8px; align-items: center; }
+.points li h3::before { content: ""; width: 8px; height: 8px; border-radius: 2px; transform: rotate(45deg); background: currentColor; flex: none; }
+.points li.dep h3::before { color: var(--deposit); }
+.points li.cre h3::before { color: var(--credit); }
+.points li p { margin: 0; }
 .ranks { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 520px), 1fr)); gap: 18px; }
-.rank { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 16px 8px; display: grid; gap: 8px; min-width: 0; }
+.rank { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 18px 8px; display: grid; gap: 8px; align-content: start; min-width: 0; }
 .rank ol { list-style: none; margin: 0; padding: 0; }
-.rank li { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; gap: 4px 10px; align-items: baseline; padding: 8px 0; border-top: 1px solid var(--line); }
+.rank li { display: grid; grid-template-columns: 26px minmax(0, 1fr) auto; gap: 4px 10px; align-items: baseline; padding: 9px 0; border-top: 1px solid var(--line); }
 .rank li:first-child { border-top: 0; }
 .rank .pos { font: 500 12px var(--font-mono); color: var(--muted); }
+.rank li:first-child .pos { color: var(--gold); font-weight: 700; }
 .rank .what { min-width: 0; }
 .rank .what a { font-weight: 600; text-decoration: none; color: var(--fg); }
 .rank .what a:hover { text-decoration: underline; color: var(--accent); }
 .rank .sub { font-size: 13px; color: var(--muted); }
-.notes { margin: 0; padding-left: 18px; color: var(--muted); font-size: 14px; display: grid; gap: 4px; max-width: 90ch; }
+.notes { margin: 0; padding: 16px 18px 16px 34px; color: var(--muted); font-size: 14px; display: grid; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
 
 /* Rate chip */
 .rate { font: 500 14px var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; padding: 2px 8px; border-radius: 6px; }
@@ -102,18 +134,19 @@ h3 { font: 600 16px/1.3 var(--font-body); margin: 0; }
 .filters { display: flex; flex-wrap: wrap; gap: 10px 12px; align-items: end; }
 .field { display: grid; gap: 4px; min-width: 0; }
 .field label, .check { font: 500 12px var(--font-mono); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
-.field input, .field select { font: 15px var(--font-body); color: var(--fg); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; min-width: 0; }
+.field input, .field select { font: 15px var(--font-body); color: var(--fg); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 9px 11px; min-width: 0; }
 .field.grow { flex: 1 1 220px; }
 .field.grow input { width: 100%; }
-.check { display: flex; gap: 6px; align-items: center; padding-bottom: 10px; cursor: pointer; text-transform: none; letter-spacing: 0; font-size: 13px; }
+.check { display: flex; gap: 6px; align-items: center; padding-bottom: 11px; cursor: pointer; text-transform: none; letter-spacing: 0; font-size: 13px; }
 .count { font: 500 13px var(--font-mono); color: var(--muted); }
-.tablebox { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.tablebox { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
 table { border-collapse: collapse; width: 100%; min-width: 860px; }
-th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th, td { text-align: left; padding: 11px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
 tbody tr:last-child td { border-bottom: 0; }
-th { font: 500 12px var(--font-mono); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); background: var(--surface); position: sticky; top: 0; }
+tbody tr:hover td { background: var(--accent-soft); }
+th { font: 500 12px var(--font-mono); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); background: var(--surface); }
 th button { all: unset; cursor: pointer; }
-th button:focus-visible { outline: 2px solid var(--accent); }
+th button:focus-visible { outline: 2px solid var(--gold); }
 th[aria-sort="ascending"] button::after { content: " ↑"; }
 th[aria-sort="descending"] button::after { content: " ↓"; }
 td.bank { font-weight: 600; white-space: nowrap; }
@@ -130,25 +163,31 @@ td.src .d { display: block; }
 
 /* Banks */
 .banks { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); gap: 14px; }
-.bankcard { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.bankcard { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: grid; gap: 10px; align-content: start; min-width: 0; }
 .bankcard header { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; flex-wrap: wrap; }
-.bankcard h3 { font: 700 17px/1.2 var(--font-display); }
+.bankcard h3 { font: 700 15px/1.3 var(--font-display); letter-spacing: -.01em; }
 .bankcard .site { font: 13px var(--font-mono); }
 .bankcard dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 14px; }
 .bankcard dt { color: var(--muted); }
 .bankcard dd { margin: 0; text-align: right; font: 500 14px var(--font-mono); font-variant-numeric: tabular-nums; }
 .bankcard .gap { font-size: 13px; color: var(--warn); background: var(--warn-soft); border-radius: 6px; padding: 6px 8px; }
-.bankcard .links { display: flex; gap: 12px; font-size: 14px; }
-.bankcard .links button { all: unset; cursor: pointer; color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.bankcard .links { display: flex; gap: 14px; font-size: 14px; }
+.bankcard .links button { all: unset; cursor: pointer; color: var(--accent); font-weight: 500; text-decoration: underline; text-underline-offset: 2px; }
 
-footer .wrap { padding-block: 20px 36px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; display: grid; gap: 6px; }
+footer { background: var(--surface); border-top: 1px solid var(--line); }
+footer .wrap { padding-block: 22px 36px; color: var(--muted); font-size: 13px; display: grid; gap: 8px; max-width: 1180px; }
+footer a { color: var(--muted); }
 
+@media (max-width: 900px) {
+  .highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 @media (max-width: 720px) {
   .tablebox { background: none; border: 0; border-radius: 0; overflow: visible; }
   table { min-width: 0; }
   thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
   tbody { display: grid; gap: 10px; }
-  tbody tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  tbody tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+  tbody tr:hover td { background: none; }
   tbody td { display: block; padding: 0; border: 0; }
   td.bank { grid-column: 1; white-space: normal; font-size: 13px; color: var(--muted); }
   td.ratecell { grid-column: 2; grid-row: 1 / span 2; text-align: right; }
@@ -161,35 +200,42 @@ footer .wrap { padding-block: 20px 36px; border-top: 1px solid var(--line); colo
   td.empty { grid-column: 1 / -1; }
 }
 @media (max-width: 560px) {
-  .rank li { grid-template-columns: 18px minmax(0, 1fr); }
+  .hero .wrap { padding-block: 28px 24px; }
+  .highlights { gap: 8px; }
+  .hl { padding: 12px; }
+  .rank li { grid-template-columns: 20px minmax(0, 1fr); }
   .rank li .rate { grid-column: 2; justify-self: start; }
 }
-@media (prefers-reduced-motion: no-preference) {
-  nav.tabs button { transition: color .15s, border-color .15s; }
+@media (prefers-reduced-motion: reduce) {
+  .refresh.spin svg { animation: none; }
 }
 </style>
 
-<header class="top">
+<header class="hero">
   <div class="wrap">
-    <div class="eyebrow">Kreditlar va omonatlar · <span id="gen"></span></div>
-    <h1>O'zbekiston banklari stavkalari</h1>
-    <p class="lede">32 ta bankning kredit va omonat mahsulotlari: foiz, muddat, summa. Har bir raqam bankning o'z saytidan olingan va sahifasiga havola qilingan.</p>
-    <div class="stats" id="stats"></div>
-    <div class="update">
-      <a class="btn" id="refresh" target="_blank" rel="noopener">Ma'lumotni yangilash ↗</a>
-      <button class="btn ghost" id="reload" type="button">Sahifani qayta yuklash</button>
-      <span id="last"></span>
-      <span class="help">Tugma GitHub'dagi yangilash jarayonini ochadi: u yerda <b>Run workflow</b> ni bosing (repo egasi uchun). Skraper bank saytlarini qayta o'qiydi, sayt 10–30 daqiqada yangilanadi. Jarayon har dushanba o'zi ham ishlaydi.</span>
+    <div class="eyebrow" id="eyebrow"></div>
+    <h1>Qaysi bankda omonat foydaliroq, kredit arzonroq?</h1>
+    <p class="lede">O'zbekistondagi 32 bankning omonat va kredit stavkalari bir joyda. Har bir raqam bankning o'z saytidan olingan, ustiga bossangiz manba sahifasi ochiladi.</p>
+    <div class="highlights" id="highlights"></div>
+    <div class="updated">
+      <button class="refresh" id="refresh" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg>
+        Yangilash
+      </button>
+      <span id="updated"></span>
     </div>
-    <nav class="tabs" role="tablist" aria-label="Bo'limlar">
-      <button role="tab" id="t-xulosalar" aria-controls="xulosalar" data-tab="xulosalar">Xulosalar</button>
-      <button role="tab" id="t-omonatlar" aria-controls="omonatlar" data-tab="omonatlar">Omonatlar <span class="n" id="n-o"></span></button>
-      <button role="tab" id="t-kreditlar" aria-controls="kreditlar" data-tab="kreditlar">Kreditlar <span class="n" id="n-k"></span></button>
-      <button role="tab" id="t-banklar" aria-controls="banklar" data-tab="banklar">Banklar <span class="n" id="n-b"></span></button>
-      <button role="tab" id="t-avtomatik" aria-controls="avtomatik" data-tab="avtomatik">Avtomatik <span class="n" id="n-a"></span></button>
-    </nav>
   </div>
 </header>
+
+<nav class="tabs" aria-label="Bo'limlar">
+  <div class="wrap" role="tablist">
+    <button role="tab" id="t-xulosalar" aria-controls="xulosalar" data-tab="xulosalar">Xulosalar</button>
+    <button role="tab" id="t-omonatlar" aria-controls="omonatlar" data-tab="omonatlar">Omonatlar <span class="n" id="n-o"></span></button>
+    <button role="tab" id="t-kreditlar" aria-controls="kreditlar" data-tab="kreditlar">Kreditlar <span class="n" id="n-k"></span></button>
+    <button role="tab" id="t-banklar" aria-controls="banklar" data-tab="banklar">Banklar <span class="n" id="n-b"></span></button>
+    <button role="tab" id="t-avtomatik" aria-controls="avtomatik" data-tab="avtomatik" hidden>Yangi topilganlar <span class="n" id="n-a"></span></button>
+  </div>
+</nav>
 
 <main>
   <div class="wrap">
@@ -197,13 +243,14 @@ footer .wrap { padding-block: 20px 36px; border-top: 1px solid var(--line); colo
       <h2>Asosiy xulosalar</h2>
       <ul class="points" id="points"></ul>
       <h2>Reytinglar</h2>
+      <p class="intro">Har bir toifada eng yaxshi takliflar. Omonatda yuqori foiz, kreditda past foiz yaxshi.</p>
       <div class="ranks" id="ranks"></div>
       <ul class="notes" id="notes"></ul>
     </section>
 
     <section role="tabpanel" id="omonatlar" aria-labelledby="t-omonatlar" hidden>
       <div class="filters">
-        <div class="field grow"><label for="o-q">Qidirish</label><input id="o-q" type="search" placeholder="Bank yoki mahsulot nomi"></div>
+        <div class="field grow"><label for="o-q">Qidirish</label><input id="o-q" type="search" placeholder="Bank yoki omonat nomi"></div>
         <div class="field"><label for="o-cur">Valyuta</label><select id="o-cur"></select></div>
         <div class="field"><label for="o-bank">Bank</label><select id="o-bank"></select></div>
         <label class="check"><input id="o-stale" type="checkbox" checked> Eski sahifalarni yashirish</label>
@@ -214,7 +261,7 @@ footer .wrap { padding-block: 20px 36px; border-top: 1px solid var(--line); colo
 
     <section role="tabpanel" id="kreditlar" aria-labelledby="t-kreditlar" hidden>
       <div class="filters">
-        <div class="field grow"><label for="k-q">Qidirish</label><input id="k-q" type="search" placeholder="Bank yoki mahsulot nomi"></div>
+        <div class="field grow"><label for="k-q">Qidirish</label><input id="k-q" type="search" placeholder="Bank yoki kredit nomi"></div>
         <div class="field"><label for="k-cat">Kredit turi</label><select id="k-cat"></select></div>
         <div class="field"><label for="k-bank">Bank</label><select id="k-bank"></select></div>
         <label class="check"><input id="k-stale" type="checkbox" checked> Eski sahifalarni yashirish</label>
@@ -224,8 +271,12 @@ footer .wrap { padding-block: 20px 36px; border-top: 1px solid var(--line); colo
       <div class="tablebox"><table id="k-table"></table></div>
     </section>
 
+    <section role="tabpanel" id="banklar" aria-labelledby="t-banklar" hidden>
+      <div class="banks" id="banks"></div>
+    </section>
+
     <section role="tabpanel" id="avtomatik" aria-labelledby="t-avtomatik" hidden>
-      <p class="panel-note" id="a-note"></p>
+      <p class="intro" id="a-note" style="margin:0"></p>
       <div class="filters">
         <div class="field grow"><label for="a-q">Qidirish</label><input id="a-q" type="search" placeholder="Bank yoki mahsulot nomi"></div>
         <div class="field"><label for="a-type">Turi</label><select id="a-type"><option value="">Hammasi</option><option value="O">Omonatlar</option><option value="K">Kreditlar</option></select></div>
@@ -235,17 +286,13 @@ footer .wrap { padding-block: 20px 36px; border-top: 1px solid var(--line); colo
       <div class="count" id="a-count"></div>
       <div class="tablebox"><table id="a-table"></table></div>
     </section>
-
-    <section role="tabpanel" id="banklar" aria-labelledby="t-banklar" hidden>
-      <div class="banks" id="banks"></div>
-    </section>
   </div>
 </main>
 
 <footer>
   <div class="wrap">
-    <div>Ma'lumot bank saytlaridan qidiruv tizimi orqali olingan; ko'p sahifalarda sana yo'q. Kredit stavkasi mijozga qarab belgilanadi. Muhim qarordan oldin bankning o'zidan tekshiring.</div>
-    <div>Manba kodi va to'liq Excel: github.com/erkinaripov14-cbuchun/uz-banks</div>
+    <div>Stavkalar bank saytlaridan olingan, ayrim sahifalarda sana ko'rsatilmagan. Kredit foizi mijozga qarab belgilanadi. Bu sayt maslahat bermaydi: qaror qabul qilishdan oldin bankning o'zidan tekshiring.</div>
+    <div><a id="admin" target="_blank" rel="noopener">Ma'lumotni qayta yig'ish (administrator uchun)</a></div>
   </div>
 </footer>
 
@@ -265,14 +312,46 @@ const bar = (r, kind) => {
   return `<div class="bar ${kind}" aria-hidden="true"><i style="left:${a}%;width:${Math.max(b - a, 0)}%"></i></div>`;
 };
 const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
+const MONTHS = ["yanvar", "fevral", "mart", "aprel", "may", "iyun", "iyul", "avgust", "sentabr", "oktabr", "noyabr", "dekabr"];
+const niceDate = (iso) => {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || "");
+  return m ? `${+m[3]}-${MONTHS[+m[2] - 1]}, ${m[1]}` : iso;
+};
 
 const deposits = DATA.rows.filter((r) => r.type === "O");
 const credits = DATA.rows.filter((r) => r.type === "K");
 const banks = [...new Set(DATA.rows.map((r) => r.bank))].sort((a, b) => a.localeCompare(b));
+const live = DATA.live;
+const liveRows = live ? live.rows : [];
+const lastUpdate = live ? live.updated : DATA.generated;
 
-/* Header */
-$("#gen").textContent = DATA.generated;
-$("#stats").innerHTML = `<span><b>${banks.length}</b> bank</span><span><b>${credits.length}</b> kredit</span><span><b>${deposits.length}</b> omonat</span><span>manba: <b>faqat bank saytlari</b></span>`;
+/* Hero */
+$("#eyebrow").textContent = `${banks.length} bank · ${deposits.length} omonat · ${credits.length} kredit`;
+$("#updated").innerHTML = `Oxirgi yangilanish: <b>${esc(niceDate(lastUpdate))}</b>`;
+$("#refresh").addEventListener("click", (e) => {
+  e.currentTarget.classList.add("spin");
+  location.reload();
+});
+$("#admin").href = `https://github.com/${DATA.repo}/actions/workflows/update.yml`;
+
+const firstOf = (title) => (DATA.rankings.find((k) => k.title === title) || { rows: [] }).rows[0];
+const HL = [
+  ["So'm omonat", "Eng yuqori so'm omonatlar", "omonatlar"],
+  ["Dollar omonat", "Eng yuqori valyuta omonatlar", "omonatlar"],
+  ["Ipoteka", "Eng arzon ipoteka", "kreditlar"],
+  ["Mikroqarz", "Eng arzon mikroqarz (0% aksiyalarsiz)", "kreditlar"],
+];
+$("#highlights").innerHTML = HL.map(([label, title, tab]) => {
+  const r = firstOf(title);
+  if (!r) return "";
+  const v = tab === "omonatlar" ? hi(r) : lo(r);
+  return `<a class="hl" href="#${tab}" data-go="${tab}">
+    <span class="k">${tab === "omonatlar" ? "Eng yuqori" : "Eng arzon"} · ${esc(label)}</span>
+    <span class="v">${num(v)}%</span>
+    <span class="w">${esc(r.bank)} <span>· ${esc(r.name)}</span></span></a>`;
+}).join("");
+
+/* Counts */
 $("#n-o").textContent = deposits.length;
 $("#n-k").textContent = credits.length;
 $("#n-b").textContent = banks.length;
@@ -373,22 +452,16 @@ const depTable = makeTable("o", deposits, "dep", (r) => !$("#o-cur").value || r.
 const creTable = makeTable("k", credits, "cre", (r) =>
   (!$("#k-cat").value || r.cat === $("#k-cat").value) && !($("#k-zero").checked && hi(r) === 0));
 
-/* Automatic (scraper) data */
-const live = DATA.live;
-const liveRows = live ? live.rows : [];
-$("#n-a").textContent = liveRows.length;
-$("#refresh").href = `https://github.com/${DATA.repo}/actions/workflows/update.yml`;
-$("#reload").addEventListener("click", () => location.reload());
-$("#last").innerHTML = live
-  ? `Oxirgi avtomatik yangilanish: <b>${esc(live.updated)}</b>`
-  : "Avtomatik yangilanish hali ishlamagan.";
-$("#a-note").textContent = live
-  ? `Skraper ${live.updated} da bank saytlarini o'qidi: ${live.banks_ok}/${live.banks_total} bankdan ${liveRows.length} ta mahsulot sahifasi topildi. ` +
-    `Foiz, muddat va summa sahifa matnidan avtomatik ajratilgan — boshqa bo'limlardagi qo'lda tekshirilgan jadvaldan aniqligi pastroq. Har bir qatorni havola orqali tekshiring.` +
-    (live.failed.length ? ` Ma'lumot olinmagan banklar: ${live.failed.join(", ")}.` : "")
-  : "Bu bo'lim skraper natijasi uchun. \"Ma'lumotni yangilash\" tugmasi orqali jarayon ishga tushgach, bank saytlaridan avtomatik o'qilgan mahsulotlar shu yerda chiqadi.";
-options($("#a-bank"), [...new Set(liveRows.map((r) => r.bank))].sort(), "Hamma banklar");
-makeTable("a", liveRows, "mix", (r) => !$("#a-type").value || r.type === $("#a-type").value);
+/* Newly found (automatic check) — the tab appears only when there is data */
+if (liveRows.length) {
+  $("#t-avtomatik").hidden = false;
+  $("#n-a").textContent = liveRows.length;
+  $("#a-note").textContent =
+    `${niceDate(live.updated)} kuni bank saytlari avtomatik qayta o'qildi: ${live.banks_ok} ta bankdan ${liveRows.length} ta mahsulot topildi. ` +
+    `Bu raqamlar sahifa matnidan avtomatik olingan, shuning uchun boshqa bo'limlardagidan kamroq aniq bo'lishi mumkin — havola orqali tekshiring.`;
+  options($("#a-bank"), [...new Set(liveRows.map((r) => r.bank))].sort(), "Hamma banklar");
+  makeTable("a", liveRows, "mix", (r) => !$("#a-type").value || r.type === $("#a-type").value);
+}
 
 /* Banks */
 function range(rs, pick) {
@@ -420,11 +493,18 @@ $("#banks").addEventListener("click", (e) => {
   if (!b) return;
   (b.dataset.go === "omonatlar" ? depTable : creTable).setBank(b.dataset.bank);
   show(b.dataset.go);
-  window.scrollTo({ top: 0 });
+  document.querySelector("nav.tabs").scrollIntoView();
+});
+$("#highlights").addEventListener("click", (e) => {
+  const a = e.target.closest("a[data-go]");
+  if (!a) return;
+  e.preventDefault();
+  show(a.dataset.go);
+  document.querySelector("nav.tabs").scrollIntoView();
 });
 
 /* Tabs */
-const TABS = ["xulosalar", "omonatlar", "kreditlar", "banklar", "avtomatik"];
+const TABS = ["xulosalar", "omonatlar", "kreditlar", "banklar", "avtomatik"].filter((t) => !$("#t-" + t).hidden);
 function show(id, push = true) {
   if (!TABS.includes(id)) id = "xulosalar";
   TABS.forEach((t) => {

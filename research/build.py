@@ -151,7 +151,7 @@ def write_site():
     full = ('<!doctype html>\n<html lang="uz">\n<head>\n<meta charset="utf-8">\n'
             '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
             '<style>[hidden]{display:none!important} body{margin:0} img{max-width:100%}</style>\n'
-            + page.replace("<header class=\"top\">", "</head>\n<body>\n<header class=\"top\">", 1)
+            + page.replace("<header class=\"hero\">", "</head>\n<body>\n<header class=\"hero\">", 1)
             + "\n</body>\n</html>\n")
     (SITE_DIRS[1] / "index.html").write_text(full, encoding="utf-8")
 
