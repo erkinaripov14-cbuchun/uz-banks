@@ -1,152 +1,163 @@
 <title>Bank stavkalari O'zbekiston</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="O'zbekistondagi 32 bankning omonat va kredit stavkalari bir joyda: qayerda omonat foydaliroq, qayerda kredit arzonroq.">
+<meta name="description" content="O'zbekistondagi 32 bankning omonat va kredit stavkalari: solishtirish, tahlil grafiklari va Excel jadval.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>
-/* Layout: lapis hero band with girih pattern and four headline rates, sticky tab bar, then one working surface per tab. */
+/* Layout: light report header (title, key rates, actions), sticky tab bar, then one working surface per tab. */
 :root {
-  --bg: #f4f5f8;
+  --bg: #f5f7fa;
   --surface: #ffffff;
-  --fg: #131c2b;
-  --muted: #5a6478;
-  --line: #dde1ea;
-  --accent: #1f4f9a;          /* lapis lazuli */
-  --accent-soft: #e3eaf6;
-  --gold: #c99a2e;            /* gilded tile */
-  --hero-bg: #13284f;
-  --hero-fg: #f4f1e8;
-  --hero-muted: #b9c3d8;
-  --hero-tile: #1b3463;
-  --hero-line: #2e4775;
-  --deposit: #1b7a4f;         /* higher is better */
-  --deposit-soft: #e0f1e8;
-  --credit: #b3432c;          /* lower is better */
-  --credit-soft: #f8e5df;
+  --band: #eaf1f9;
+  --fg: #172033;
+  --muted: #5b6577;
+  --faint: #8a93a3;
+  --line: #e1e6ee;
+  --grid: #edf0f5;
+  --accent: #1f5fa8;
+  --accent-soft: #e6eef9;
+  --deposit: #1a7f52;
+  --deposit-soft: #e3f3ea;
+  --credit: #c2410c;
+  --credit-soft: #fbe9e1;
   --warn: #8a6510;
-  --warn-soft: #f6edd4;
-  --track: #e6e9f0;
-  --font-display: "Unbounded", "Segoe UI", system-ui, sans-serif;
+  --warn-soft: #f7efd9;
+  --track: #e8ecf2;
   --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0c1220; --surface: #141c2d; --fg: #e6e9f1; --muted: #98a2b8; --line: #263149;
-    --accent: #8db3f2; --accent-soft: #1c2a47; --gold: #e2b955;
-    --hero-bg: #0f1d3a; --hero-fg: #f4f1e8; --hero-muted: #a9b5cd; --hero-tile: #172a50; --hero-line: #2a4170;
-    --deposit: #5fcf97; --deposit-soft: #14352a; --credit: #ef8c73; --credit-soft: #3b211b;
-    --warn: #e5c066; --warn-soft: #3a3018; --track: #232e45;
+    --bg: #0f141c; --surface: #171e29; --band: #142032; --fg: #e7ebf2; --muted: #9aa4b5; --faint: #6f7a8c;
+    --line: #283244; --grid: #202938; --accent: #7fb0ec; --accent-soft: #1b2a40;
+    --deposit: #4cc38a; --deposit-soft: #143326; --credit: #f08a5d; --credit-soft: #3a2117;
+    --warn: #e5c066; --warn-soft: #3a3018; --track: #253043;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0c1220; --surface: #141c2d; --fg: #e6e9f1; --muted: #98a2b8; --line: #263149;
-  --accent: #8db3f2; --accent-soft: #1c2a47; --gold: #e2b955;
-  --hero-bg: #0f1d3a; --hero-fg: #f4f1e8; --hero-muted: #a9b5cd; --hero-tile: #172a50; --hero-line: #2a4170;
-  --deposit: #5fcf97; --deposit-soft: #14352a; --credit: #ef8c73; --credit-soft: #3b211b;
-  --warn: #e5c066; --warn-soft: #3a3018; --track: #232e45;
+  --bg: #0f141c; --surface: #171e29; --band: #142032; --fg: #e7ebf2; --muted: #9aa4b5; --faint: #6f7a8c;
+  --line: #283244; --grid: #202938; --accent: #7fb0ec; --accent-soft: #1b2a40;
+  --deposit: #4cc38a; --deposit-soft: #143326; --credit: #f08a5d; --credit-soft: #3a2117;
+  --warn: #e5c066; --warn-soft: #3a3018; --track: #253043;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body { background: var(--bg); color: var(--fg); font: 15px/1.55 var(--font-body); }
 a { color: var(--accent); text-underline-offset: 2px; }
-:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
 
-/* Hero */
-.hero { background-color: var(--hero-bg); color: var(--hero-fg); position: relative; overflow: hidden; }
-.hero::before {
-  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23d8b45a' stroke-opacity='.16' stroke-width='1.2'%3E%3Cpath d='M48 8l11 29 29 11-29 11-11 29-11-29-29-11 29-11z'/%3E%3Cpath d='M20 20h56v56H20z' transform='rotate(45 48 48)'/%3E%3Cpath d='M20 20h56v56H20z'/%3E%3Ccircle cx='48' cy='48' r='9'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: 96px 96px;
-  -webkit-mask-image: linear-gradient(100deg, transparent 30%, #000 85%);
-          mask-image: linear-gradient(100deg, transparent 30%, #000 85%);
-}
-.hero .wrap { position: relative; padding-block: 40px 36px; display: grid; gap: 22px; }
-.eyebrow { font: 500 12px/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
-h1 { font: 700 clamp(28px, 4.6vw, 50px)/1.08 var(--font-display); margin: 0; max-width: 20ch; text-wrap: balance; letter-spacing: -.02em; }
-.lede { margin: 0; color: var(--hero-muted); max-width: 62ch; font-size: 17px; }
-.updated { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; font-size: 14px; color: var(--hero-muted); }
-.updated b { color: var(--hero-fg); font-weight: 500; }
-.refresh { appearance: none; display: inline-flex; align-items: center; gap: 8px; font: 600 14px var(--font-body); color: var(--hero-bg); background: var(--gold); border: 0; border-radius: 999px; padding: 8px 16px; cursor: pointer; }
-.refresh:hover { filter: brightness(1.06); }
-.refresh svg { width: 16px; height: 16px; }
-.refresh.spin svg { animation: spin .8s linear infinite; }
-@keyframes spin { to { transform: rotate(360deg); } }
+/* Header */
+.top { background: var(--band); border-bottom: 1px solid var(--line); }
+.top .wrap { padding-block: 32px 28px; display: grid; gap: 18px; }
+.eyebrow { font: 600 12px/1 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+h1 { font: 700 clamp(24px, 3.2vw, 36px)/1.2 var(--font-body); margin: 0; letter-spacing: -.01em; text-wrap: balance; max-width: 26ch; }
+.lede { margin: 0; color: var(--muted); max-width: 64ch; font-size: 16px; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; font-size: 14px; color: var(--muted); }
+.actions b { color: var(--fg); font-weight: 600; }
+.btn { display: inline-flex; align-items: center; gap: 8px; font: 600 14px var(--font-body); padding: 9px 16px; border-radius: 8px; border: 1px solid var(--accent); background: var(--accent); color: var(--surface); text-decoration: none; cursor: pointer; }
+.btn:hover { filter: brightness(1.08); }
+.btn.ghost { background: var(--surface); color: var(--accent); border-color: var(--line); }
+.btn svg { width: 16px; height: 16px; flex: none; }
 
-.highlights { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 4px; }
-.hl { display: grid; gap: 4px; align-content: start; padding: 16px; border-radius: 12px; background: var(--hero-tile); border: 1px solid var(--hero-line); color: var(--hero-fg); text-decoration: none; min-width: 0; }
-.hl:hover { border-color: var(--gold); }
-.hl .k { font: 500 12px var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--hero-muted); }
-.hl .v { font: 700 clamp(30px, 3.6vw, 40px)/1.1 var(--font-display); color: var(--gold); font-variant-numeric: tabular-nums; }
-.hl .w { font-size: 14px; color: var(--hero-fg); }
-.hl .w span { color: var(--hero-muted); }
+.highlights { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.hl { display: grid; gap: 2px; align-content: start; padding: 14px 16px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); color: var(--fg); text-decoration: none; min-width: 0; position: relative; }
+.hl:hover { border-color: var(--accent); }
+.hl .k { font-size: 13px; color: var(--muted); display: flex; gap: 6px; align-items: center; }
+.hl .k::before { content: ""; width: 8px; height: 8px; border-radius: 2px; flex: none; }
+.hl.dep .k::before { background: var(--deposit); }
+.hl.cre .k::before { background: var(--credit); }
+.hl .v { font: 600 clamp(24px, 2.6vw, 30px)/1.2 var(--font-mono); font-variant-numeric: tabular-nums; }
+.hl .w { font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.hl .w b { color: var(--fg); font-weight: 600; }
 
 /* Tabs */
 nav.tabs { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
 nav.tabs .wrap { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; }
-nav.tabs button { appearance: none; border: 0; background: none; color: var(--muted); font: 600 15px var(--font-body); padding: 14px 14px 12px; border-bottom: 3px solid transparent; cursor: pointer; white-space: nowrap; }
+nav.tabs .wrap::-webkit-scrollbar { display: none; }
+nav.tabs button { appearance: none; border: 0; background: none; color: var(--muted); font: 600 15px var(--font-body); padding: 13px 12px 11px; border-bottom: 3px solid transparent; cursor: pointer; white-space: nowrap; }
 nav.tabs button[aria-selected="true"] { color: var(--fg); border-bottom-color: var(--accent); }
 nav.tabs button:hover { color: var(--fg); }
-nav.tabs .n { font: 500 12px var(--font-mono); color: var(--muted); margin-left: 4px; }
+nav.tabs .n { font: 500 12px var(--font-mono); color: var(--faint); margin-left: 4px; }
 
-main .wrap { padding-block: 32px 56px; }
-section[role="tabpanel"] { display: grid; gap: 28px; scroll-margin-top: 72px; }
-h2 { font: 700 21px/1.25 var(--font-display); margin: 0; text-wrap: balance; letter-spacing: -.01em; }
-h3 { font: 600 16px/1.3 var(--font-body); margin: 0; }
-.intro { margin: -14px 0 0; color: var(--muted); max-width: 70ch; }
+main .wrap { padding-block: 28px 56px; }
+section[role="tabpanel"] { display: grid; gap: 24px; scroll-margin-top: 64px; }
+h2 { font: 700 20px/1.3 var(--font-body); margin: 0; text-wrap: balance; }
+h3 { font: 600 16px/1.35 var(--font-body); margin: 0; }
+.intro { margin: -12px 0 0; color: var(--muted); max-width: 72ch; }
 
 /* Summary */
-.points { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 18px 28px; margin: 0; padding: 0; list-style: none; }
-.points li { display: grid; gap: 6px; align-content: start; padding-top: 14px; border-top: 2px solid var(--line); min-width: 0; }
-.points li.dep { border-top-color: var(--deposit); }
-.points li.cre { border-top-color: var(--credit); }
+.points { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.points li { display: grid; gap: 6px; align-content: start; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; min-width: 0; }
 .points li h3 { font-size: 15px; display: flex; gap: 8px; align-items: center; }
-.points li h3::before { content: ""; width: 8px; height: 8px; border-radius: 2px; transform: rotate(45deg); background: currentColor; flex: none; }
-.points li.dep h3::before { color: var(--deposit); }
-.points li.cre h3::before { color: var(--credit); }
-.points li p { margin: 0; }
-.ranks { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 520px), 1fr)); gap: 18px; }
-.rank { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 18px 8px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.points li h3::before { content: ""; width: 8px; height: 8px; border-radius: 2px; flex: none; }
+.points li.dep h3::before { background: var(--deposit); }
+.points li.cre h3::before { background: var(--credit); }
+.points li p { margin: 0; color: var(--fg); font-size: 14.5px; }
+.ranks { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 500px), 1fr)); gap: 16px; }
+.rank { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 16px 6px; display: grid; gap: 6px; align-content: start; min-width: 0; }
 .rank ol { list-style: none; margin: 0; padding: 0; }
-.rank li { display: grid; grid-template-columns: 26px minmax(0, 1fr) auto; gap: 4px 10px; align-items: baseline; padding: 9px 0; border-top: 1px solid var(--line); }
+.rank li { display: grid; grid-template-columns: 24px minmax(0, 1fr) auto; gap: 2px 10px; align-items: baseline; padding: 9px 0; border-top: 1px solid var(--line); }
 .rank li:first-child { border-top: 0; }
-.rank .pos { font: 500 12px var(--font-mono); color: var(--muted); }
-.rank li:first-child .pos { color: var(--gold); font-weight: 700; }
+.rank .pos { font: 500 12px var(--font-mono); color: var(--faint); }
 .rank .what { min-width: 0; }
 .rank .what a { font-weight: 600; text-decoration: none; color: var(--fg); }
 .rank .what a:hover { text-decoration: underline; color: var(--accent); }
 .rank .sub { font-size: 13px; color: var(--muted); }
-.notes { margin: 0; padding: 16px 18px 16px 34px; color: var(--muted); font-size: 14px; display: grid; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.notes { margin: 0; padding: 14px 16px 14px 32px; color: var(--muted); font-size: 14px; display: grid; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
 
 /* Rate chip */
 .rate { font: 500 14px var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; padding: 2px 8px; border-radius: 6px; }
-.rate.dep { background: var(--deposit-soft); color: var(--deposit); }
-.rate.cre { background: var(--credit-soft); color: var(--credit); }
+.rate.dep { background: var(--deposit-soft); color: var(--fg); box-shadow: inset 3px 0 0 var(--deposit); }
+.rate.cre { background: var(--credit-soft); color: var(--fg); box-shadow: inset 3px 0 0 var(--credit); }
 .bar { position: relative; height: 6px; width: 96px; background: var(--track); border-radius: 3px; }
 .bar i { position: absolute; top: 0; bottom: 0; border-radius: 3px; min-width: 4px; }
 .bar.dep i { background: var(--deposit); }
 .bar.cre i { background: var(--credit); }
 
+/* Charts */
+.charts { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 540px), 1fr)); gap: 16px; }
+.chart { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.chart .sub { margin: -4px 0 0; font-size: 13px; color: var(--muted); }
+.plot { display: grid; grid-template-columns: minmax(96px, 34%) minmax(0, 1fr); column-gap: 12px; position: relative; }
+.plot .row { display: contents; }
+.plot .lab { font-size: 13px; color: var(--fg); padding: 3px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; align-self: center; }
+.plot .area { position: relative; height: 24px; }
+.plot .area::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(to right, var(--grid) 1px, transparent 1px); background-size: 25% 100%; width: calc(100% + 1px); }
+.plot .mark { position: absolute; top: 6px; height: 12px; border-radius: 0 4px 4px 0; }
+.plot .mark.range { border-radius: 4px; }
+.plot.dep .mark { background: var(--deposit); }
+.plot.cre .mark { background: var(--credit); }
+.plot .val { position: absolute; top: 2px; font: 500 12px/20px var(--font-mono); color: var(--fg); padding-left: 6px; white-space: nowrap; }
+.plot .row:hover .lab { color: var(--accent); }
+.plot .row:hover .mark { filter: brightness(1.15); }
+.axis { display: grid; grid-template-columns: minmax(96px, 34%) minmax(0, 1fr); column-gap: 12px; }
+.axis .ticks { position: relative; height: 16px; font: 11px var(--font-mono); color: var(--faint); }
+.axis .ticks span { position: absolute; transform: translateX(-50%); }
+.axis .ticks span:first-child { transform: none; }
+.tip { position: fixed; z-index: 20; pointer-events: none; background: var(--fg); color: var(--surface); font-size: 13px; padding: 8px 10px; border-radius: 8px; max-width: 260px; box-shadow: 0 6px 20px rgba(0,0,0,.18); }
+.tip b { font-family: var(--font-mono); }
+
 /* Filters + tables */
 .filters { display: flex; flex-wrap: wrap; gap: 10px 12px; align-items: end; }
 .field { display: grid; gap: 4px; min-width: 0; }
-.field label, .check { font: 500 12px var(--font-mono); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
-.field input, .field select { font: 15px var(--font-body); color: var(--fg); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 9px 11px; min-width: 0; }
+.field label { font-size: 13px; font-weight: 500; color: var(--muted); }
+.check { display: flex; gap: 6px; align-items: center; padding-bottom: 10px; cursor: pointer; font-size: 14px; color: var(--muted); }
+.field input, .field select { font: 15px var(--font-body); color: var(--fg); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 9px 11px; min-width: 0; max-width: 100%; }
 .field.grow { flex: 1 1 220px; }
 .field.grow input { width: 100%; }
-.check { display: flex; gap: 6px; align-items: center; padding-bottom: 11px; cursor: pointer; text-transform: none; letter-spacing: 0; font-size: 13px; }
 .count { font: 500 13px var(--font-mono); color: var(--muted); }
-.tablebox { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.tablebox { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
 table { border-collapse: collapse; width: 100%; min-width: 860px; }
 th, td { text-align: left; padding: 11px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
 tbody tr:last-child td { border-bottom: 0; }
 tbody tr:hover td { background: var(--accent-soft); }
-th { font: 500 12px var(--font-mono); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); background: var(--surface); }
+th { font: 600 12px var(--font-body); letter-spacing: .02em; text-transform: uppercase; color: var(--muted); background: var(--surface); }
 th button { all: unset; cursor: pointer; }
-th button:focus-visible { outline: 2px solid var(--gold); }
+th button:focus-visible { outline: 2px solid var(--accent); }
 th[aria-sort="ascending"] button::after { content: " ↑"; }
 th[aria-sort="descending"] button::after { content: " ↓"; }
 td.bank { font-weight: 600; white-space: nowrap; }
@@ -157,15 +168,15 @@ td.ratecell { white-space: nowrap; }
 td.ratecell .bar { margin-top: 6px; }
 td.small { font-size: 14px; color: var(--muted); }
 td.src .d { display: block; }
-.tag { display: inline-block; font: 500 11px/1.6 var(--font-mono); padding: 0 6px; border-radius: 4px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+.tag { display: inline-block; font: 500 12px/1.6 var(--font-body); padding: 0 7px; border-radius: 4px; background: var(--accent-soft); color: var(--fg); white-space: nowrap; }
 .tag.old { background: var(--warn-soft); color: var(--warn); }
 .empty { padding: 28px 16px; text-align: center; color: var(--muted); }
 
 /* Banks */
-.banks { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); gap: 14px; }
-.bankcard { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.banks { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); gap: 12px; }
+.bankcard { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 10px; align-content: start; min-width: 0; }
 .bankcard header { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; flex-wrap: wrap; }
-.bankcard h3 { font: 700 15px/1.3 var(--font-display); letter-spacing: -.01em; }
+.bankcard h3 { font-size: 16px; }
 .bankcard .site { font: 13px var(--font-mono); }
 .bankcard dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 14px; }
 .bankcard dt { color: var(--muted); }
@@ -174,19 +185,30 @@ td.src .d { display: block; }
 .bankcard .links { display: flex; gap: 14px; font-size: 14px; }
 .bankcard .links button { all: unset; cursor: pointer; color: var(--accent); font-weight: 500; text-decoration: underline; text-underline-offset: 2px; }
 
+/* Admin */
+.admin { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 12px; max-width: 520px; }
+.admin form { display: flex; flex-wrap: wrap; gap: 8px; align-items: end; }
+.admin .msg { font-size: 14px; color: var(--credit); min-height: 1.2em; margin: 0; }
+.admin ol { margin: 0; padding-left: 20px; display: grid; gap: 4px; font-size: 14px; color: var(--muted); }
+.linkbtn { all: unset; cursor: pointer; color: var(--muted); text-decoration: underline; text-underline-offset: 2px; font-size: 13px; }
+
 footer { background: var(--surface); border-top: 1px solid var(--line); }
-footer .wrap { padding-block: 22px 36px; color: var(--muted); font-size: 13px; display: grid; gap: 8px; max-width: 1180px; }
-footer a { color: var(--muted); }
+footer .wrap { padding-block: 20px 32px; color: var(--muted); font-size: 13px; display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; }
+footer p { margin: 0; max-width: 80ch; }
 
 @media (max-width: 900px) {
   .highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 720px) {
+  .top .wrap { padding-block: 22px 20px; gap: 14px; }
+  .lede { font-size: 15px; }
+  .highlights { gap: 8px; }
+  .hl { padding: 12px; }
   .tablebox { background: none; border: 0; border-radius: 0; overflow: visible; }
   table { min-width: 0; }
   thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
   tbody { display: grid; gap: 10px; }
-  tbody tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+  tbody tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
   tbody tr:hover td { background: none; }
   tbody td { display: block; padding: 0; border: 0; }
   td.bank { grid-column: 1; white-space: normal; font-size: 13px; color: var(--muted); }
@@ -198,30 +220,27 @@ footer a { color: var(--muted); }
   td.src .d { display: inline; }
   td.src .d::before { content: " · "; }
   td.empty { grid-column: 1 / -1; }
+  .filters .field:not(.grow) { flex: 1 1 140px; }
+  .filters .field select { width: 100%; }
+  .plot, .axis { grid-template-columns: minmax(80px, 38%) minmax(0, 1fr); }
 }
 @media (max-width: 560px) {
-  .hero .wrap { padding-block: 28px 24px; }
-  .highlights { gap: 8px; }
-  .hl { padding: 12px; }
   .rank li { grid-template-columns: 20px minmax(0, 1fr); }
   .rank li .rate { grid-column: 2; justify-self: start; }
 }
-@media (prefers-reduced-motion: reduce) {
-  .refresh.spin svg { animation: none; }
-}
 </style>
 
-<header class="hero">
+<header class="top">
   <div class="wrap">
     <div class="eyebrow" id="eyebrow"></div>
-    <h1>Qaysi bankda omonat foydaliroq, kredit arzonroq?</h1>
-    <p class="lede">O'zbekistondagi 32 bankning omonat va kredit stavkalari bir joyda. Har bir raqam bankning o'z saytidan olingan, ustiga bossangiz manba sahifasi ochiladi.</p>
+    <h1>O'zbekiston banklari: omonat va kredit stavkalari</h1>
+    <p class="lede">32 bankning omonat va kredit mahsulotlari bir joyda. Har bir raqam bankning o'z saytidan olingan va manba sahifasiga havola qilingan.</p>
     <div class="highlights" id="highlights"></div>
-    <div class="updated">
-      <button class="refresh" id="refresh" type="button">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg>
-        Yangilash
-      </button>
+    <div class="actions">
+      <a class="btn" id="excel" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        Excel yuklab olish
+      </a>
       <span id="updated"></span>
     </div>
   </div>
@@ -230,10 +249,12 @@ footer a { color: var(--muted); }
 <nav class="tabs" aria-label="Bo'limlar">
   <div class="wrap" role="tablist">
     <button role="tab" id="t-xulosalar" aria-controls="xulosalar" data-tab="xulosalar">Xulosalar</button>
+    <button role="tab" id="t-tahlil" aria-controls="tahlil" data-tab="tahlil">Tahlil</button>
     <button role="tab" id="t-omonatlar" aria-controls="omonatlar" data-tab="omonatlar">Omonatlar <span class="n" id="n-o"></span></button>
     <button role="tab" id="t-kreditlar" aria-controls="kreditlar" data-tab="kreditlar">Kreditlar <span class="n" id="n-k"></span></button>
     <button role="tab" id="t-banklar" aria-controls="banklar" data-tab="banklar">Banklar <span class="n" id="n-b"></span></button>
     <button role="tab" id="t-avtomatik" aria-controls="avtomatik" data-tab="avtomatik" hidden>Yangi topilganlar <span class="n" id="n-a"></span></button>
+    <button role="tab" id="t-admin" aria-controls="admin" data-tab="admin" hidden>Administrator</button>
   </div>
 </nav>
 
@@ -243,9 +264,15 @@ footer a { color: var(--muted); }
       <h2>Asosiy xulosalar</h2>
       <ul class="points" id="points"></ul>
       <h2>Reytinglar</h2>
-      <p class="intro">Har bir toifada eng yaxshi takliflar. Omonatda yuqori foiz, kreditda past foiz yaxshi.</p>
+      <p class="intro">Har bir toifadagi eng yaxshi takliflar: omonatda yuqori foiz, kreditda past foiz yaxshi.</p>
       <div class="ranks" id="ranks"></div>
       <ul class="notes" id="notes"></ul>
+    </section>
+
+    <section role="tabpanel" id="tahlil" aria-labelledby="t-tahlil" hidden>
+      <h2>Banklar bo'yicha tahlil</h2>
+      <p class="intro">Har bir bankning shu toifadagi eng yaxshi stavkasi. Ustuniga olib borsangiz, mahsulot nomi va shartlari chiqadi. Aniq raqamlar "Omonatlar" va "Kreditlar" jadvallarida.</p>
+      <div class="charts" id="charts"></div>
     </section>
 
     <section role="tabpanel" id="omonatlar" aria-labelledby="t-omonatlar" hidden>
@@ -286,15 +313,42 @@ footer a { color: var(--muted); }
       <div class="count" id="a-count"></div>
       <div class="tablebox"><table id="a-table"></table></div>
     </section>
+
+    <section role="tabpanel" id="admin" aria-labelledby="t-admin" hidden>
+      <h2>Administrator</h2>
+      <div class="admin">
+        <div id="admin-login">
+          <form id="admin-form">
+            <div class="field grow"><label for="admin-pw">Parol</label><input id="admin-pw" type="password" autocomplete="current-password"></div>
+            <button class="btn" type="submit">Kirish</button>
+          </form>
+          <p class="msg" id="admin-msg" role="status"></p>
+        </div>
+        <div id="admin-panel" hidden>
+          <p style="margin:0">Ma'lumotni bank saytlaridan qayta yig'ish:</p>
+          <ol>
+            <li>"Ma'lumotni yangilash" tugmasini bosing — GitHub sahifasi ochiladi.</li>
+            <li>GitHub hisobingizga kiring va <b>Run workflow</b> ni bosing.</li>
+            <li>20–30 daqiqadan keyin sayt o'zi yangilanadi.</li>
+          </ol>
+          <div class="actions">
+            <a class="btn" id="admin-run" target="_blank" rel="noopener">Ma'lumotni yangilash</a>
+            <a class="btn ghost" id="admin-runs" target="_blank" rel="noopener">Jarayon holati</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </main>
 
 <footer>
   <div class="wrap">
-    <div>Stavkalar bank saytlaridan olingan, ayrim sahifalarda sana ko'rsatilmagan. Kredit foizi mijozga qarab belgilanadi. Bu sayt maslahat bermaydi: qaror qabul qilishdan oldin bankning o'zidan tekshiring.</div>
-    <div><a id="admin" target="_blank" rel="noopener">Ma'lumotni qayta yig'ish (administrator uchun)</a></div>
+    <p>Stavkalar bank saytlaridan olingan, ayrim sahifalarda sana ko'rsatilmagan. Kredit foizi mijozga qarab belgilanadi. Bu sayt moliyaviy maslahat bermaydi: qaror qabul qilishdan oldin bankning o'zidan tekshiring.</p>
+    <button class="linkbtn" id="admin-open" type="button">Administrator</button>
   </div>
 </footer>
+
+<div class="tip" id="tip" hidden></div>
 
 <script>
 const DATA = /*DATA*/null;
@@ -325,33 +379,28 @@ const live = DATA.live;
 const liveRows = live ? live.rows : [];
 const lastUpdate = live ? live.updated : DATA.generated;
 
-/* Hero */
+/* Header */
 $("#eyebrow").textContent = `${banks.length} bank · ${deposits.length} omonat · ${credits.length} kredit`;
-$("#updated").innerHTML = `Oxirgi yangilanish: <b>${esc(niceDate(lastUpdate))}</b>`;
-$("#refresh").addEventListener("click", (e) => {
-  e.currentTarget.classList.add("spin");
-  location.reload();
-});
-$("#admin").href = `https://github.com/${DATA.repo}/actions/workflows/update.yml`;
+$("#updated").innerHTML = `Ma'lumot holati: <b>${esc(niceDate(lastUpdate))}</b>`;
+$("#excel").href = DATA.excel;
 
 const firstOf = (title) => (DATA.rankings.find((k) => k.title === title) || { rows: [] }).rows[0];
 const HL = [
-  ["So'm omonat", "Eng yuqori so'm omonatlar", "omonatlar"],
-  ["Dollar omonat", "Eng yuqori valyuta omonatlar", "omonatlar"],
-  ["Ipoteka", "Eng arzon ipoteka", "kreditlar"],
-  ["Mikroqarz", "Eng arzon mikroqarz (0% aksiyalarsiz)", "kreditlar"],
+  ["So'm omonat", "Eng yuqori so'm omonatlar", "omonatlar", "dep"],
+  ["Dollar omonat", "Eng yuqori valyuta omonatlar", "omonatlar", "dep"],
+  ["Ipoteka", "Eng arzon ipoteka", "kreditlar", "cre"],
+  ["Mikroqarz", "Eng arzon mikroqarz (0% aksiyalarsiz)", "kreditlar", "cre"],
 ];
-$("#highlights").innerHTML = HL.map(([label, title, tab]) => {
+$("#highlights").innerHTML = HL.map(([label, title, tab, kind]) => {
   const r = firstOf(title);
   if (!r) return "";
-  const v = tab === "omonatlar" ? hi(r) : lo(r);
-  return `<a class="hl" href="#${tab}" data-go="${tab}">
-    <span class="k">${tab === "omonatlar" ? "Eng yuqori" : "Eng arzon"} · ${esc(label)}</span>
+  const v = kind === "dep" ? hi(r) : lo(r);
+  return `<a class="hl ${kind}" href="#${tab}" data-go="${tab}">
+    <span class="k">${kind === "dep" ? "Eng yuqori" : "Eng arzon"} ${esc(label.toLowerCase())}</span>
     <span class="v">${num(v)}%</span>
-    <span class="w">${esc(r.bank)} <span>· ${esc(r.name)}</span></span></a>`;
+    <span class="w"><b>${esc(r.bank)}</b> · ${esc(r.name)}</span></a>`;
 }).join("");
 
-/* Counts */
 $("#n-o").textContent = deposits.length;
 $("#n-k").textContent = credits.length;
 $("#n-b").textContent = banks.length;
@@ -369,6 +418,79 @@ $("#ranks").innerHTML = DATA.rankings.map((k) => {
   return `<article class="rank"><h3>${esc(k.title)}</h3><ol>${items}</ol></article>`;
 }).join("");
 $("#notes").innerHTML = DATA.notes.map((n) => `<li>${esc(n)}</li>`).join("");
+
+/* Analysis charts: one bar (or range) per bank, best offer in the category */
+const fresh = (r) => !r.stale;
+function bestPerBank(rows, pick, better) {
+  const m = new Map();
+  rows.forEach((r) => {
+    const v = pick(r);
+    if (v == null) return;
+    const cur = m.get(r.bank);
+    if (!cur || better(v, cur.v)) m.set(r.bank, { v, r });
+  });
+  return [...m.values()];
+}
+const CHARTS = [
+  { title: "So'm omonat: eng yuqori stavka", sub: "Har bir bankning so'mdagi eng yuqori omonat foizi, yillik", kind: "dep",
+    data: () => bestPerBank(deposits.filter((r) => fresh(r) && r.cur === "UZS" && hi(r) > 0), hi, (a, b) => a > b).sort((a, b) => b.v - a.v) },
+  { title: "Dollar omonat: eng yuqori stavka", sub: "Har bir bankning valyutadagi eng yuqori omonat foizi, yillik", kind: "dep",
+    data: () => bestPerBank(deposits.filter((r) => fresh(r) && r.cur !== "UZS" && hi(r) > 0), hi, (a, b) => a > b).sort((a, b) => b.v - a.v) },
+  { title: "Ipoteka: eng past stavka", sub: "Har bir bankning eng arzon ipoteka foizi, yillik", kind: "cre",
+    data: () => bestPerBank(credits.filter((r) => fresh(r) && r.cat === "Ipoteka"), (r) => (lo(r) > 0 ? lo(r) : null), (a, b) => a < b).sort((a, b) => a.v - b.v) },
+  { title: "Avtokredit: eng past stavka", sub: "0% aksiyalarsiz, yillik", kind: "cre",
+    data: () => bestPerBank(credits.filter((r) => fresh(r) && r.cat === "Avtokredit"), (r) => (lo(r) > 0 ? lo(r) : null), (a, b) => a < b).sort((a, b) => a.v - b.v) },
+  { title: "Mikroqarz: stavka oralig'i", sub: "Har bir bankdagi eng past va eng yuqori mikroqarz foizi, yillik", kind: "cre", range: true,
+    data: () => {
+      const m = new Map();
+      credits.filter((r) => fresh(r) && r.cat === "Mikroqarz" && lo(r) > 0).forEach((r) => {
+        const c = m.get(r.bank) || { lo: Infinity, hi: -Infinity, n: 0, bank: r.bank };
+        c.lo = Math.min(c.lo, lo(r)); c.hi = Math.max(c.hi, hi(r)); c.n++;
+        m.set(r.bank, c);
+      });
+      return [...m.values()].sort((a, b) => a.lo - b.lo || a.hi - b.hi);
+    } },
+];
+const MAXV = (vals) => { const m = Math.max(...vals); return m <= 10 ? 10 : Math.ceil(m / 20) * 20; };
+$("#charts").innerHTML = CHARTS.map((c, ci) => {
+  const d = c.data();
+  if (!d.length) return "";
+  const max = MAXV(d.map((x) => (c.range ? x.hi : x.v)));
+  const ticks = [0, .25, .5, .75, 1].map((t) => `<span style="left:${t * 100}%">${num(max * t)}%</span>`).join("");
+  const rows = d.map((x, i) => {
+    const bank = c.range ? x.bank : x.r.bank;
+    if (c.range) {
+      const a = x.lo / max * 100, b = x.hi / max * 100;
+      return `<div class="row" data-c="${ci}" data-i="${i}"><span class="lab">${esc(bank)}</span>
+        <span class="area"><i class="mark range" style="left:${a}%;width:${Math.max(b - a, 1.5)}%"></i>
+        ${i < 3 ? `<span class="val" style="left:${b}%">${num(x.lo)}${x.hi > x.lo ? "–" + num(x.hi) : ""}%</span>` : ""}</span></div>`;
+    }
+    const w = x.v / max * 100;
+    return `<div class="row" data-c="${ci}" data-i="${i}"><span class="lab">${esc(bank)}</span>
+      <span class="area"><i class="mark" style="left:0;width:${w}%"></i>
+      ${i < 3 ? `<span class="val" style="left:${w}%">${num(x.v)}%</span>` : ""}</span></div>`;
+  }).join("");
+  return `<figure class="chart" style="margin:0"><h3>${esc(c.title)}</h3><p class="sub">${esc(c.sub)} · ${d.length} bank</p>
+    <div class="plot ${c.kind}" role="img" aria-label="${esc(c.title)}">${rows}</div>
+    <div class="axis"><span></span><span class="ticks">${ticks}</span></div></figure>`;
+}).join("");
+const CHART_DATA = CHARTS.map((c) => c.data());
+const tip = $("#tip");
+const showTip = (e) => {
+  const row = e.target.closest(".row");
+  if (!row) { tip.hidden = true; return; }
+  const c = CHARTS[row.dataset.c], x = CHART_DATA[row.dataset.c][row.dataset.i];
+  tip.innerHTML = c.range
+    ? `<div>${esc(x.bank)}</div><b>${num(x.lo)}${x.hi > x.lo ? "–" + num(x.hi) : ""}%</b> · ${x.n} ta mahsulot`
+    : `<div>${esc(x.r.bank)} · ${esc(x.r.name)}</div><b>${num(x.v)}%</b>${x.r.term ? " · " + esc(x.r.term) : ""}`;
+  tip.hidden = false;
+  const pad = 14, w = tip.offsetWidth, h = tip.offsetHeight;
+  tip.style.left = Math.min(e.clientX + pad, innerWidth - w - 8) + "px";
+  tip.style.top = Math.min(e.clientY + pad, innerHeight - h - 8) + "px";
+};
+$("#charts").addEventListener("mousemove", showTip);
+$("#charts").addEventListener("click", showTip);  // telefonda bosganda ham chiqadi
+$("#charts").addEventListener("mouseleave", () => { tip.hidden = true; });
 
 /* Tables */
 function options(sel, values, all) {
@@ -503,15 +625,40 @@ $("#highlights").addEventListener("click", (e) => {
   document.querySelector("nav.tabs").scrollIntoView();
 });
 
+/* Administrator: password gate in front of the GitHub update page.
+   The update itself only runs for GitHub accounts with write access to the repository. */
+$("#admin-run").href = `https://github.com/${DATA.repo}/actions/workflows/update.yml`;
+$("#admin-runs").href = `https://github.com/${DATA.repo}/actions`;
+async function sha256(text) {
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+$("#admin-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const ok = (await sha256($("#admin-pw").value)) === DATA.adminHash;
+  $("#admin-msg").textContent = ok ? "" : "Parol noto'g'ri.";
+  $("#admin-login").hidden = ok;
+  $("#admin-panel").hidden = !ok;
+  $("#admin-pw").value = "";
+});
+$("#admin-open").addEventListener("click", () => {
+  $("#t-admin").hidden = false;
+  if (!TABS.includes("admin")) TABS.push("admin");
+  show("admin");
+  document.querySelector("nav.tabs").scrollIntoView();
+  $("#admin-pw").focus();
+});
+
 /* Tabs */
-const TABS = ["xulosalar", "omonatlar", "kreditlar", "banklar", "avtomatik"].filter((t) => !$("#t-" + t).hidden);
+const TABS = ["xulosalar", "tahlil", "omonatlar", "kreditlar", "banklar", "avtomatik"].filter((t) => !$("#t-" + t).hidden);
 function show(id, push = true) {
   if (!TABS.includes(id)) id = "xulosalar";
-  TABS.forEach((t) => {
+  [...TABS, "admin"].forEach((t) => {
     $("#" + t).hidden = t !== id;
     $("#t-" + t).setAttribute("aria-selected", String(t === id));
     $("#t-" + t).tabIndex = t === id ? 0 : -1;
   });
+  tip.hidden = true;
   if (push) { try { history.replaceState(null, "", "#" + id); } catch {} }
 }
 document.querySelector("nav.tabs").addEventListener("click", (e) => {
