@@ -33,3 +33,27 @@ def test_classify():
 def test_summary():
     s = summarize("Avtokredit: 24% dan 26% gacha, 60 oygacha, 800 mln so'm")
     assert (s["rate_min"], s["rate_max"], s["term_max_months"], s["amount_max"]) == (24, 26, 60, 800e6)
+
+
+def test_skip_and_business_urls():
+    from uzbanks.crawl import _wanted
+    site = "https://bank.uz"
+    assert _wanted("https://bank.uz/uz/private/crediting/avto/", site, "uz")
+    assert _wanted("https://www.bank.uz/uz/private/deposit/x", site, "uz")
+    assert not _wanted("https://bank.uz/uz/search/?q=Kredit", site, "uz")
+    assert not _wanted("https://bank.uz/uz/private/crediting/request/?credit=X", site, "uz")
+    assert not _wanted("https://bank.uz/uz/services/calculators/", site, "uz")
+    assert not _wanted("https://bank.uz/uz/private/deposit/?currency=USD&filter=yes", site, "uz")
+    assert not _wanted("https://bank.uz/uz/corporate/crediting/", site, "uz")
+    assert not _wanted("https://bank.uz/uz/small-business/deposits/", site, "uz")
+    assert not _wanted("https://cabinet.bank.uz/", site, "uz")
+    assert not _wanted("https://bank.uz/oz/private/deposit/", site, "uz")
+    assert not _wanted("https://bank.uz/qr/private/crediting/", site, "uz")
+
+
+def test_repeated_titles_fall_back_to_document_title():
+    from uzbanks.crawl import _fix_repeated_titles
+    r = {"credits": [{"title": "Xizmat sifatini baholang", "doc_title": f"Kredit {i}"} for i in range(3)]
+                    + [{"title": "Avtokredit", "doc_title": "Avtokredit"}]}
+    _fix_repeated_titles(r, ["credits"])
+    assert [p["title"] for p in r["credits"]] == ["Kredit 0", "Kredit 1", "Kredit 2", "Avtokredit"]

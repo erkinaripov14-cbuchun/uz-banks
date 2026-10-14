@@ -26,6 +26,7 @@ def main():
     ap.add_argument("--max-pages", type=int, default=40, help="har bir bo'lim uchun maksimal sahifalar")
     ap.add_argument("--concurrency", type=int, default=4, help="bir vaqtda nechta bank")
     ap.add_argument("--timeout", type=int, default=45, help="sahifa yuklanish vaqti, soniya")
+    ap.add_argument("--budget", type=int, default=300, help="bitta bankka ajratilgan vaqt, soniya")
     ap.add_argument("--headful", action="store_true", help="brauzer oynasini ko'rsatish")
     ap.add_argument("--out", default=f"output/{date.today().isoformat()}", help="natijalar papkasi")
     a = ap.parse_args()
@@ -45,7 +46,7 @@ def main():
     results = asyncio.run(scrape_all(
         banks, sections, concurrency=a.concurrency, headless=not a.headful,
         executable_path=os.environ.get("CHROMIUM_PATH"),
-        max_pages=a.max_pages, lang=a.lang or None, timeout=a.timeout * 1000,
+        max_pages=a.max_pages, lang=a.lang or None, timeout=a.timeout * 1000, budget=a.budget,
     ))
 
     out = Path(a.out)
