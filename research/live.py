@@ -88,6 +88,16 @@ GENERIC_TITLES = re.compile(
     r"omonatlar va depozitlar|barchasi omonatlar haqida|xorijiy valyutada|milliy valyutada|вклады|кредиты)$", re.I)
 
 
+# Kartochkadagi birinchi qator mahsulot nomi bo'lmasligi mumkin: summa, stavka, reklama jumlasi
+BAD_TITLE = re.compile(r"^(сумма|summa|общая|umumiy|stavka|ставка|foiz|bazaviy|базов|muddat|срок|bizda|biz |"
+                       r"har bir|ariza|подробнее|batafsil|ko.proq|[\d\s.,+%–-]+$)", re.I)
+
+
+def clean_title(t):
+    t = re.sub(r"\s+", " ", t or "").strip()
+    return "" if not t or BAD_TITLE.search(t) or len(t) > 70 else t
+
+
 BUSINESS_URL = re.compile(r"/(corporate|small-business|legal|juristic|yuridik[-_]shaxslar\w*|business|biznes-uchun)(/|$)", re.I)
 
 
@@ -103,7 +113,8 @@ def _plausible(kind, lo, hi, cur="UZS", cat=""):
         return (3 <= lo <= hi <= 30) if cur == "UZS" else (0.5 <= lo <= hi <= 12)
     if lo == hi == 0:          # 0% aksiya (masalan, avtokredit)
         return True
-    return 10 <= lo <= hi <= (35 if cat == "Ipoteka" else 50)
+    cap = {"Ipoteka": 35, "Avtokredit": 40, "Ta'lim": 30}.get(cat, 50)   # yuqorisi — odatda boshlang'ich badal
+    return 10 <= lo <= hi <= cap
 
 
 def _items(bank, section):
@@ -118,7 +129,7 @@ def _items(bank, section):
             if c["url"].rstrip("/") in product_urls or c.get("rate_min") is None:
                 continue
             lines = [l.strip() for l in c["text"].splitlines() if l.strip()]
-            title = next((l for l in lines if len(l) > 3 and not re.match(r"^[\d.,%\s–-]+$", l)), "")
+            title = next((clean_title(l) for l in lines if clean_title(l) and len(l) > 3), "")
             yield {**c, "title": title[:120], "kind": "card"}
 
 
@@ -130,7 +141,7 @@ def convert(results):
             for p in _items(bank, section):
                 if p.get("rate_min") is None:
                     continue
-                title = (p.get("title") or "").strip()
+                title = clean_title(p.get("title"))
                 if not title or GENERIC_TITLES.match(title) or NOT_PRODUCT.search(title):
                     continue
                 rng = _rates(p, kind) if p.get("rates") is not None else (p["rate_min"], p["rate_max"])
@@ -142,6 +153,8 @@ def convert(results):
                     cur = [c for c in cur if c != "UZS"] or ["USD"]
                 cur1 = "UZS" if not cur or "UZS" in cur else cur[0]
                 cat = _category(section, f"{title} {p['url']}", cur)
+                if kind == "K" and _segment(p) == "yuridik" and cat in ("Iste'mol", "Mikroqarz"):
+                    cat = "Biznes"
                 if not _plausible(kind, lo, hi, cur1, cat):
                     continue
                 key = (bank["bank"], title.lower(), lo, hi)
@@ -160,6 +173,27 @@ def convert(results):
     return rows
 
 
+def combine(previous, results, rows, now):
+    """Yangi natijani avvalgisi bilan birlashtirish: faqat shu safar muvaffaqiyatli o'qilgan banklarning
+    qatorlari almashadi. Ayrim banklar uchun yangilash (--only) yoki o'qilmay qolgan bank boshqa banklarning
+    ma'lumotini o'chirmaydi."""
+    ok = {r["bank"] for r in results if any(r.get(s) for s in ("credits", "deposits"))}
+    kept = [r for r in (previous or {}).get("rows", []) if r["bank"] not in ok]
+    all_rows = rows + kept
+    banks_with_data = {r["bank"] for r in all_rows}
+    attempted = {r["bank"] for r in results}
+    prev_failed = set((previous or {}).get("failed", []))
+    failed = sorted((attempted - ok - banks_with_data) | (prev_failed - ok - banks_with_data - attempted))
+    return {
+        "updated": now,
+        "banks_ok": len(banks_with_data), "banks_total": max(len(attempted | banks_with_data | prev_failed),
+                                                             (previous or {}).get("banks_total", 0)),
+        "failed": failed,
+        "last_run": {"banks": sorted(attempted), "ok": len(ok)},
+        "rows": all_rows,
+    }
+
+
 def main():
     if len(sys.argv) != 2:
         sys.exit(__doc__)
@@ -170,14 +204,11 @@ def main():
     if not rows:
         print("Hech narsa topilmadi — research/live/latest.json o'zgartirilmadi.")
         return
+    previous = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else None
+    data = combine(previous, results, rows, datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"))
     OUT.parent.mkdir(exist_ok=True)
-    OUT.write_text(json.dumps({
-        "updated": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "banks_ok": len(ok), "banks_total": len(results),
-        "failed": sorted(r["bank"] for r in results if r["bank"] not in ok),
-        "rows": rows,
-    }, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"Yozildi: {OUT}")
+    OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"Yozildi: {OUT} — jami {len(data['rows'])} ta mahsulot, {data['banks_ok']} bank")
 
 
 if __name__ == "__main__":

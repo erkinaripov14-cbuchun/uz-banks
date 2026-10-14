@@ -349,11 +349,19 @@ footer p { margin: 0; max-width: 80ch; }
             </form>
           </div>
           <div id="admin-ready" hidden>
-            <p style="margin:0">Bank saytlarini qayta o'qib, saytni yangilash. Jarayon 15–20 daqiqa davom etadi, keyin sahifani qayta yuklang.</p>
+            <p style="margin:0">Bank saytlarini qayta o'qib, saytni yangilash. Jarayon 30–40 daqiqa davom etadi, keyin sahifani qayta yuklang.</p>
             <div class="actions">
               <button class="btn" id="admin-update" type="button">Ma'lumotni yangilash</button>
               <a class="btn ghost" id="admin-runs" target="_blank" rel="noopener">GitHub'da ko'rish</a>
+            </div>
+            <div class="actions" id="admin-local-tools">
+              <button class="linkbtn" id="admin-export" type="button">Barcha qurilmalarda ishlashi uchun kod olish</button>
               <button class="linkbtn" id="admin-forget" type="button">Tokenni bu qurilmadan o'chirish</button>
+            </div>
+            <div id="admin-export-box" hidden style="display:grid;gap:8px">
+              <p style="margin:0;font-size:14px;color:var(--muted)">Bu kod token admin paroli bilan shifrlangan holda. Uni saytga joylash uchun repo egasiga yuboring — shundan keyin har qanday qurilmada faqat parol va bitta tugma yetadi. Parolsiz bu koddan foydalanib bo'lmaydi.</p>
+              <textarea id="admin-export-text" readonly rows="4" style="font:12px var(--font-mono);width:100%;border:1px solid var(--line);border-radius:8px;padding:8px;background:var(--bg);color:var(--fg)"></textarea>
+              <div><button class="btn ghost" id="admin-export-copy" type="button">Nusxalash</button></div>
             </div>
           </div>
           <p class="msg ok" id="admin-status" role="status"></p>
@@ -675,7 +683,9 @@ async function keyFrom(pw, salt) {
   return crypto.subtle.deriveKey({ name: "PBKDF2", salt, iterations: 310000, hash: "SHA-256" },
     base, { name: "AES-GCM", length: 256 }, false, ["encrypt", "decrypt"]);
 }
-function loadBlob() { try { return JSON.parse(localStorage.getItem(TOKEN_KEY) || "null"); } catch { return null; } }
+function localBlob() { try { return JSON.parse(localStorage.getItem(TOKEN_KEY) || "null"); } catch { return null; } }
+// Shu qurilmada saqlangan token, bo'lmasa saytga joylangan (hamma qurilma uchun) shifrlangan token
+function loadBlob() { return localBlob() || DATA.adminTokenBlob || null; }
 async function saveToken(token) {
   const salt = crypto.getRandomValues(new Uint8Array(16)), iv = crypto.getRandomValues(new Uint8Array(12));
   const ct = new Uint8Array(await crypto.subtle.encrypt({ name: "AES-GCM", iv }, await keyFrom(adminPw, salt), enc.encode(token)));
@@ -693,6 +703,7 @@ function adminView() {
   const has = !!loadBlob();
   $("#admin-setup").hidden = has;
   $("#admin-ready").hidden = !has;
+  $("#admin-local-tools").hidden = !localBlob();
 }
 async function gh(token, path, opts = {}) {
   const r = await fetch(`https://api.github.com/repos/${DATA.repo}${path}`, {
@@ -753,6 +764,15 @@ $("#admin-update").addEventListener("click", async () => {
   } catch (err) {
     status(err.message === "Failed to fetch" ? "GitHub'ga ulanib bo'lmadi. Yangilash faqat asosiy saytda (github.io) ishlaydi." : err.message);
   }
+});
+$("#admin-export").addEventListener("click", () => {
+  $("#admin-export-text").value = JSON.stringify(localBlob());
+  $("#admin-export-box").hidden = false;
+});
+$("#admin-export-copy").addEventListener("click", async () => {
+  const t = $("#admin-export-text");
+  try { await navigator.clipboard.writeText(t.value); status("Kod nusxalandi."); }
+  catch { t.select(); status("Kodni belgilab, nusxalang (Ctrl+C)."); }
 });
 $("#admin-forget").addEventListener("click", () => {
   try { localStorage.removeItem(TOKEN_KEY); } catch {}

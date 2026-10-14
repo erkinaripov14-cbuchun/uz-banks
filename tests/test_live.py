@@ -77,3 +77,20 @@ def test_stricter_plausibility():
     assert not _plausible("K", 50, 50, "UZS", "Ipoteka")
     assert _plausible("K", 0, 0, "UZS", "Avtokredit")
     assert _plausible("O", 7, 7, "USD") and _plausible("O", 20, 22)
+
+
+def test_card_titles_skip_amount_and_slogan_lines():
+    from live import clean_title
+    assert clean_title("Сумма микрозайма") == "" and clean_title("Bazaviy stavka + 5,0%") == ""
+    assert clean_title("Bizda har bir kishi uchun katta tanlov mavjud") == ""
+    assert clean_title("“Mahalla loyihasi”\nkrediti") == "“Mahalla loyihasi” krediti"
+
+
+def test_partial_run_keeps_other_banks():
+    from live import combine
+    prev = {"rows": [{"bank": "A", "name": "a1"}, {"bank": "B", "name": "b1"}, {"bank": "C", "name": "c1"}],
+            "failed": ["D"], "banks_total": 4}
+    results = [{"bank": "A", "credits": [{"x": 1}]}, {"bank": "B", "credits": []}]   # faqat A va B; B o'qilmadi
+    data = combine(prev, results, [{"bank": "A", "name": "a2"}], "now")
+    assert sorted(r["name"] for r in data["rows"]) == ["a2", "b1", "c1"]   # A yangilandi, B va C saqlandi
+    assert data["banks_ok"] == 3 and data["failed"] == ["D"] and data["banks_total"] == 4
