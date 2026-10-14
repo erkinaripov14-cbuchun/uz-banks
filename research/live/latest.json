@@ -1,10 +1,9 @@
 {
  "updated": "2026-10-14 18:15 UTC",
  "banks_ok": 26,
- "banks_total": 32,
+ "banks_total": 30,
  "failed": [
-  "Asakabank",
-  "Turkiston bank"
+  "Asakabank"
  ],
  "last_run": {
   "banks": [

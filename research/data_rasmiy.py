@@ -426,16 +426,6 @@ ROWS = [
     ("Octobank", "K", "Biznes", "Octo-Aylanma", 20, 23, "", "", "UZS",
      "https://octobank.uz/bank-haqida/xabarnomalar/uvedomlenie-ob-izmenenii-usloviy-kreditovaniya-dlya-yuridicheskih-lits", "", "Valyutada 9–13%"),
 
-    # ---------------- Turkiston — turkistonbank.uz ----------------
-    ("Turkiston bank", "O", "So'm omonat", "Muddatli depozitlar (yuridik shaxslar)", 3, 9, "30 kun – 12 oy+", "", "UZS",
-     "https://turkistonbank.uz/uz/corporate/deposits/muddatli-depozitlar/", "2020–2021", "Yuridik shaxslar uchun; sahifalar eski"),
-
-    # ---------------- Hi-Tech Bank — htb.uz ----------------
-    ("Hi-Tech Bank", "O", "So'm omonat", "OMAD", 14, 14, "6–24 oy", "", "UZS",
-     "https://htb.uz/vklady", "", "Sahifa matni buzilgan ('1 4%') — 14% bo'lishi mumkin; foiz har oy"),
-    ("Hi-Tech Bank", "K", "Biznes", "Lizing (mikrolizing)", 30, None, "13 oy – 3 yil", "", "UZS",
-     "https://htb.uz/kreditovanie-biznesa/lizing-mikrolizing-1", "", ""),
-
     # ---------------- Madad Invest Bank — madadinvestbank.uz ----------------
     ("Madad Invest Bank", "K", "Iste'mol", "Green Power", 24.99, 24.99, "60 oygacha", "200 BHM gacha", "UZS",
      "https://madadinvestbank.uz/storage/tariflar/%E2%84%96280_0001.pdf", "", "Skanerlangan tarif hujjati, yili aniq emas"),
@@ -527,8 +517,6 @@ GAPS = {
     "Octobank": "Omonat stavkalari topilmadi",
     "Universal bank": "So'm omonatlari topilmadi",
     "Ipak Yo'li banki": "So'm omonatlari topilmadi",
-    "Turkiston bank": "Faqat yuridik shaxslar uchun eski depozitlar; kreditlar topilmadi",
-    "Hi-Tech Bank": "Jismoniy shaxslar uchun kreditlar topilmadi",
     "Madad Invest Bank": "Omonatlar topilmadi; yagona kredit tarifi sanasiz",
     "Smartbank": "Omonat stavkasi yo'q; sayt 'Openbank' nomida",
     "Xalq banki": "Faqat 1 ta omonat va 2024 yilgi kredit hujjati topildi",

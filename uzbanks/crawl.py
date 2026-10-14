@@ -17,7 +17,7 @@ SKIP_RE = re.compile(
     r"|[?&](q|filter|credit|credit_name|sort|page|currency|term|replenishment|capitalization|open|fr)=",
     re.I)
 # Yuridik shaxslar / tadbirkorlar bo'limlari — mahsulot shu belgiga qarab "yuridik" deb ajratiladi
-BUSINESS_RE = re.compile(r"/(corporate|small-business|legal|juristic|yuridik[-_]shaxslar\w*|business|biznes-uchun)(/|$)", re.I)
+BUSINESS_RE = re.compile(r"/(corporate|corporate-customers|small-business|legal|juristic|yuridik[-_]shaxslar\w*|business|biznes-uchun)(/|$)", re.I)
 
 # Sahifadagi barcha havolalar, ular joylashgan "kartochka" matni bilan birga
 JS_LINKS = r"""
@@ -263,6 +263,8 @@ async def scrape_all(banks, sections, concurrency=4, headless=True, executable_p
                 r = await scrape_bank(browser, bank, sections, **kw)
                 counts = ", ".join(f"{s}: {len(r[s])}" for s in sections)
                 print(f"✓ {bank['name']}: {counts}" + (f", xatolar: {len(r['errors'])}" if r["errors"] else ""))
+                for err in r["errors"][:5]:   # sababini Actions logida ko'rish uchun
+                    print(f"    ! {err[:300]}")
                 return r
 
         results = await asyncio.gather(*(one(b) for b in banks))

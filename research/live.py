@@ -98,7 +98,7 @@ def clean_title(t):
     return "" if not t or BAD_TITLE.search(t) or len(t) > 70 else t
 
 
-BUSINESS_URL = re.compile(r"/(corporate|small-business|legal|juristic|yuridik[-_]shaxslar\w*|business|biznes-uchun)(/|$)", re.I)
+BUSINESS_URL = re.compile(r"/(corporate|corporate-customers|small-business|legal|juristic|yuridik[-_]shaxslar\w*|business|biznes-uchun)(/|$)", re.I)
 
 
 def _segment(p):
