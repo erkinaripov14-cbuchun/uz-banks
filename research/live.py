@@ -173,6 +173,27 @@ def convert(results):
     return rows
 
 
+def combine(previous, results, rows, now):
+    """Yangi natijani avvalgisi bilan birlashtirish: faqat shu safar muvaffaqiyatli o'qilgan banklarning
+    qatorlari almashadi. Ayrim banklar uchun yangilash (--only) yoki o'qilmay qolgan bank boshqa banklarning
+    ma'lumotini o'chirmaydi."""
+    ok = {r["bank"] for r in results if any(r.get(s) for s in ("credits", "deposits"))}
+    kept = [r for r in (previous or {}).get("rows", []) if r["bank"] not in ok]
+    all_rows = rows + kept
+    banks_with_data = {r["bank"] for r in all_rows}
+    attempted = {r["bank"] for r in results}
+    prev_failed = set((previous or {}).get("failed", []))
+    failed = sorted((attempted - ok - banks_with_data) | (prev_failed - ok - banks_with_data - attempted))
+    return {
+        "updated": now,
+        "banks_ok": len(banks_with_data), "banks_total": max(len(attempted | banks_with_data | prev_failed),
+                                                             (previous or {}).get("banks_total", 0)),
+        "failed": failed,
+        "last_run": {"banks": sorted(attempted), "ok": len(ok)},
+        "rows": all_rows,
+    }
+
+
 def main():
     if len(sys.argv) != 2:
         sys.exit(__doc__)
@@ -183,14 +204,11 @@ def main():
     if not rows:
         print("Hech narsa topilmadi — research/live/latest.json o'zgartirilmadi.")
         return
+    previous = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else None
+    data = combine(previous, results, rows, datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"))
     OUT.parent.mkdir(exist_ok=True)
-    OUT.write_text(json.dumps({
-        "updated": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "banks_ok": len(ok), "banks_total": len(results),
-        "failed": sorted(r["bank"] for r in results if r["bank"] not in ok),
-        "rows": rows,
-    }, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"Yozildi: {OUT}")
+    OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"Yozildi: {OUT} — jami {len(data['rows'])} ta mahsulot, {data['banks_ok']} bank")
 
 
 if __name__ == "__main__":

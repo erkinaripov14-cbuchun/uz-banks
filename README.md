@@ -118,6 +118,7 @@ va holatini ko'rsatib turadi. Buning uchun har bir qurilmada bir marta GitHub to
 - Bu faqat asosiy saytda (github.io) ishlaydi.
 
 Jarayonni GitHub'ning o'zidan ham ishga tushirish mumkin: Actions → **Run workflow** (ixtiyoriy ravishda faqat ayrim banklar, masalan `hamkorbank,nbu`).
+Ayrim banklar uchun yangilaganda faqat o'sha banklarning ma'lumoti almashadi, qolganlari saqlanib qoladi.
 Jarayon har dushanba 08:17 (Toshkent) da o'zi ham ishlaydi.
 
 Jarayon nima qiladi:
