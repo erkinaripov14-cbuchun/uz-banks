@@ -3,6 +3,8 @@
     python research/build.py
 """
 import csv
+import json
+from collections import Counter
 import sys
 from pathlib import Path
 from urllib.parse import urlparse
@@ -118,6 +120,39 @@ def write_markdown(path):
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+SITE_DIRS = [Path(__file__).parent.parent / "site", Path(__file__).parent.parent / "docs"]
+
+
+def write_site():
+    """site/index.html — Artifact uchun (skeletsiz); docs/index.html — GitHub Pages uchun to'liq hujjat."""
+    sites = {}
+    for b in {r[0] for r in ROWS}:
+        hosts = Counter(".".join((urlparse(r[9]).hostname or "").split(".")[-2:]) for r in ROWS if r[0] == b)
+        sites[b] = hosts.most_common(1)[0][0]
+    data = {
+        "generated": "2026-10-14",
+        "rows": [{"bank": r[0], "type": r[1], "cat": r[2], "name": r[3], "lo": r[4], "hi": r[5], "term": r[6],
+                  "amount": r[7], "cur": r[8], "url": r[9], "date": r[10], "note": r[11],
+                  "stale": xulosalar.is_stale(r)} for r in ROWS],
+        "points": xulosalar.KEY_POINTS,
+        "rankings": xulosalar.rankings(),
+        "notes": xulosalar.NOTES,
+        "gaps": GAPS,
+        "sites": sites,
+    }
+    blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
+    page = (Path(__file__).parent / "site_template.html").read_text(encoding="utf-8").replace("/*DATA*/null", blob)
+    SITE_DIRS[0].mkdir(exist_ok=True)
+    (SITE_DIRS[0] / "index.html").write_text(page, encoding="utf-8")
+    SITE_DIRS[1].mkdir(exist_ok=True)
+    full = ('<!doctype html>\n<html lang="uz">\n<head>\n<meta charset="utf-8">\n'
+            '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
+            '<style>[hidden]{display:none!important} body{margin:0} img{max-width:100%}</style>\n'
+            + page.replace("<header class=\"top\">", "</head>\n<body>\n<header class=\"top\">", 1)
+            + "\n</body>\n</html>\n")
+    (SITE_DIRS[1] / "index.html").write_text(full, encoding="utf-8")
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     wb = Workbook()
@@ -154,6 +189,7 @@ def main():
     ]], [140])
     wb.save(OUT / "banklar_kredit_omonat_rasmiy.xlsx")
     write_markdown(OUT / "XULOSALAR.md")
+    write_site()
     print(f"{OUT}/banklar_kredit_omonat_rasmiy.xlsx: {len(summary)} bank, "
           f"{len(rows('K'))} kredit, {len(rows('O'))} omonat")
 
