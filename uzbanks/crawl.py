@@ -1,12 +1,23 @@
 """Playwright bilan bank saytini aylanib chiqib, kredit va omonat sahifalarini yig'ish."""
 import asyncio
 import re
+import time
+from collections import Counter
 from datetime import datetime, timezone
 from urllib.parse import urljoin, urlparse, urlunparse
 
 from .parse import classify_link, summarize
 
-LANGS = {"uz", "ru", "en", "oz", "uzc", "uz-cyrl", "uz-latn", "kr", "cy"}
+LANGS = {"uz", "ru", "en", "oz", "uzc", "uz-cyrl", "uz-latn", "kr", "cy", "qr", "kk", "kaa"}
+
+# Mahsulot bo'lmagan sahifalar: qidiruv, ariza, kalkulyator, savol-javob, kabinet, filtrlar
+SKIP_RE = re.compile(
+    r"/(search|request|ariza|calculators?|kalkulyator\w*|question_answer|faq|blanks?|login|auth|cabinet|"
+    r"feedback|contacts?|vacanc\w*|news|press|yangiliklar)(/|$)"
+    r"|[?&](q|filter|credit|credit_name|sort|page|currency|term|replenishment|capitalization|open|fr)=",
+    re.I)
+# Yuridik shaxslar bo'limlari (jismoniy shaxslar mahsulotlari kerak)
+BUSINESS_RE = re.compile(r"/(corporate|small-business|legal|juristic|yuridik[-_]shaxslar\w*|business|biznes-uchun)(/|$)", re.I)
 
 # Sahifadagi barcha havolalar, ular joylashgan "kartochka" matni bilan birga
 JS_LINKS = r"""
@@ -43,8 +54,15 @@ JS_TABLES = r"""
 ).filter(t => t.length > 1)
 """
 
+# Ko'rinadigan birinchi sarlavha (modal/vidjetlardagisi emas) va hujjat nomi
 JS_TITLE = r"""
-() => ((document.querySelector('h1') || {}).innerText || document.title || '').trim()
+() => {
+  const vis = (e) => e.offsetParent !== null && !e.closest('dialog,[role=dialog],[class*=modal],[class*=popup],[class*=widget],footer');
+  const h = Array.from(document.querySelectorAll('main h1, h1, main h2')).find((e) => vis(e) && (e.innerText || '').trim().length > 2);
+  const og = (document.querySelector('meta[property="og:title"]') || {}).content || '';
+  const doc = (og || document.title || '').split(/\s+[|\u2013\u2014-]\s+/)[0];
+  return {h1: ((h && h.innerText) || '').trim(), doc: doc.trim()};
+}
 """
 
 
@@ -56,7 +74,7 @@ def _host(url):
 def normalize(url):
     p = urlparse(url)
     path = re.sub(r"/+$", "", p.path) or "/"
-    return urlunparse((p.scheme, (p.hostname or "").removeprefix("www."), path, "", p.query, ""))
+    return urlunparse(("https", (p.hostname or "").removeprefix("www."), path, "", p.query, ""))
 
 
 def lang_of(url):
@@ -65,31 +83,35 @@ def lang_of(url):
 
 
 def same_site(url, site):
-    a, b = _host(url), _host(site)
-    return a == b or a.endswith("." + b)
+    # Faqat bankning asosiy domeni: cabinet., online. kabi subdomenlar emas
+    return _host(url) == _host(site)
 
 
 async def _goto(page, url, timeout):
     await page.goto(url, wait_until="domcontentloaded", timeout=timeout)
     try:
-        await page.wait_for_load_state("networkidle", timeout=min(timeout, 15000))
+        await page.wait_for_load_state("networkidle", timeout=min(timeout, 6000))
     except Exception:
         pass
     # lazy-load qilinadigan kartochkalar uchun pastgacha aylantirish
-    for _ in range(4):
+    for _ in range(2):
         await page.mouse.wheel(0, 4000)
-        await page.wait_for_timeout(400)
+        await page.wait_for_timeout(300)
 
 
 def _wanted(url, site, lang):
-    if not same_site(url, site) or not url.startswith("http"):
+    if not same_site(url, site) or not url.startswith("http") or SKIP_RE.search(url) or BUSINESS_RE.search(url):
         return False
     lg = lang_of(url)
-    return lg is None or lang is None or lg == lang or (lang == "uz" and lg in {"uz-latn", "oz"})
+    return lg is None or lang is None or lg == lang or (lang == "uz" and lg == "uz-latn")
 
 
-async def scrape_bank(browser, bank, sections, max_pages=40, lang="uz", timeout=45000, log=print):
-    """Bitta bank: {'bank':..., 'credits': [...], 'deposits': [...], 'errors': [...]}"""
+async def scrape_bank(browser, bank, sections, max_pages=40, lang="uz", timeout=45000, budget=300, log=print):
+    """Bitta bank: {'bank':..., 'credits': [...], 'deposits': [...], 'errors': [...]}
+
+    budget — bitta bankka ajratilgan vaqt (soniya); tugasa, yig'ilgani bilan to'xtaydi.
+    """
+    started = time.monotonic()
     site = bank["site"]
     result = {"bank_id": bank["id"], "bank": bank["name"], "site": site,
               "scraped_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -137,6 +159,9 @@ async def scrape_bank(browser, bank, sections, max_pages=40, lang="uz", timeout=
         for sec in sections:
             seen, todo, n = set(), list(queues[sec]), 0
             while todo and n < max_pages:
+                if time.monotonic() - started > budget:
+                    result["errors"].append(f"Vaqt limiti ({budget} s) tugadi — {sec} qisman yig'ildi")
+                    break
                 url = todo.pop(0)
                 key = normalize(url)
                 if key in seen:
@@ -169,19 +194,29 @@ async def scrape_bank(browser, bank, sections, max_pages=40, lang="uz", timeout=
 
                 full = summarize(text + "\n" + "\n".join(" | ".join(r) for t in tables for r in t))
                 result[sec].append({
-                    "url": page.url, "title": title,
+                    "url": page.url, "title": title["h1"] or title["doc"], "doc_title": title["doc"],
                     "kind": "listing" if len(cards) >= 2 else "product",
                     **full,
                     "cards": _dedupe_cards(cards),
                     "tables": tables,
                     "text": text[:20000],
                 })
-                log(f"  [{bank['id']}] {sec}: {title[:60]!r} {page.url}")
+                log(f"  [{bank['id']}] {sec}: {(title['h1'] or title['doc'])[:60]!r} {page.url}")
     except Exception as e:
         result["errors"].append(f"{e.__class__.__name__}: {e}")
     finally:
         await ctx.close()
+    _fix_repeated_titles(result, sections)
     return result
+
+
+def _fix_repeated_titles(result, sections):
+    """Bir xil sarlavha ko'p sahifada takrorlansa (sayt vidjeti), u mahsulot nomi emas — hujjat nomini olamiz."""
+    pages = [p for s in sections for p in result[s]]
+    counts = Counter(p["title"] for p in pages)
+    for p in pages:
+        if counts[p["title"]] >= 3 and p.get("doc_title"):
+            p["title"] = p["doc_title"]
 
 
 def _short(s):
