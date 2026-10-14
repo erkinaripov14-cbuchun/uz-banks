@@ -47,3 +47,11 @@ def test_scrape_local_site(server, tmp_path):
     write_json([r], tmp_path, sections)
     write_excel([r], tmp_path / "report.xlsx", sections)
     assert (tmp_path / "report.xlsx").stat().st_size > 0
+
+
+def test_seed_pages_used_when_homepage_fails(server):
+    bank = {"id": "seed", "name": "Seed bank", "site": "http://127.0.0.1:9",  # ulanib bo'lmaydigan port
+            "credits": [server + "/uz/kreditlar/avtokredit/"]}
+    [r] = asyncio.run(scrape_all([bank], ["credits"], executable_path=os.environ.get("CHROMIUM_PATH"), timeout=8000))
+    assert [p["title"] for p in r["credits"]] == ["Avtokredit"]
+    assert r["errors"]  # bosh sahifa xatosi yozib qo'yilgan
