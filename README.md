@@ -66,3 +66,14 @@ omonat, depozit, кредит, вклад …). Agar biror bankda topa olmasa, U
 pip install pytest
 pytest -q        # lokal test-sayt ustida, internet kerak emas
 ```
+
+## Rasmiy saytlardan yig'ilgan ma'lumot (2026-10-14)
+
+`research/rasmiy-2026-10-14/banklar_kredit_omonat_rasmiy.xlsx` (va `kreditlar.csv`, `omonatlar.csv`) —
+32 bankning kredit va omonat mahsulotlari, **faqat bankning o'z saytidan** (hamkorbank.uz, nbu.uz, ...).
+Agregator va yangilik saytlari ishlatilmagan; istisno — InfinBank (rasmiy sayti infinbank.com).
+Har bir qatorda sahifa havolasi bor. Ma'lumot `research/data_rasmiy.py` da;
+Excel'ni qayta yasash: `python research/build.py`.
+
+Bu skraper natijasi emas: saytlar qidiruv tizimi orqali o'qilgan, ko'p sahifalar sanasiz,
+shuning uchun qaror qabul qilishdan oldin bankning o'zidan tekshiring.
