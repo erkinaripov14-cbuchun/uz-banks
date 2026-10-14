@@ -67,13 +67,13 @@ pip install pytest
 pytest -q        # lokal test-sayt ustida, internet kerak emas
 ```
 
-## Qo'lda yig'ilgan ma'lumot (2026-10-14)
+## Rasmiy saytlardan yig'ilgan ma'lumot (2026-10-14)
 
-`research/2026-10-14/banklar_kredit_omonat.xlsx` (va `kreditlar.csv`, `omonatlar.csv`) —
-32 bankning kredit va omonat mahsulotlari, internet qidiruvi orqali yig'ilgan
-(bank saytlari, bank.uz, depozit.uz, bankxizmatlari.uz, spot.uz, pravilno.uz va boshqalar).
-Har bir qatorda manba havolasi, manba turi va sanasi bor. Ma'lumot `research/data_2026_10_14.py`
-da saqlanadi; Excel'ni qayta yasash: `python research/build.py`.
+`research/rasmiy-2026-10-14/banklar_kredit_omonat_rasmiy.xlsx` (va `kreditlar.csv`, `omonatlar.csv`) —
+32 bankning kredit va omonat mahsulotlari, **faqat bankning o'z saytidan** (hamkorbank.uz, nbu.uz, ...).
+Agregator va yangilik saytlari ishlatilmagan; istisno — InfinBank (rasmiy sayti infinbank.com).
+Har bir qatorda sahifa havolasi bor. Ma'lumot `research/data_rasmiy.py` da;
+Excel'ni qayta yasash: `python research/build.py`.
 
-Bu skraper natijasi emas: ko'p manbalar sanasiz yoki bir-biriga zid, shuning uchun
-qaror qabul qilishdan oldin bankning o'zidan tekshiring.
+Bu skraper natijasi emas: saytlar qidiruv tizimi orqali o'qilgan, ko'p sahifalar sanasiz,
+shuning uchun qaror qabul qilishdan oldin bankning o'zidan tekshiring.
