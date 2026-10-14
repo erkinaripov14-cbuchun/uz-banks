@@ -142,8 +142,8 @@ async def scrape_bank(browser, bank, sections, max_pages=40, lang="uz", timeout=
                 ok = True
             except Exception as e:
                 result["errors"].append(f"{url}: {e.__class__.__name__}: {str(e).splitlines()[0]}")
-        if not ok:
-            return result
+        if not ok and not any(queues.values()):
+            return result  # bosh sahifa ochilmadi va qo'lda berilgan sahifa ham yo'q
 
         found = {s: [] for s in sections}
         for ln in links:
