@@ -89,6 +89,7 @@ def tables():
 NOTES = [
     "Reytinglarga 2025 yildan oldingi va arxivdagi sahifalar kiritilmagan (masalan, Kapitalbank «Maksimal kapital» 25% — 2023).",
     "Ma'lumot faqat bank saytlaridan, qidiruv tizimi orqali olingan; ko'p sahifalarda sana yo'q.",
+    "Istisno: Asakabank sayti mahsulotlarni faqat O'zbekistondan ko'rsatadi, shuning uchun uning foizlari bank.uz va depozit.uz agregatorlaridan olingan (har bir qatorda belgilangan).",
     "Kredit stavkasi mijozga qarab individual belgilanadi — jadvaldagi raqam boshlang'ich stavka.",
     "Muhim qarordan oldin stavkani bankning o'zidan tekshiring.",
 ]

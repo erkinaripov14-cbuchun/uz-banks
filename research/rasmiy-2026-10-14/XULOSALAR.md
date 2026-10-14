@@ -1,6 +1,6 @@
 # O'zbekiston banklari: kreditlar va omonatlar — asosiy xulosalar
 
-Manba: faqat bank saytlari, 2026-10-14. 213 ta mahsulot, 30 ta bank. To'liq jadval: [banklar_kredit_omonat_rasmiy.xlsx](banklar_kredit_omonat_rasmiy.xlsx).
+Manba: faqat bank saytlari, 2026-10-14. 222 ta mahsulot, 30 ta bank. To'liq jadval: [banklar_kredit_omonat_rasmiy.xlsx](banklar_kredit_omonat_rasmiy.xlsx).
 
 ## Asosiy xulosalar
 
@@ -52,18 +52,18 @@ Manba: faqat bank saytlari, 2026-10-14. 213 ta mahsulot, 30 ta bank. To'liq jadv
 | Ipoteka-bank | [Ipoteka dasturlari (birlamchi, ikkilamchi, tijorat)](https://www.ipotekabank.uz/mortgage/) | 17 – 24.99 | 20 yilgacha |  |
 | Ipoteka-bank | [Oson (yangi uy, subsidiya bilan)](https://www.ipotekabank.uz/mortgage/oson/) | 17.5 | 20 yilgacha | 420 mln gacha |
 | Agrobank | [Zamonaviy uy](https://agrobank.uz/uz/person/loans/mortgage) | 19.99 | 20 yil |  |
-| Turonbank | [Ipoteka krediti](https://turonbank.uz/uz/private/crediting/ipoteka-krediti/) | 20 | 20 yilgacha |  |
+| Asakabank | [Ipoteka Oila](https://bank.uz/uz/ipoteka/tags/asaka-bank) | 20 | 20 yil | 800 mln gacha |
 
 ## Eng arzon avtokredit (0% aksiyalarsiz)
 
 | Bank | Mahsulot | Foiz, % | Muddat | Summa |
 |---|---|---|---|---|
 | Orient Finans Bank | [BYD Special Plus](https://ofb.uz/kreditlar/byd-special-plus) | 12.5 | 36 / 60 oy | 800 mln gacha |
+| Asakabank | [Avtokredit 2.6](https://bank.uz/uz/credit/avtokredit-2-1) | 18.9 – 24.9 | 1 – 5 yil | 1 mlrd gacha |
 | Orient Finans Bank | [Byudjet tashkilotlari xodimlari uchun](https://ofb.uz/kreditlar/byudjet-tashkilotlari-xodimlari-uchun-avtokredit) | 20.9 | 60 oygacha | 800 mln gacha |
 | Asia Alliance Bank | [Birlamchi (yangi avtomobil)](https://aab.uz/uz/private/crediting/avtokredit-gm/) | 21 – 26 | 60 oygacha |  |
 | Ipak Yo'li banki | [Avtokreditni qayta moliyalashtirish](https://ipakyulibank.uz/physical/kreditlar/qayta-moliyalashtirish/avtokreditni-qayta-moliyalashtirish) | 21 – 24.9 | 12 / 36 / 60 oy |  |
 | Octobank | [Avtokredit 2.0](https://octobank.uz/jismoniy-shaxslarga/avtokredit-20) | 21 – 24 | 60 oygacha |  |
-| Trastbank | [Avtokredit](https://trustbank.uz/uz/private/) | 21 – 24 | 48–60 oy |  |
 
 ## Eng arzon mikroqarz (0% aksiyalarsiz)
 
@@ -76,7 +76,7 @@ Manba: faqat bank saytlari, 2026-10-14. 213 ta mahsulot, 30 ta bank. To'liq jadv
 | Aloqabank | [Onlayn mikroqarz](https://aloqabank.uz/uz/private/crediting/onlayn-mikroqarz/) | 23 – 28.9 |  | 100 mln gacha |
 | Hamkorbank | [Onlayn kredit](https://hamkorbank.uz/uz/physical/credits/online-credit/) | 23 – 38 | 3 yilgacha | 100 mln gacha |
 | Hamkorbank | [Mikrokredit Plus (avto garovi)](https://hamkorbank.uz/uz/physical/credits/microcredit-plus/) | 23.99 – 25.99 | 60 oygacha | 300 mln gacha |
-| Asakabank | [Mikroqarz](https://old.asakabank.uz/uz/kreditlar/mikroqarz) | 24 – 26 | 12 / 24 oy | 50 mln gacha |
+| Ipoteka-bank | [O'zini o'zi band qilganlar uchun mikrokredit](https://www.ipotekabank.uz/crediting/microloan-self-employed/) | 24 | 3–36 oy | 1–100 mln |
 
 ## Eng qimmat mikroqarz
 
@@ -97,7 +97,7 @@ Manba: faqat bank saytlari, 2026-10-14. 213 ta mahsulot, 30 ta bank. To'liq jadv
 | Biznesni rivojlantirish banki | [Iste'mol krediti](https://brb.uz/jismoniy-shaxslarga/kreditlar/potrebitelskiy-kredit) | 23 – 27 | 5 yilgacha | 200 mln gacha |
 | Madad Invest Bank | [Green Power](https://madadinvestbank.uz/storage/tariflar/%E2%84%96280_0001.pdf) | 24.99 | 60 oygacha | 200 BHM gacha |
 | Smartbank | [Kredit](https://smartbank.uz/useful/faq) | 24.99 – 25.99 |  |  |
-| Hamkorbank | [Iste'mol krediti](https://hamkorbank.uz/uz/physical/credits/) | 26 | 36 oygacha | 200 mln gacha |
+| Asakabank | [Sayohatchi](https://bank.uz/uz/credit/puteshestvennik) | 25 – 27 | 6 oy – 1 yil | 100 mln gacha |
 
 ## Eng arzon biznes krediti
 
@@ -114,6 +114,7 @@ Manba: faqat bank saytlari, 2026-10-14. 213 ta mahsulot, 30 ta bank. To'liq jadv
 
 - Reytinglarga 2025 yildan oldingi va arxivdagi sahifalar kiritilmagan (masalan, Kapitalbank «Maksimal kapital» 25% — 2023).
 - Ma'lumot faqat bank saytlaridan, qidiruv tizimi orqali olingan; ko'p sahifalarda sana yo'q.
+- Istisno: Asakabank sayti mahsulotlarni faqat O'zbekistondan ko'rsatadi, shuning uchun uning foizlari bank.uz va depozit.uz agregatorlaridan olingan (har bir qatorda belgilangan).
 - Kredit stavkasi mijozga qarab individual belgilanadi — jadvaldagi raqam boshlang'ich stavka.
 - Muhim qarordan oldin stavkani bankning o'zidan tekshiring.
 
