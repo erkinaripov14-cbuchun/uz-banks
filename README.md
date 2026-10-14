@@ -101,6 +101,22 @@ ochish mumkin. GitHub Pages'da `main` branch'ining `/docs` papkasidan joylangan:
 https://erkinaripov14-cbuchun.github.io/uz-banks/ — `main` ga push qilingandan keyin avtomatik yangilanadi.
 `site/index.html` — shu sahifaning Claude Artifact uchun versiyasi.
 
+## Avtomatik yangilash
+
+Saytdagi **"Ma'lumotni yangilash"** tugmasi GitHub Actions'dagi
+[Ma'lumotni yangilash](.github/workflows/update.yml) jarayonini ochadi. U yerda **Run workflow** ni bosing
+(repoga yozish huquqi kerak; ixtiyoriy ravishda faqat ayrim banklarni yozish mumkin, masalan `hamkorbank,nbu`).
+Jarayon har dushanba 08:17 (Toshkent) da o'zi ham ishlaydi.
+
+Jarayon nima qiladi:
+1. `scrape.py` bilan bank saytlarini o'qiydi;
+2. `research/live.py` natijani `research/live/latest.json` ga yozadi;
+3. `research/build.py` saytni qayta yasaydi, o'zgarishni `main` ga commit qiladi va Pages'ni qayta joylaydi.
+
+Skraper topgan mahsulotlar saytning **Avtomatik** bo'limida chiqadi. Ular sahifa matnidan avtomatik
+ajratilgani uchun qo'lda tekshirilgan jadvaldan aniqligi pastroq. Skraperning to'liq natijasi (Excel, JSON)
+jarayon sahifasida `scraper-output` artifakti sifatida yuklab olinadi.
+
 ## Natijalarni qayta yasash
 
 Ma'lumot `research/data_rasmiy.py` da, xulosalar matni `research/xulosalar.py` da.

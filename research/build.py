@@ -120,6 +120,7 @@ def write_markdown(path):
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+LIVE = Path(__file__).parent / "live" / "latest.json"
 SITE_DIRS = [Path(__file__).parent.parent / "site", Path(__file__).parent.parent / "docs"]
 
 
@@ -139,6 +140,8 @@ def write_site():
         "notes": xulosalar.NOTES,
         "gaps": GAPS,
         "sites": sites,
+        "repo": "erkinaripov14-cbuchun/uz-banks",
+        "live": json.loads(LIVE.read_text(encoding="utf-8")) if LIVE.exists() else None,
     }
     blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     page = (Path(__file__).parent / "site_template.html").read_text(encoding="utf-8").replace("/*DATA*/null", blob)
