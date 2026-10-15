@@ -85,7 +85,7 @@ def _rates(p, kind):
 # Mahsulot nomi emas: ro'yxat, xizmat va xato sahifalari
 GENERIC_TITLES = re.compile(
     r"^(kredit(lar)?|kreditlash|kredit mahsulotlari|omonat(lar)?|depozit(lar)?|amanatlar|jismoniy shaxslar\w*|"
-    r"kalkulyator\w*|savol[- ]javob\w*|talabnoma\w*|ariza\w*|saytdan qidirish|qidiruv|404|"
+    r"kalkulyator\w*|savol[- ]javob\w*|savollarga javoblar|ko.p beriladigan savollar\w*|faq|вопросы и ответы|частые вопросы|talabnoma\w*|ariza\w*|saytdan qidirish|qidiruv|404|"
     r"xizmat sifatini baholang|доступ запрещён|bosh sahifa|asosiy|varaqasi\*?|.{0,3}|"
     r"avtokreditlar|ipoteka kreditlari|mikroqarzlar|mikrokreditlar|iste.mol kreditlari|"
     r"omonatlar va depozitlar|barchasi omonatlar haqida|xorijiy valyutada|milliy valyutada|вклады|кредиты)$", re.I)
