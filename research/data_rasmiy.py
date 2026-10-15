@@ -508,8 +508,13 @@ ROWS = [
      "https://tengebank.uz/en/credit/avtokredit-drive", "", "Stavka badal va muddatga qarab"),
 
     # ---------------- Openbank (sobiq Smartbank, 2025-yildan) — openbank.uz ----------------
-    ("Openbank", "K", "Iste'mol", "Kredit", 24.99, 25.99, "", "", "UZS",
-     "https://openbank.uz/faq", "", "Rasmiy daromadli 24.99%, o'zini band qilganlar 25.99%"),
+    ("Openbank", "K", "Ipoteka", "Yangi uy", 24.99, 25.99, "10 yilgacha", "1 mlrd gacha", "UZS",
+     "https://openbank.uz/mortgage", "", "Rasmiy daromadli 24.99%, o'zini band qilganlar 25.99% (FAQ); boshlang'ich to'lov 20% dan; onlayn, jarimasiz"),
+    ("Openbank", "K", "Iste'mol", "Open muddatli to'lov (karta)", 0, 29.5, "3 – 12 oy", "100 mln gacha", "UZS",
+     "https://bankxizmatlari.uz/uz/loans/consumer-loan/265225/", "",
+     "Har bir xarid 3–12 oyga bo'linadi, boshlang'ich to'lovsiz; manba: bankxizmatlari.uz (Markaziy bank portali)"),
+    ("Openbank", "K", "Biznes", "Biznes uchun muddatli to'lov", None, None, "24 oygacha", "5 mlrd gacha", "UZS",
+     "https://openbank.uz/business/installment", "", "Biznes marketpleysdan tovar xaridi; stavka saytda ko'rsatilmagan; jarima va yashirin to'lov yo'q"),
     ("Openbank", "O", "So'm omonat", "Omonat", None, None, "3 / 6 / 9 / 12 oy", "", "UZS",
      "https://openbank.uz/faq", "", "Stavka ko'rsatilmagan"),
 
