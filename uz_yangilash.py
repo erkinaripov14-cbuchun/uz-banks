@@ -49,7 +49,7 @@ def main():
             print(json.loads(r.read() or b"{}"))
         return
 
-    run(py, "scrape.py", "--only", a.only, "--out", str(OUT), "--max-pages", "40", "--concurrency", "3",
+    run(py, "scrape.py", "--only", a.only, "--out", str(OUT), "--sections", "credits", "--max-pages", "40", "--concurrency", "3",
         "--timeout", "45", "--budget", "420")
     results = OUT / "all.json"
 

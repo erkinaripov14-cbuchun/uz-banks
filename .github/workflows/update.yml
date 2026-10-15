@@ -41,7 +41,7 @@ jobs:
         env:
           ONLY: ${{ inputs.only }}
         run: |
-          ARGS=(--out output/run --max-pages 40 --concurrency 6 --timeout 45 --budget 420)
+          ARGS=(--out output/run --sections credits --max-pages 40 --concurrency 6 --timeout 45 --budget 420)
           ONLY=$(printf '%s' "$ONLY" | tr 'A-Z' 'a-z' | tr -d ' ')   # "Hamkorbank, NBU" ham qabul qilinadi
           if [ -n "$ONLY" ]; then
             [[ "$ONLY" =~ ^[a-z0-9_,]+$ ]] || { echo "Noto'g'ri bank ro'yxati: $ONLY (faqat lotin harflari, raqam va vergul)"; exit 1; }

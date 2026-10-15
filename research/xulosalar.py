@@ -3,6 +3,10 @@ import re
 
 from data_rasmiy import ROWS
 
+# Sayt va Excel'da omonatlar ko'rsatiladimi. False — faqat kreditlar (omonat ma'lumoti data_rasmiy.py da saqlanadi,
+# True qilinsa qaytadi)
+SHOW_DEPOSITS = False
+
 KEY_POINTS = [
     ("So'm omonatlar",
      "Ko'pchilik banklarda yillik 16–22%. Eng yuqorisi: Garant bank «Red Line» — 25% (13 oy), "
@@ -41,6 +45,23 @@ KEY_POINTS = [
      "Garovsiz onlayn mikroqarz eng qimmat kredit turi."),
 ]
 
+# Faqat kreditlar ko'rsatilganda bank kartochkasidagi izohlar: omonatga oid qismi olib tashlanadi (None — izoh yo'q)
+CREDIT_GAPS = {"Uzum Bank": None, "Octobank": None, "Universal bank": None, "Ipak Yo'li banki": None,
+               "Smartbank": "Sayt 'Openbank' nomida", "Madad Invest Bank": "Yagona kredit tarifi sanasiz",
+               "Xalq banki": "Kredit hujjati 2024 yilgi"}
+
+
+def gaps(all_gaps):
+    if SHOW_DEPOSITS:
+        return all_gaps
+    out = {b: CREDIT_GAPS.get(b, t) for b, t in all_gaps.items()}
+    return {b: t for b, t in out.items() if t}
+
+
+DEPOSIT_TOPICS = {"So'm omonatlar", "Qanday ochish foydaliroq", "Muddatidan oldin yechish", "Dollar omonatlar"}
+if not SHOW_DEPOSITS:
+    KEY_POINTS = [p for p in KEY_POINTS if p[0] not in DEPOSIT_TOPICS]
+
 
 def _hi(r):
     return r[5] if r[5] is not None else r[4]
@@ -74,6 +95,10 @@ def cheapest(category, n, reverse=False):
 
 def tables():
     head = ["Bank", "Mahsulot", "Foiz, %", "Muddat", "Summa", "Havola"]
+    return [t for t in _tables(head) if SHOW_DEPOSITS or "omonat" not in t[0]]
+
+
+def _tables(head):
     return [
         ("Eng yuqori so'm omonatlar", head, top_deposits(True, 10)),
         ("Eng yuqori valyuta omonatlar", head, top_deposits(False, 8)),
@@ -113,7 +138,7 @@ def rankings():
             ("Eng qimmat mikroqarz", "K", cre("Mikroqarz", True)[:6]),
             ("Eng arzon iste'mol krediti", "K", cre("Iste'mol")[:5]),
             ("Eng arzon biznes krediti", "K", cre("Biznes")[:6])]
-    return [{"title": t, "kind": k, "rows": [_as_dict(r) for r in rs]} for t, k, rs in spec]
+    return [{"title": t, "kind": k, "rows": [_as_dict(r) for r in rs]} for t, k, rs in spec if SHOW_DEPOSITS or k == "K"]
 
 
 def is_stale(r):

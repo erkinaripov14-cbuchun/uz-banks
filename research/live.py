@@ -10,6 +10,7 @@ import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 OUT = Path(__file__).parent / "live" / "latest.json"
 
@@ -57,6 +58,8 @@ NOT_RATE_WORDS = re.compile(
     r"keshbek|cashback|кешбэк|komissiya|комисси|chegirma|скидк|soliq|налог|qarz yuki|долговой нагруз|"
     r"ulush|доля|qoplash|покрыти|garov|залог|sug.urta|страхов|inflyatsiya|инфляц", re.I)
 FX_TITLE = re.compile(r"dollar|usd|\$|yevro|evro|euro|eur|€|valyuta|валют|доллар|евро", re.I)
+# Kredit bo'limida topilgan, lekin aslida omonat bo'lgan sahifa (masalan, "ipoteka omonati" yoki /omonatlar/ manzilida)
+DEPOSIT_TITLE = re.compile(r"omonat|depozit|вклад|депозит|deposit|vklad", re.I)
 NOT_PRODUCT = re.compile(r"yacheyka|ячейк|seyf|сейф|ijara qutisi|arxiv|архив|archive", re.I)
 
 
@@ -143,6 +146,8 @@ def convert(results):
                     continue
                 title = clean_title(p.get("title"))
                 if not title or GENERIC_TITLES.match(title) or NOT_PRODUCT.search(title):
+                    continue
+                if kind == "K" and (DEPOSIT_TITLE.search(title) or DEPOSIT_TITLE.search(urlparse(p["url"]).path)):
                     continue
                 rng = _rates(p, kind) if p.get("rates") is not None else (p["rate_min"], p["rate_max"])
                 if not rng:

@@ -5,6 +5,10 @@ faqat bankning o'z saytidan.
 
 **Sayt: https://erkinaripov14-cbuchun.github.io/uz-banks/**
 
+> **Hozir sayt va Excel faqat kreditlarni ko'rsatadi.** Omonat ma'lumoti `research/data_rasmiy.py` da saqlanadi;
+> qaytarish uchun `research/xulosalar.py` da `SHOW_DEPOSITS = True` qiling va `--sections credits` ni
+> `.github/workflows/update.yml` hamda `uz_yangilash.py` dan olib tashlang.
+
 ## Natijalar
 
 | Fayl | Nima bor |

@@ -1,47 +1,15 @@
-# O'zbekiston banklari: kreditlar va omonatlar — asosiy xulosalar
+# O'zbekiston banklari: kreditlar — asosiy xulosalar
 
-Manba: faqat bank saytlari, 2026-10-14. 222 ta mahsulot, 30 ta bank. To'liq jadval: [banklar_kredit_omonat_rasmiy.xlsx](banklar_kredit_omonat_rasmiy.xlsx).
+Manba: bank saytlari. 119 ta qo'lda tekshirilgan mahsulot, 30 ta bank. To'liq jadval: [banklar_kredit_omonat_rasmiy.xlsx](banklar_kredit_omonat_rasmiy.xlsx).
 
 ## Asosiy xulosalar
 
-- **So'm omonatlar.** Ko'pchilik banklarda yillik 16–22%. Eng yuqorisi: Garant bank «Red Line» — 25% (13 oy), Anorbank «SMART 3.0» va Asia Alliance Bank «Strategiya online» — 23% (24 oy), Trastbank «Onlayn-Trast Imkon» (24 oy) va Tenge Bank «Qulay onlayn» (13 oy) — 22%.
-- **Qanday ochish foydaliroq.** Ilova orqali ochilgan omonat odatda filialdagidan 0.5–1% yuqori (NBU, Ipoteka-bank, Mikrokreditbank, Asakabank). Foiz muddat oxirida to'lansa, oyma-oy to'lovdan yuqori bo'ladi (Ipoteka-bank DaroMax: 21% va 18.5%).
-- **Muddatidan oldin yechish.** Deyarli hamma bankda foiz keskin tushadi yoki umuman to'lanmaydi (masalan, Mikrokreditbank «Omonat karta»: 3 oygacha 0%). TBC Bank muddatli omonatini muddatidan oldin yechib bo'lmaydi.
-- **Dollar omonatlar.** Asosan 5–7.5%. Eng yuqorisi Universal bank «Invest 7.5» — 7.5% (18 oy, 200 $ dan). 7% — Davr bank «Optimal» va Turonbank «Turon Oltin» (100 $ dan), Trastbank, Ipak Yo'li, Asia Alliance (onlayn), Anorbank «ELITE» (10 000 $ dan). Eng pasti: Ziraat 1–2%, SQB 3%.
 - **Ipoteka.** 17% dan boshlanadi: Hamkorbank, Agrobank «Xonadon plyus», Ipoteka-bank; subsidiyali «Oson» — 17.5% (badal 15%). Odatda 20–24%, muddat 10–20 yil, boshlang'ich badal 15–26%. Eng qimmati Poytaxt bank «Maskan» — 28–32%.
 - **Avtokredit.** Oddiy stavka 21–27%. Ayrim modellar uchun 0% aksiyalar bor (Hamkorbank, SQB «Uzavto-Imkon», Asia Alliance «Onix va Tracker», Garant bank) — odatda faqat hamkor dilerlar va aniq modellar uchun. OFB «BYD Special Plus» — 12.5% dan.
 - **Mikroqarz.** Stavkalar eng keng oraliqda: 20–49%. Arzonlari: OFB «Green» — 20%, Ipak Yo'li garovli — 21.9% dan, SQB ish haqi loyihasi — 22% dan, Hamkorbank onlayn — 23% dan. Qimmatlari: TBC va Tenge — 49% gacha, Anorbank — 44%, Davr bank — 33–38%, Octobank — 37.9%. Uzum Bank: 30 kunga 0%, keyin to'lovlarga bo'linadi.
 - **Iste'mol va ta'lim krediti.** Iste'mol krediti asosan 22–32% (SQB «Yangicha» — 21.99% dan, ish haqi loyihasi mijozlariga). Ta'lim krediti eng arzon: Hamkorbank va BRB — 14%, 7 yilgacha.
 - **Biznes krediti.** Imtiyozli dasturlar 10–19%: BRB «Invest» — 10% dan, NBU yoshlar uchun — 14%, SQB «Yosh tadbirkor» — 18%, InfinBank — 18.99%. Oddiy biznes kreditlari 21–30%.
 - **Umumiy qoida.** Garov, rasmiy daromad yoki bankda ish haqi loyihasi bo'lsa, kredit stavkasi sezilarli past. Garovsiz onlayn mikroqarz eng qimmat kredit turi.
-
-## Eng yuqori so'm omonatlar
-
-| Bank | Mahsulot | Foiz, % | Muddat | Summa |
-|---|---|---|---|---|
-| Garant bank | [Red Line](https://www.garantbank.uz/uz/news/garant-bankdan-25percent-foiz-stavkasi-bilan-yangi-red-line-som-omonati) | 25 | 13 oy | 1 mln dan |
-| Anorbank | [SMART 3.0](https://www.anorbank.uz/uz/deposit/vklad-smart-3-0-uz/) | 23 | 24 oy |  |
-| Asia Alliance Bank | [Strategiya online](https://aab.uz/uz/private/deposit/) | 23 | 24 oy |  |
-| Aloqabank | [Stimul / Chorak asr](https://aloqabank.uz/uz/private/deposit/stimul/) | 19 – 22 | 18 oy |  |
-| Tenge Bank | [Qulay onlayn](https://tengebank.uz/storage/app/media/tenge24/ozb/1-uz-4-udobnyi-onlain.pdf) | 22 | 13 oy | 1000 so'm dan |
-| Trastbank | [Onlayn-Trast Imkon](https://trustbank.uz/uz/private/deposit/onlayn-trast-imkon/) | 22 | 24 oy |  |
-| Davr bank | [Sharqona-2](https://davrbank.uz/api/files/2796) | 21 | 60 oy |  |
-| Ipoteka-bank | [DaroMax](https://www.ipotekabank.uz/deposits/daromax/) | 18 – 21 | 24 oy | 500 ming dan |
-| Trastbank | [Standart](https://trustbank.uz/uz/private/deposit/standart/) | 21 | 24 oy | 500 ming dan |
-| Aloqabank | [Aloqachi](https://aloqabank.uz/uz/private/deposit/alokachi/) | 15 – 20 | 12–13 oy |  |
-
-## Eng yuqori valyuta omonatlar
-
-| Bank | Mahsulot | Foiz, % | Muddat | Summa |
-|---|---|---|---|---|
-| Universal bank | [Invest 7.5](https://universalbank.uz/deposit/5) | 7.5 | 18 oy | 200 USD dan |
-| Anorbank | [ELITE](https://anorbank.uz/upload/doc/_ELITE_%20omonati-new.pdf) | 7 | 24 oy | 10 000 USD dan |
-| Asia Alliance Bank | [Alliance Grand / Alliance Grand online](https://aab.uz/uz/private/deposit/) | 6 – 7 | 25 oy |  |
-| Davr bank | [Optimal](https://davrbank.uz/uz/deposits/individual-term-deposit-optimal) | 7 | 25 oygacha | 100 USD dan |
-| Ipak Yo'li banki | [Tayanch](https://ipakyulibank.uz/) | 7 | 18 oy |  |
-| Trastbank | [Ishonchli sarmoya](https://trustbank.uz/uz/private/deposit/) | 7 | 24 oy |  |
-| Turonbank | [Turon Oltin](https://turonbank.uz/uz/private/deposit/Turon%20Oltin/) | 7 | 18 oy | 100 USD dan |
-| Aloqabank | [Komfort plyus](https://aloqabank.uz/uz/private/deposit/comfort-plus/) | 6.5 | 24 oy | 100 USD dan |
 
 ## Eng arzon ipoteka
 
