@@ -177,7 +177,9 @@ def combine(previous, results, rows, now):
     """Yangi natijani avvalgisi bilan birlashtirish: faqat shu safar muvaffaqiyatli o'qilgan banklarning
     qatorlari almashadi. Ayrim banklar uchun yangilash (--only) yoki o'qilmay qolgan bank boshqa banklarning
     ma'lumotini o'chirmaydi."""
-    ok = {r["bank"] for r in results if any(r.get(s) for s in ("credits", "deposits"))}
+    # Faqat shu safar mahsulot chiqqan banklarning qatorlari almashadi: sahifasi ochilib, bo'sh kelgan bank
+    # (masalan, chet eldan ochilganda) avvalgi — O'zbekistondan o'qilgan — ma'lumotini yo'qotmaydi
+    ok = {r["bank"] for r in rows}
     kept = [r for r in (previous or {}).get("rows", []) if r["bank"] not in ok]
     all_rows = rows + kept
     banks_with_data = {r["bank"] for r in all_rows}
@@ -200,7 +202,7 @@ def main():
         sys.exit(__doc__)
     results = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
     rows = convert(results)
-    ok = [r["bank"] for r in results if any(r.get(s) for s in ("credits", "deposits"))]
+    ok = {r["bank"] for r in rows}
     print(f"{len(rows)} ta mahsulot, {len(ok)}/{len(results)} bankdan")
     if not rows:
         print("Hech narsa topilmadi — research/live/latest.json o'zgartirilmadi.")

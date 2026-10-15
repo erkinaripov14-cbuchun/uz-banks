@@ -147,3 +147,24 @@ Excel, CSV, XULOSALAR.md va saytni (`docs/`, `site/`) qayta yasash; sayt shablon
 python research/build.py
 ```
 
+
+## O'zbekistondan yangilash (Windows kompyuter)
+
+Asakabank, Anorbank va Smartbank saytlari GitHub serveridan (AQSh) ochilmaydi: sahifa bo'sh keladi, ulanish uziladi
+yoki "403". Ular O'zbekistondagi kompyuterda o'qiladi. Buning uchun kompyuterga bir marta GitHub runner dasturi
+o'rnatiladi. Keyin `.github/workflows/update-uz.yml` asosiy yangilashdan so'ng o'zi ishga tushadi va shu kompyuterda
+`uz_yangilash.py` ni bajaradi. Kompyuter o'chiq bo'lsa, navbatda kutadi; asosiy yangilashga xalaqit bermaydi.
+
+1. **Git** o'rnating: https://git-scm.com/download/win (hamma sozlamalar standart).
+2. Brauzerda oching: https://github.com/erkinaripov14-cbuchun/uz-banks/settings/actions/runners/new?arch=x64&os=win
+3. **PowerShell** ni administrator sifatida oching (Pusk → PowerShell → o'ng tugma → "Run as administrator").
+4. Sahifadagi **Download** bo'limidagi buyruqlarni birma-bir nusxalab, PowerShell'ga qo'yib bajaring.
+5. **Configure** bo'limidagi `./config.cmd --url ... --token ...` buyrug'ini bajaring va savollarga javob bering:
+   - runner group, name, work folder — **Enter**;
+   - *additional labels* — **`uz`** deb yozing (muhim);
+   - *run as service?* — **Y**;
+   - *user account for the service* — **`NT AUTHORITY\SYSTEM`** deb yozing.
+6. Runners sahifasida kompyuter **Idle** (yashil) bo'lib ko'rinadi — tayyor.
+7. Xavfsizlik (repo ochiq): Settings → Actions → General → *Fork pull request workflows from outside collaborators* →
+   **Require approval for all outside collaborators**.
+8. Sinov: Actions → **O'zbekistondan yangilash** → **Run workflow**. Birinchi safar Python va brauzer yuklanadi (~5 daqiqa).
