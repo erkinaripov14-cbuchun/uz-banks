@@ -169,7 +169,10 @@
   "Eng arzon mikroqarz (0% aksiyalarsiz)": "Самый дешёвый микрозайм (без акций 0%)",
   "Eng qimmat mikroqarz": "Самый дорогой микрозайм",
   "Eng arzon iste'mol krediti": "Самый дешёвый потребительский кредит",
-  "Eng arzon biznes krediti": "Самый дешёвый бизнес-кредит"
+  "Eng arzon biznes krediti": "Самый дешёвый бизнес-кредит",
+  "Sayt 'Openbank' nomida": "Сайт работает под названием 'Openbank'",
+  "Yagona kredit tarifi sanasiz": "Единственный кредитный тариф без даты",
+  "Kredit hujjati 2024 yilgi": "Кредитный документ — 2024 года"
  },
  "en": {
   "'Sayohat' krediti: 28%, 12 oy": "'Sayohat' loan: 28%, 12 months",
@@ -341,6 +344,9 @@
   "Eng arzon mikroqarz (0% aksiyalarsiz)": "Cheapest microloans (excluding 0% promotions)",
   "Eng qimmat mikroqarz": "Most expensive microloans",
   "Eng arzon iste'mol krediti": "Cheapest consumer loans",
-  "Eng arzon biznes krediti": "Cheapest business loans"
+  "Eng arzon biznes krediti": "Cheapest business loans",
+  "Sayt 'Openbank' nomida": "The website is branded 'Openbank'",
+  "Yagona kredit tarifi sanasiz": "The only loan tariff is undated",
+  "Kredit hujjati 2024 yilgi": "The loan document is from 2024"
  }
 }

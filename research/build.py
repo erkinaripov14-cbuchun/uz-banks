@@ -22,7 +22,10 @@ OUT = Path(__file__).parent / "rasmiy-2026-10-14"
 HEAD = ["Bank", "Kim uchun", "Toifa", "Mahsulot", "Foiz min, %", "Foiz max, %", "Saytda hozir, %", "Muddat",
         "Summa", "Valyuta", "Manba", "Sana", "Izoh", "Havola"]
 WIDTHS = [26, 12, 14, 38, 10, 10, 13, 18, 18, 9, 14, 11, 50, 50]
-MERGED = merge.merged_rows()
+MERGED = [r for r in merge.merged_rows() if xulosalar.SHOW_DEPOSITS or r["type"] == "K"]
+KINDS = (("K", "Kreditlar"), ("O", "Omonatlar")) if xulosalar.SHOW_DEPOSITS else (("K", "Kreditlar"),)
+TITLE = "kreditlar va omonatlar" if xulosalar.SHOW_DEPOSITS else "kreditlar"
+N_SRC = sum(1 for r in ROWS if xulosalar.SHOW_DEPOSITS or r[1] == "K")
 SEGMENT = {"jismoniy": "Jismoniy", "yuridik": "Yuridik"}
 
 
@@ -78,9 +81,9 @@ def summary_sheet(wb):
     bold, title = Font(bold=True), Font(bold=True, size=14)
     head_font, head_fill = Font(bold=True, color="FFFFFF"), PatternFill("solid", fgColor="1F4E78")
     wrap = Alignment(wrap_text=True, vertical="top")
-    ws.append(["O'zbekiston banklari: kreditlar va omonatlar — asosiy xulosalar"])
+    ws.append([f"O'zbekiston banklari: {TITLE} — asosiy xulosalar"])
     ws["A1"].font = title
-    ws.append([f"Manba: faqat bank saytlari, 2026-10-14. {len(ROWS)} ta mahsulot, {len({r[0] for r in ROWS})} ta bank."])
+    ws.append([f"Manba: bank saytlari. {N_SRC} ta qo'lda tekshirilgan mahsulot, {len({r[0] for r in ROWS})} ta bank."])
     ws.append([])
     for topic, text in xulosalar.KEY_POINTS:
         ws.append([topic, text])
@@ -112,8 +115,8 @@ def summary_sheet(wb):
 
 
 def write_markdown(path):
-    lines = ["# O'zbekiston banklari: kreditlar va omonatlar — asosiy xulosalar", "",
-             f"Manba: faqat bank saytlari, 2026-10-14. {len(ROWS)} ta mahsulot, "
+    lines = [f"# O'zbekiston banklari: {TITLE} — asosiy xulosalar", "",
+             f"Manba: bank saytlari. {N_SRC} ta qo'lda tekshirilgan mahsulot, "
              f"{len({r[0] for r in ROWS})} ta bank. To'liq jadval: "
              "[banklar_kredit_omonat_rasmiy.xlsx](banklar_kredit_omonat_rasmiy.xlsx).", "",
              "## Asosiy xulosalar", ""]
@@ -134,7 +137,7 @@ LIVE = Path(__file__).parent / "live" / "latest.json"
 ADMIN_TOKEN = Path(__file__).parent / "admin_token.json"
 I18N = Path(__file__).parent / "i18n_texts.json"
 PAGES_URL = "https://erkinaripov14-cbuchun.github.io/uz-banks/"
-EXCEL_NAME = "banklar_kredit_omonat.xlsx"
+EXCEL_NAME = "banklar_kreditlar.xlsx"
 SITE_DIRS = [Path(__file__).parent.parent / "site", Path(__file__).parent.parent / "docs"]
 
 
@@ -156,7 +159,7 @@ def write_site():
         "points": xulosalar.KEY_POINTS,
         "rankings": xulosalar.rankings(),
         "notes": xulosalar.NOTES,
-        "gaps": GAPS,
+        "gaps": xulosalar.gaps(GAPS),
         "sites": sites,
         "repo": "erkinaripov14-cbuchun/uz-banks",
         "excel": PAGES_URL + EXCEL_NAME,
@@ -188,7 +191,9 @@ def main():
     wb = Workbook()
     wb.remove(wb.active)
     summary_sheet(wb)
-    for kind, title in (("K", "Kreditlar"), ("O", "Omonatlar")):
+    for old in ([] if xulosalar.SHOW_DEPOSITS else [OUT / "omonatlar.csv", SITE_DIRS[1] / "banklar_kredit_omonat.xlsx"]):
+        old.unlink(missing_ok=True)
+    for kind, title in KINDS:
         data = [as_list(r) for r in rows(kind)]
         sheet(wb, title, HEAD, data, WIDTHS)
         with open(OUT / f"{title.lower()}.csv", "w", newline="", encoding="utf-8-sig") as f:
@@ -204,18 +209,20 @@ def main():
         uzs = as_t([x for x in o if x["cur"] == "UZS"])
         fx = as_t([x for x in o if x["cur"] != "UZS"])
         site = ".".join((urlparse(mine[0]["url"]).hostname or "").split(".")[-2:])
-        summary.append([b, len(kj), len(k) - len(kj), _rng(as_t(k)), len(o), _rng(uzs), _rng(fx),
-                        sum(r["source"] == "avtomatik" for r in mine), GAPS.get(b, ""), site])
-    sheet(wb, "Banklar xulosasi", ["Bank", "Kredit (jismoniy)", "Kredit (yuridik)", "Kredit foizi, %", "Omonatlar",
-                                   "So'm omonat, %", "Valyuta omonat, %", "Saytdan avtomatik", "Kamchilik", "Sayt"],
-          summary, [28, 11, 11, 15, 11, 14, 14, 12, 60, 24])
+        dep = [len(o), _rng(uzs), _rng(fx)] if xulosalar.SHOW_DEPOSITS else []
+        summary.append([b, len(kj), len(k) - len(kj), _rng(as_t(k)), *dep,
+                        sum(r["source"] == "avtomatik" for r in mine), xulosalar.gaps(GAPS).get(b, ""), site])
+    dep_head = ["Omonatlar", "So'm omonat, %", "Valyuta omonat, %"] if xulosalar.SHOW_DEPOSITS else []
+    sheet(wb, "Banklar xulosasi", ["Bank", "Kredit (jismoniy)", "Kredit (yuridik)", "Kredit foizi, %", *dep_head,
+                                   "Saytdan avtomatik", "Kamchilik", "Sayt"],
+          summary, [28, 11, 11, 15, *([11, 14, 14] if xulosalar.SHOW_DEPOSITS else []), 12, 60, 24])
     sheet(wb, "Izoh", ["Muhim"], [[t] for t in [
         "Ma'lumot 2026-10-14 da faqat banklarning o'z rasmiy saytlaridan olindi (qidiruv har bir bank domeni bilan cheklangan).",
-        "Agregatorlar (bank.uz, depozit.uz, bankxizmatlari.uz) va yangilik saytlari ishlatilmagan.",
+        "Agregatorlar ishlatilmagan. Istisno: Asakabank (sayti chet eldan ochilmaydi) — bank.uz.",
         "Istisno: InfinBank — rasmiy sayti infinbank.com.",
         "Bank saytlari bu muhitdan to'g'ridan-to'g'ri ochilmadi; ma'lumot qidiruv tizimi indekslagan sahifalardan olingan.",
         "Ko'p sahifalarda sana yo'q — 'Sana' bo'sh bo'lsa, sahifa eski bo'lishi mumkin. Bir bank sahifalari bir-biriga zid bo'lsa, 'Izoh'da yozilgan.",
-        "Kredit stavkalari ko'pincha mijozga qarab individual; omonat stavkasi kanal (ilova / filial) va foiz to'lash tartibiga bog'liq.",
+        "Kredit stavkalari ko'pincha mijozga qarab individual: garov, rasmiy daromad va ish haqi loyihasiga bog'liq.",
         "Qaror qabul qilishdan oldin bank sayti yoki call-markazi orqali tekshiring.",
         "Yangilash: python scrape.py (bank saytlariga kirish mumkin bo'lgan kompyuterda) yoki python research/build.py.",
     ]], [140])
@@ -223,7 +230,7 @@ def main():
     write_markdown(OUT / "XULOSALAR.md")
     write_site()
     print(f"{OUT}/banklar_kredit_omonat_rasmiy.xlsx: {len(summary)} bank, "
-          f"{len(rows('K'))} kredit, {len(rows('O'))} omonat")
+          f"{len(rows('K'))} kredit, {len(rows('O'))} omonat (saytda {'ko`rsatiladi' if xulosalar.SHOW_DEPOSITS else 'yo`q'})")
 
 
 if __name__ == "__main__":

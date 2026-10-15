@@ -8,6 +8,7 @@
 import json
 import re
 from pathlib import Path
+from urllib.parse import urlparse
 
 from data_rasmiy import ROWS
 import live as live_rules
@@ -46,6 +47,8 @@ def _live_rows():
         # Eski yozilgan fayllar uchun ham bugungi qoidalar qo'llanadi
         name = live_rules.clean_title(r["name"])
         if not name or live_rules.GENERIC_TITLES.match(name) or live_rules.NOT_PRODUCT.search(name):
+            continue
+        if r["type"] == "K" and (live_rules.DEPOSIT_TITLE.search(name) or live_rules.DEPOSIT_TITLE.search(urlparse(r["url"]).path)):
             continue
         r = {**r, "name": name}
         seg = r.get("segment") or live_rules._segment(r)

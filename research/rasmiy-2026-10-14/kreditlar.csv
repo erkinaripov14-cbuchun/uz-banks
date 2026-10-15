@@ -150,7 +150,6 @@ Davr bank,Yuridik,Biznes,Biznes Start mikrokredit,31,34,,60 oygacha,300 mln gach
 Garant bank,Jismoniy,Avtokredit,Avtokredit «LIXIANG»,35.0,35.0,,2 oy – 5 yil,600 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://garantbank.uz/uz/avtokredit-lixiang
 Garant bank,Jismoniy,Avtokredit,Avtokreditlar (ayrim modellar),0,0,,60 oygacha,,UZS,Qo'lda tekshirilgan,,,https://garantbank.uz/uz/get_list_pages/credits
 Garant bank,Jismoniy,Iste'mol,Iste'mol krediti,28,28,,2 yilgacha,,UZS,Qo'lda tekshirilgan,,Kafil talab qilinadi; stavka individual,https://garantbank.uz/uz/kredity
-Garant bank,Jismoniy,Iste'mol,«Orzu sari» omonati,18.0,18.0,,2 yilgacha,10 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://garantbank.uz/uz/vklad-orzu-sari
 Garant bank,Jismoniy,Mikroqarz,Imkoniyat,30,30,,,,UZS,Qo'lda tekshirilgan,,,https://garantbank.uz/uz/get_list_pages/credits
 Garant bank,Jismoniy,Mikroqarz,Farovonlik (o'zini band qilganlar),30,30,,,,UZS,Qo'lda tekshirilgan,,,https://garantbank.uz/uz/get_list_pages/credits
 Hamkorbank,Jismoniy,Avtokredit,Стоимость автомобиля,23.99,30.0,,3 oy – 5 yil,300 mln – 600 mln,UZS,Saytdan avtomatik,2026-10-15,,https://hamkorbank.uz/
@@ -203,7 +202,6 @@ Ipak Yo'li banki,Jismoniy,Ipoteka,NRG ipotekasi (yangi uy),21.5,21.5,,10 yilgach
 Ipak Yo'li banki,Jismoniy,Ipoteka,Ipoteka - NRG (vaqtinchalik to‘xtatilgan ),21.5,21.5,,10 yilgacha,2 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/ipoteka/ipoteka-nrg
 Ipak Yo'li banki,Jismoniy,Ipoteka,Yangi qurilgan uylarga ipoteka,16.5,20.9,,6 oy – 20 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/ipoteka/yangi-qurilgan-uylarga-ipoteka
 Ipak Yo'li banki,Jismoniy,Ipoteka,Ipoteka haqida batafsil,17.5,19.0,,6 oy – 10 yil,1 mln – 3.48 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/ipoteka/ipoteka-nur
-Ipak Yo'li banki,Jismoniy,Ipoteka,Yillik 13% daromadlilikka ega ipoteka omonati,13.0,13.0,,,,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/omonatlar/somli-omonatlar/ipoteka-omonati?utm_source=mainpage
 Ipak Yo'li banki,Jismoniy,Iste'mol,Kreditni qayta moliyalashtirish (kafillik asosida),20.9,26.0,,6 oy – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/qayta-moliyalashtirish/kafillik-asosida-kreditni-qayta-moliyalashtirish
 Ipak Yo'li banki,Jismoniy,Iste'mol,Uy ta’miri uchun kredit,20.9,20.9,,1 yil – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/uy-tamiri-uchun-kredit
 Ipak Yo'li banki,Jismoniy,Mikroqarz,Kafillik asosida mikroqarz,20.9,28.9,,6 oy – 5 yil,10 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/mikroqarzlar/mikroqarz
@@ -218,12 +216,10 @@ Ipoteka-bank,Jismoniy,Ipoteka,Oylik to‘lov,27.99,27.99,,,28.0659 mln gacha,UZS
 Ipoteka-bank,Jismoniy,Ipoteka,"Ipoteka dasturlari (birlamchi, ikkilamchi, tijorat)",17,24.99,,20 yilgacha,,UZS,Qo'lda tekshirilgan,,Boshlang'ich badal 15–26%,https://www.ipotekabank.uz/mortgage/
 Ipoteka-bank,Jismoniy,Ipoteka,Produktni tanlang,22.5,22.5,,1 yil – 20 yil,69.438 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://www.ipotekabank.uz/crediting/mortgage/tijorat/
 Ipoteka-bank,Jismoniy,Ipoteka,20% dan,20.0,20.0,,,,UZS,Saytdan avtomatik,2026-10-15,,https://www.ipotekabank.uz/crediting/mortgage/imkoniyat/botanika-saroyi/
-Ipoteka-bank,Jismoniy,Ipoteka,Produktni tanlang,18.0,18.0,,1 yilgacha,17.775 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://www.ipotekabank.uz/deposits/oddiy/
 Ipoteka-bank,Jismoniy,Ipoteka,"17,8% dan",17.8,17.8,,,,UZS,Saytdan avtomatik,2026-10-15,,https://www.ipotekabank.uz/crediting/mortgage/imkoniyat/sharq-bahori/
 Ipoteka-bank,Jismoniy,Ipoteka,"Oson (yangi uy, subsidiya bilan)",17.5,,,20 yilgacha,420 mln gacha,UZS,Qo'lda tekshirilgan,,Boshlang'ich badal 15%; Moliya vazirligi subsidiyasi,https://www.ipotekabank.uz/mortgage/oson/
 Ipoteka-bank,Jismoniy,Ipoteka,17% dan,17.0,17.0,,,,UZS,Saytdan avtomatik,2026-10-15,,https://www.ipotekabank.uz/crediting/mortgage/imkoniyat/dreamland-parkent/
 Ipoteka-bank,Jismoniy,Ipoteka,Imkoniyat,15.0,15.0,,20 yilgacha,1.7 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://www.ipotekabank.uz/crediting/mortgage/imkoniyat/
-Ipoteka-bank,Jismoniy,Ipoteka,“Maqsadli Ipoteka” omonati,14.0,14.0,,,,UZS,Saytdan avtomatik,2026-10-15,,https://www.ipotekabank.uz/deposits/target-mortgage-deposit/
 Ipoteka-bank,Jismoniy,Mikroqarz,O'zini o'zi band qilganlar uchun mikrokredit,24,,,3–36 oy,1–100 mln,UZS,Qo'lda tekshirilgan,,Garovsiz,https://www.ipotekabank.uz/crediting/microloan-self-employed/
 KDB Bank O'zbekiston,Jismoniy,Iste'mol,Korporativ mijozlar xodimlari uchun overdraft,34,,,12 oygacha,,UZS,Qo'lda tekshirilgan,,KDB kartasiga,https://kdb.uz/uz/individuals/credit
 KDB Bank O'zbekiston,Jismoniy,Iste'mol,企业客户员工小额透支贷款（工资账户关联型）,34.0,34.0,,1 oygacha,,UZS,Saytdan avtomatik,2026-10-15,,https://kdb.uz/cn/individuals/credit
@@ -338,7 +334,6 @@ Orient Finans Bank,Jismoniy,Ipoteka,Ta’mirlash uchun ipoteka krediti,23.0,23.0
 Orient Finans Bank,Jismoniy,Ipoteka,Yashil ipoteka,23.0,23.0,,7 yilgacha,350 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/yashil-ipoteka
 Orient Finans Bank,Jismoniy,Ipoteka,Navro‘z ipoteka krediti,21.0,21.0,,20 yilgacha,1.06 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/navroz-ipoteka-krediti
 Orient Finans Bank,Jismoniy,Ipoteka,Birlamchi bozor uchun ipoteka 2.0,19.0,19.0,,20 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/birlamchi-bozor-uchun-2-0
-Orient Finans Bank,Jismoniy,Ipoteka,OFB Ipoteka,18.0,18.0,,1 yilgacha,299.739 ming – 2.49974 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/omonatlar/ofb-ipoteka
 Orient Finans Bank,Jismoniy,Ipoteka,Ipoteka O‘qituvchi,16.7,17.0,,6 oy – 20 yil,8.26814 mln – 496.088 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/ipoteka-oqituvchi
 Orient Finans Bank,Jismoniy,Ipoteka,Oilaviy ipoteka,16.7,16.7,,6 oy – 20 yil,8.26814 mln – 496.088 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/oilaviy-ipoteka
 Orient Finans Bank,Jismoniy,Iste'mol,Corporate Plus,25.0,25.0,,3 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/corporate-plus
@@ -408,12 +403,7 @@ Trastbank,Jismoniy,Ipoteka,Bankning o‘z mablag‘lari hisobidan ajratiladigan 
 Trastbank,Jismoniy,Ipoteka,Yillik foiz:,21.0,21.0,,15 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/crediting/birlamchi-va-ikkilamchi-bozordan-uy-joy-sotib-olish-uchun-ipoteka-krediti/
 Trastbank,Jismoniy,Ipoteka,Yillik foiz:,20.0,20.0,,20 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/crediting/golden-house-property-group-qurilish-kompaniyasi-qoshidagi-korxonalar-tomonidan-qurilayotgan-uy-joy-/
 Trastbank,Jismoniy,Ipoteka,Birlamchi bozordan uy-joy (kvartira) sotib olish uchun ipoteka krediti,17.0,17.0,,20 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/crediting/birlamchi-bozordan-uy-sotib-olish-uchun-ipoteka-krediti/
-Trastbank,Jismoniy,Ipoteka,Maqsadli ipoteka,14.0,14.0,,1 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/deposit/maqsadli-ipoteka/
 Trastbank,Jismoniy,Iste'mol,Yashil energiya,20.0,20.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/crediting/quyosh-panellarini-sotib-olish-va-o-rnatish-uchun-kredit/
-Trastbank,Jismoniy,Iste'mol,Onlayn-Zamin,16.0,16.0,,18 oygacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/deposit/onlayn-zamin/
-Trastbank,Jismoniy,Iste'mol,Zamin,16.0,16.0,,18 oygacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/deposit/zamin/
-Trastbank,Jismoniy,Iste'mol,Bolajon,14.0,14.0,,,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/deposit/bolajon/
-Trastbank,Jismoniy,Iste'mol,Imkon-3,14.0,14.0,,3 oygacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/deposit/imkon-3/
 Trastbank,Jismoniy,Kredit karta,"""Overdraft"" krediti",24.0,24.0,,1 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/crediting/overdraft/
 Trastbank,Jismoniy,Mikroqarz,Onlayn mikroqarz,25,25,,12 oygacha,,UZS,Qo'lda tekshirilgan,,,https://trustbank.uz/uz/private/crediting/online-microloan/
 Trastbank,Yuridik,Biznes,Lizing,30.0,30.0,,3 oy – 1 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/corporate/leasing/

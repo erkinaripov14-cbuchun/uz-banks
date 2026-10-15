@@ -1,6 +1,6 @@
 <title>Bank stavkalari O'zbekiston</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="O'zbekistondagi 30 bankning omonat va kredit stavkalari: solishtirish, tahlil grafiklari va Excel jadval.">
+<meta name="description" content="O'zbekistondagi 30 bankning kredit stavkalari: solishtirish, tahlil grafiklari va Excel jadval.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
@@ -274,7 +274,7 @@ footer p { margin: 0; max-width: 80ch; }
         <button type="button" data-lang="en" lang="en">English</button>
       </div>
     </div>
-    <h1>O'zbekiston banklari: omonat va kredit stavkalari</h1>
+    <h1 id="h1">O'zbekiston banklari: omonat va kredit stavkalari</h1>
     <p class="lede" id="lede"></p>
     <div class="highlights" id="highlights"></div>
     <div class="actions">
@@ -304,14 +304,14 @@ footer p { margin: 0; max-width: 80ch; }
       <h2>Asosiy xulosalar</h2>
       <ul class="points" id="points"></ul>
       <h2>Reytinglar</h2>
-      <p class="intro">Har bir toifadagi eng yaxshi takliflar: omonatda yuqori foiz, kreditda past foiz yaxshi.</p>
+      <p class="intro" id="ranks-intro">Har bir toifadagi eng yaxshi takliflar: omonatda yuqori foiz, kreditda past foiz yaxshi.</p>
       <div class="ranks" id="ranks"></div>
       <ul class="notes" id="notes"></ul>
     </section>
 
     <section role="tabpanel" id="tahlil" aria-labelledby="t-tahlil" hidden>
       <h2>Banklar bo'yicha tahlil</h2>
-      <p class="intro">Har bir bankning shu toifadagi eng yaxshi stavkasi. Ustuniga olib borsangiz, mahsulot nomi va shartlari chiqadi. Aniq raqamlar "Omonatlar" va "Kreditlar" jadvallarida.</p>
+      <p class="intro" id="tahlil-intro">Har bir bankning shu toifadagi eng yaxshi stavkasi. Ustuniga olib borsangiz, mahsulot nomi va shartlari chiqadi. Aniq raqamlar "Omonatlar" va "Kreditlar" jadvallarida.</p>
       <div class="charts" id="charts"></div>
     </section>
 
@@ -485,6 +485,17 @@ const add = (uz, ru, en) => { UI.ru[uz] = ru; UI.en[uz] = en; };
     "Deposits and loans from {n} banks in one place. Every figure comes from the bank's own website and links to its source page."],
   ["{b} bank · {o} omonat · {k} kredit", "{b} банков · {o} вкладов · {k} кредитов", "{b} banks · {o} deposits · {k} loans"],
   ["Excel yuklab olish", "Скачать Excel", "Download Excel"],
+  ["O'zbekiston banklari: kredit stavkalari", "Банки Узбекистана: ставки по кредитам", "Banks of Uzbekistan: loan rates"],
+  ["{b} bank · {k} kredit", "{b} банков · {k} кредитов", "{b} banks · {k} loans"],
+  ["{n} bankning kredit mahsulotlari bir joyda: ipoteka, avtokredit, mikroqarz, iste'mol, ta'lim va biznes kreditlari. Har bir raqam manba sahifasiga havola qilingan.",
+    "Кредиты {n} банков в одном месте: ипотека, автокредиты, микрозаймы, потребительские, образовательные и бизнес-кредиты. Каждая цифра ведёт на страницу-источник.",
+    "Loans from {n} banks in one place: mortgages, car loans, microloans, consumer, education and business loans. Every figure links to its source page."],
+  ["Har bir toifadagi eng arzon kreditlar: foiz qancha past bo'lsa, shuncha yaxshi.", "Самые дешёвые кредиты в каждой категории: чем ниже ставка, тем лучше.", "The cheapest loans in each category: the lower the rate, the better."],
+  ["Har bir bankning shu toifadagi eng past stavkasi. Ustuniga olib borsangiz, mahsulot nomi va shartlari chiqadi. Aniq raqamlar \"Kreditlar\" jadvalida.",
+    "Самая низкая ставка каждого банка в категории. Наведите на столбец, чтобы увидеть продукт и условия. Точные цифры — в таблице «Кредиты».",
+    "Each bank's lowest rate in the category. Hover over a bar to see the product and its terms. Exact figures are in the Loans table."],
+  ["Eng arzon avtokredit", "Самый дешёвый автокредит", "Cheapest car loan"],
+  ["Eng arzon iste'mol krediti", "Самый дешёвый потребительский кредит", "Cheapest consumer loan"],
   ["Ma'lumot holati:", "Данные на:", "Data as of:"],
   ["Bo'limlar", "Разделы", "Sections"],
   ["Xulosalar", "Выводы", "Summary"], ["Tahlil", "Анализ", "Analysis"], ["Omonatlar", "Вклады", "Deposits"],
@@ -670,17 +681,33 @@ const live = DATA.live;
 const lastUpdate = live ? live.updated : DATA.generated;
 
 /* Header */
-$("#eyebrow").textContent = T("{b} bank · {o} omonat · {k} kredit", { b: banks.length, o: deposits.length, k: credits.length });
-$("#lede").textContent = T("{n} bankning omonat va kredit mahsulotlari bir joyda. Har bir raqam bankning o'z saytidan olingan va manba sahifasiga havola qilingan.", { n: banks.length });
+// Omonatlar ma'lumotda bo'lmasa (research/xulosalar.py: SHOW_DEPOSITS = False) — sayt faqat kreditlar haqida
+const HAS_DEP = deposits.length > 0;
+if (HAS_DEP) {
+  $("#eyebrow").textContent = T("{b} bank · {o} omonat · {k} kredit", { b: banks.length, o: deposits.length, k: credits.length });
+  $("#lede").textContent = T("{n} bankning omonat va kredit mahsulotlari bir joyda. Har bir raqam bankning o'z saytidan olingan va manba sahifasiga havola qilingan.", { n: banks.length });
+} else {
+  $("#t-omonatlar").hidden = true;
+  $("#h1").textContent = T("O'zbekiston banklari: kredit stavkalari");
+  $("#eyebrow").textContent = T("{b} bank · {k} kredit", { b: banks.length, k: credits.length });
+  $("#lede").textContent = T("{n} bankning kredit mahsulotlari bir joyda: ipoteka, avtokredit, mikroqarz, iste'mol, ta'lim va biznes kreditlari. Har bir raqam manba sahifasiga havola qilingan.", { n: banks.length });
+  $("#ranks-intro").textContent = T("Har bir toifadagi eng arzon kreditlar: foiz qancha past bo'lsa, shuncha yaxshi.");
+  $("#tahlil-intro").textContent = T("Har bir bankning shu toifadagi eng past stavkasi. Ustuniga olib borsangiz, mahsulot nomi va shartlari chiqadi. Aniq raqamlar \"Kreditlar\" jadvalida.");
+}
 $("#updated").innerHTML = `${esc(T("Ma'lumot holati:"))} <b>${esc(niceDate(lastUpdate))}</b>`;
 $("#excel").href = DATA.excel;
 
 const firstOf = (title) => (DATA.rankings.find((k) => k.title === title) || { rows: [] }).rows[0];
-const HL = [
+const HL = HAS_DEP ? [
   ["Eng yuqori so'm omonat", "Eng yuqori so'm omonatlar", "omonatlar", "dep"],
   ["Eng yuqori dollar omonat", "Eng yuqori valyuta omonatlar", "omonatlar", "dep"],
   ["Eng arzon ipoteka", "Eng arzon ipoteka", "kreditlar", "cre"],
   ["Eng arzon mikroqarz", "Eng arzon mikroqarz (0% aksiyalarsiz)", "kreditlar", "cre"],
+] : [
+  ["Eng arzon ipoteka", "Eng arzon ipoteka", "kreditlar", "cre"],
+  ["Eng arzon avtokredit", "Eng arzon avtokredit (0% aksiyalarsiz)", "kreditlar", "cre"],
+  ["Eng arzon mikroqarz", "Eng arzon mikroqarz (0% aksiyalarsiz)", "kreditlar", "cre"],
+  ["Eng arzon iste'mol krediti", "Eng arzon iste'mol krediti", "kreditlar", "cre"],
 ];
 $("#highlights").innerHTML = HL.map(([label, title, tab, kind]) => {
   const r = firstOf(title);
@@ -899,8 +926,8 @@ $("#banks").innerHTML = banks.map((b) => {
   return `<article class="bankcard">
     <header><h3>${esc(N(b))}</h3><a class="site" href="https://${esc(site)}" target="_blank" rel="noopener">${esc(site)}</a></header>
     <dl>
-      <dt>${esc(T("So'm omonat"))}</dt><dd>${range(oj, (r) => r.cur === "UZS")}</dd>
-      <dt>${esc(T("Valyuta omonat"))}</dt><dd>${range(oj, (r) => r.cur !== "UZS")}</dd>
+      ${HAS_DEP ? `<dt>${esc(T("So'm omonat"))}</dt><dd>${range(oj, (r) => r.cur === "UZS")}</dd>
+      <dt>${esc(T("Valyuta omonat"))}</dt><dd>${range(oj, (r) => r.cur !== "UZS")}</dd>` : ""}
       <dt>${esc(T("Kredit (jismoniy)"))}</dt><dd>${range(kj, (r) => hi(r) > 0)}</dd>
       <dt>${esc(T("Kredit (yuridik)"))}</dt><dd>${range(ky, (r) => hi(r) > 0)}</dd>
     </dl>
