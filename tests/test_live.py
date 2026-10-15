@@ -94,3 +94,13 @@ def test_partial_run_keeps_other_banks():
     data = combine(prev, results, [{"bank": "A", "name": "a2"}], "now")
     assert sorted(r["name"] for r in data["rows"]) == ["a2", "b1", "c1"]   # A yangilandi, B va C saqlandi
     assert data["banks_ok"] == 3 and data["failed"] == ["D"] and data["banks_total"] == 4
+
+
+def test_empty_pages_keep_previous_rows():
+    # Chet eldan ochilgan sahifa bo'sh keldi (mahsulot yo'q) — O'zbekistondan avval o'qilgan qatorlar saqlanadi
+    from live import combine
+    prev = {"rows": [{"bank": "Asakabank", "name": "a1"}, {"bank": "B", "name": "b1"}], "failed": [], "banks_total": 2}
+    results = [{"bank": "Asakabank", "credits": [{"url": "x"}]}, {"bank": "B", "credits": [{"url": "y"}]}]
+    data = combine(prev, results, [{"bank": "B", "name": "b2"}], "now")
+    assert sorted(r["name"] for r in data["rows"]) == ["a1", "b2"]
+    assert data["failed"] == [] and data["banks_ok"] == 2
