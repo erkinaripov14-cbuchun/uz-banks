@@ -1,6 +1,6 @@
 name: O'zbekistondan yangilash
 
-# Chet eldan ochilmaydigan bank saytlari (Asakabank, Anorbank, Smartbank) O'zbekistondagi kompyuter yoki serverda o'qiladi.
+# Chet eldan ochilmaydigan bank saytlari (Asakabank, Anorbank, Openbank) O'zbekistondagi kompyuter yoki serverda o'qiladi.
 # U yerda GitHub self-hosted runner ("uz" belgisi bilan, Windows yoki Linux) o'rnatilgan bo'lishi kerak — README dagi yo'riqnoma.
 # Asosiy yangilash tugagach o'zi boshlanadi. Kompyuter o'chiq bo'lsa, navbatda kutib turadi va asosiy yangilashga xalaqit bermaydi.
 on:

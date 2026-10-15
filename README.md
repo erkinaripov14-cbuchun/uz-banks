@@ -154,7 +154,7 @@ python research/build.py
 
 ## O'zbekistondan yangilash (server yoki Windows kompyuter)
 
-Asakabank, Anorbank va Smartbank saytlari GitHub serveridan (AQSh) ochilmaydi: sahifa bo'sh keladi, ulanish uziladi
+Asakabank, Anorbank va Openbank (sobiq Smartbank) saytlari GitHub serveridan (AQSh) ochilmaydi: sahifa bo'sh keladi, ulanish uziladi
 yoki "403". Ular O'zbekistondagi server yoki kompyuterda o'qiladi. Buning uchun unga bir marta GitHub runner dasturi
 `uz` belgisi bilan o'rnatiladi (Linux server yoki Windows kompyuter — ikkalasi ham ishlaydi). Keyin `.github/workflows/update-uz.yml` asosiy yangilashdan so'ng o'zi ishga tushadi va shu kompyuterda
 `uz_yangilash.py` ni bajaradi. Kompyuter o'chiq bo'lsa, navbatda kutadi; asosiy yangilashga xalaqit bermaydi.

@@ -26,7 +26,7 @@
   {"id": "tbc",          "name": "TBC Bank",                     "site": "https://tbcbank.uz"},
   {"id": "anorbank",     "name": "Anorbank",                     "site": "https://anorbank.uz", "credits": ["/uz/credits/available-money-uz/"], "deposits": ["/uz/deposit/vklad-smart-3-0-uz/"]},
   {"id": "uzum",         "name": "Uzum Bank",                    "site": "https://uzumbank.uz", "credits": ["/uz/tariffs/"], "deposits": ["/uz/tariffs/"]},
-  {"id": "smartbank",    "name": "Smartbank",                    "site": "https://smartbank.uz", "credits": ["/useful/faq"], "deposits": ["/useful/faq"]},
+  {"id": "openbank",     "name": "Openbank",                     "site": "https://openbank.uz", "credits": ["/mortgage", "/installment", "/faq"]},
   {"id": "kdb",          "name": "KDB Bank O'zbekiston",         "site": "https://kdb.uz"},
   {"id": "ziraat",       "name": "Ziraat Bank O'zbekiston",      "site": "https://ziraatbank.uz"}
 ]

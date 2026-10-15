@@ -64,7 +64,7 @@ Manba: bank saytlari. 119 ta qo'lda tekshirilgan mahsulot, 30 ta bank. To'liq ja
 | O'zsanoatqurilishbank (SQB) | [Yangicha (ish haqi loyihasi)](https://sqb.uz/uz/individuals/credits/consumer-credit-new-uz/) | 21.99 – 26.99 | 6–60 oy | 200 mln gacha |
 | Biznesni rivojlantirish banki | [Iste'mol krediti](https://brb.uz/jismoniy-shaxslarga/kreditlar/potrebitelskiy-kredit) | 23 – 27 | 5 yilgacha | 200 mln gacha |
 | Madad Invest Bank | [Green Power](https://madadinvestbank.uz/storage/tariflar/%E2%84%96280_0001.pdf) | 24.99 | 60 oygacha | 200 BHM gacha |
-| Smartbank | [Kredit](https://smartbank.uz/useful/faq) | 24.99 – 25.99 |  |  |
+| Openbank | [Kredit](https://openbank.uz/faq) | 24.99 – 25.99 |  |  |
 | Asakabank | [Sayohatchi](https://bank.uz/uz/credit/puteshestvennik) | 25 – 27 | 6 oy – 1 yil | 100 mln gacha |
 
 ## Eng arzon biznes krediti
@@ -94,7 +94,7 @@ Manba: bank saytlari. 119 ta qo'lda tekshirilgan mahsulot, 30 ta bank. To'liq ja
 - **Madad Invest Bank:** Omonatlar topilmadi; yagona kredit tarifi sanasiz
 - **O'zmilliybank (NBU):** Kredit stavkalari faqat 2024 yilgi e'londan
 - **Octobank:** Omonat stavkalari topilmadi
-- **Smartbank:** Omonat stavkasi yo'q; sayt 'Openbank' nomida
+- **Openbank:** Omonat stavkasi yo'q (sobiq Smartbank)
 - **Universal bank:** So'm omonatlari topilmadi
 - **Uzum Bank:** Omonat stavkalari rasmiy saytda topilmadi (tariflar 13.10.2026 dan yangilangan)
 - **Xalq banki:** Faqat 1 ta omonat va 2024 yilgi kredit hujjati topildi

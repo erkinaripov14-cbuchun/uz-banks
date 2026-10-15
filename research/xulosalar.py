@@ -47,7 +47,7 @@ KEY_POINTS = [
 
 # Faqat kreditlar ko'rsatilganda bank kartochkasidagi izohlar: omonatga oid qismi olib tashlanadi (None — izoh yo'q)
 CREDIT_GAPS = {"Uzum Bank": None, "Octobank": None, "Universal bank": None, "Ipak Yo'li banki": None,
-               "Smartbank": "Sayt 'Openbank' nomida", "Madad Invest Bank": "Yagona kredit tarifi sanasiz",
+               "Openbank": None, "Madad Invest Bank": "Yagona kredit tarifi sanasiz",
                "Xalq banki": "Kredit hujjati 2024 yilgi"}
 
 

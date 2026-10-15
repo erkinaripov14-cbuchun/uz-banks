@@ -507,11 +507,11 @@ ROWS = [
     ("Tenge Bank", "K", "Avtokredit", "Avtokredit Drive", None, None, "5 yilgacha", "500 mln gacha", "UZS",
      "https://tengebank.uz/en/credit/avtokredit-drive", "", "Stavka badal va muddatga qarab"),
 
-    # ---------------- Smartbank — smartbank.uz ----------------
-    ("Smartbank", "K", "Iste'mol", "Kredit", 24.99, 25.99, "", "", "UZS",
-     "https://smartbank.uz/useful/faq", "", "Rasmiy daromadli 24.99%, o'zini band qilganlar 25.99%; sahifa 'Openbank' nomida"),
-    ("Smartbank", "O", "So'm omonat", "Omonat", None, None, "3 / 6 / 9 / 12 oy", "", "UZS",
-     "https://smartbank.uz/useful/faq", "", "Stavka ko'rsatilmagan"),
+    # ---------------- Openbank (sobiq Smartbank, 2025-yildan) — openbank.uz ----------------
+    ("Openbank", "K", "Iste'mol", "Kredit", 24.99, 25.99, "", "", "UZS",
+     "https://openbank.uz/faq", "", "Rasmiy daromadli 24.99%, o'zini band qilganlar 25.99%"),
+    ("Openbank", "O", "So'm omonat", "Omonat", None, None, "3 / 6 / 9 / 12 oy", "", "UZS",
+     "https://openbank.uz/faq", "", "Stavka ko'rsatilmagan"),
 
     # ---------------- KDB — kdb.uz ----------------
     ("KDB Bank O'zbekiston", "O", "So'm omonat", "Talab qilib olinguncha", 0, 0, "Muddatsiz", "", "UZS",
@@ -537,7 +537,7 @@ GAPS = {
     "Universal bank": "So'm omonatlari topilmadi",
     "Ipak Yo'li banki": "So'm omonatlari topilmadi",
     "Madad Invest Bank": "Omonatlar topilmadi; yagona kredit tarifi sanasiz",
-    "Smartbank": "Omonat stavkasi yo'q; sayt 'Openbank' nomida",
+    "Openbank": "Omonat stavkasi yo'q (sobiq Smartbank)",
     "Xalq banki": "Faqat 1 ta omonat va 2024 yilgi kredit hujjati topildi",
     "O'zmilliybank (NBU)": "Kredit stavkalari faqat 2024 yilgi e'londan",
     "InFinBank": "Rasmiy sayti infinbank.com (.uz emas)",
