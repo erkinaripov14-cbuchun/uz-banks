@@ -1,42 +1,62 @@
 ﻿Bank,Kim uchun,Toifa,Mahsulot,"Foiz min, %","Foiz max, %","Saytda hozir, %",Muddat,Summa,Valyuta,Manba,Sana,Izoh,Havola
 Agrobank,Jismoniy,Avtokredit,Avtokredit,24,,,5 yilgacha,Avto narxining 75% gacha,UZS,Qo'lda tekshirilgan,,,https://agrobank.uz/uz/person/loans
-Agrobank,Jismoniy,Biznes,Biznesga ko'mak krediti,21.0,21.0,,1 yil – 4 yil,93.114 ming – 17 mln,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/biznesga-komak
-Agrobank,Jismoniy,Biznes,"""Har bir oila tadbirkor""",17.5,17.5,,1 yil – 7 yil,457.211 ming – 1 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/oilaviy-tadbirkorlik
-Agrobank,Jismoniy,Ipoteka,Uy-joy ta'miri uchun,24.99,24.99,,1 yil – 10 yil,9.50394 mln – 250 mln,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/tamir-plyus
-Agrobank,Jismoniy,Ipoteka,"""Bizdan uy"" ipoteka krediti",24.99,24.99,,1 yil – 15 yil,712.795 ming – 900 mln,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/mortgage-bank
-Agrobank,Jismoniy,Ipoteka,Arzon ipoteka krediti,23.0,23.0,,6 oy – 20 yil,1.78024 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/arzon-ipoteka-krediti
-Agrobank,Jismoniy,Ipoteka,Yangi Hayot Ipoteka krediti,21.99,21.99,,1 oy – 20 yil,25 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/mortgage2
+Agrobank,Jismoniy,Biznes,Biznesga ko'mak krediti,21.0,21.0,,1 yil – 4 yil,93.114 ming – 17 mln,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/biznesga-komak
+Agrobank,Jismoniy,Biznes,"""Har bir oila tadbirkor""",17.5,17.5,,1 yil – 7 yil,457.211 ming – 1 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/oilaviy-tadbirkorlik
+Agrobank,Jismoniy,Ipoteka,Uy-joy ta'miri uchun,24.99,24.99,,1 yil – 10 yil,9.50394 mln – 250 mln,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/tamir-plyus
+Agrobank,Jismoniy,Ipoteka,"""Bizdan uy"" ipoteka krediti",24.99,24.99,,1 yil – 15 yil,712.795 ming – 900 mln,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/mortgage-bank
+Agrobank,Jismoniy,Ipoteka,Arzon ipoteka krediti,23.0,23.0,,6 oy – 20 yil,1.78024 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/arzon-ipoteka-krediti
+Agrobank,Jismoniy,Ipoteka,Yangi Hayot Ipoteka krediti,21.99,21.99,,1 oy – 20 yil,25 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/mortgage2
 Agrobank,Jismoniy,Ipoteka,Zamonaviy uy,19.99,19.99,19.99,20 yil,,UZS,Qo'lda tekshirilgan,,,https://agrobank.uz/uz/person/loans/mortgage
-Agrobank,Jismoniy,Ipoteka,"""Yashil taʼmir"" ipoteka krediti",19.0,19.0,,1 yil – 10 yil,92.157 ming – 350 mln,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/yashil-ta-mir-ipoteka-krediti
-Agrobank,Jismoniy,Ipoteka,"""Ijtimoiy ko‘mak"" ipoteka krediti",18.0,18.0,,1 yil – 10 yil,77.928 ming – 120 mln,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/ijtimoiy-komak-ipoteka
+Agrobank,Jismoniy,Ipoteka,"""Yashil taʼmir"" ipoteka krediti",19.0,19.0,,1 yil – 10 yil,92.157 ming – 350 mln,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/yashil-ta-mir-ipoteka-krediti
+Agrobank,Jismoniy,Ipoteka,"""Ijtimoiy ko‘mak"" ipoteka krediti",18.0,18.0,,1 yil – 10 yil,77.928 ming – 120 mln,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/ijtimoiy-komak-ipoteka
 Agrobank,Jismoniy,Ipoteka,Xonadon plyus,17,17,,20 yil,,UZS,Qo'lda tekshirilgan,,MB asosiy stavkasi + 3% (sahifada 2025 yilgi asosiy stavka),https://agrobank.uz/uz/person/loans/mortgage
-Agrobank,Jismoniy,Ipoteka,Yangi uylarga Ipoteka (birlamchi bozor),17.0,17.0,,1 yil – 20 yil,7.7524 mln – 480 mln,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/mortgage
-Agrobank,Jismoniy,Iste'mol,"""Yashil energiya"" jismoniy shaxslar uchun",20.0,20.0,,3 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/green-energy
-Agrobank,Jismoniy,Kredit karta,Kredit karta,30.0,30.0,,1 yil – 4 yil,97.487 ming – 100 mln,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/credit-karta
+Agrobank,Jismoniy,Ipoteka,Yangi uylarga Ipoteka (birlamchi bozor),17.0,17.0,,1 yil – 20 yil,7.7524 mln – 480 mln,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/mortgage
+Agrobank,Jismoniy,Iste'mol,"""Yashil energiya"" jismoniy shaxslar uchun",20.0,20.0,,3 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/green-energy
+Agrobank,Jismoniy,Kredit karta,Kredit karta,30.0,30.0,,1 yil – 4 yil,97.487 ming – 100 mln,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/credit-karta
 Agrobank,Jismoniy,Mikroqarz,Onlayn mikroqarz,31,34,,1–4 yil,,UZS,Qo'lda tekshirilgan,,,https://agrobank.uz/uz/person/loans
-Agrobank,Jismoniy,Mikroqarz,Online mikroqarz,31.0,34.0,,1 yil – 4 yil,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/online/online-micro
-Agrobank,Jismoniy,Mikroqarz,Ishonchli mikroqarzi,26.0,26.0,,2 yil – 5 yil,53.875 ming – 50 mln,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/ishonchli-mikroqarzi
+Agrobank,Jismoniy,Mikroqarz,Online mikroqarz,31.0,34.0,,1 yil – 4 yil,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/online/online-micro
+Agrobank,Jismoniy,Mikroqarz,Ishonchli mikroqarzi,26.0,26.0,,2 yil – 5 yil,53.875 ming – 50 mln,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/ishonchli-mikroqarzi
 Agrobank,Jismoniy,Mikroqarz,Mikroqarz,25,25,,5 yilgacha,100 mln gacha,UZS,Qo'lda tekshirilgan,,,https://agrobank.uz/uz/person/loans
-Agrobank,Jismoniy,Mikroqarz,"""Avans plyus""",25.0,25.0,,2 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/online/avans-plyus
-Agrobank,Jismoniy,Mikroqarz,Mikroqarz,25.0,25.0,,5 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/microloan
-Agrobank,Jismoniy,Mikroqarz,"""Arzon"" mikroqarzi",25.0,25.0,,2 yil – 5 yil,53.372 ming – 100 mln,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/arzon-mikroqarzi
-Agrobank,Jismoniy,Mikroqarz,Biznesga birinchi qadam,25.0,25.0,,1 yilgacha,9.504 ming – 5 mln,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/microloan-self-employed
-Agrobank,Jismoniy,Mikroqarz,“Mahalla loyihasi” mikroqarzi,21.0,21.0,,1 yil – 5 yil,93.114 ming – 50 mln,UZS,Saytdan avtomatik,2026-10-14,,https://agrobank.uz/uz/person/loans/mahalla-loyihasi-mikroqarzi
+Agrobank,Jismoniy,Mikroqarz,"""Avans plyus""",25.0,25.0,,2 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/online/avans-plyus
+Agrobank,Jismoniy,Mikroqarz,Mikroqarz,25.0,25.0,,5 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/microloan
+Agrobank,Jismoniy,Mikroqarz,"""Arzon"" mikroqarzi",25.0,25.0,,2 yil – 5 yil,53.372 ming – 100 mln,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/arzon-mikroqarzi
+Agrobank,Jismoniy,Mikroqarz,Biznesga birinchi qadam,25.0,25.0,,1 yilgacha,9.504 ming – 5 mln,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/microloan-self-employed
+Agrobank,Jismoniy,Mikroqarz,“Mahalla loyihasi” mikroqarzi,21.0,21.0,,1 yil – 5 yil,93.114 ming – 50 mln,UZS,Saytdan avtomatik,2026-10-15,,https://agrobank.uz/uz/person/loans/mahalla-loyihasi-mikroqarzi
 Agrobank,Jismoniy,Ta'lim,Ta'lim krediti,,,,,Kontrakt summasi,UZS,Qo'lda tekshirilgan,,Stavka = MB asosiy stavkasi,https://agrobank.uz/uz/about/press-center/agrobank-ta-lim-krediti-ajratishni-boshladi
 Agrobank,Yuridik,Biznes,Kichik biznes uchun kredit,26,26,,,,UZS,Qo'lda tekshirilgan,2025,6 oygacha imtiyozli davr,https://agrobank.uz/uz/business/loans/for-small-business
-Aloqabank,Jismoniy,Avtokredit,23% dan,23.0,23.0,,5 yilgacha,500 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://aloqabank.uz/uz/private/crediting/avtokredit-import-/
-Aloqabank,Jismoniy,Iste'mol,Mobil ilova,16.0,16.0,,,15 mln – 30 mln,UZS,Saytdan avtomatik,2026-10-14,,https://aloqabank.uz/uz/private/remote-banking/mobile-app/
-Aloqabank,Jismoniy,Iste'mol,«Joziba plus»,14.0,15.0,,3 oy – 6 oy,,UZS,Saytdan avtomatik,2026-10-14,,https://aloqabank.uz/uz/private/deposit/joziba-plus/
-Aloqabank,Jismoniy,Iste'mol,«Joziba»,14.0,15.0,,3 oy – 6 oy,,UZS,Saytdan avtomatik,2026-10-14,,https://aloqabank.uz/uz/private/deposit/joziba/
-Aloqabank,Jismoniy,Iste'mol,«Aloqachi»,15.0,15.0,,13 oygacha,,UZS,Saytdan avtomatik,2026-10-14,,https://aloqabank.uz/uz/private/deposit/alokachi/
-Aloqabank,Jismoniy,Iste'mol,«Kelajak uchun»,14.0,14.0,,,,UZS,Saytdan avtomatik,2026-10-14,,https://aloqabank.uz/uz/private/deposit/kelajak-uchun/
+Aloqabank,Jismoniy,Avtokredit,23% dan,23.0,23.0,,5 yilgacha,500 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/avtokredit-import-/
+Aloqabank,Jismoniy,Ipoteka,20 yilgacha,24.0,24.0,,20 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/ipotekani-qayta-moliyalashtirish-kredit-mahsuloti/
+Aloqabank,Jismoniy,Ipoteka,15 yilgacha,24.0,24.0,,15 yilgacha,1 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/it-park-rezidentlarining-xorijiy-mutaxassislari-uchun-ipoteka-kredit-mahsuloti-6160/
+Aloqabank,Jismoniy,Ipoteka,7 yilgacha,23.0,23.0,,7 yilgacha,350 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/yashil-ta-mir-ipoteka-krediti3482/
+Aloqabank,Jismoniy,Ipoteka,20 yilgacha,18.0,23.0,,20 yilgacha,1.28 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/ulushdor-ipoteka-krediti-mahsulotining-asosiy-shartlari/
+Aloqabank,Jismoniy,Ipoteka,20 yilgacha,16.0,23.0,,20 yilgacha,1.18 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/qo-qon-ipoteka-krediti-mahsuloti/
+Aloqabank,Jismoniy,Ipoteka,10 yilgacha,22.9,22.9,,10 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/uy-joy-ta-miri-uchun-kredit-mahsuloti646/
+Aloqabank,Jismoniy,Ipoteka,20 yilgacha,18.0,18.0,,20 yilgacha,1.18 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/chimgan-ipoteka-krediti/
+Aloqabank,Jismoniy,Ipoteka,20 yilgacha,17.0,17.0,,20 yilgacha,480 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/primary-mortgage/
+Aloqabank,Jismoniy,Ipoteka,20 yilgacha,16.9,16.9,,20 yilgacha,1.28 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/yangi-toshkent-ipoteka-krediti/
+Aloqabank,Jismoniy,Iste'mol,“Ichki turizm” kredit mahsuloti,22.9,28.9,,,960.174 ming – 800 mln,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/ichki-turizm-kredit-mahsuloti/
 Aloqabank,Jismoniy,Mikroqarz,Onlayn mikroqarz,23,28.9,,,100 mln gacha,UZS,Qo'lda tekshirilgan,,,https://aloqabank.uz/uz/private/crediting/onlayn-mikroqarz/
-Aloqabank,Jismoniy,Mikroqarz,Onlayn mikroqarz,22.9,28.9,,,940.763 ming – 800 mln,UZS,Saytdan avtomatik,2026-10-14,,https://aloqabank.uz/uz/private/crediting/onlayn-mikroqarz/?mobile=Y
-Aloqabank,Yuridik,Avtokredit,25% dan,25.0,25.0,,5 yilgacha,3 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://aloqabank.uz/uz/corporate/crediting/carloan-qulay40991632/
+Aloqabank,Jismoniy,Mikroqarz,6 oydan 60 oygacha,23.0,28.9,,6 oy – 5 yil,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/onlayn-mikroqarz/
+Aloqabank,Jismoniy,Mikroqarz,"""Biznesga birinchi qadam-1"" mikroqarzi",21.0,28.9,,,931.138 ming – 800 mln,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/Biznesga%20birinchi%20qadam5913/
+Aloqabank,Jismoniy,Mikroqarz,"""Biznesga birinchi qadam-3"" mikroqarzi",22.9,28.9,,,943.178 ming – 800 mln,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/biznesga-birinchi-qadam-3-mikroqarzi/
+Aloqabank,Jismoniy,Mikroqarz,"""Biznesga madad"" mikroqarzi",22.9,28.9,,,477.651 ming – 800 mln,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/biznesga-madad-mikroqarzi/
+Aloqabank,Jismoniy,Mikroqarz,60 oygacha,25.0,25.0,,5 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/mening-mahallam-2-mikrokrediti/
+Aloqabank,Jismoniy,Mikroqarz,7 yilgacha,18.0,18.0,,7 yilgacha,200 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/yosh-tadbirkor-mikroqarzi7096/
+Aloqabank,Jismoniy,Ta'lim,Ta’lim krediti - Bankning oʻz mablagʻlari hisobidan,22.9,28.9,,1 oy – 20 yil,993.996 ming – 800 mln,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/loan-education/
+Aloqabank,Jismoniy,Ta'lim,Oʻqish davri + 7.5 yil,14.0,14.0,,5 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/private/crediting/education-loan/
+Aloqabank,Yuridik,Avtokredit,3 yilgacha,26.0,26.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/corporate/crediting/car-primary-market/
+Aloqabank,Yuridik,Avtokredit,60 oygacha,20.19,25.49,,5 yilgacha,3 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/corporate/crediting/isuzu-auto-modulli-krediti/
+Aloqabank,Yuridik,Avtokredit,25% dan,25.0,25.0,,5 yilgacha,3 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/corporate/crediting/carloan-qulay40991632/
+Aloqabank,Yuridik,Biznes,36 oygacha,27.0,27.0,,3 yilgacha,3 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/corporate/crediting/universal-modulli-krediti/
 Aloqabank,Yuridik,Biznes,Biznes uchun modulli kredit,25,,,36 oygacha,2 mlrd gacha,UZS,Qo'lda tekshirilgan,,,https://aloqabank.uz/uz/corporate/crediting/biznes-uchun-modulli-krediti/
-Aloqabank,Yuridik,Biznes,24% dan,24.0,24.0,,3 yilgacha,2 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://aloqabank.uz/uz/corporate/crediting/start-biznes-modulli-krediti6677/
+Aloqabank,Yuridik,Biznes,12 oygacha,25.0,25.0,,1 yilgacha,3 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/corporate/crediting/revolver-aylanma-modulli-krediti/
+Aloqabank,Yuridik,Biznes,36 oygacha,25.0,25.0,,3 yilgacha,3 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/corporate/crediting/Pro-tok%20energy/
+Aloqabank,Yuridik,Biznes,24% dan,24.0,24.0,,3 yilgacha,2 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/corporate/crediting/start-biznes-modulli-krediti6677/
+Aloqabank,Yuridik,Biznes,12 oygacha,24.0,24.0,,1 yilgacha,20 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/corporate/crediting/payment-terminal/
+Aloqabank,Yuridik,Biznes,36 oygacha,24.0,24.0,,3 yilgacha,3 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/corporate/crediting/muqobil-energiya-modulli-krediti/
 Aloqabank,Yuridik,Biznes,Tadbirkor ayol,21,22,,24 oy – 7 yil,,UZS,Qo'lda tekshirilgan,,,https://aloqabank.uz/uz/corporate/crediting/
-Aloqabank,Yuridik,Biznes,13% dan,13.0,13.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://aloqabank.uz/uz/corporate/crediting/loans-in-foreign-currency/
+Aloqabank,Yuridik,Biznes,24 oydan - 7 yilgacha,21.0,22.0,,2 yil – 7 yil,300 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/corporate/crediting/tadbirkor-ayol-kredit-mahsuloti/
+Aloqabank,Yuridik,Biznes,13% dan,13.0,13.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://aloqabank.uz/uz/corporate/crediting/loans-in-foreign-currency/
 Anorbank,Jismoniy,Mikroqarz,Oson pullar 3.0,44,44,,36 oygacha,100 mln gacha,UZS,Qo'lda tekshirilgan,,,https://anorbank.uz/uz/credits/available-money-uz/
 Anorbank,Yuridik,Biznes,Kontokorrent krediti,21,24,,Har tranche 45 kungacha,2 mlrd gacha,UZS,Qo'lda tekshirilgan,,,https://www.anorbank.uz/uz/business/loans/cc-account-uz/
 Anorbank,Yuridik,Biznes,Biznes krediti,22,23,,1–60 oy,500 mln gacha,UZS,Qo'lda tekshirilgan,,Shartlar bajarilmasa 46%,https://www.anorbank.uz/uz/business/credits/
@@ -49,386 +69,393 @@ Asakabank,Jismoniy,Mikroqarz,Mikroqarz 2.3,25.9,31.9,,1 – 3 yil,50 mln gacha,U
 Asakabank,Jismoniy,Ta'lim,Ta'lim krediti,14,14,,11.5 yil,,UZS,Qo'lda tekshirilgan,,Ayollar va qizlar uchun 14%; agregator ma'lumoti (bank.uz),https://bank.uz/uz/credit/obrazovatelnyy-kredit19023
 Asakabank,Yuridik,Biznes,Biznesga birinchi qadam 2,27,27,,3 yil,17 mln gacha,UZS,Qo'lda tekshirilgan,,Agregator ma'lumoti (bank.uz),https://bank.uz/uz/credit/pervyy-shag-k-biznesu-22
 Asakabank,Yuridik,Biznes,Mahalla loyihasi,23,25,,36 oygacha,,UZS,Qo'lda tekshirilgan,,6 oygacha imtiyozli davr,https://asakabank.uz/uz/small-business/credits/mahalla-loyihasi
-Asia Alliance Bank,Jismoniy,Avtokredit,Avtokredit «Ikkilamchi»,26.0,28.0,,5 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://aab.uz/uz/private/crediting/avtokredit-vtorichnyy-rynok-/
+Asia Alliance Bank,Jismoniy,Avtokredit,Avtokredit «Ikkilamchi»,26.0,28.0,,5 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://aab.uz/uz/private/crediting/avtokredit-vtorichnyy-rynok-/
 Asia Alliance Bank,Jismoniy,Avtokredit,Birlamchi (yangi avtomobil),21,26,,60 oygacha,,UZS,Qo'lda tekshirilgan,,"12 oygacha 21%, 60 oygacha 26%",https://aab.uz/uz/private/crediting/avtokredit-gm/
-Asia Alliance Bank,Jismoniy,Avtokredit,Avtokredit «Sultanov Motors»,19.0,19.0,,5 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://aab.uz/uz/private/crediting/avtokredit-sultanov-motors/
+Asia Alliance Bank,Jismoniy,Avtokredit,Avtokredit «Sultanov Motors»,19.0,19.0,,5 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://aab.uz/uz/private/crediting/avtokredit-sultanov-motors/
 Asia Alliance Bank,Jismoniy,Avtokredit,Onix va Tracker,0,0,,58 oygacha,,UZS,Qo'lda tekshirilgan,,Boshlang'ich badal talab qilinadi,https://aab.uz/uz/private/crediting/avtokredit-onix-va-tracker-/
-Asia Alliance Bank,Jismoniy,Ipoteka,Ipoteka krediti,26.0,26.0,,15 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://aab.uz/uz/private/crediting/ipotechnyy-kredit/
-Asia Alliance Bank,Jismoniy,Ipoteka,Ipoteka krediti «Yangi uy - gibrid»,26.0,26.0,,15 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://aab.uz/uz/private/crediting/ipotechnyy-kredit-novyy-dom-gibrid/
-Asia Alliance Bank,Jismoniy,Ipoteka,Ipoteka krediti «Bashkent»,20.0,25.0,,20 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://aab.uz/uz/private/crediting/ipotechnyy-kredit-bashkent/
-Asia Alliance Bank,Jismoniy,Ipoteka,Ipoteka krediti «Mubaarak»,20.0,25.0,,20 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://aab.uz/uz/private/crediting/ipotechnyy-kredit-mubaarak/
-Asia Alliance Bank,Jismoniy,Ipoteka,Ipoteka krediti «Yangi uy»,17.0,18.0,,20 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://aab.uz/uz/private/crediting/ipotechnyy-kredit-novyy-dom/
-Asia Alliance Bank,Jismoniy,Iste'mol,«Sayoxatlar sari» iste’mol krediti,28.0,30.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://aab.uz/uz/private/crediting/potrebitelskiy-kredit-sayoxatlar-sari-/
-Asia Alliance Bank,Jismoniy,Iste'mol,«Muqobil energiya» iste’mol krediti,20.0,20.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://aab.uz/uz/private/crediting/potrebitelskiy-kredit-alternativnaya-energiya/
-Asia Alliance Bank,Jismoniy,Kredit karta,Overdraft,21.0,21.0,,,,UZS,Saytdan avtomatik,2026-10-14,,https://aab.uz/uz/private/crediting/overdraft/
-Asia Alliance Bank,Jismoniy,Mikroqarz,Mikrokredit «Mahalla tadbirkori»,21.0,26.0,,5 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://aab.uz/uz/private/crediting/mikrokredit-mahalla-tadbirkori-/
-Asia Alliance Bank,Jismoniy,Mikroqarz,Mikrokredit «Biznes+»,21.0,26.0,,5 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://aab.uz/uz/private/crediting/mikrokredit-biznes-plus/
-Asia Alliance Bank,Jismoniy,Mikroqarz,Mikroqarz «Imkon»,21.0,26.0,,5 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://aab.uz/uz/private/crediting/mikrozaym-imkon-/
-Asia Alliance Bank,Jismoniy,Mikroqarz,Mikroqarz «Garov»,21.0,26.0,,5 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://aab.uz/uz/private/crediting/mikrozaym-zalog-/
-Asia Alliance Bank,Jismoniy,Mikroqarz,Mikrokredit «Mening mahallam»,21.0,25.0,,3 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://aab.uz/uz/private/crediting/mikrokredit-mening-mahallam-/
-Asia Alliance Bank,Jismoniy,Mikroqarz,Mikroqarz «Mahalla farovonligi»,24.0,24.0,,5 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://aab.uz/uz/private/crediting/mikrozaym-blagopoluchie-makhalli/
-Asia Alliance Bank,Jismoniy,Mikroqarz,Overdraft «Online»,22.0,22.0,,,,UZS,Saytdan avtomatik,2026-10-14,,https://aab.uz/uz/private/crediting/overdraft-onlayn-/
+Asia Alliance Bank,Jismoniy,Ipoteka,Ipoteka krediti,26.0,26.0,,15 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://aab.uz/uz/private/crediting/ipotechnyy-kredit/
+Asia Alliance Bank,Jismoniy,Ipoteka,Ipoteka krediti «Yangi uy - gibrid»,26.0,26.0,,15 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://aab.uz/uz/private/crediting/ipotechnyy-kredit-novyy-dom-gibrid/
+Asia Alliance Bank,Jismoniy,Ipoteka,Ipoteka krediti «Bashkent»,20.0,25.0,,20 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://aab.uz/uz/private/crediting/ipotechnyy-kredit-bashkent/
+Asia Alliance Bank,Jismoniy,Ipoteka,Ipoteka krediti «Mubaarak»,20.0,25.0,,20 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://aab.uz/uz/private/crediting/ipotechnyy-kredit-mubaarak/
+Asia Alliance Bank,Jismoniy,Ipoteka,Ipoteka krediti «Yangi uy»,17.0,18.0,,20 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://aab.uz/uz/private/crediting/ipotechnyy-kredit-novyy-dom/
+Asia Alliance Bank,Jismoniy,Iste'mol,«Sayoxatlar sari» iste’mol krediti,28.0,30.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://aab.uz/uz/private/crediting/potrebitelskiy-kredit-sayoxatlar-sari-/
+Asia Alliance Bank,Jismoniy,Iste'mol,«Muqobil energiya» iste’mol krediti,20.0,20.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://aab.uz/uz/private/crediting/potrebitelskiy-kredit-alternativnaya-energiya/
+Asia Alliance Bank,Jismoniy,Kredit karta,Overdraft,21.0,21.0,,,,UZS,Saytdan avtomatik,2026-10-15,,https://aab.uz/uz/private/crediting/overdraft/
+Asia Alliance Bank,Jismoniy,Mikroqarz,Mikrokredit «Mahalla tadbirkori»,21.0,26.0,,5 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aab.uz/uz/private/crediting/mikrokredit-mahalla-tadbirkori-/
+Asia Alliance Bank,Jismoniy,Mikroqarz,Mikrokredit «Biznes+»,21.0,26.0,,5 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aab.uz/uz/private/crediting/mikrokredit-biznes-plus/
+Asia Alliance Bank,Jismoniy,Mikroqarz,Mikroqarz «Imkon»,21.0,26.0,,5 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aab.uz/uz/private/crediting/mikrozaym-imkon-/
+Asia Alliance Bank,Jismoniy,Mikroqarz,Mikroqarz «Garov»,21.0,26.0,,5 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aab.uz/uz/private/crediting/mikrozaym-zalog-/
+Asia Alliance Bank,Jismoniy,Mikroqarz,Mikrokredit «Mening mahallam»,21.0,25.0,,3 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://aab.uz/uz/private/crediting/mikrokredit-mening-mahallam-/
+Asia Alliance Bank,Jismoniy,Mikroqarz,Mikroqarz «Mahalla farovonligi»,24.0,24.0,,5 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://aab.uz/uz/private/crediting/mikrozaym-blagopoluchie-makhalli/
+Asia Alliance Bank,Jismoniy,Mikroqarz,Overdraft «Online»,22.0,22.0,,,,UZS,Saytdan avtomatik,2026-10-15,,https://aab.uz/uz/private/crediting/overdraft-onlayn-/
 Biznesni rivojlantirish banki,Jismoniy,Avtokredit,Avtokredit (yangi avtomobil),23,27,,5 yilgacha,,UZS,Qo'lda tekshirilgan,,Boshlang'ich badal 25% dan,https://brb.uz/jismoniy-shaxslarga/kreditlar/avtokredit
-Biznesni rivojlantirish banki,Jismoniy,Avtokredit,BRB Avto Classic,25.0,25.0,,30 oygacha,,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/brb-avto-classic
-Biznesni rivojlantirish banki,Jismoniy,Avtokredit,Milliy avto,25.0,25.0,,5 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/milliy-avto-krediti
-Biznesni rivojlantirish banki,Jismoniy,Biznes,Bir Mahalla – Bir Biznes,21.0,21.0,,7 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/bir-mahalla-bir-biznes
-Biznesni rivojlantirish banki,Jismoniy,Biznes,"""Ayol Tadbirkor"" krediti",20.0,21.0,,6 oy – 7 yil,100 mln – 10.3 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/kreditlar/ayol-tadbirkorkrediti
-Biznesni rivojlantirish banki,Jismoniy,Biznes,“Mahallada biznes” krediti,21.0,21.0,,1 oy – 7 yil,50 mln – 500 mln,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/kreditlar/mahallada-biznes-krediti
-Biznesni rivojlantirish banki,Jismoniy,Biznes,"""Yosh tadbirkor"" krediti",18.0,18.0,,1 oy – 5 yil,100 mln – 10 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/kreditlar/yosh-tadbirkor-krediti
-Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Uy-joy qurish va rekonstruksiya qilishga ipoteka,20.0,26.0,,15 yilgacha,1540 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/ipoteka/uy-joy-qurish-va-rekonstruksiya-qilish
-Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Tijoriy,19.5,25.0,,15 yilgacha,1 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/ipoteka/ipoteka-na-lyuboe-zhile
-Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Ikkilamchi,20.0,24.0,,15 yilgacha,4.12 mlrd – 4.4 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/ipoteka/ikkilamchi-ipoteka
-Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Madad,20.0,23.0,,15 yilgacha,1.1 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/ipoteka/ipoteka-madad
-Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Yashil ta'mir,23.0,23.0,,10 yilgacha,350 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/ipoteka/ipoteka-yashil-tamir
+Biznesni rivojlantirish banki,Jismoniy,Avtokredit,BRB Avto Classic,25.0,25.0,,30 oygacha,,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/brb-avto-classic
+Biznesni rivojlantirish banki,Jismoniy,Avtokredit,Milliy avto,25.0,25.0,,5 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/milliy-avto-krediti
+Biznesni rivojlantirish banki,Jismoniy,Biznes,Bir Mahalla – Bir Biznes,21.0,21.0,,7 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/bir-mahalla-bir-biznes
+Biznesni rivojlantirish banki,Jismoniy,Biznes,"""Ayol Tadbirkor"" krediti",20.0,21.0,,6 oy – 7 yil,100 mln – 10.3 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/kreditlar/ayol-tadbirkorkrediti
+Biznesni rivojlantirish banki,Jismoniy,Biznes,“Mahallada biznes” krediti,21.0,21.0,,1 oy – 7 yil,50 mln – 500 mln,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/kreditlar/mahallada-biznes-krediti
+Biznesni rivojlantirish banki,Jismoniy,Biznes,"""Yosh tadbirkor"" krediti",18.0,18.0,,1 oy – 5 yil,100 mln – 10 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/kreditlar/yosh-tadbirkor-krediti
+Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Uy-joy qurish va rekonstruksiya qilishga ipoteka,20.0,26.0,,15 yilgacha,1540 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/ipoteka/uy-joy-qurish-va-rekonstruksiya-qilish
+Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Tijoriy,19.5,25.0,,15 yilgacha,1 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/ipoteka/ipoteka-na-lyuboe-zhile
+Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Ikkilamchi,20.0,24.0,,15 yilgacha,4.12 mlrd – 4.4 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/ipoteka/ikkilamchi-ipoteka
+Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Madad,20.0,23.0,,15 yilgacha,1.1 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/ipoteka/ipoteka-madad
+Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Yashil ta'mir,23.0,23.0,,10 yilgacha,350 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/ipoteka/ipoteka-yashil-tamir
 Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Uy-joy ta'miri uchun ipoteka,22,22.9,22–22.9,10 yilgacha,440 mln gacha (Toshkent),UZS,Qo'lda tekshirilgan,,,https://brb.uz/jismoniy-shaxslarga/ipoteka/uy-joy-tamiri-uchun-ipoteka
-Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Qayta moliyalashtirishga ipoteka,21.5,22.0,,15 yilgacha,4.4 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/ipoteka/ipoteka-qayta-moliyalashtirish
-Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Bank qurayotgan uylarga ipoteka,14.0,20.0,,15 yilgacha,2.2 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/ipoteka/bank-qurayotgan-uylarga-ipoteka
-Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Ipoteka-birlamchi,15.0,20.0,,20 yilgacha,480 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/ipoteka/birlamchi-ipoteka
-Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Tezkor,15.0,16.99,,20 yilgacha,480 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/ipoteka/tezkor-ipoteka
+Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Qayta moliyalashtirishga ipoteka,21.5,22.0,,15 yilgacha,4.4 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/ipoteka/ipoteka-qayta-moliyalashtirish
+Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Bank qurayotgan uylarga ipoteka,14.0,20.0,,15 yilgacha,2.2 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/ipoteka/bank-qurayotgan-uylarga-ipoteka
+Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Ipoteka-birlamchi,15.0,20.0,,20 yilgacha,480 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/ipoteka/birlamchi-ipoteka
+Biznesni rivojlantirish banki,Jismoniy,Ipoteka,Tezkor,15.0,16.99,,20 yilgacha,480 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/ipoteka/tezkor-ipoteka
 Biznesni rivojlantirish banki,Jismoniy,Iste'mol,Iste'mol krediti,23,27,,5 yilgacha,200 mln gacha,UZS,Qo'lda tekshirilgan,,,https://brb.uz/jismoniy-shaxslarga/kreditlar/potrebitelskiy-kredit
-Biznesni rivojlantirish banki,Jismoniy,Iste'mol,Bino qurish krediti,24.5,26.0,,5 yilgacha,400 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/kreditlar/bino-qurish-krediti
-Biznesni rivojlantirish banki,Jismoniy,Iste'mol,“Mahalla loyihasi” krediti,24.0,26.0,,1 oy – 5 yil,1 mlrd – 5 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/kreditlar/mahalla-loyihasi
-Biznesni rivojlantirish banki,Jismoniy,Iste'mol,Mahalla bankiri,24.0,25.0,,3 yilgacha,60 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/mahalla-bankiri-krediti
-Biznesni rivojlantirish banki,Jismoniy,Iste'mol,Yangi yo'l tomorqa,20.0,20.0,,1 yilgacha,20 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/yangi-yol-tomorqa-krediti
-Biznesni rivojlantirish banki,Jismoniy,Iste'mol,Yashil energiya krediti,20.0,20.0,,3 yilgacha,200 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/yashil-energiya-istemol-krediti
-Biznesni rivojlantirish banki,Jismoniy,Iste'mol,Toʻlov terminalini ijaraga berish,20.0,20.0,,,68 ming gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/tolov-terminallari
-Biznesni rivojlantirish banki,Jismoniy,Iste'mol,“Yangi O‘zbekiston kelajagi” krediti,18.0,18.0,,1 oy – 7 yil,1 mlrd – 10 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/kreditlar/yangi-ozbekiston-kelajagi-krediti
-Biznesni rivojlantirish banki,Jismoniy,Iste'mol,"""Chorvachilikni rivojlantirish"" krediti",17.0,17.0,,10 yilgacha,,EUR,Saytdan avtomatik,2026-10-14,,https://brb.uz/kreditlar/chorvachilikni-rivojlantirish-krediti
-Biznesni rivojlantirish banki,Jismoniy,Iste'mol,"""Tomorqa revolver"" krediti",14.0,14.0,,6 oy – 1 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/kreditlar/tomorqa-revolver-krediti
-Biznesni rivojlantirish banki,Jismoniy,Kredit karta,Onlayn Overdraft,24.0,24.0,,2 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/onlayn-overdraft
-Biznesni rivojlantirish banki,Jismoniy,Kredit karta,Overdraft,24.0,24.0,,1 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/overdraft
-Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Onlayn mikroqarz: 100 mln. so‘mgacha,26.0,33.0,,4 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/onlayn-mikroqarz
-Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,BRB mikroqarzi bilan tezkor yechimlar,25.0,30.0,,6 oy – 4 yil,34.104 – 100 mln,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/mikroqarz
-Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Mikroqarz,26.0,29.0,,4 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/korporativ-xodimlari-uchun-mikroqarz
-Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,BRB IT Start-up,26.0,29.0,,3 yilgacha,15 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/mikrokredit-brb-it-start-up
-Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,BRB Start-up,26.0,29.0,,3 yilgacha,12 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/mikrozaym-brb-start-up
-Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Travel mikroqarz,26.0,28.0,,4 yilgacha,40 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/sayohat-uchun-mikroqarz
-Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,BRB business-man,26.0,28.0,,3 yilgacha,10 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/mikroqarz-brb-business-man
-Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Biznes uchun onlayn kredit,27.99,27.99,,6 oy – 1 yil,300 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/kreditlar/online-express-mikrokrediti
-Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Biznes onlayn,27.99,27.99,,6 oy – 1 yil,300 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/kreditlar/biznes-onlayn-mikro-krediti
-Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Garov evaziga mikrokredit,23.99,26.99,,5 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/yangi-biznes-m-300
-Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,BRB business-woman,24.0,26.0,,3 yilgacha,11 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/brb-business-woman-mikroqarz
-Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Biznesga birinchi qadam,24.0,24.0,,3 yilgacha,15 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/mikrozaym-pervyy-shag-k-biznesu
-Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Tomorqa biznes,24.0,24.0,,4 yilgacha,17 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/jismoniy-shaxslarga/kreditlar/mikrozaym-tomorqa-biznes
-Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Kichik biznesga mikrokredit,19.0,23.0,,7 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://brb.uz/kreditlar/mikrokredit
+Biznesni rivojlantirish banki,Jismoniy,Iste'mol,Bino qurish krediti,24.5,26.0,,5 yilgacha,400 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/kreditlar/bino-qurish-krediti
+Biznesni rivojlantirish banki,Jismoniy,Iste'mol,“Mahalla loyihasi” krediti,24.0,26.0,,1 oy – 5 yil,1 mlrd – 5 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/kreditlar/mahalla-loyihasi
+Biznesni rivojlantirish banki,Jismoniy,Iste'mol,Mahalla bankiri,24.0,25.0,,3 yilgacha,60 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/mahalla-bankiri-krediti
+Biznesni rivojlantirish banki,Jismoniy,Iste'mol,Yangi yo'l tomorqa,20.0,20.0,,1 yilgacha,20 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/yangi-yol-tomorqa-krediti
+Biznesni rivojlantirish banki,Jismoniy,Iste'mol,Yashil energiya krediti,20.0,20.0,,3 yilgacha,200 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/yashil-energiya-istemol-krediti
+Biznesni rivojlantirish banki,Jismoniy,Iste'mol,Toʻlov terminalini ijaraga berish,20.0,20.0,,,68 ming gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/tolov-terminallari
+Biznesni rivojlantirish banki,Jismoniy,Iste'mol,“Yangi O‘zbekiston kelajagi” krediti,18.0,18.0,,1 oy – 7 yil,1 mlrd – 10 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/kreditlar/yangi-ozbekiston-kelajagi-krediti
+Biznesni rivojlantirish banki,Jismoniy,Iste'mol,"""Chorvachilikni rivojlantirish"" krediti",17.0,17.0,,10 yilgacha,,EUR,Saytdan avtomatik,2026-10-15,,https://brb.uz/kreditlar/chorvachilikni-rivojlantirish-krediti
+Biznesni rivojlantirish banki,Jismoniy,Iste'mol,"""Tomorqa revolver"" krediti",14.0,14.0,,6 oy – 1 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/kreditlar/tomorqa-revolver-krediti
+Biznesni rivojlantirish banki,Jismoniy,Kredit karta,Onlayn Overdraft,24.0,24.0,,2 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/onlayn-overdraft
+Biznesni rivojlantirish banki,Jismoniy,Kredit karta,Overdraft,24.0,24.0,,1 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/overdraft
+Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Onlayn mikroqarz: 100 mln. so‘mgacha,26.0,33.0,,4 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/onlayn-mikroqarz
+Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,BRB mikroqarzi bilan tezkor yechimlar,25.0,30.0,,6 oy – 4 yil,34.104 – 100 mln,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/mikroqarz
+Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Mikroqarz,26.0,29.0,,4 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/korporativ-xodimlari-uchun-mikroqarz
+Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,BRB IT Start-up,26.0,29.0,,3 yilgacha,15 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/mikrokredit-brb-it-start-up
+Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,BRB Start-up,26.0,29.0,,3 yilgacha,12 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/mikrozaym-brb-start-up
+Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Travel mikroqarz,26.0,28.0,,4 yilgacha,40 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/sayohat-uchun-mikroqarz
+Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,BRB business-man,26.0,28.0,,3 yilgacha,10 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/mikroqarz-brb-business-man
+Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Biznes uchun onlayn kredit,27.99,27.99,,6 oy – 1 yil,300 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/kreditlar/online-express-mikrokrediti
+Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Biznes onlayn,27.99,27.99,,6 oy – 1 yil,300 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/kreditlar/biznes-onlayn-mikro-krediti
+Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Garov evaziga mikrokredit,23.99,26.99,,5 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/yangi-biznes-m-300
+Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,BRB business-woman,24.0,26.0,,3 yilgacha,11 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/brb-business-woman-mikroqarz
+Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Biznesga birinchi qadam,24.0,24.0,,3 yilgacha,15 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/mikrozaym-pervyy-shag-k-biznesu
+Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Tomorqa biznes,24.0,24.0,,4 yilgacha,17 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/jismoniy-shaxslarga/kreditlar/mikrozaym-tomorqa-biznes
+Biznesni rivojlantirish banki,Jismoniy,Mikroqarz,Kichik biznesga mikrokredit,19.0,23.0,,7 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://brb.uz/kreditlar/mikrokredit
 Biznesni rivojlantirish banki,Jismoniy,Ta'lim,Onlayn ta'lim krediti,14,14,14,7 yilgacha,,UZS,Qo'lda tekshirilgan,,,https://brb.uz/jismoniy-shaxslarga/kreditlar/onlayn-talim-krediti
 Biznesni rivojlantirish banki,Yuridik,Biznes,Micro Business,24,25.5,,60 oygacha,500 mln gacha,UZS,Qo'lda tekshirilgan,,Sahifada 24% va 25.5% — farq bor,https://brb.uz/kreditlar/micro-business-krediti
 Biznesni rivojlantirish banki,Yuridik,Biznes,Invest,10,25,,84 oygacha,100 mlrd ekv. gacha,UZS,Qo'lda tekshirilgan,,,https://brb.uz/kreditlar/invest-krediti
-Davr bank,Jismoniy,Avtokredit,Smart Auto,25.0,29.94,,58 oy – 6 yil,467.566 – 1 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://davrbank.uz/uz/loans/individual-car-loan/individual-smart-auto
-Davr bank,Jismoniy,Avtokredit,Smart Roodell,25.0,29.94,,1 yil – 6 yil,880.522 – 1 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://davrbank.uz/uz/loans/individual-car-loan/individual-smart-roodell
-Davr bank,Jismoniy,Avtokredit,UzAuto,25.0,27.0,,10 oy – 6 yil,300 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://davrbank.uz/uz/loans/individual-car-loan/individual-uzauto
-Davr bank,Jismoniy,Avtokredit,Comfort avto,25.0,27.0,,1 yil – 6 yil,166.667 – 1 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://davrbank.uz/uz/loans/individual-car-loan/individual-comfort-avto
+Davr bank,Jismoniy,Avtokredit,Smart Auto,25.0,29.94,,58 oy – 6 yil,467.566 – 1 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://davrbank.uz/uz/loans/individual-car-loan/individual-smart-auto
+Davr bank,Jismoniy,Avtokredit,Smart Roodell,25.0,29.94,,1 yil – 6 yil,880.522 – 1 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://davrbank.uz/uz/loans/individual-car-loan/individual-smart-roodell
+Davr bank,Jismoniy,Avtokredit,UzAuto,25.0,27.0,,10 oy – 6 yil,300 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://davrbank.uz/uz/loans/individual-car-loan/individual-uzauto
+Davr bank,Jismoniy,Avtokredit,Comfort avto,25.0,27.0,,1 yil – 6 yil,166.667 – 1 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://davrbank.uz/uz/loans/individual-car-loan/individual-comfort-avto
 Davr bank,Jismoniy,Ipoteka,Ipoteka,25.99,28.99,,84 oygacha,700 mln gacha,UZS,Qo'lda tekshirilgan,,Aniq sahifa havolasi qidiruvda ko'rinmadi,https://davrbank.uz/
 Davr bank,Jismoniy,Iste'mol,Karta aylanmasi,44,44,,,,UZS,Qo'lda tekshirilgan,,,https://davrbank.uz/uz/loans/individual-loan/individual-card-turnover
-Davr bank,Jismoniy,Mikroqarz,Davr Online 2,45.0,45.0,,5 yilgacha,30 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://davrbank.uz/uz/loans/individual-microqarz/individual-davr-online-2
+Davr bank,Jismoniy,Mikroqarz,Davr Online 2,45.0,45.0,,5 yilgacha,30 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://davrbank.uz/uz/loans/individual-microqarz/individual-davr-online-2
 Davr bank,Jismoniy,Mikroqarz,Universal mikroqarz,38,38,,12 oygacha,50 mln gacha,UZS,Qo'lda tekshirilgan,,,https://davrbank.uz/uz/loans/4
 Davr bank,Jismoniy,Mikroqarz,Mikroqarz 100,37,37,,60 oygacha,100 mln gacha,UZS,Qo'lda tekshirilgan,,Rasmiy daromad talab qilinadi,https://davrbank.uz/uz/loans/individual-microloan/individual-microloan-100
 Davr bank,Jismoniy,Mikroqarz,To'lov uchun mikroqarz,36,36,36,,,UZS,Qo'lda tekshirilgan,,30 kun imtiyozli davr,https://davrbank.uz/uz/loans/individual-microqarz/individual-microloan-for-payment
 Davr bank,Jismoniy,Mikroqarz,Nuroniy,33,33,,60 oygacha,100 mln gacha,UZS,Qo'lda tekshirilgan,,,https://davrbank.uz/uz/loans/individual-microloan/individual-microloan-nuroniy
-Davr bank,Jismoniy,Mikroqarz,Mini kredit 3,27.0,27.0,,3 yilgacha,10 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://davrbank.uz/uz/loans/individual-microqarz/individual-mini-loan-3
+Davr bank,Jismoniy,Mikroqarz,Mini kredit 3,27.0,27.0,,3 yilgacha,10 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://davrbank.uz/uz/loans/individual-microqarz/individual-mini-loan-3
 Davr bank,Yuridik,Biznes,Biznes Start mikrokredit,31,34,,60 oygacha,300 mln gacha,UZS,Qo'lda tekshirilgan,,"Ko'chmas mulk garovi 31%, avto garovi 34%",https://davrbank.uz/uz/loans/individual-microloan/individual-biznes-start-mikrokredit
-Garant bank,Jismoniy,Avtokredit,Avtokredit «LIXIANG»,35.0,35.0,,2 oy – 5 yil,600 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://garantbank.uz/uz/avtokredit-lixiang
+Garant bank,Jismoniy,Avtokredit,Avtokredit «LIXIANG»,35.0,35.0,,2 oy – 5 yil,600 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://garantbank.uz/uz/avtokredit-lixiang
 Garant bank,Jismoniy,Avtokredit,Avtokreditlar (ayrim modellar),0,0,,60 oygacha,,UZS,Qo'lda tekshirilgan,,,https://garantbank.uz/uz/get_list_pages/credits
 Garant bank,Jismoniy,Iste'mol,Iste'mol krediti,28,28,,2 yilgacha,,UZS,Qo'lda tekshirilgan,,Kafil talab qilinadi; stavka individual,https://garantbank.uz/uz/kredity
-Garant bank,Jismoniy,Iste'mol,«Orzu sari» omonati,18.0,18.0,,2 yilgacha,10 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://garantbank.uz/uz/vklad-orzu-sari
+Garant bank,Jismoniy,Iste'mol,«Orzu sari» omonati,18.0,18.0,,2 yilgacha,10 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://garantbank.uz/uz/vklad-orzu-sari
 Garant bank,Jismoniy,Mikroqarz,Imkoniyat,30,30,,,,UZS,Qo'lda tekshirilgan,,,https://garantbank.uz/uz/get_list_pages/credits
 Garant bank,Jismoniy,Mikroqarz,Farovonlik (o'zini band qilganlar),30,30,,,,UZS,Qo'lda tekshirilgan,,,https://garantbank.uz/uz/get_list_pages/credits
-Hamkorbank,Jismoniy,Avtokredit,Стоимость автомобиля,23.99,30.0,,3 oy – 5 yil,300 mln – 600 mln,UZS,Saytdan avtomatik,2026-10-14,,https://hamkorbank.uz/
+Hamkorbank,Jismoniy,Avtokredit,Стоимость автомобиля,23.99,30.0,,3 oy – 5 yil,300 mln – 600 mln,UZS,Saytdan avtomatik,2026-10-15,,https://hamkorbank.uz/
 Hamkorbank,Jismoniy,Avtokredit,Auto light (ikkilamchi bozor),23.99,25.99,,5 yilgacha,,UZS,Qo'lda tekshirilgan,,Boshlang'ich badal 25%,https://hamkorbank.uz/uz/physical/credits/autolight/
-Hamkorbank,Jismoniy,Avtokredit,Avtotransport summasi,10.0,19.5,,3 oy – 5 yil,300 mln – 600 mln,UZS,Saytdan avtomatik,2026-10-14,,https://hamkorbank.uz/uz/
-Hamkorbank,Jismoniy,Avtokredit,Стоимость автомобиля,10.0,19.0,,3 oy – 5 yil,300 mln – 600 mln,UZS,Saytdan avtomatik,2026-10-14,,https://hamkorbank.uz/
-Hamkorbank,Jismoniy,Avtokredit,Avtotransport summasi,10.0,19.0,,3 oy – 5 yil,300 mln – 600 mln,UZS,Saytdan avtomatik,2026-10-14,,https://hamkorbank.uz/uz/
+Hamkorbank,Jismoniy,Avtokredit,Avtotransport summasi,10.0,19.5,,3 oy – 5 yil,300 mln – 600 mln,UZS,Saytdan avtomatik,2026-10-15,,https://hamkorbank.uz/uz/
+Hamkorbank,Jismoniy,Avtokredit,Стоимость автомобиля,10.0,19.0,,3 oy – 5 yil,300 mln – 600 mln,UZS,Saytdan avtomatik,2026-10-15,,https://hamkorbank.uz/
+Hamkorbank,Jismoniy,Avtokredit,Avtotransport summasi,10.0,19.0,,3 oy – 5 yil,300 mln – 600 mln,UZS,Saytdan avtomatik,2026-10-15,,https://hamkorbank.uz/uz/
 Hamkorbank,Jismoniy,Avtokredit,Avtokreditlar (ko'p modellar),0,,,5 yilgacha,,UZS,Qo'lda tekshirilgan,,Hamkor dilerlar aksiyasi,https://hamkorbank.uz/uz/physical/credits/
 Hamkorbank,Jismoniy,Ipoteka,Ipoteka,17,19,,20 yilgacha,,UZS,Qo'lda tekshirilgan,,"Asosiy sahifada 17% dan, boshqa sahifada 19%",https://hamkorbank.uz/uz/physical/mortgage/
-Hamkorbank,Jismoniy,Ipoteka,Покупка жилья,18.0,18.0,,20 yilgacha,420 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://hamkorbank.uz/physical/mortgage/off-plan-mortgage/
-Hamkorbank,Jismoniy,Iste'mol,Калькулятор,40.0,40.0,,,100 ming – 50 mln,UZS,Saytdan avtomatik,2026-10-14,,https://hamkorbank.uz/
-Hamkorbank,Jismoniy,Iste'mol,Стоимость жилья,25.0,27.0,,1 yil – 10 yil,500 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://hamkorbank.uz/
+Hamkorbank,Jismoniy,Ipoteka,Покупка жилья,18.0,18.0,,20 yilgacha,420 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://hamkorbank.uz/physical/mortgage/off-plan-mortgage/
+Hamkorbank,Jismoniy,Iste'mol,Калькулятор,40.0,40.0,,,100 ming – 50 mln,UZS,Saytdan avtomatik,2026-10-15,,https://hamkorbank.uz/
+Hamkorbank,Jismoniy,Iste'mol,20 млн. сум,23.99,29.99,,1 oy – 5 yil,4.60195 mln – 300 mln,UZS,Saytdan avtomatik,2026-10-15,,https://hamkorbank.uz/
+Hamkorbank,Jismoniy,Iste'mol,Стоимость жилья,25.0,27.0,,1 yil – 10 yil,500 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://hamkorbank.uz/
 Hamkorbank,Jismoniy,Iste'mol,Iste'mol krediti,26,,,36 oygacha,200 mln gacha,UZS,Qo'lda tekshirilgan,,,https://hamkorbank.uz/uz/physical/credits/
-Hamkorbank,Jismoniy,Iste'mol,Стоимость жилья,19.0,19.0,,1 yil – 10 yil,175 mln – 350 mln,UZS,Saytdan avtomatik,2026-10-14,,https://hamkorbank.uz/
+Hamkorbank,Jismoniy,Iste'mol,0 сум,18.0,26.0,,,210 mln – 420 mln,UZS,Saytdan avtomatik,2026-10-15,,https://hamkorbank.uz/
+Hamkorbank,Jismoniy,Iste'mol,Стоимость жилья,19.0,19.0,,1 yil – 10 yil,175 mln – 350 mln,UZS,Saytdan avtomatik,2026-10-15,,https://hamkorbank.uz/
+Hamkorbank,Jismoniy,Iste'mol,0 сум,17.0,17.5,,,500 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://hamkorbank.uz/
+Hamkorbank,Jismoniy,Iste'mol,1 млн. сум,14.0,14.0,,1 yil – 7 yil,477.87 ming – 50 mln,UZS,Saytdan avtomatik,2026-10-15,,https://hamkorbank.uz/
 Hamkorbank,Jismoniy,Mikroqarz,Onlayn kredit,23,38,,3 yilgacha,100 mln gacha,UZS,Qo'lda tekshirilgan,,"Garovsiz, faqat pasport",https://hamkorbank.uz/uz/physical/credits/online-credit/
 Hamkorbank,Jismoniy,Mikroqarz,Mikrokredit Plus (avto garovi),23.99,25.99,,60 oygacha,300 mln gacha,UZS,Qo'lda tekshirilgan,,Qarz yuki 50% dan past bo'lsa; aks holda yuqoriroq,https://hamkorbank.uz/uz/physical/credits/microcredit-plus/
-Hamkorbank,Jismoniy,Mikroqarz,Для любых целей,23.0,23.0,,3 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://hamkorbank.uz/physical/credits/online-credit/
-Hamkorbank,Jismoniy,Mikroqarz,Har qanday maqsadlar uchun,23.0,23.0,,3 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://hamkorbank.uz/uz/physical/credits/online-credit/
+Hamkorbank,Jismoniy,Mikroqarz,Для любых целей,23.0,23.0,,3 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://hamkorbank.uz/physical/credits/online-credit/
+Hamkorbank,Jismoniy,Mikroqarz,Har qanday maqsadlar uchun,23.0,23.0,,3 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://hamkorbank.uz/uz/physical/credits/online-credit/
 Hamkorbank,Jismoniy,Ta'lim,Ta'lim krediti,14,14,,7 yilgacha,100 mln gacha,UZS,Qo'lda tekshirilgan,,,https://hamkorbank.uz/uz/physical/credits/education-loan/
-InFinBank,Jismoniy,Iste'mol,Yashil ta'mir,50.0,50.0,,10 yilgacha,170 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://www.infinbank.com/uz/private/credits/green_repair/
-InFinBank,Jismoniy,Iste'mol,Isteʼmol krediti,37.99,37.99,,3 oy – 18 oy,41.2 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://www.infinbank.com/uz/private/credits/consumer/
-InFinBank,Jismoniy,Iste'mol,InFin Rekostruksiya,29.99,29.99,,0.1 oy – 6 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://www.infinbank.com/uz/private/credits/reconstruction_loan/
-InFinBank,Jismoniy,Kredit karta,Yangilangan sana: 03.12.2024,25.55,25.55,,5 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://www.infinbank.com/uz/private/credits/overdraft/
-InFinBank,Jismoniy,Mikroqarz,InFin Mikroqarz,23.99,27.99,,0.1 oy – 5 yil,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://www.infinbank.com/uz/private/credits/microloans/
-InFinBank,Jismoniy,Ta'lim,Ta'lim krediti,26.99,26.99,,0.1 oy – 15 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://www.infinbank.com/uz/private/credits/Edu_loan/
-InFinBank,Yuridik,Avtokredit,"Avtokreditga aksiya (Onix, Tracker, Captiva, Damas va Labo)",35.98,35.98,,1 oy – 5 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://www.infinbank.com/uz/corporate/credits/autoloan_promo/?ELEMENT_CODE=autoloan_promo
-InFinBank,Yuridik,Avtokredit,Avtokreditga aksiya,18.5,18.5,,,,UZS,Saytdan avtomatik,2026-10-14,,https://www.infinbank.com/uz/corporate/credits/autoloan_promo/
+InFinBank,Jismoniy,Iste'mol,Yashil ta'mir,50.0,50.0,,10 yilgacha,170 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://www.infinbank.com/uz/private/credits/green_repair/
+InFinBank,Jismoniy,Iste'mol,Isteʼmol krediti,37.99,37.99,,3 oy – 18 oy,41.2 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://www.infinbank.com/uz/private/credits/consumer/
+InFinBank,Jismoniy,Iste'mol,InFin Rekostruksiya,29.99,29.99,,0.1 oy – 6 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://www.infinbank.com/uz/private/credits/reconstruction_loan/
+InFinBank,Jismoniy,Kredit karta,Yangilangan sana: 03.12.2024,25.55,25.55,,5 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://www.infinbank.com/uz/private/credits/overdraft/
+InFinBank,Jismoniy,Mikroqarz,InFin Mikroqarz,23.99,27.99,,0.1 oy – 5 yil,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://www.infinbank.com/uz/private/credits/microloans/
+InFinBank,Jismoniy,Ta'lim,Ta'lim krediti,26.99,26.99,,0.1 oy – 15 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://www.infinbank.com/uz/private/credits/Edu_loan/
+InFinBank,Yuridik,Avtokredit,"Avtokreditga aksiya (Onix, Tracker, Captiva, Damas va Labo)",35.98,35.98,,1 oy – 5 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://www.infinbank.com/uz/corporate/credits/autoloan_promo/?ELEMENT_CODE=autoloan_promo
+InFinBank,Yuridik,Avtokredit,Avtokreditga aksiya,18.5,18.5,,,,UZS,Saytdan avtomatik,2026-10-15,,https://www.infinbank.com/uz/corporate/credits/autoloan_promo/
 InFinBank,Yuridik,Biznes,Modulli kredit,27.99,29.99,26.99,90 kun – 36 oy,,UZS,Qo'lda tekshirilgan,,"90 kun 27.99%, 12 oy 28.99%, 36 oy 29.99%",https://www.infinbank.com/uz/corporate/credits/modular_loan/
 InFinBank,Yuridik,Biznes,Mikrokredit,27.99,27.99,,,,UZS,Qo'lda tekshirilgan,,Valyutada 12.99% dan,https://www.infinbank.com/uz/corporate/credits/microcredit/
-InFinBank,Yuridik,Biznes,Kichik biznesni uzluksiz qo‘llab-quvvatlash,23.99,23.99,,3 yil – 7 yil,100 mln – 200 mln,UZS,Saytdan avtomatik,2026-10-14,,https://www.infinbank.com/uz/corporate/credits/support/
-InFinBank,Yuridik,Biznes,Qurilish,23.99,23.99,,6 oy – 3 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://www.infinbank.com/uz/corporate/credits/construction/
-InFinBank,Yuridik,Biznes,Faktoring,23.99,23.99,,4 oy – 6 oy,,UZS,Saytdan avtomatik,2026-10-14,,https://www.infinbank.com/uz/corporate/credits/factoring/
-InFinBank,Yuridik,Biznes,Lizing,22.0,22.0,,1 yil – 3 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://www.infinbank.com/uz/corporate/credits/leasing/
-InFinBank,Yuridik,Biznes,Tadbirkor ayol hamrohi,19.9,19.9,,1 oy – 1 yil,100 mln – 1.648 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://www.infinbank.com/uz/corporate/credits/female_loan/
+InFinBank,Yuridik,Biznes,Kichik biznesni uzluksiz qo‘llab-quvvatlash,23.99,23.99,,3 yil – 7 yil,100 mln – 200 mln,UZS,Saytdan avtomatik,2026-10-15,,https://www.infinbank.com/uz/corporate/credits/support/
+InFinBank,Yuridik,Biznes,Qurilish,23.99,23.99,,6 oy – 3 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://www.infinbank.com/uz/corporate/credits/construction/
+InFinBank,Yuridik,Biznes,Faktoring,23.99,23.99,,4 oy – 6 oy,,UZS,Saytdan avtomatik,2026-10-15,,https://www.infinbank.com/uz/corporate/credits/factoring/
+InFinBank,Yuridik,Biznes,Lizing,22.0,22.0,,1 yil – 3 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://www.infinbank.com/uz/corporate/credits/leasing/
+InFinBank,Yuridik,Biznes,Tadbirkor ayol hamrohi,19.9,19.9,,1 oy – 1 yil,100 mln – 1.648 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://www.infinbank.com/uz/corporate/credits/female_loan/
 InFinBank,Yuridik,Biznes,Biznes uchun yangi kredit,18.99,18.99,,7 yilgacha,1 mlrd gacha,UZS,Qo'lda tekshirilgan,2026-08,Rasmiy sayt .com domenida,https://www.infinbank.com/uz/press/news/2026/08/13842/
-InFinBank,Yuridik,Ipoteka,Biznes ipoteka,15.0,25.0,,7 yil – 10 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://www.infinbank.com/uz/corporate/credits/business_mortgage/
-Ipak Yo'li banki,Jismoniy,Avtokredit,Volkswagen uchun avtokredit,20.9,25.0,,6 oy – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/kreditlar/avtokreditlar/volkswagen-avtokredit
+InFinBank,Yuridik,Ipoteka,Biznes ipoteka,15.0,25.0,,7 yil – 10 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://www.infinbank.com/uz/corporate/credits/business_mortgage/
+Ipak Yo'li banki,Jismoniy,Avtokredit,Volkswagen uchun avtokredit,20.9,25.0,,6 oy – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/avtokreditlar/volkswagen-avtokredit
 Ipak Yo'li banki,Jismoniy,Avtokredit,Avtokreditni qayta moliyalashtirish,21,24.9,,12 / 36 / 60 oy,,UZS,Qo'lda tekshirilgan,,"Oldingi stavkadan 5% past, lekin 21% / 23.9% / 24.9% dan kam emas",https://ipakyulibank.uz/physical/kreditlar/qayta-moliyalashtirish/avtokreditni-qayta-moliyalashtirish
-Ipak Yo'li banki,Jismoniy,Avtokredit,Chevrolet uchun avtokredit,20.9,20.9,,1 yil – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/kreditlar/avtokreditlar/avtokredit-uzauto
-Ipak Yo'li banki,Jismoniy,Avtokredit,Voyah avtomobillari uchun avtokredit,20.9,20.9,,1 yil – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/kreditlar/avtokreditlar/voyah-avtokredit
-Ipak Yo'li banki,Jismoniy,Avtokredit,"Leapmotor, Aito va GAC avtomobillari uchun 0% avtokredit",20.9,20.9,,1 yil – 5 yil,600 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/kreditlar/avtokreditlar/evolution-motors-avtokredit
-Ipak Yo'li banki,Jismoniy,Avtokredit,Davlat xizmatchilari uchun avtokredit,20.9,20.9,,1 yil – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/kreditlar/davlat-xizmatchilari-uchun-kreditlar/davlat-xizmatchilari-uchun-avtokredit
-Ipak Yo'li banki,Jismoniy,Ipoteka,"""Murad Buildings"" ipotekasi",17.5,25.0,,1 yil – 20 yil,1 mln – 2 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/kreditlar/ipoteka/murad-buildings-ipotekasi
-Ipak Yo'li banki,Jismoniy,Ipoteka,Ipotekani qayta moliyalashtirish,20.9,23.9,,1 yil – 10 yil,80 mln – 1.5 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/kreditlar/qayta-moliyalashtirish/ipotekani-qayta-moliyalashtirish
+Ipak Yo'li banki,Jismoniy,Avtokredit,Chevrolet uchun avtokredit,20.9,20.9,,1 yil – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/avtokreditlar/avtokredit-uzauto
+Ipak Yo'li banki,Jismoniy,Avtokredit,Voyah avtomobillari uchun avtokredit,20.9,20.9,,1 yil – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/avtokreditlar/voyah-avtokredit
+Ipak Yo'li banki,Jismoniy,Avtokredit,"Leapmotor, Aito va GAC avtomobillari uchun 0% avtokredit",20.9,20.9,,1 yil – 5 yil,600 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/avtokreditlar/evolution-motors-avtokredit
+Ipak Yo'li banki,Jismoniy,Avtokredit,Davlat xizmatchilari uchun avtokredit,20.9,20.9,,1 yil – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/davlat-xizmatchilari-uchun-kreditlar/davlat-xizmatchilari-uchun-avtokredit
+Ipak Yo'li banki,Jismoniy,Ipoteka,"""Murad Buildings"" ipotekasi",17.5,25.0,,1 yil – 20 yil,1 mln – 2 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/ipoteka/murad-buildings-ipotekasi
+Ipak Yo'li banki,Jismoniy,Ipoteka,Ipotekani qayta moliyalashtirish,20.9,23.9,,1 yil – 10 yil,80 mln – 1.5 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/qayta-moliyalashtirish/ipotekani-qayta-moliyalashtirish
 Ipak Yo'li banki,Jismoniy,Ipoteka,NRG ipotekasi (yangi uy),21.5,21.5,,10 yilgacha,2 mlrd gacha,UZS,Qo'lda tekshirilgan,,Boshlang'ich badal 25%,https://ipakyulibank.uz/physical/kreditlar/ipoteka/ipoteka-nrg
-Ipak Yo'li banki,Jismoniy,Ipoteka,Ipoteka - NRG (vaqtinchalik to‘xtatilgan ),21.5,21.5,,10 yilgacha,2 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/kreditlar/ipoteka/ipoteka-nrg
-Ipak Yo'li banki,Jismoniy,Ipoteka,Yangi qurilgan uylarga ipoteka,16.5,20.9,,6 oy – 20 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/kreditlar/ipoteka/yangi-qurilgan-uylarga-ipoteka
-Ipak Yo'li banki,Jismoniy,Ipoteka,Ipoteka haqida batafsil,17.5,19.0,,6 oy – 10 yil,1 mln – 3.48 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/kreditlar/ipoteka/ipoteka-nur
-Ipak Yo'li banki,Jismoniy,Ipoteka,Yillik 13% daromadlilikka ega ipoteka omonati,13.0,13.0,,,,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/omonatlar/somli-omonatlar/ipoteka-omonati?utm_source=mainpage
-Ipak Yo'li banki,Jismoniy,Iste'mol,Kreditni qayta moliyalashtirish (kafillik asosida),20.9,26.0,,6 oy – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/kreditlar/qayta-moliyalashtirish/kafillik-asosida-kreditni-qayta-moliyalashtirish
-Ipak Yo'li banki,Jismoniy,Iste'mol,Uy ta’miri uchun kredit,20.9,20.9,,1 yil – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/kreditlar/uy-tamiri-uchun-kredit
-Ipak Yo'li banki,Jismoniy,Mikroqarz,Kafillik asosida mikroqarz,20.9,28.9,,6 oy – 5 yil,10 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/kreditlar/mikroqarzlar/mikroqarz
-Ipak Yo'li banki,Jismoniy,Mikroqarz,Davlat xizmatchilari uchun kafillik asosida mikroqarz,20.9,26.9,,1 yil – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/kreditlar/davlat-xizmatchilari-uchun-kreditlar/kafillik-asosidagi-mikroqarz
+Ipak Yo'li banki,Jismoniy,Ipoteka,Ipoteka - NRG (vaqtinchalik to‘xtatilgan ),21.5,21.5,,10 yilgacha,2 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/ipoteka/ipoteka-nrg
+Ipak Yo'li banki,Jismoniy,Ipoteka,Yangi qurilgan uylarga ipoteka,16.5,20.9,,6 oy – 20 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/ipoteka/yangi-qurilgan-uylarga-ipoteka
+Ipak Yo'li banki,Jismoniy,Ipoteka,Ipoteka haqida batafsil,17.5,19.0,,6 oy – 10 yil,1 mln – 3.48 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/ipoteka/ipoteka-nur
+Ipak Yo'li banki,Jismoniy,Ipoteka,Yillik 13% daromadlilikka ega ipoteka omonati,13.0,13.0,,,,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/omonatlar/somli-omonatlar/ipoteka-omonati?utm_source=mainpage
+Ipak Yo'li banki,Jismoniy,Iste'mol,Kreditni qayta moliyalashtirish (kafillik asosida),20.9,26.0,,6 oy – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/qayta-moliyalashtirish/kafillik-asosida-kreditni-qayta-moliyalashtirish
+Ipak Yo'li banki,Jismoniy,Iste'mol,Uy ta’miri uchun kredit,20.9,20.9,,1 yil – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/uy-tamiri-uchun-kredit
+Ipak Yo'li banki,Jismoniy,Mikroqarz,Kafillik asosida mikroqarz,20.9,28.9,,6 oy – 5 yil,10 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/mikroqarzlar/mikroqarz
+Ipak Yo'li banki,Jismoniy,Mikroqarz,Davlat xizmatchilari uchun kafillik asosida mikroqarz,20.9,26.9,,1 yil – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/davlat-xizmatchilari-uchun-kreditlar/kafillik-asosidagi-mikroqarz
 Ipak Yo'li banki,Jismoniy,Mikroqarz,Garov asosida mikroqarz,21.9,24.9,20.9–21.9,12 / 36 / 60 oy,100 mln gacha,UZS,Qo'lda tekshirilgan,,"12 oy 21.9%, 36 oy 22.9%, 60 oy 24.9%",https://ipakyulibank.uz/physical/kreditlar/garov-asosida-mikroqarz
-Ipak Yo'li banki,Jismoniy,Mikroqarz,Ish haqi loyihasiga ega bo‘lganlar uchun mikroqarz,20.9,23.9,,1 yil – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/kreditlar/mikroqarzlar/maosh-loyihasi-evaziga-mikroqarz
+Ipak Yo'li banki,Jismoniy,Mikroqarz,Ish haqi loyihasiga ega bo‘lganlar uchun mikroqarz,20.9,23.9,,1 yil – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/mikroqarzlar/maosh-loyihasi-evaziga-mikroqarz
 Ipak Yo'li banki,Jismoniy,Mikroqarz,Rasmiy daromadi yo'qlar uchun mikroqarz,22.9,,,60 oygacha,100 mln gacha,UZS,Qo'lda tekshirilgan,,Garovsiz va kafilsiz,https://en.ipakyulibank.uz/physical/loans/microloans/microloan-for-the-self-employed
-Ipak Yo'li banki,Jismoniy,Mikroqarz,Rasmiy daromadga ega bo‘lmaganlar uchun mikroqarz,20.9,22.9,,1 yil – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/kreditlar/mikroqarzlar/oz-ozini-band-qilganlar-uchun-mikroqarz
-Ipak Yo'li banki,Jismoniy,Mikroqarz,O‘zini o‘zi band qilganlar uchun mikrokredit,20.9,20.9,,1 yil – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ipakyulibank.uz/physical/kreditlar/mikroqarzlar/mikrokredit-ozini-ozi-band-qilganlar-uchun
+Ipak Yo'li banki,Jismoniy,Mikroqarz,Rasmiy daromadga ega bo‘lmaganlar uchun mikroqarz,20.9,22.9,,1 yil – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/mikroqarzlar/oz-ozini-band-qilganlar-uchun-mikroqarz
+Ipak Yo'li banki,Jismoniy,Mikroqarz,O‘zini o‘zi band qilganlar uchun mikrokredit,20.9,20.9,,1 yil – 5 yil,1 mln – 950 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ipakyulibank.uz/physical/kreditlar/mikroqarzlar/mikrokredit-ozini-ozi-band-qilganlar-uchun
 Ipak Yo'li banki,Yuridik,Biznes,Biznesga ko'mak,27,,,36 oygacha,40 000 USD gacha,UZS,Qo'lda tekshirilgan,,Sahifa ~555 kun oldin yangilangan,https://ipakyulibank.uz/legal/credit/biznesga-komak
+Ipoteka-bank,Jismoniy,Ipoteka,Oylik to‘lov,27.99,27.99,,,28.0659 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://www.ipotekabank.uz/crediting/autocredit/avtokredit-r1/
 Ipoteka-bank,Jismoniy,Ipoteka,"Ipoteka dasturlari (birlamchi, ikkilamchi, tijorat)",17,24.99,,20 yilgacha,,UZS,Qo'lda tekshirilgan,,Boshlang'ich badal 15–26%,https://www.ipotekabank.uz/mortgage/
-Ipoteka-bank,Jismoniy,Ipoteka,Produktni tanlang,22.5,22.5,,1 yil – 20 yil,69.438 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://www.ipotekabank.uz/crediting/mortgage/tijorat/
-Ipoteka-bank,Jismoniy,Ipoteka,20% dan,20.0,20.0,,,,UZS,Saytdan avtomatik,2026-10-14,,https://www.ipotekabank.uz/crediting/mortgage/imkoniyat/botanika-saroyi/
-Ipoteka-bank,Jismoniy,Ipoteka,"17,8% dan",17.8,17.8,,,,UZS,Saytdan avtomatik,2026-10-14,,https://www.ipotekabank.uz/crediting/mortgage/imkoniyat/sharq-bahori/
+Ipoteka-bank,Jismoniy,Ipoteka,Produktni tanlang,22.5,22.5,,1 yil – 20 yil,69.438 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://www.ipotekabank.uz/crediting/mortgage/tijorat/
+Ipoteka-bank,Jismoniy,Ipoteka,20% dan,20.0,20.0,,,,UZS,Saytdan avtomatik,2026-10-15,,https://www.ipotekabank.uz/crediting/mortgage/imkoniyat/botanika-saroyi/
+Ipoteka-bank,Jismoniy,Ipoteka,Produktni tanlang,18.0,18.0,,1 yilgacha,17.775 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://www.ipotekabank.uz/deposits/oddiy/
+Ipoteka-bank,Jismoniy,Ipoteka,"17,8% dan",17.8,17.8,,,,UZS,Saytdan avtomatik,2026-10-15,,https://www.ipotekabank.uz/crediting/mortgage/imkoniyat/sharq-bahori/
 Ipoteka-bank,Jismoniy,Ipoteka,"Oson (yangi uy, subsidiya bilan)",17.5,,,20 yilgacha,420 mln gacha,UZS,Qo'lda tekshirilgan,,Boshlang'ich badal 15%; Moliya vazirligi subsidiyasi,https://www.ipotekabank.uz/mortgage/oson/
-Ipoteka-bank,Jismoniy,Ipoteka,17% dan,17.0,17.0,,,,UZS,Saytdan avtomatik,2026-10-14,,https://www.ipotekabank.uz/crediting/mortgage/imkoniyat/dreamland-parkent/
-Ipoteka-bank,Jismoniy,Ipoteka,Imkoniyat,15.0,15.0,,20 yilgacha,1.7 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://www.ipotekabank.uz/crediting/mortgage/imkoniyat/
-Ipoteka-bank,Jismoniy,Ipoteka,“Maqsadli Ipoteka” omonati,14.0,14.0,,,,UZS,Saytdan avtomatik,2026-10-14,,https://www.ipotekabank.uz/deposits/target-mortgage-deposit/
+Ipoteka-bank,Jismoniy,Ipoteka,17% dan,17.0,17.0,,,,UZS,Saytdan avtomatik,2026-10-15,,https://www.ipotekabank.uz/crediting/mortgage/imkoniyat/dreamland-parkent/
+Ipoteka-bank,Jismoniy,Ipoteka,Imkoniyat,15.0,15.0,,20 yilgacha,1.7 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://www.ipotekabank.uz/crediting/mortgage/imkoniyat/
+Ipoteka-bank,Jismoniy,Ipoteka,“Maqsadli Ipoteka” omonati,14.0,14.0,,,,UZS,Saytdan avtomatik,2026-10-15,,https://www.ipotekabank.uz/deposits/target-mortgage-deposit/
 Ipoteka-bank,Jismoniy,Mikroqarz,O'zini o'zi band qilganlar uchun mikrokredit,24,,,3–36 oy,1–100 mln,UZS,Qo'lda tekshirilgan,,Garovsiz,https://www.ipotekabank.uz/crediting/microloan-self-employed/
 KDB Bank O'zbekiston,Jismoniy,Iste'mol,Korporativ mijozlar xodimlari uchun overdraft,34,,,12 oygacha,,UZS,Qo'lda tekshirilgan,,KDB kartasiga,https://kdb.uz/uz/individuals/credit
-KDB Bank O'zbekiston,Jismoniy,Iste'mol,企业客户员工小额透支贷款（工资账户关联型）,34.0,34.0,,1 oygacha,,UZS,Saytdan avtomatik,2026-10-14,,https://kdb.uz/cn/individuals/credit
+KDB Bank O'zbekiston,Jismoniy,Iste'mol,企业客户员工小额透支贷款（工资账户关联型）,34.0,34.0,,1 oygacha,,UZS,Saytdan avtomatik,2026-10-15,,https://kdb.uz/cn/individuals/credit
 KDB Bank O'zbekiston,Yuridik,Biznes,Korporativ kredit,,,,,250 mlrd / 20 mln USD gacha,UZS,Qo'lda tekshirilgan,,So'mda MB asosiy stavkasi + 8%; USD da Term SOFR 3M + 5%,https://kdb.uz/uz/corporates/credit/credit-legal-entities
-Kapitalbank,Jismoniy,Avtokredit,Ishonchli Start 10.0,30.0,30.0,,30 oy – 5 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://kapital24.uz/uz/crediting/kapitalbankdan-uzauto-nasiya/
-Kapitalbank,Jismoniy,Avtokredit,Kapitalbankdan Qulay Nasiya II,19.05,19.05,,1 yil – 5 yil,35 mln – 230 mln,UZS,Saytdan avtomatik,2026-10-14,,https://kapital24.uz/uz/crediting/kapitalbankdan-avto-nasiya-ikkilamchi/
-Kapitalbank,Jismoniy,Biznes,Muvaffaqiyatli Biznes +,25.0,25.0,,10 oy – 34 oy,300 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://kapital24.uz/uz/crediting/muvaffaqiyatli-biznes/
-Kapitalbank,Jismoniy,Ipoteka,«QULAY UY» ipoteka krediti,20.0,21.0,,1 oy – 10 yil,100 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://kapital24.uz/uz/crediting/qulay-uy-ipoteka-krediti/
-Kapitalbank,Jismoniy,Iste'mol,Ecokredit,50.0,50.0,,6 oy – 5 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://kapital24.uz/uz/crediting/ecocredit/
-Madad Invest Bank,Jismoniy,Avtokredit,Ishlatilgan avtomobil uchun avtokredit,25.0,28.9,,6 oy – 5 yil,50 mln – 400 mln,UZS,Saytdan avtomatik,2026-10-14,,https://madadinvestbank.uz/credit/16
-Madad Invest Bank,Jismoniy,Avtokredit,Har qanday avtomobil uchun avtokreditlar,27.9,27.9,,5 yilgacha,600 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://madadinvestbank.uz/credits/physical
-Madad Invest Bank,Jismoniy,Avtokredit,Yangi avtomobil uchun avtokredit,27.9,27.9,,6 oy – 5 yil,50 mln – 600 mln,UZS,Saytdan avtomatik,2026-10-14,,https://madadinvestbank.uz/credit/15
+Kapitalbank,Jismoniy,Avtokredit,Ishonchli Start 10.0,30.0,30.0,,30 oy – 5 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://kapital24.uz/uz/crediting/kapitalbankdan-uzauto-nasiya/
+Kapitalbank,Jismoniy,Avtokredit,Kapitalbankdan Qulay Nasiya II,19.05,19.05,,1 yil – 5 yil,35 mln – 230 mln,UZS,Saytdan avtomatik,2026-10-15,,https://kapital24.uz/uz/crediting/kapitalbankdan-avto-nasiya-ikkilamchi/
+Kapitalbank,Jismoniy,Biznes,Muvaffaqiyatli Biznes +,25.0,25.0,,10 oy – 34 oy,300 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://kapital24.uz/uz/crediting/muvaffaqiyatli-biznes/
+Kapitalbank,Jismoniy,Ipoteka,«QULAY UY» ipoteka krediti,20.0,21.0,,1 oy – 10 yil,100 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://kapital24.uz/uz/crediting/qulay-uy-ipoteka-krediti/
+Kapitalbank,Jismoniy,Iste'mol,Ecokredit,50.0,50.0,,6 oy – 5 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://kapital24.uz/uz/crediting/ecocredit/
+Madad Invest Bank,Jismoniy,Avtokredit,Ishlatilgan avtomobil uchun avtokredit,25.0,28.9,,6 oy – 5 yil,50 mln – 400 mln,UZS,Saytdan avtomatik,2026-10-15,,https://madadinvestbank.uz/credit/16
+Madad Invest Bank,Jismoniy,Avtokredit,Har qanday avtomobil uchun avtokreditlar,27.9,27.9,,5 yilgacha,600 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://madadinvestbank.uz/credits/physical
+Madad Invest Bank,Jismoniy,Avtokredit,Yangi avtomobil uchun avtokredit,27.9,27.9,,6 oy – 5 yil,50 mln – 600 mln,UZS,Saytdan avtomatik,2026-10-15,,https://madadinvestbank.uz/credit/15
 Madad Invest Bank,Jismoniy,Iste'mol,Green Power,24.99,24.99,,60 oygacha,200 BHM gacha,UZS,Qo'lda tekshirilgan,,"Skanerlangan tarif hujjati, yili aniq emas",https://madadinvestbank.uz/storage/tariflar/%E2%84%96280_0001.pdf
-Madad Invest Bank,Jismoniy,Mikroqarz,100 mln. so'mgacha mikrokredit,31.9,31.9,,6 oy – 3 yil,20 mln – 100 mln,UZS,Saytdan avtomatik,2026-10-14,,https://madadinvestbank.uz/credit/17
-Mikrokreditbank,Jismoniy,Avtokredit,UZCARD Sherdor,15.0,15.0,,1 oy – 5 yil,100 ming gacha,UZS,Saytdan avtomatik,2026-10-14,,https://mkbank.uz/uz/private/plastic-cards/list/uzcard-sherdor/
-Mikrokreditbank,Jismoniy,Ipoteka,IPOTEKA KREDITI,24.0,26.0,,20 yilgacha,1.648 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://mkbank.uz/uz/private/crediting/mortgage-loan-secondary-market/
-Mikrokreditbank,Jismoniy,Iste'mol,“Kambagʻallikdan farovonlik sari” dasturi,12.0,17.5,,2 yil – 5 yil,,EUR,Saytdan avtomatik,2026-10-14,,https://mkbank.uz/uz/women-enterpreneurship/program/
+Madad Invest Bank,Jismoniy,Mikroqarz,100 mln. so'mgacha mikrokredit,31.9,31.9,,6 oy – 3 yil,20 mln – 100 mln,UZS,Saytdan avtomatik,2026-10-15,,https://madadinvestbank.uz/credit/17
+Mikrokreditbank,Jismoniy,Avtokredit,UZCARD Sherdor,15.0,15.0,,1 oy – 5 yil,100 ming gacha,UZS,Saytdan avtomatik,2026-10-15,,https://mkbank.uz/uz/private/plastic-cards/list/uzcard-sherdor/
+Mikrokreditbank,Jismoniy,Ipoteka,IPOTEKA KREDITI,24.0,26.0,,20 yilgacha,1.648 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://mkbank.uz/uz/private/crediting/mortgage-loan-secondary-market/
+Mikrokreditbank,Jismoniy,Iste'mol,“Kambagʻallikdan farovonlik sari” dasturi,12.0,17.5,,2 yil – 5 yil,,EUR,Saytdan avtomatik,2026-10-15,,https://mkbank.uz/uz/women-enterpreneurship/program/
 Mikrokreditbank,Jismoniy,Mikroqarz,Mikroqarz,24,28,,12–60 oy,100 mln gacha,UZS,Qo'lda tekshirilgan,,"12 oy 24%, 24 oy 25%, 36 oy 26%, 48 oy 27%, 60 oy 28%",https://mkbank.uz/uz/private/crediting/microloan/
 Mikrokreditbank,Yuridik,Biznes,Biznes mikrokrediti,26,29,,24–60 oy,300 mln gacha,UZS,Qo'lda tekshirilgan,,,https://mkbank.uz/uz/private/crediting/biznes-mikrokrediti/
 Mikrokreditbank,Yuridik,Biznes,Mahalla-Biznes mikroqarzi,27,29,,12–48 oy,,UZS,Qo'lda tekshirilgan,,,https://mkbank.uz/uz/private/crediting/mahalla-bizness-mikroqarz/
-Mikrokreditbank,Yuridik,Biznes,MIKROKREDIT,26.0,26.0,,,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://mkbank.uz/uz/small-business/crediting/business-online-2/
+Mikrokreditbank,Yuridik,Biznes,MIKROKREDIT,26.0,26.0,,,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://mkbank.uz/uz/small-business/crediting/business-online-2/
 Mikrokreditbank,Yuridik,Biznes,Biznes overdraft,25,25,25,12 oygacha,,UZS,Qo'lda tekshirilgan,,,https://mkbank.uz/uz/small-business/crediting/business-overdraft/
-Mikrokreditbank,Yuridik,Biznes,AYLANMA,25.0,25.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://mkbank.uz/uz/small-business/crediting/working-capital/
-Mikrokreditbank,Yuridik,Biznes,MIKROKREDIT,25.0,25.0,,5 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://mkbank.uz/uz/small-business/crediting/equipment-inventory/
-Mikrokreditbank,Yuridik,Biznes,MIKROKREDIT,22.9,22.9,,5 yilgacha,500 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://mkbank.uz/uz/small-business/crediting/naqd-pulda-kredit/
+Mikrokreditbank,Yuridik,Biznes,AYLANMA,25.0,25.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://mkbank.uz/uz/small-business/crediting/working-capital/
+Mikrokreditbank,Yuridik,Biznes,MIKROKREDIT,25.0,25.0,,5 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://mkbank.uz/uz/small-business/crediting/equipment-inventory/
+Mikrokreditbank,Yuridik,Biznes,MIKROKREDIT,22.9,22.9,,5 yilgacha,500 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://mkbank.uz/uz/small-business/crediting/naqd-pulda-kredit/
 Mikrokreditbank,Yuridik,Biznes,Biznesga birinchi qadam,21,,,24–84 oy,50 mln gacha,UZS,Qo'lda tekshirilgan,,6 oygacha imtiyoz; garov 125%,https://mkbank.uz/uz/private/crediting/biznesga-birinchi-qadam-mikroqarz/
-Mikrokreditbank,Yuridik,Biznes,INVESTITSIYALAR,21.0,21.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://mkbank.uz/uz/small-business/crediting/green-energy/
-Mikrokreditbank,Yuridik,Biznes,MIKROKREDIT,19.0,19.0,,7 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://mkbank.uz/uz/small-business/crediting/imkoniyat-kredit/
-Mikrokreditbank,Yuridik,Biznes,INVESTITSIYALAR,18.0,18.0,,5 yilgacha,2.5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://mkbank.uz/uz/small-business/crediting/young-entrepreneurs-support-fund/
-Mikrokreditbank,Yuridik,Biznes,MIKROKREDIT,17.5,17.5,,3 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://mkbank.uz/uz/small-business/crediting/kasanachilarga-yengil-konstruksiyali-joylar-tashkil-etish-uchun/
-O'zmilliybank (NBU),Jismoniy,Avtokredit,Ikkilamchi bozor uchun avtokredit,20.0,30.0,,3 oy – 5 yil,100 mln – 500 mln,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/ikkilamchi-bozor-uchun-avtokredit
-O'zmilliybank (NBU),Jismoniy,Avtokredit,NBU’dan UzAuto Motors avtomobillari uchun avtokredit,28.0,28.0,,10 oy – 5 yil,50 mln – 300 mln,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/uzauto-motorsdan-avtokredit
-O'zmilliybank (NBU),Jismoniy,Avtokredit,Avtokredit KIA,28.0,28.0,,1 yil – 5 yil,50 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/avtokredit-kia-haval
-O'zmilliybank (NBU),Jismoniy,Avtokredit,Avtokredit Changan,28.0,28.0,,1 yil – 5 yil,20 mln – 500 mln,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/changan-avtokrediti
-O'zmilliybank (NBU),Jismoniy,Avtokredit,Avtokredit Haval,28.0,28.0,,1 yil – 5 yil,50 mln – 500 mln,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/avtokredit-haval
-O'zmilliybank (NBU),Jismoniy,Avtokredit,Elektromobil va gibrid avtomobillar uchun avtokredit,21.0,21.0,,6 oy – 4 yil,100 mln – 500 mln,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/elektromobillar-va-gibridlar-uchun-avtokredit
-O'zmilliybank (NBU),Jismoniy,Avtokredit,Yangi avtomobillar uchun avtokredit,20.0,20.0,,6 oy – 5 yil,50 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/yangi-avtomobillar-uchun-avtokredit
-O'zmilliybank (NBU),Jismoniy,Biznes,"""Tezkor"" krediti",26.0,26.0,,3 oy – 18 oy,100 mln – 1.5 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/kichik-biznes/kreditlar/tezkor
-O'zmilliybank (NBU),Jismoniy,Biznes,"""Yengil start"" krediti",24.0,24.0,,6 oy – 3 yil,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/kichik-biznes/kreditlar/kredit-engil-start
-O'zmilliybank (NBU),Jismoniy,Biznes,Qayta moliyalashtirish,23.0,23.0,,,500 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/kichik-biznes/kreditlar/qayta-moliyalashtirish
-O'zmilliybank (NBU),Jismoniy,Biznes,"""Imkoniyat"" krediti",23.0,23.0,,3 oy – 3 yil,15 mln – 500 mln,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/kichik-biznes/kreditlar/imkoniyat-krediti
+Mikrokreditbank,Yuridik,Biznes,INVESTITSIYALAR,21.0,21.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://mkbank.uz/uz/small-business/crediting/green-energy/
+Mikrokreditbank,Yuridik,Biznes,MIKROKREDIT,19.0,19.0,,7 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://mkbank.uz/uz/small-business/crediting/imkoniyat-kredit/
+Mikrokreditbank,Yuridik,Biznes,INVESTITSIYALAR,18.0,18.0,,5 yilgacha,2.5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://mkbank.uz/uz/small-business/crediting/young-entrepreneurs-support-fund/
+Mikrokreditbank,Yuridik,Biznes,MIKROKREDIT,17.5,17.5,,3 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://mkbank.uz/uz/small-business/crediting/kasanachilarga-yengil-konstruksiyali-joylar-tashkil-etish-uchun/
+O'zmilliybank (NBU),Jismoniy,Avtokredit,Ikkilamchi bozor uchun avtokredit,20.0,30.0,,3 oy – 5 yil,100 mln – 500 mln,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/ikkilamchi-bozor-uchun-avtokredit
+O'zmilliybank (NBU),Jismoniy,Avtokredit,NBU’dan UzAuto Motors avtomobillari uchun avtokredit,28.0,28.0,,10 oy – 5 yil,50 mln – 300 mln,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/uzauto-motorsdan-avtokredit
+O'zmilliybank (NBU),Jismoniy,Avtokredit,Avtokredit KIA,28.0,28.0,,1 yil – 5 yil,50 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/avtokredit-kia-haval
+O'zmilliybank (NBU),Jismoniy,Avtokredit,Avtokredit Changan,28.0,28.0,,1 yil – 5 yil,20 mln – 500 mln,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/changan-avtokrediti
+O'zmilliybank (NBU),Jismoniy,Avtokredit,Avtokredit Haval,28.0,28.0,,1 yil – 5 yil,50 mln – 500 mln,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/avtokredit-haval
+O'zmilliybank (NBU),Jismoniy,Avtokredit,Elektromobil va gibrid avtomobillar uchun avtokredit,21.0,21.0,,6 oy – 4 yil,100 mln – 500 mln,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/elektromobillar-va-gibridlar-uchun-avtokredit
+O'zmilliybank (NBU),Jismoniy,Avtokredit,Yangi avtomobillar uchun avtokredit,20.0,20.0,,6 oy – 5 yil,50 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/yangi-avtomobillar-uchun-avtokredit
+O'zmilliybank (NBU),Jismoniy,Biznes,"""Tezkor"" krediti",26.0,26.0,,3 oy – 18 oy,100 mln – 1.5 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/kichik-biznes/kreditlar/tezkor
+O'zmilliybank (NBU),Jismoniy,Biznes,"""Yengil start"" krediti",24.0,24.0,,6 oy – 3 yil,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/kichik-biznes/kreditlar/kredit-engil-start
+O'zmilliybank (NBU),Jismoniy,Biznes,Qayta moliyalashtirish,23.0,23.0,,,500 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/kichik-biznes/kreditlar/qayta-moliyalashtirish
+O'zmilliybank (NBU),Jismoniy,Biznes,"""Imkoniyat"" krediti",23.0,23.0,,3 oy – 3 yil,15 mln – 500 mln,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/kichik-biznes/kreditlar/imkoniyat-krediti
 O'zmilliybank (NBU),Jismoniy,Ipoteka,Ipoteka,22,26,16.5,120 oygacha,,UZS,Qo'lda tekshirilgan,2024,Boshlang'ich badal 25%; 2024 yilgi e'lon,https://nbu.uz/yangiliklar/o-zmilliybank-aj-jismoniy-shaxslar-uchun-kreditlar-taklif-etadi
-O'zmilliybank (NBU),Jismoniy,Ipoteka,Ipotеka krеditi,16.5,16.5,,20 yilgacha,5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/ipoteka-kreditlari
+O'zmilliybank (NBU),Jismoniy,Ipoteka,Ipotеka krеditi,16.5,16.5,,20 yilgacha,5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/ipoteka-kreditlari
 O'zmilliybank (NBU),Jismoniy,Iste'mol,Iste'mol krediti,27,27,,36 oygacha,,UZS,Qo'lda tekshirilgan,2024,2024 yilgi e'lon — eskirgan bo'lishi mumkin,https://nbu.uz/yangiliklar/o-zmilliybank-aj-jismoniy-shaxslar-uchun-kreditlar-taklif-etadi
-O'zmilliybank (NBU),Jismoniy,Iste'mol,Eko-ta'mirlash,23.5,23.5,,5 oy – 10 yil,10 mln – 170 mln,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/ekologik-tamirlash
-O'zmilliybank (NBU),Jismoniy,Kredit karta,Overdraft,23.0,23.0,,1 yilgacha,100 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/kichik-biznes/kreditlar/overdraft
+O'zmilliybank (NBU),Jismoniy,Iste'mol,Eko-ta'mirlash,23.5,23.5,,5 oy – 10 yil,10 mln – 170 mln,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/ekologik-tamirlash
+O'zmilliybank (NBU),Jismoniy,Kredit karta,Overdraft,23.0,23.0,,1 yilgacha,100 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/kichik-biznes/kreditlar/overdraft
 O'zmilliybank (NBU),Jismoniy,Mikroqarz,Mikroqarz,29,29,,24 oy,,UZS,Qo'lda tekshirilgan,2024,2024 yilgi e'lon,https://nbu.uz/yangiliklar/o-zmilliybank-aj-jismoniy-shaxslar-uchun-kreditlar-taklif-etadi
-O'zmilliybank (NBU),Jismoniy,Mikroqarz,Mikroqarz,24.0,28.0,,2 yil – 5 yil,10 mln – 100 mln,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/mikroqarz
-O'zmilliybank (NBU),Jismoniy,Mikroqarz,100 million so‘mgacha online-mikroqarz,25.0,25.0,,25 oy – 5 yil,10 mln – 100 mln,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/onlayn-mikroqarz
-O'zmilliybank (NBU),Jismoniy,Ta'lim,Ta’lim krеditi,22.0,24.0,,1 yil – 5 yil,1 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/talim-krediti
-O'zmilliybank (NBU),Jismoniy,Ta'lim,Ta’lim krеditi,14.0,14.0,,162 oygacha,,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/talim-krediti-1
-O'zmilliybank (NBU),Jismoniy,Ta'lim,Imtiyozli ta’lim krediti,14.0,14.0,,6 oy – 162 oy,10 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/imtiyozli-talim-krediti
+O'zmilliybank (NBU),Jismoniy,Mikroqarz,Mikroqarz,24.0,28.0,,2 yil – 5 yil,10 mln – 100 mln,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/mikroqarz
+O'zmilliybank (NBU),Jismoniy,Mikroqarz,100 million so‘mgacha online-mikroqarz,25.0,25.0,,25 oy – 5 yil,10 mln – 100 mln,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/onlayn-mikroqarz
+O'zmilliybank (NBU),Jismoniy,Ta'lim,Ta’lim krеditi,22.0,24.0,,1 yil – 5 yil,1 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/talim-krediti
+O'zmilliybank (NBU),Jismoniy,Ta'lim,Ta’lim krеditi,14.0,14.0,,162 oygacha,,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/talim-krediti-1
+O'zmilliybank (NBU),Jismoniy,Ta'lim,Imtiyozli ta’lim krediti,14.0,14.0,,6 oy – 162 oy,10 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://nbu.uz/jismoniy-shaxslarga-kreditlar/imtiyozli-talim-krediti
 O'zmilliybank (NBU),Yuridik,Biznes,Yoshlar biznes g'oyalari uchun kredit,14,14,,7 yil (3 yil imtiyoz),100 000 USD ekv. gacha,UZS,Qo'lda tekshirilgan,,Valyutada 3%,https://nbu.uz/yangiliklar/o-zmilliybank-yoshlar-biznes-g-oyalarini-qo-llab-quvvatlashga-kreditlar-ajratadi
 O'zsanoatqurilishbank (SQB),Jismoniy,Avtokredit,Uzavto-Imkon,0,0,20,60 oygacha,,UZS,Qo'lda tekshirilgan,,UzAuto Motors avtomobillari; boshlang'ich badal 25% dan,https://sqb.uz/uz/individuals/credits/avtokredit-uzavto-imkon-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,Uy-joyni ta’mirlash,32.0,32.0,,10 yilgacha,200 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/ipoteka/ipoteka-na-remont-zhilya-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,Ishonchli ipoteka,23.5,23.5,,15 yilgacha,1.5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/ipoteka/ishonchli-ipoteka-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,"""Mulk-ulushdor"" krediti",21.0,21.0,,20 yilgacha,1.5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/ipoteka/mulk-ulushdor-krediti-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,"""Mulk"" ipoteka",21.0,21.0,,20 yilgacha,1.5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/ipoteka/mulk-ipoteka-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,“Birlamchi uyga ipoteka” krediti,19.0,19.0,,20 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/ipoteka/ipoteka-na-pervichnoe-zhile-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,“Yashil ta’mir” ipotekasi,19.0,19.0,,10 yilgacha,170 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/ipoteka/ipoteka-yashil-ta-mir-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,"""Hamkor ipoteka"" krediti",18.0,18.0,,20 yilgacha,1 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/ipoteka/hamkor-ipoteka-kredit-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,Kumushkon Residence ipoteka,18.0,18.0,,15 yilgacha,5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/ipoteka/kumushkon-residence-ipoteka-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,“Universal hamkor ipoteka” kredit mahsuloti,18.0,18.0,,20 yilgacha,1 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/ipoteka/ipoteka-universal-hamkor-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,"""Yangi Toshkent"" ipoteka",18.0,18.0,,20 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/ipoteka/yangi-toshkent-ipoteka-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,Exclusive ipoteka,18.0,18.0,,20 yilgacha,1 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/ipoteka/exclusive-ipoteka-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,Orzuingizdagi uy,17.0,17.0,,,,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/ipoteka/ipoteka-na-pervichnoe-zhile-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,Yangi uyga ipoteka-2,17.0,17.0,,20 yilgacha,480 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/ipoteka/new-house-ipoteka-2-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,Balansdagi turar-joy ipoteka krediti,14.0,14.0,,15 yilgacha,1.5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/ipoteka/balansdagi-turar-joy-ipoteka-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,Chimgan Residence ipoteka,14.0,14.0,,10 yilgacha,1.5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/ipoteka/chimgan-residence-ipoteka-uz2870/
+O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,Uy-joyni ta’mirlash,32.0,32.0,,10 yilgacha,200 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/ipoteka/ipoteka-na-remont-zhilya-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,Ishonchli ipoteka,23.5,23.5,,15 yilgacha,1.5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/ipoteka/ishonchli-ipoteka-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,"""Mulk-ulushdor"" krediti",21.0,21.0,,20 yilgacha,1.5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/ipoteka/mulk-ulushdor-krediti-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,"""Mulk"" ipoteka",21.0,21.0,,20 yilgacha,1.5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/ipoteka/mulk-ipoteka-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,“Birlamchi uyga ipoteka” krediti,19.0,19.0,,20 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/ipoteka/ipoteka-na-pervichnoe-zhile-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,“Yashil ta’mir” ipotekasi,19.0,19.0,,10 yilgacha,170 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/ipoteka/ipoteka-yashil-ta-mir-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,"""Hamkor ipoteka"" krediti",18.0,18.0,,20 yilgacha,1 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/ipoteka/hamkor-ipoteka-kredit-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,Kumushkon Residence ipoteka,18.0,18.0,,15 yilgacha,5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/ipoteka/kumushkon-residence-ipoteka-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,“Universal hamkor ipoteka” kredit mahsuloti,18.0,18.0,,20 yilgacha,1 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/ipoteka/ipoteka-universal-hamkor-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,"""Yangi Toshkent"" ipoteka",18.0,18.0,,20 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/ipoteka/yangi-toshkent-ipoteka-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,Exclusive ipoteka,18.0,18.0,,20 yilgacha,1 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/ipoteka/exclusive-ipoteka-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,Orzuingizdagi uy,17.0,17.0,,,,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/ipoteka/ipoteka-na-pervichnoe-zhile-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,Yangi uyga ipoteka-2,17.0,17.0,,20 yilgacha,480 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/ipoteka/new-house-ipoteka-2-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,Balansdagi turar-joy ipoteka krediti,14.0,14.0,,15 yilgacha,1.5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/ipoteka/balansdagi-turar-joy-ipoteka-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Ipoteka,Chimgan Residence ipoteka,14.0,14.0,,10 yilgacha,1.5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/ipoteka/chimgan-residence-ipoteka-uz2870/
 O'zsanoatqurilishbank (SQB),Jismoniy,Iste'mol,Yangicha (ish haqi loyihasi),21.99,26.99,,6–60 oy,200 mln gacha,UZS,Qo'lda tekshirilgan,,6 oy 21.99% ... 36–60 oy 26.99%,https://sqb.uz/uz/individuals/credits/consumer-credit-new-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Iste'mol,Qarzni yangi qarz oluvchiga o‘tkazish xizmati,23.0,25.0,,,,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/credits/qarzni-yangi-qarz-oluvchiga-o-tkazish-xizmati-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Iste'mol,«Yangicha» iste’mol krediti,21.99,21.99,,5 yilgacha,200 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/credits/consumer-credit-new-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Iste'mol,Green komfort,20.0,20.0,,3 yilgacha,200 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/credits/green-komfort-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Kredit karta,"""Yangicha OVERDRAFT""",26.9,26.9,,2 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/credits/overdraft-offline-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Iste'mol,Qarzni yangi qarz oluvchiga o‘tkazish xizmati,23.0,25.0,,,,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/credits/qarzni-yangi-qarz-oluvchiga-o-tkazish-xizmati-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Iste'mol,«Yangicha» iste’mol krediti,21.99,21.99,,5 yilgacha,200 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/credits/consumer-credit-new-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Iste'mol,Green komfort,20.0,20.0,,3 yilgacha,200 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/credits/green-komfort-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Kredit karta,"""Yangicha OVERDRAFT""",26.9,26.9,,2 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/credits/overdraft-offline-uz/
 O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,Ish haqi loyihasi uchun mikroqarz,22,28,,3–48 oy,2–100 mln,UZS,Qo'lda tekshirilgan,,,https://sqb.uz/uz/individuals/credits/mikrozaym-salary-uz/
 O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,Mikroqarz,26.9,26.9,,24 oygacha,,UZS,Qo'lda tekshirilgan,,Vaqtincha to'xtatilgan,https://sqb.uz/en/individuals/credits/
-O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,Ochiq kredit liniyasi bo‘yicha mikroqarz,26.9,26.9,,2 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/credits/ochiq-kredit-liniyasi-bo-yicha-mikroqarz-krediti-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Mikrokredit»,26.9,26.9,,5 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/credits/mikrokredit-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Mahalla tadbirkori» mikroqarzi,25.0,25.0,,5 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/credits/mikrokredit-mahalla-tadbirkori-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,Ochiq kredit liniyasi bo‘yicha mikroqarz,26.9,26.9,,2 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/credits/ochiq-kredit-liniyasi-bo-yicha-mikroqarz-krediti-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Mikrokredit»,26.9,26.9,,5 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/credits/mikrokredit-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Mahalla tadbirkori» mikroqarzi,25.0,25.0,,5 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/credits/mikrokredit-mahalla-tadbirkori-uz/
 O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,SQB Mobile onlayn mikroqarz,24,,24,12–48 oy,2–100 mln,UZS,Qo'lda tekshirilgan,,,https://sqb.uz/en/individuals/credits/sqb-mobile-ilovasida-mikroqarz-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Mahalla» mikroqarzi,24.0,24.0,,5 yilgacha,15 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/credits/mahalla-mikroqarz-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«MikroMadad» mikroqarzi,23.0,23.0,,4 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/credits/mikromadad-mikroqarz-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Bir kontur — bir mahsulot» mikroqarzi,22.9,22.9,,18 oygacha,20 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/credits/mikrozaym-bir-kontur-bir-mahsulot-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Mahalla ishbilarmoni» mikroqarzi,21.0,21.0,,7 yilgacha,50 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/credits/mikrokredit-mahalla-ishbilarmoni-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Istiqlol online» mikroqarz,21.0,21.0,,3 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/credits/mikrozaym-istiqlol-online-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Istiqlol» mikroqarzi,20.0,20.0,,3 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/credits/istiqlol-mikroqarz-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Agroko‘makchi» krediti,18.0,18.0,,1 yilgacha,15 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/credits/mikrozayem-agroko-makchi-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Oila va yoshlar tadbirkori» krediti,12.0,12.0,,7 yilgacha,50 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/credits/mikrozaym-oila-va-yoshlar-tadbirkori-uz/
-O'zsanoatqurilishbank (SQB),Jismoniy,Ta'lim,«Ta’lim» krediti,14.0,14.0,,6 oy – 11 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://sqb.uz/uz/individuals/credits/educational-credit-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Mahalla» mikroqarzi,24.0,24.0,,5 yilgacha,15 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/credits/mahalla-mikroqarz-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«MikroMadad» mikroqarzi,23.0,23.0,,4 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/credits/mikromadad-mikroqarz-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Bir kontur — bir mahsulot» mikroqarzi,22.9,22.9,,18 oygacha,20 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/credits/mikrozaym-bir-kontur-bir-mahsulot-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Mahalla ishbilarmoni» mikroqarzi,21.0,21.0,,7 yilgacha,50 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/credits/mikrokredit-mahalla-ishbilarmoni-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Istiqlol online» mikroqarz,21.0,21.0,,3 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/credits/mikrozaym-istiqlol-online-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Istiqlol» mikroqarzi,20.0,20.0,,3 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/credits/istiqlol-mikroqarz-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Agroko‘makchi» krediti,18.0,18.0,,1 yilgacha,15 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/credits/mikrozayem-agroko-makchi-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Mikroqarz,«Oila va yoshlar tadbirkori» krediti,12.0,12.0,,7 yilgacha,50 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/credits/mikrozaym-oila-va-yoshlar-tadbirkori-uz/
+O'zsanoatqurilishbank (SQB),Jismoniy,Ta'lim,«Ta’lim» krediti,14.0,14.0,,6 oy – 11 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://sqb.uz/uz/individuals/credits/educational-credit-uz/
 O'zsanoatqurilishbank (SQB),Yuridik,Biznes,Yosh tadbirkor (18–30 yosh),18,18,18,60 oygacha,100 mln gacha,UZS,Qo'lda tekshirilgan,,MB asosiy stavkasi + 4%,https://sqb.uz/uz/individuals/credits/yosh-tadbirkor-mikrozaym-uz/
 Octobank,Jismoniy,Avtokredit,Avtokredit 2.0,21,24,,60 oygacha,,UZS,Qo'lda tekshirilgan,,Ish haqi loyihasi ishtirokchilari 21%; badal 40% dan,https://octobank.uz/jismoniy-shaxslarga/avtokredit-20
 Octobank,Jismoniy,Ipoteka,Yangi qurilgan va ikkilamchi uylar uchun ipoteka,,,,120 oygacha,,UZS,Qo'lda tekshirilgan,,Stavka qidiruvda ko'rinmadi,https://octobank.uz/jismoniy-shaxslarga/ipoteka-novostroyki
-Octobank,Jismoniy,Iste'mol,"""Oktobank"" AJ ish haqi loyihasi xodimlari uchun aksiya stavkasi",21.0,21.0,,2.57 oygacha,,UZS,Saytdan avtomatik,2026-10-14,,https://octobank.uz/bank-haqida/aktsiyalar/osobye-usloviya-kreditovaniya-dlya-vas-i-vashih-kolleg-ot-octobank
+Octobank,Jismoniy,Iste'mol,"""Oktobank"" AJ ish haqi loyihasi xodimlari uchun aksiya stavkasi",21.0,21.0,,2.53 oygacha,,UZS,Saytdan avtomatik,2026-10-15,,https://octobank.uz/bank-haqida/aktsiyalar/osobye-usloviya-kreditovaniya-dlya-vas-i-vashih-kolleg-ot-octobank
 Octobank,Jismoniy,Mikroqarz,Mikroqarz (PreApprove),37.9,37.9,,12 / 24 / 36 oy,4–100 mln,UZS,Qo'lda tekshirilgan,,,https://octobank.uz/assets/components/widgets_05/pasport_-preapprove_mikroqarzi_uz.pdf
 Octobank,Yuridik,Biznes,Octo-Invest,21,27,,,,UZS,Qo'lda tekshirilgan,,Valyutada 11–15%,https://octobank.uz/bank-haqida/xabarnomalar/uvedomlenie-ob-izmenenii-usloviy-kreditovaniya-dlya-yuridicheskih-lits
 Octobank,Yuridik,Biznes,Octo-Aylanma,20,23,,,,UZS,Qo'lda tekshirilgan,,Valyutada 9–13%,https://octobank.uz/bank-haqida/xabarnomalar/uvedomlenie-ob-izmenenii-usloviy-kreditovaniya-dlya-yuridicheskih-lits
-Orient Finans Bank,Jismoniy,Avtokredit,Avtokredit Ikkilamchi bozorga,24.9,24.9,,4 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/ikkilamchi-bozor-uchun-avtokredit
-Orient Finans Bank,Jismoniy,Avtokredit,Avtokredit Import,22.9,22.9,,5 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/import-avtokredit
-Orient Finans Bank,Jismoniy,Avtokredit,Avtokredit Foydali,22.0,22.0,,1 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/avtokredit-foydali
-Orient Finans Bank,Jismoniy,Avtokredit,Oson avtokredit,21.9,21.9,,5 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/oson-avtokredit
+Orient Finans Bank,Jismoniy,Avtokredit,Avtokredit Ikkilamchi bozorga,24.9,24.9,,4 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/ikkilamchi-bozor-uchun-avtokredit
+Orient Finans Bank,Jismoniy,Avtokredit,Avtokredit Import,22.9,22.9,,5 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/import-avtokredit
+Orient Finans Bank,Jismoniy,Avtokredit,Avtokredit Foydali,22.0,22.0,,1 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/avtokredit-foydali
+Orient Finans Bank,Jismoniy,Avtokredit,Oson avtokredit,21.9,21.9,,5 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/oson-avtokredit
 Orient Finans Bank,Jismoniy,Avtokredit,Byudjet tashkilotlari xodimlari uchun,20.9,,20.9,60 oygacha,800 mln gacha,UZS,Qo'lda tekshirilgan,,Boshlang'ich badalga qarab pasayadi,https://ofb.uz/kreditlar/byudjet-tashkilotlari-xodimlari-uchun-avtokredit
 Orient Finans Bank,Jismoniy,Avtokredit,BYD Special Plus,12.5,,,36 / 60 oy,800 mln gacha,UZS,Qo'lda tekshirilgan,,Yangi BYD avtomobillari,https://ofb.uz/kreditlar/byd-special-plus
-Orient Finans Bank,Jismoniy,Biznes,OFB Start,25.0,28.0,,3 oy – 3 yil,5.33715 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/biznes/kreditlar/ofb-start
-Orient Finans Bank,Jismoniy,Biznes,OFB Ishonchli,26.0,28.0,,2 oy – 2 yil,18.0539 mln – 2 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/biznes/kreditlar/ofb-ishonchli
-Orient Finans Bank,Jismoniy,Biznes,OFB Cash,26.0,26.0,,2 oy – 2 yil,17.9531 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/biznes/kreditlar/ofb-cash
-Orient Finans Bank,Jismoniy,Biznes,OFB Kapital,22.0,26.0,,3 oy – 3 yil,9.55301 mln – 3 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/biznes/kreditlar/ofb-kapital
-Orient Finans Bank,Jismoniy,Biznes,OFB Garant,25.0,25.0,,3 oy – 3 yil,93.75 ming – 5 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/biznes/kreditlar/ofb-garant
-Orient Finans Bank,Jismoniy,Biznes,OFB Kelajak,12.5,12.5,,2 oy – 2 yil,259.193 ming – 1.64891 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/biznes/kreditlar/ofb-kelajak
-Orient Finans Bank,Jismoniy,Ipoteka,Foydali ipoteka,16.0,25.0,,6 oy – 20 yil,7.82892 mln – 1.06 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/foydali-ipoteka
+Orient Finans Bank,Jismoniy,Biznes,OFB Start,25.0,28.0,,3 oy – 3 yil,5.33715 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/biznes/kreditlar/ofb-start
+Orient Finans Bank,Jismoniy,Biznes,OFB Ishonchli,26.0,28.0,,2 oy – 2 yil,18.0539 mln – 2 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/biznes/kreditlar/ofb-ishonchli
+Orient Finans Bank,Jismoniy,Biznes,OFB Cash,26.0,26.0,,2 oy – 2 yil,17.9531 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/biznes/kreditlar/ofb-cash
+Orient Finans Bank,Jismoniy,Biznes,OFB Kapital,22.0,26.0,,3 oy – 3 yil,9.55301 mln – 3 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/biznes/kreditlar/ofb-kapital
+Orient Finans Bank,Jismoniy,Biznes,OFB Garant,25.0,25.0,,3 oy – 3 yil,93.75 ming – 5 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/biznes/kreditlar/ofb-garant
+Orient Finans Bank,Jismoniy,Biznes,OFB Kelajak,12.5,12.5,,2 oy – 2 yil,259.193 ming – 1.64891 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/biznes/kreditlar/ofb-kelajak
+Orient Finans Bank,Jismoniy,Ipoteka,Foydali ipoteka,16.0,25.0,,6 oy – 20 yil,7.82892 mln – 1.06 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/foydali-ipoteka
 Orient Finans Bank,Jismoniy,Ipoteka,Uy-joy ta'miri uchun ipoteka,23,23,,10 yilgacha,400 mln gacha,UZS,Qo'lda tekshirilgan,,,https://ofb.uz/kreditlar/tamirlash-uchun-ipoteka-krediti
-Orient Finans Bank,Jismoniy,Ipoteka,Ta’mirlash uchun ipoteka krediti,23.0,23.0,,10 yilgacha,400 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/tamirlash-uchun-ipoteka-krediti
-Orient Finans Bank,Jismoniy,Ipoteka,Yashil ipoteka,23.0,23.0,,7 yilgacha,350 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/yashil-ipoteka
-Orient Finans Bank,Jismoniy,Ipoteka,Navro‘z ipoteka krediti,21.0,21.0,,20 yilgacha,1.06 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/navroz-ipoteka-krediti
-Orient Finans Bank,Jismoniy,Ipoteka,Birlamchi bozor uchun ipoteka 2.0,19.0,19.0,,20 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/birlamchi-bozor-uchun-2-0
-Orient Finans Bank,Jismoniy,Ipoteka,OFB Ipoteka,18.0,18.0,,1 yilgacha,299.739 ming – 2.49974 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/omonatlar/ofb-ipoteka
-Orient Finans Bank,Jismoniy,Ipoteka,Ipoteka O‘qituvchi,16.7,17.0,,6 oy – 20 yil,8.26814 mln – 496.088 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/ipoteka-oqituvchi
-Orient Finans Bank,Jismoniy,Ipoteka,Oilaviy ipoteka,16.7,16.7,,6 oy – 20 yil,8.26814 mln – 496.088 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/oilaviy-ipoteka
-Orient Finans Bank,Jismoniy,Iste'mol,Corporate Plus,25.0,25.0,,3 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/corporate-plus
-Orient Finans Bank,Jismoniy,Iste'mol,Qulay qayta moliyalashtirish,21.0,21.0,,,1.72392 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/qulay-qayta-moliyalashtirish
-Orient Finans Bank,Jismoniy,Iste'mol,Bashkent,20.0,20.0,,,1.06 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/bashkent
-Orient Finans Bank,Jismoniy,Kredit karta,Biznes Karta,25.0,26.0,,2 oy – 1 yil,17.9028 mln – 500 mln,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/biznes/kreditlar/biznes-karta
-Orient Finans Bank,Jismoniy,Kredit karta,Biznes Overdraft,25.0,25.0,,2 oy – 18 oy,17.9028 mln – 1.5 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/biznes/kreditlar/biznes-overdraft
-Orient Finans Bank,Jismoniy,Kredit karta,Overdraft,24.0,24.0,,2 yilgacha,50 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/overdraft
+Orient Finans Bank,Jismoniy,Ipoteka,Ta’mirlash uchun ipoteka krediti,23.0,23.0,,10 yilgacha,400 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/tamirlash-uchun-ipoteka-krediti
+Orient Finans Bank,Jismoniy,Ipoteka,Yashil ipoteka,23.0,23.0,,7 yilgacha,350 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/yashil-ipoteka
+Orient Finans Bank,Jismoniy,Ipoteka,Navro‘z ipoteka krediti,21.0,21.0,,20 yilgacha,1.06 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/navroz-ipoteka-krediti
+Orient Finans Bank,Jismoniy,Ipoteka,Birlamchi bozor uchun ipoteka 2.0,19.0,19.0,,20 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/birlamchi-bozor-uchun-2-0
+Orient Finans Bank,Jismoniy,Ipoteka,OFB Ipoteka,18.0,18.0,,1 yilgacha,299.739 ming – 2.49974 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/omonatlar/ofb-ipoteka
+Orient Finans Bank,Jismoniy,Ipoteka,Ipoteka O‘qituvchi,16.7,17.0,,6 oy – 20 yil,8.26814 mln – 496.088 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/ipoteka-oqituvchi
+Orient Finans Bank,Jismoniy,Ipoteka,Oilaviy ipoteka,16.7,16.7,,6 oy – 20 yil,8.26814 mln – 496.088 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/oilaviy-ipoteka
+Orient Finans Bank,Jismoniy,Iste'mol,Corporate Plus,25.0,25.0,,3 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/corporate-plus
+Orient Finans Bank,Jismoniy,Iste'mol,Qulay qayta moliyalashtirish,21.0,21.0,,,1.72392 mln – 1 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/qulay-qayta-moliyalashtirish
+Orient Finans Bank,Jismoniy,Iste'mol,Bashkent,20.0,20.0,,,1.06 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/bashkent
+Orient Finans Bank,Jismoniy,Kredit karta,Biznes Karta,25.0,26.0,,2 oy – 1 yil,17.9028 mln – 500 mln,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/biznes/kreditlar/biznes-karta
+Orient Finans Bank,Jismoniy,Kredit karta,Biznes Overdraft,25.0,25.0,,2 oy – 18 oy,17.9028 mln – 1.5 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/biznes/kreditlar/biznes-overdraft
+Orient Finans Bank,Jismoniy,Kredit karta,Overdraft,24.0,24.0,,2 yilgacha,50 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/overdraft
 Orient Finans Bank,Jismoniy,Mikroqarz,Onlayn mikroqarz (ilova),30,30,,24 oygacha,50 mln gacha,UZS,Qo'lda tekshirilgan,,,https://ofb.uz/en/credits/online-microloan
-Orient Finans Bank,Jismoniy,Mikroqarz,Onlayn mikroqarz,30.0,30.0,,,50 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/onlayn-mikroqarz
-Orient Finans Bank,Jismoniy,Mikroqarz,Kichik biznesga qadam,27.4,27.4,,2 yilgacha,5 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/kichik-biznesga-qadam-mikrozaymi
-Orient Finans Bank,Jismoniy,Mikroqarz,O‘simlikchilik,26.9,26.9,,3 yilgacha,30 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/osimlikchilik-mikrozaymi
-Orient Finans Bank,Jismoniy,Mikroqarz,Bog‘bon,26.9,26.9,,3 yilgacha,20 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/bogbon-mikrozaymi
+Orient Finans Bank,Jismoniy,Mikroqarz,Onlayn mikroqarz,30.0,30.0,,,50 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/onlayn-mikroqarz
+Orient Finans Bank,Jismoniy,Mikroqarz,Kichik biznesga qadam,27.4,27.4,,2 yilgacha,5 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/kichik-biznesga-qadam-mikrozaymi
+Orient Finans Bank,Jismoniy,Mikroqarz,O‘simlikchilik,26.9,26.9,,3 yilgacha,30 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/osimlikchilik-mikrozaymi
+Orient Finans Bank,Jismoniy,Mikroqarz,Bog‘bon,26.9,26.9,,3 yilgacha,20 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/bogbon-mikrozaymi
 Orient Finans Bank,Jismoniy,Mikroqarz,Mikroqarz Ichki turizm,26,26,27,12 oygacha,15 mln gacha,UZS,Qo'lda tekshirilgan,,,https://ofb.uz/kreditlar/mikroqarz-ichki-turizm
-Orient Finans Bank,Jismoniy,Mikroqarz,Start Up,25.9,25.9,,1 yilgacha,15 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/start-up-mikrozaymi
-Orient Finans Bank,Jismoniy,Mikroqarz,Oilaviy biznes,25.9,25.9,,3 yilgacha,25 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/oilaviy-biznes-mikrozaymi
-Orient Finans Bank,Jismoniy,Mikroqarz,Ishonch,25.5,25.5,,3 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/ishonch-mikroqarz
+Orient Finans Bank,Jismoniy,Mikroqarz,Start Up,25.9,25.9,,1 yilgacha,15 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/start-up-mikrozaymi
+Orient Finans Bank,Jismoniy,Mikroqarz,Oilaviy biznes,25.9,25.9,,3 yilgacha,25 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/oilaviy-biznes-mikrozaymi
+Orient Finans Bank,Jismoniy,Mikroqarz,Ishonch,25.5,25.5,,3 yilgacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/ishonch-mikroqarz
 Orient Finans Bank,Jismoniy,Mikroqarz,Green mikroqarz,20,20,,36 oygacha,5–50 mln,UZS,Qo'lda tekshirilgan,,,https://ofb.uz/kreditlar/green-mikroqarz
-Orient Finans Bank,Jismoniy,Ta'lim,Ta’lim uchun,25.0,25.0,,4 yilgacha,250 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://ofb.uz/kreditlar/talim-uchun-istemol-krediti
+Orient Finans Bank,Jismoniy,Ta'lim,Ta’lim uchun,25.0,25.0,,4 yilgacha,250 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/talim-uchun-istemol-krediti
 Orient Finans Bank,Yuridik,Biznes,OFB Express (aylanma mablag'),26,,26,24 oygacha,1 mlrd gacha,UZS,Qo'lda tekshirilgan,,,https://ofb.uz/biznes/kreditlar/ofb-express
-Poytaxt bank,Jismoniy,Avtokredit,"""Milliy"" avtokredit",20.0,28.0,,,100 mln – 300 mln,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/private/crediting/milliy-avtokredit/
-Poytaxt bank,Jismoniy,Avtokredit,"""Mini Truck Avto"" krediti",20.0,28.0,,,1 mln – 450 mln,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/private/crediting/mini-truck-avto-krediti/
+Poytaxt bank,Jismoniy,Avtokredit,"""Milliy"" avtokredit",20.0,28.0,,,100 mln – 300 mln,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/private/crediting/milliy-avtokredit/
+Poytaxt bank,Jismoniy,Avtokredit,"""Mini Truck Avto"" krediti",20.0,28.0,,,1 mln – 450 mln,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/private/crediting/mini-truck-avto-krediti/
 Poytaxt bank,Jismoniy,Avtokredit,BYD / UzAuto / Hyundai,24.9,26.9,,48 oy,,UZS,Qo'lda tekshirilgan,,"Ayrim Chevrolet modellari uchun 0%, 60 oygacha",https://poytaxtbank.uz/uz/private/
-Poytaxt bank,Jismoniy,Avtokredit,"""Komfort AVTO"" avtok... YANGI",20.0,24.0,,5 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/private/crediting/komfort-avto-avtokrediti/
-Poytaxt bank,Jismoniy,Biznes,"""Biznesga birinchi qadam"" krediti",20.0,28.0,,,18 ming – 15 mln,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/private/crediting/first-step-to-business/
-Poytaxt bank,Jismoniy,Biznes,"""Biznesga ikkinchi qadam"" krediti",20.0,28.0,,,42 ming – 17 mln,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/private/crediting/second-step-to-business/
+Poytaxt bank,Jismoniy,Avtokredit,"""Komfort AVTO"" avtok... YANGI",20.0,24.0,,5 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/private/crediting/komfort-avto-avtokrediti/
+Poytaxt bank,Jismoniy,Biznes,"""Biznesga birinchi qadam"" krediti",20.0,28.0,,,18 ming – 15 mln,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/private/crediting/first-step-to-business/
+Poytaxt bank,Jismoniy,Biznes,"""Biznesga ikkinchi qadam"" krediti",20.0,28.0,,,42 ming – 17 mln,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/private/crediting/second-step-to-business/
 Poytaxt bank,Jismoniy,Ipoteka,Maskan,27.99,31.99,,5–10 yil,,UZS,Qo'lda tekshirilgan,,Boshlang'ich badal 25%,https://poytaxtbank.uz/uz/private/crediting/mortgage-loan
-Poytaxt bank,Jismoniy,Ipoteka,«Tayyor Uy» ipoteka krediti YANGI,22.5,24.5,,20 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/private/crediting/tayyor-uy-ipoteka-krediti/
+Poytaxt bank,Jismoniy,Ipoteka,«Tayyor Uy» ipoteka krediti YANGI,22.5,24.5,,20 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/private/crediting/tayyor-uy-ipoteka-krediti/
 Poytaxt bank,Jismoniy,Iste'mol,Iste'mol krediti,28,30,,12–36 oy,,UZS,Qo'lda tekshirilgan,,"'Sayohat' krediti: 28%, 12 oy",https://poytaxtbank.uz/uz/private/
-Poytaxt bank,Jismoniy,Iste'mol,Mahalla loyihasi krediti,20.0,28.0,,,18 ming – 30 mln,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/private/crediting/mahalla-loyihasi-krediti/
+Poytaxt bank,Jismoniy,Iste'mol,Mahalla loyihasi krediti,20.0,28.0,,,18 ming – 30 mln,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/private/crediting/mahalla-loyihasi-krediti/
 Poytaxt bank,Jismoniy,Mikroqarz,Mikroqarz,25,28,,36 oygacha,100 mln gacha,UZS,Qo'lda tekshirilgan,,Boshlang'ich badal yo'q,https://poytaxtbank.uz/uz/private/crediting/microloan/
-Poytaxt bank,Jismoniy,Mikroqarz,Mikroqarz KASSA ORQALI,25.0,28.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/private/crediting/microloan/
-Poytaxt bank,Jismoniy,Mikroqarz,"Mikroqarz ""Bir to‘lov... YANGI",28.0,28.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/private/crediting/mikroqarz-bir-to-lov/
-Poytaxt bank,Jismoniy,Mikroqarz,Oylik ish haqi loyihasida Mikroqarz,20.0,28.0,,,600 ming – 100 mln,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/private/crediting/oylik-ish-haqi-loyihasida-mikroqarz/
-Poytaxt bank,Yuridik,Avtokredit,Avto kredit,27.99,27.99,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/corporate/crediting/avto-kredit-/
-Poytaxt bank,Yuridik,Avtokredit,Avto kredit (5 tonnagacha bo‘l... YANGI,27.99,27.99,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/corporate/crediting/avto-kredit-5-tonnagacha-bo-lgan-yo-lovchi-va-yuk-tashish-uchun/
-Poytaxt bank,Yuridik,Avtokredit,Avto kredit YANGI,27.99,27.99,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/small-business/crediting/avto-kredit-/
-Poytaxt bank,Yuridik,Biznes,“Faol tadbirkor” krediti YANGI,27.99,27.99,,1 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/corporate/crediting/faol-tadbirkor-krediti/
-Poytaxt bank,Yuridik,Biznes,Revolver kreditlar,27.99,27.99,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/corporate/crediting/revolver-kreditlar/
-Poytaxt bank,Yuridik,Biznes,Aylanma mablagʻlarni toʻldiris...,27.99,27.99,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/corporate/crediting/aylanma-mablag-larni-to-ldirish-/
-Poytaxt bank,Yuridik,Biznes,Asosiy vosita hamda investitsi...,27.99,27.99,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/small-business/crediting/asosiy-vosita-hamda-investitsiya-loyihalarni-moliyalashtirish/
-Poytaxt bank,Yuridik,Biznes,Poytaxt Biznes 2 YANGI,25.0,25.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/corporate/crediting/poytaxt-biznes-2/
-Poytaxt bank,Yuridik,Biznes,Asosiy vosita hamda investitsi...,25.0,25.0,,5 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/corporate/crediting/asosiy-vosita-hamda-investitsiya-loyihalarni-moliyalashtirish/
-Poytaxt bank,Yuridik,Ipoteka,Koʻp qavatli uy-joylar qurish ... YANGI,27.99,27.99,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://poytaxtbank.uz/uz/corporate/crediting/ko-p-qavatli-uy-joylar-qurish-va-rekonstruksiya-qilish-uchun/
+Poytaxt bank,Jismoniy,Mikroqarz,Mikroqarz KASSA ORQALI,25.0,28.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/private/crediting/microloan/
+Poytaxt bank,Jismoniy,Mikroqarz,"Mikroqarz ""Bir to‘lov... YANGI",28.0,28.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/private/crediting/mikroqarz-bir-to-lov/
+Poytaxt bank,Jismoniy,Mikroqarz,Oylik ish haqi loyihasida Mikroqarz,20.0,28.0,,,600 ming – 100 mln,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/private/crediting/oylik-ish-haqi-loyihasida-mikroqarz/
+Poytaxt bank,Yuridik,Avtokredit,Avto kredit,27.99,27.99,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/corporate/crediting/avto-kredit-/
+Poytaxt bank,Yuridik,Avtokredit,Avto kredit (5 tonnagacha bo‘l... YANGI,27.99,27.99,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/corporate/crediting/avto-kredit-5-tonnagacha-bo-lgan-yo-lovchi-va-yuk-tashish-uchun/
+Poytaxt bank,Yuridik,Avtokredit,Avto kredit YANGI,27.99,27.99,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/small-business/crediting/avto-kredit-/
+Poytaxt bank,Yuridik,Biznes,“Faol tadbirkor” krediti YANGI,27.99,27.99,,1 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/corporate/crediting/faol-tadbirkor-krediti/
+Poytaxt bank,Yuridik,Biznes,Revolver kreditlar,27.99,27.99,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/corporate/crediting/revolver-kreditlar/
+Poytaxt bank,Yuridik,Biznes,Aylanma mablagʻlarni toʻldiris...,27.99,27.99,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/corporate/crediting/aylanma-mablag-larni-to-ldirish-/
+Poytaxt bank,Yuridik,Biznes,Asosiy vosita hamda investitsi...,27.99,27.99,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/small-business/crediting/asosiy-vosita-hamda-investitsiya-loyihalarni-moliyalashtirish/
+Poytaxt bank,Yuridik,Biznes,Poytaxt Biznes 2 YANGI,25.0,25.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/corporate/crediting/poytaxt-biznes-2/
+Poytaxt bank,Yuridik,Biznes,Asosiy vosita hamda investitsi...,25.0,25.0,,5 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/corporate/crediting/asosiy-vosita-hamda-investitsiya-loyihalarni-moliyalashtirish/
+Poytaxt bank,Yuridik,Ipoteka,Koʻp qavatli uy-joylar qurish ... YANGI,27.99,27.99,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://poytaxtbank.uz/uz/corporate/crediting/ko-p-qavatli-uy-joylar-qurish-va-rekonstruksiya-qilish-uchun/
 Smartbank,Jismoniy,Iste'mol,Kredit,24.99,25.99,,,,UZS,Qo'lda tekshirilgan,,"Rasmiy daromadli 24.99%, o'zini band qilganlar 25.99%; sahifa 'Openbank' nomida",https://smartbank.uz/useful/faq
-TBC Bank,Jismoniy,Avtokredit,TBC Avtokredit,29.5,29.5,,6 oy – 5 yil,1 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://tbcbank.uz/product/avtokredit/tariffs/
-TBC Bank,Jismoniy,Biznes,Kredit biznesning o‘sishiga qanday yordam beradi: 6 ta misol,33.0,38.0,,3 oy – 3 yil,10 mln – 300 mln,UZS,Saytdan avtomatik,2026-10-14,,https://tbcbank.uz/blog/articles/kredit-dlya-biznesa-uz/
-TBC Bank,Jismoniy,Iste'mol,Bank nima uchun kreditni rad etadi,50.0,50.0,,1 oygacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://tbcbank.uz/blog/articles/pochemu-banki-otkazivayut-v-kredite-uz/
+TBC Bank,Jismoniy,Avtokredit,TBC Avtokredit,29.5,29.5,,6 oy – 5 yil,1 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://tbcbank.uz/product/avtokredit/tariffs/
+TBC Bank,Jismoniy,Biznes,Kredit biznesning o‘sishiga qanday yordam beradi: 6 ta misol,33.0,38.0,,3 oy – 3 yil,10 mln – 300 mln,UZS,Saytdan avtomatik,2026-10-15,,https://tbcbank.uz/blog/articles/kredit-dlya-biznesa-uz/
+TBC Bank,Jismoniy,Iste'mol,Bank nima uchun kreditni rad etadi,50.0,50.0,,1 oygacha,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://tbcbank.uz/blog/articles/pochemu-banki-otkazivayut-v-kredite-uz/
 TBC Bank,Jismoniy,Kredit karta,TBC Osmon,,,,Imtiyozli davr 25–55 kun,,UZS,Qo'lda tekshirilgan,,Stavka ilovadagi 'Shartlar' bo'limida,https://tbcbank.uz/product/credit-card/
 TBC Bank,Jismoniy,Mikroqarz,Onlayn kredit (ilova orqali),28,49,,3–36 oy,100 mln gacha,UZS,Qo'lda tekshirilgan,,Stavka mijoz profiliga qarab,https://tbcbank.uz/product/kredity/
 TBC Bank,Jismoniy,Mikroqarz,Mikrokredit,29,48,,,,UZS,Qo'lda tekshirilgan,,,https://tbcbank.uz/product/mikrokredit/
-TBC Bank,Yuridik,Biznes,Biznes uchun garov evaziga kredit,22.0,22.0,,6 oy – 7 yil,106.514 mln – 12 mlrd,UZS,Saytdan avtomatik,2026-10-14,,https://tbcbank.uz/business/product/secured-loan-12-billion/
-Tenge Bank,Jismoniy,Avtokredit,Аvtokredit - «ROODELL»,30.0,30.0,,5 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://tengebank.uz/credit/avtokredit-roodell-i
-Tenge Bank,Jismoniy,Avtokredit,Yangi avtomobil uchun avtokredit,22.9,26.0,,4 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://tengebank.uz/credit/avtokredit-na-novyj-avtomobil
+TBC Bank,Yuridik,Biznes,Biznes uchun garov evaziga kredit,22.0,22.0,,6 oy – 7 yil,106.514 mln – 12 mlrd,UZS,Saytdan avtomatik,2026-10-15,,https://tbcbank.uz/business/product/secured-loan-12-billion/
+Tenge Bank,Jismoniy,Avtokredit,Аvtokredit - «ROODELL»,30.0,30.0,,5 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://tengebank.uz/credit/avtokredit-roodell-i
+Tenge Bank,Jismoniy,Avtokredit,Yangi avtomobil uchun avtokredit,22.9,26.0,,4 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://tengebank.uz/credit/avtokredit-na-novyj-avtomobil
 Tenge Bank,Jismoniy,Avtokredit,Avtokredit Drive,,,26,5 yilgacha,500 mln gacha,UZS,Qo'lda tekshirilgan,,Stavka badal va muddatga qarab,https://tengebank.uz/en/credit/avtokredit-drive
-Tenge Bank,Jismoniy,Biznes,Biznesga birinchi qadam,25.0,25.0,,3 yilgacha,30 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://tengebank.uz/credit/pervyj-shag-k-biznesu
-Tenge Bank,Jismoniy,Ipoteka,Yangi turarjoyga ipoteka,23.9,25.0,,15 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://tengebank.uz/credit/ipoteka-na-novoe-jilyo
+Tenge Bank,Jismoniy,Biznes,Biznesga birinchi qadam,25.0,25.0,,3 yilgacha,30 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://tengebank.uz/credit/pervyj-shag-k-biznesu
+Tenge Bank,Jismoniy,Ipoteka,Yangi turarjoyga ipoteka,23.9,25.0,,15 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://tengebank.uz/credit/ipoteka-na-novoe-jilyo
 Tenge Bank,Jismoniy,Ipoteka,Ikkilamchi uy-joy uchun ipoteka,23.9,23.9,,10 yilgacha,,UZS,Qo'lda tekshirilgan,,Boshlang'ich badal 25%,https://tengebank.uz/en/credit/ipoteka-na-vtorichnoe-zhile
 Tenge Bank,Jismoniy,Ipoteka,Yangi uy-joy uchun ipoteka,23.9,23.9,,15 yilgacha,,UZS,Qo'lda tekshirilgan,,Boshlang'ich badal 25%,https://tengebank.uz/en/credits
 Tenge Bank,Jismoniy,Mikroqarz,Onlayn mikroqarz,24.6,49,,6–36 oy,1–90 mln,UZS,Qo'lda tekshirilgan,,Kreditlar ro'yxatida '30% dan' deb ko'rsatilgan,https://tengebank.uz/en/credit/mikrozajm-onlajn
-Tenge Bank,Jismoniy,Mikroqarz,Onlayn mikroqarz,24.6,24.6,,3 yilgacha,90 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://tengebank.uz/credit/mikrozajm-onlajn
-Tenge Bank,Yuridik,Biznes,Tezkor biznes,26.0,26.0,,,5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://tengebank.uz/business/smelending/biznes-uskorennyj
-Tenge Bank,Yuridik,Biznes,YaTT uchun onlayn kredit,24.9,24.9,,3 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://tengebank.uz/business/smelending/online-business
+Tenge Bank,Jismoniy,Mikroqarz,Onlayn mikroqarz,24.6,24.6,,3 yilgacha,90 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://tengebank.uz/credit/mikrozajm-onlajn
+Tenge Bank,Yuridik,Biznes,Tezkor biznes,26.0,26.0,,,5 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://tengebank.uz/business/smelending/biznes-uskorennyj
+Tenge Bank,Yuridik,Biznes,YaTT uchun onlayn kredit,24.9,24.9,,3 yilgacha,300 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://tengebank.uz/business/smelending/online-business
 Trastbank,Jismoniy,Avtokredit,Avtokredit,21,24,,48–60 oy,,UZS,Qo'lda tekshirilgan,,"Bosh sahifa: 21% dan, 60 oy; maqola: 24% (30% badal) / 22% (50% badal), 48 oy",https://trustbank.uz/uz/private/
-Trastbank,Jismoniy,Ipoteka,“Sharq bahori” ipoteka krediti,17.0,24.0,,20 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://trustbank.uz/uz/private/crediting/sharq-bahori-ipoteka-krediti/
-Trastbank,Jismoniy,Ipoteka,Bankning o‘z mablag‘lari hisobidan ajratiladigan ipoteka krediti,23.0,23.0,,10 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://trustbank.uz/uz/private/crediting/bankning-o-z-mablag-lari-hisobidan-ajratiladigan-ipoteka-krediti/
-Trastbank,Jismoniy,Ipoteka,Birlamchi bozordan uy-joy (kvartira) sotib olish uchun ipoteka krediti,17.0,17.0,,20 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://trustbank.uz/uz/private/crediting/birlamchi-bozordan-uy-sotib-olish-uchun-ipoteka-krediti/
-Trastbank,Jismoniy,Ipoteka,Maqsadli ipoteka,14.0,14.0,,1 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://trustbank.uz/uz/private/deposit/maqsadli-ipoteka/
-Trastbank,Jismoniy,Iste'mol,Yashil energiya,20.0,20.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://trustbank.uz/uz/private/crediting/quyosh-panellarini-sotib-olish-va-o-rnatish-uchun-kredit/
-Trastbank,Jismoniy,Iste'mol,Onlayn-Zamin,16.0,16.0,,18 oygacha,,UZS,Saytdan avtomatik,2026-10-14,,https://trustbank.uz/uz/private/deposit/onlayn-zamin/
-Trastbank,Jismoniy,Iste'mol,Zamin,16.0,16.0,,18 oygacha,,UZS,Saytdan avtomatik,2026-10-14,,https://trustbank.uz/uz/private/deposit/zamin/
-Trastbank,Jismoniy,Iste'mol,Bolajon,14.0,14.0,,,,UZS,Saytdan avtomatik,2026-10-14,,https://trustbank.uz/uz/private/deposit/bolajon/
-Trastbank,Jismoniy,Iste'mol,Imkon-3,14.0,14.0,,3 oygacha,,UZS,Saytdan avtomatik,2026-10-14,,https://trustbank.uz/uz/private/deposit/imkon-3/
-Trastbank,Jismoniy,Kredit karta,"""Overdraft"" krediti",24.0,24.0,,1 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://trustbank.uz/uz/private/crediting/overdraft/
+Trastbank,Jismoniy,Ipoteka,“Sharq bahori” ipoteka krediti,17.0,24.0,,20 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/crediting/sharq-bahori-ipoteka-krediti/
+Trastbank,Jismoniy,Ipoteka,Bankning o‘z mablag‘lari hisobidan ajratiladigan ipoteka krediti,23.0,23.0,,10 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/crediting/bankning-o-z-mablag-lari-hisobidan-ajratiladigan-ipoteka-krediti/
+Trastbank,Jismoniy,Ipoteka,Yillik foiz:,21.0,21.0,,15 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/crediting/birlamchi-va-ikkilamchi-bozordan-uy-joy-sotib-olish-uchun-ipoteka-krediti/
+Trastbank,Jismoniy,Ipoteka,Yillik foiz:,20.0,20.0,,20 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/crediting/golden-house-property-group-qurilish-kompaniyasi-qoshidagi-korxonalar-tomonidan-qurilayotgan-uy-joy-/
+Trastbank,Jismoniy,Ipoteka,Birlamchi bozordan uy-joy (kvartira) sotib olish uchun ipoteka krediti,17.0,17.0,,20 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/crediting/birlamchi-bozordan-uy-sotib-olish-uchun-ipoteka-krediti/
+Trastbank,Jismoniy,Ipoteka,Maqsadli ipoteka,14.0,14.0,,1 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/deposit/maqsadli-ipoteka/
+Trastbank,Jismoniy,Iste'mol,Yashil energiya,20.0,20.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/crediting/quyosh-panellarini-sotib-olish-va-o-rnatish-uchun-kredit/
+Trastbank,Jismoniy,Iste'mol,Onlayn-Zamin,16.0,16.0,,18 oygacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/deposit/onlayn-zamin/
+Trastbank,Jismoniy,Iste'mol,Zamin,16.0,16.0,,18 oygacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/deposit/zamin/
+Trastbank,Jismoniy,Iste'mol,Bolajon,14.0,14.0,,,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/deposit/bolajon/
+Trastbank,Jismoniy,Iste'mol,Imkon-3,14.0,14.0,,3 oygacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/deposit/imkon-3/
+Trastbank,Jismoniy,Kredit karta,"""Overdraft"" krediti",24.0,24.0,,1 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/private/crediting/overdraft/
 Trastbank,Jismoniy,Mikroqarz,Onlayn mikroqarz,25,25,,12 oygacha,,UZS,Qo'lda tekshirilgan,,,https://trustbank.uz/uz/private/crediting/online-microloan/
-Trastbank,Yuridik,Biznes,Lizing,30.0,30.0,,3 oy – 1 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://trustbank.uz/uz/corporate/leasing/
-Turonbank,Jismoniy,Avtokredit,“Green Avto” Avtokrediti,20.99,28.9,,1 oy – 5 yil,20.286 ming – 824 mln,UZS,Saytdan avtomatik,2026-10-14,,https://turonbank.uz/uz/private/crediting/avtokredit-ecogreencar/
-Turonbank,Jismoniy,Avtokredit,“AvtoSelf 2.0” Avtokrediti,20.99,28.9,,1 yil – 5 yil,22.817 ming – 494.4 mln,UZS,Saytdan avtomatik,2026-10-14,,https://turonbank.uz/uz/private/crediting/avtokredit-avtoself/
+Trastbank,Yuridik,Biznes,Lizing,30.0,30.0,,3 oy – 1 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://trustbank.uz/uz/corporate/leasing/
+Turonbank,Jismoniy,Avtokredit,“Green Avto” Avtokrediti,20.99,28.9,,1 oy – 5 yil,20.286 ming – 824 mln,UZS,Saytdan avtomatik,2026-10-15,,https://turonbank.uz/uz/private/crediting/avtokredit-ecogreencar/
+Turonbank,Jismoniy,Avtokredit,“AvtoSelf 2.0” Avtokrediti,20.99,28.9,,1 yil – 5 yil,22.817 ming – 494.4 mln,UZS,Saytdan avtomatik,2026-10-15,,https://turonbank.uz/uz/private/crediting/avtokredit-avtoself/
 Turonbank,Jismoniy,Avtokredit,Imkoniyat 2.0,25,25,,5 yilgacha,,UZS,Qo'lda tekshirilgan,,Ayrim mijozlar uchun 0% avtokreditlar ham bor,https://turonbank.uz/uz/private/crediting/avtokredit-imkoniyat/
-Turonbank,Jismoniy,Biznes,Biznesim maqsadim,20.99,28.9,,1 oy – 5 yil,842.933 ming – 50 mln,UZS,Saytdan avtomatik,2026-10-14,,https://turonbank.uz/uz/private/crediting/biznesim-maqsadim/
+Turonbank,Jismoniy,Biznes,Biznesim maqsadim,20.99,28.9,,1 oy – 5 yil,842.933 ming – 50 mln,UZS,Saytdan avtomatik,2026-10-15,,https://turonbank.uz/uz/private/crediting/biznesim-maqsadim/
 Turonbank,Jismoniy,Ipoteka,Ipoteka (Yanada oson),26,26,,10 yilgacha,,UZS,Qo'lda tekshirilgan,,,https://turonbank.uz/uz/private/crediting/ipoteka-krediti-yagona-oson/
 Turonbank,Jismoniy,Ipoteka,Ipoteka krediti,20,20,,20 yilgacha,,UZS,Qo'lda tekshirilgan,,Boshlang'ich badal 26%,https://turonbank.uz/uz/private/crediting/ipoteka-krediti/
-Turonbank,Jismoniy,Iste'mol,Kredit haqida,28.9,28.9,,3 oy – 1 yil,10 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://turonbank.uz/upload/iblock/368/2em3p0hf1je11eqqnwzqyl277o5w8gbz/tarif_fiz_uz_12.05..xlsx
-Turonbank,Jismoniy,Iste'mol,Barakali limonzor,20.99,28.9,,1 oy – 7 yil,23.4259 ming – 41.2 mln,UZS,Saytdan avtomatik,2026-10-14,,https://turonbank.uz/uz/private/crediting/barakali-limonzor/
-Turonbank,Jismoniy,Mikroqarz,Kredit miqdori,27.9,30.9,,1 oy – 4 yil,1 mln – 100 mln,UZS,Saytdan avtomatik,2026-10-14,,https://turonbank.uz/uz/private/crediting/mikroqarz/
-Turonbank,Jismoniy,Mikroqarz,Mahalla loyihasi mikrokrediti,20.99,28.9,,1 oy – 5 yil,1 mln – 81.9771 mln,UZS,Saytdan avtomatik,2026-10-14,,https://turonbank.uz/uz/private/crediting/mahalla-loyihasi-mikrokrediti/
+Turonbank,Jismoniy,Iste'mol,Kredit haqida,28.9,28.9,,3 oy – 1 yil,10 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://turonbank.uz/upload/iblock/368/2em3p0hf1je11eqqnwzqyl277o5w8gbz/tarif_fiz_uz_12.05..xlsx
+Turonbank,Jismoniy,Iste'mol,Barakali limonzor,20.99,28.9,,1 oy – 7 yil,23.4259 ming – 41.2 mln,UZS,Saytdan avtomatik,2026-10-15,,https://turonbank.uz/uz/private/crediting/barakali-limonzor/
+Turonbank,Jismoniy,Mikroqarz,Kredit miqdori,27.9,30.9,,1 oy – 4 yil,1 mln – 100 mln,UZS,Saytdan avtomatik,2026-10-15,,https://turonbank.uz/uz/private/crediting/mikroqarz/
+Turonbank,Jismoniy,Mikroqarz,Mahalla loyihasi mikrokrediti,20.99,28.9,,1 oy – 5 yil,1 mln – 81.9771 mln,UZS,Saytdan avtomatik,2026-10-15,,https://turonbank.uz/uz/private/crediting/mahalla-loyihasi-mikrokrediti/
 Turonbank,Yuridik,Biznes,Welcome krediti,27.99,27.99,,36 oygacha,50 mln gacha,UZS,Qo'lda tekshirilgan,,,https://turonbank.uz/uz/corporate/crediting/welcome-krediti/
 Turonbank,Yuridik,Biznes,Mikrokreditlash,27.99,27.99,,36 oygacha,,UZS,Qo'lda tekshirilgan,,,https://turonbank.uz/uz/corporate/crediting/microcredit9237/
 Turonbank,Yuridik,Biznes,Investitsion kredit,27.99,27.99,,36–84 oy,,UZS,Qo'lda tekshirilgan,,,https://turonbank.uz/uz/corporate/crediting/investment-loan/
 Universal bank,Jismoniy,Avtokredit,Comfortable (yangi avtomobil),30,34,,36–60 oy,,UZS,Qo'lda tekshirilgan,,"36 oy 30–32%, 60 oy 32–34%; 3 oygacha imtiyoz",https://universalbank.uz/credit/avtokredit-comfortable
 Universal bank,Jismoniy,Avtokredit,Ikkilamchi bozor uchun,27,27,24,36 oy,,UZS,Qo'lda tekshirilgan,,Boshlang'ich badal 36% dan,https://universalbank.uz/credit/avtokredit-ikkilamchi-bozor-uc
-Universal bank,Jismoniy,Biznes,Biznesga birinchi qadam – “Lux”,36.0,36.0,,1 oy – 3 yil,45.804 – 100 mln,UZS,Saytdan avtomatik,2026-10-14,,https://universalbank.uz/credit/biznesga-birinchi-qadam-lux
-Universal bank,Jismoniy,Biznes,Biznesga birinchi qadam – “Premium”,36.0,36.0,,1 oy – 3 yil,45.804 – 30 mln,UZS,Saytdan avtomatik,2026-10-14,,https://universalbank.uz/credit/biznesga-birinchi-qadam-premiu
-Universal bank,Jismoniy,Biznes,Biznesga birinchi qadam – “Standart”,34.0,34.0,,1 oy – 2 yil,57.992 – 20 mln,UZS,Saytdan avtomatik,2026-10-14,,https://universalbank.uz/credit/biznesga-birinchi-qadam-standa
-Universal bank,Jismoniy,Biznes,Biznesga birinchi qadam – “Econom”,32.0,32.0,,1 oy – 1 yil,98.474 – 10 mln,UZS,Saytdan avtomatik,2026-10-14,,https://universalbank.uz/credit/biznesga-birinchi-qadam-econom
-Universal bank,Jismoniy,Ipoteka,Ipotekani qayta moliyalashtirish,24.0,24.0,,3 oy – 10 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://universalbank.uz/credit/ipotekani-qayta-moliyalashtiri
+Universal bank,Jismoniy,Biznes,Biznesga birinchi qadam – “Lux”,36.0,36.0,,1 oy – 3 yil,45.804 – 100 mln,UZS,Saytdan avtomatik,2026-10-15,,https://universalbank.uz/credit/biznesga-birinchi-qadam-lux
+Universal bank,Jismoniy,Biznes,Biznesga birinchi qadam – “Premium”,36.0,36.0,,1 oy – 3 yil,45.804 – 30 mln,UZS,Saytdan avtomatik,2026-10-15,,https://universalbank.uz/credit/biznesga-birinchi-qadam-premiu
+Universal bank,Jismoniy,Biznes,Biznesga birinchi qadam – “Standart”,34.0,34.0,,1 oy – 2 yil,57.992 – 20 mln,UZS,Saytdan avtomatik,2026-10-15,,https://universalbank.uz/credit/biznesga-birinchi-qadam-standa
+Universal bank,Jismoniy,Biznes,Biznesga birinchi qadam – “Econom”,32.0,32.0,,1 oy – 1 yil,98.474 – 10 mln,UZS,Saytdan avtomatik,2026-10-15,,https://universalbank.uz/credit/biznesga-birinchi-qadam-econom
+Universal bank,Jismoniy,Ipoteka,Ipotekani qayta moliyalashtirish,24.0,24.0,,3 oy – 10 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://universalbank.uz/credit/ipotekani-qayta-moliyalashtiri
 Universal bank,Jismoniy,Iste'mol,Iste'mol krediti,30,32,26,36 oygacha,200 BHM gacha,UZS,Qo'lda tekshirilgan,,Byudjet xodimlari uchun 30%,https://universalbank.uz/credit/iste'mol-krediti
 Universal bank,Jismoniy,Mikroqarz,ISHONCH,31,31,,36 oygacha,,UZS,Qo'lda tekshirilgan,,1 oygacha imtiyoz,https://universalbank.uz/credit/mikroqarz-ishonch
 Universal bank,Jismoniy,Mikroqarz,Mikroqarz (byudjet),24,26,,12 oygacha,50 mln gacha,UZS,Qo'lda tekshirilgan,,"6 oygacha 24%, 6–12 oy 26%",https://universalbank.uz/credit/mikroqarz-byudjet
-Universal bank,Jismoniy,Mikroqarz,Mikrokredit - 300,26.0,26.0,,1 oy – 5 yil,300 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://universalbank.uz/credit/mikrokredit-300
-Universal bank,Jismoniy,Mikroqarz,Mikroqarz,25.0,25.0,,3 yil – 5 yil,100 mln gacha,UZS,Saytdan avtomatik,2026-10-14,,https://universalbank.uz/credit/mikroqarz
+Universal bank,Jismoniy,Mikroqarz,Mikrokredit - 300,26.0,26.0,,1 oy – 5 yil,300 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://universalbank.uz/credit/mikrokredit-300
+Universal bank,Jismoniy,Mikroqarz,Mikroqarz,25.0,25.0,,3 yil – 5 yil,100 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://universalbank.uz/credit/mikroqarz
 Universal bank,Yuridik,Biznes,Biznes kreditlari,26,30,,36–120 oy,,UZS,Qo'lda tekshirilgan,,USD da 12–14%,https://universalbank.uz/juristic/kreditlar
-Universal bank,Yuridik,Biznes,Good customer 100,30.0,30.0,,3 oy – 3 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://universalbank.uz/juristic/credit/good-customer-100
-Universal bank,Yuridik,Biznes,Good customer 300,30.0,30.0,,3 oy – 3 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://universalbank.uz/juristic/credit/good-customer-300
-Universal bank,Yuridik,Biznes,Good customer 500,30.0,30.0,,3 oy – 3 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://universalbank.uz/juristic/credit/good-customer-500
-Universal bank,Yuridik,Biznes,BlueOrchard,28.0,30.0,,6 oy – 5 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://universalbank.uz/juristic/credit/blueorchard
-Universal bank,Yuridik,Biznes,Simbiotics,28.0,30.0,,6 oy – 5 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://universalbank.uz/juristic/credit/simbiotics
-Universal bank,Yuridik,Biznes,Qulay,28.0,28.0,,3 oy – 3 yil,3 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://universalbank.uz/juristic/credit/qulay
-Universal bank,Yuridik,Biznes,ESG Finance,24.0,24.0,,6 oy – 5 yil,3 mlrd gacha,UZS,Saytdan avtomatik,2026-10-14,,https://universalbank.uz/juristic/credit/esg-finance
+Universal bank,Yuridik,Biznes,Good customer 100,30.0,30.0,,3 oy – 3 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://universalbank.uz/juristic/credit/good-customer-100
+Universal bank,Yuridik,Biznes,Good customer 300,30.0,30.0,,3 oy – 3 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://universalbank.uz/juristic/credit/good-customer-300
+Universal bank,Yuridik,Biznes,Good customer 500,30.0,30.0,,3 oy – 3 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://universalbank.uz/juristic/credit/good-customer-500
+Universal bank,Yuridik,Biznes,BlueOrchard,28.0,30.0,,6 oy – 5 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://universalbank.uz/juristic/credit/blueorchard
+Universal bank,Yuridik,Biznes,Simbiotics,28.0,30.0,,6 oy – 5 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://universalbank.uz/juristic/credit/simbiotics
+Universal bank,Yuridik,Biznes,Qulay,28.0,28.0,,3 oy – 3 yil,3 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://universalbank.uz/juristic/credit/qulay
+Universal bank,Yuridik,Biznes,ESG Finance,24.0,24.0,,6 oy – 5 yil,3 mlrd gacha,UZS,Saytdan avtomatik,2026-10-15,,https://universalbank.uz/juristic/credit/esg-finance
 Uzum Bank,Jismoniy,Mikroqarz,Mikroqarz (Uzum Nasiya orqali),0,0,,30 kun,25 mln gacha,UZS,Qo'lda tekshirilgan,,30 kundan keyin qarz 12 ta to'lovga bo'linadi (Uzum Nasiya komissiyasi bilan); kartaga o'tkazish 5%,https://uzumbank.uz/en/card/
 Xalq banki,Jismoniy,Iste'mol,Byudjet tashkiloti xodimlari uchun,27,32,,4 yilgacha,,UZS,Qo'lda tekshirilgan,2024-03,2024 yilgi hujjat,https://xb.uz/cdn/2/uploads/2024/03/13/10/37/xFOk3qk78QLp4M9iml5Dtfxdpf4RAJg9WlWzWtIymDeLH1KET7RIL94TKXcXfUC7.pdf
 Xalq banki,Jismoniy,Iste'mol,Ish haqi loyihasi ishtirokchilari uchun,25,30,,1–4 yil,,UZS,Qo'lda tekshirilgan,2024-03,"1 yil 25%, 2 yil 26%, 3 yil 28%, 4 yil 30%; 2024 yilgi hujjat",https://xb.uz/cdn/2/uploads/2024/03/13/10/37/xFOk3qk78QLp4M9iml5Dtfxdpf4RAJg9WlWzWtIymDeLH1KET7RIL94TKXcXfUC7.pdf
-Xalq banki,Jismoniy,Iste'mol,"""Moliyaviy ommabop"" krediti",23.0,24.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-14,,https://xb.uz/page/moliyaviy-ommabop-krediti
-Xalq banki,Jismoniy,Iste'mol,Aksiyadorlik tijorat Xalq banki,14.0,14.0,,3 oy – 82 oy,1 – 300 mln,UZS,Saytdan avtomatik,2026-10-14,,https://xb.uz/
-Ziraat Bank O'zbekiston,Jismoniy,Iste'mol,"Iste`mol kredit ""Shinam uy""",25.0,28.0,,1 oy – 3 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://ziraatbank.uz/uz/%D1%88%D0%B8%D0%BD%D0%B0%D0%BC-%D1%83%D0%B9
-Ziraat Bank O'zbekiston,Jismoniy,Iste'mol,"Iste'mol kredit ""Yashil Komfort""",24.0,25.0,,6 oy – 5 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://ziraatbank.uz/uz/iste-mol-kredit----yashil-komfort---
-Ziraat Bank O'zbekiston,Jismoniy,Iste'mol,ECO SARMOYA,23.5,25.0,,6 oy – 5 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://ziraatbank.uz/uz/eco-sarmoya
+Xalq banki,Jismoniy,Iste'mol,"""Moliyaviy ommabop"" krediti",23.0,24.0,,3 yilgacha,,UZS,Saytdan avtomatik,2026-10-15,,https://xb.uz/page/moliyaviy-ommabop-krediti
+Ziraat Bank O'zbekiston,Jismoniy,Iste'mol,"Iste`mol kredit ""Shinam uy""",25.0,28.0,,1 oy – 3 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://ziraatbank.uz/uz/%D1%88%D0%B8%D0%BD%D0%B0%D0%BC-%D1%83%D0%B9
+Ziraat Bank O'zbekiston,Jismoniy,Iste'mol,"Iste'mol kredit ""Yashil Komfort""",24.0,25.0,,6 oy – 5 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://ziraatbank.uz/uz/iste-mol-kredit----yashil-komfort---
+Ziraat Bank O'zbekiston,Jismoniy,Iste'mol,ECO SARMOYA,23.5,25.0,,6 oy – 5 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://ziraatbank.uz/uz/eco-sarmoya
 Ziraat Bank O'zbekiston,Jismoniy,Mikroqarz,Mikroqarz,25,26.5,,1–36 oy,20 mln dan,UZS,Qo'lda tekshirilgan,,"1–12 oy 25%, 13–24 oy 26%, 25–36 oy 26.5% (rasmiy daromadli)",https://ziraatbank.uz/uz/mikroqarz
-Ziraat Bank O'zbekiston,Jismoniy,Mikroqarz,Mikroqarz,25.0,26.5,,1 oy – 3 yil,,UZS,Saytdan avtomatik,2026-10-14,,https://ziraatbank.uz/uz/mikroqarz
+Ziraat Bank O'zbekiston,Jismoniy,Mikroqarz,Mikroqarz,25.0,26.5,,1 oy – 3 yil,,UZS,Saytdan avtomatik,2026-10-15,,https://ziraatbank.uz/uz/mikroqarz
