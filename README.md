@@ -148,12 +148,39 @@ python research/build.py
 ```
 
 
-## O'zbekistondan yangilash (Windows kompyuter)
+## O'zbekistondan yangilash (server yoki Windows kompyuter)
 
 Asakabank, Anorbank va Smartbank saytlari GitHub serveridan (AQSh) ochilmaydi: sahifa bo'sh keladi, ulanish uziladi
-yoki "403". Ular O'zbekistondagi kompyuterda o'qiladi. Buning uchun kompyuterga bir marta GitHub runner dasturi
-o'rnatiladi. Keyin `.github/workflows/update-uz.yml` asosiy yangilashdan so'ng o'zi ishga tushadi va shu kompyuterda
+yoki "403". Ular O'zbekistondagi server yoki kompyuterda o'qiladi. Buning uchun unga bir marta GitHub runner dasturi
+`uz` belgisi bilan o'rnatiladi (Linux server yoki Windows kompyuter — ikkalasi ham ishlaydi). Keyin `.github/workflows/update-uz.yml` asosiy yangilashdan so'ng o'zi ishga tushadi va shu kompyuterda
 `uz_yangilash.py` ni bajaradi. Kompyuter o'chiq bo'lsa, navbatda kutadi; asosiy yangilashga xalaqit bermaydi.
+
+### A. O'zbekistondagi Linux server (VPS) — doim yoqiq, tavsiya etiladi
+
+**Server talablari:** Ubuntu 24.04 (yoki 22.04), 2 CPU, 2 GB RAM, 20 GB disk, **IP manzili O'zbekistonniki**.
+Hosting sizga server IP manzili va `root` paroli beradi.
+
+1. Serverga ulaning: kompyuterda `ssh root@SERVER_IP`, iPhone'da **Termius** ilovasi (host — IP, user — `root`, parol).
+2. Quyidagilarni bajaring (bir marta, nusxalab qo'ying):
+   ```bash
+   curl -s ipinfo.io/country        # UZ chiqishi kerak — aks holda server O'zbekistonda emas
+   apt-get update && apt-get install -y git curl python3-venv
+   python3 -m venv /opt/pw && /opt/pw/bin/pip install playwright && /opt/pw/bin/playwright install-deps chromium
+   useradd -m -s /bin/bash runner
+   su - runner
+   ```
+3. Brauzerda oching: https://github.com/erkinaripov14-cbuchun/uz-banks/settings/actions/runners/new?arch=x64&os=linux
+4. **Download** bo'limidagi buyruqlarni birma-bir serverda bajaring.
+5. **Configure** bo'limidagi `./config.sh --url ... --token ...` buyrug'ining **oxiriga** ` --labels uz --unattended`
+   qo'shib bajaring.
+6. Servis qilib o'rnating (server qayta yoqilganda ham o'zi ishga tushadi):
+   ```bash
+   exit
+   cd /home/runner/actions-runner && ./svc.sh install runner && ./svc.sh start
+   ```
+7. Runners sahifasida server **Idle** (yashil) ko'rinadi. Quyidagi 7–8-bandlarni (xavfsizlik va sinov) bajaring.
+
+### B. Windows kompyuter (bepul, yangilash paytida yoqiq turishi kerak)
 
 1. **Git** o'rnating: https://git-scm.com/download/win (hamma sozlamalar standart).
 2. Brauzerda oching: https://github.com/erkinaripov14-cbuchun/uz-banks/settings/actions/runners/new?arch=x64&os=win

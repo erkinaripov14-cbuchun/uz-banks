@@ -1,13 +1,18 @@
-"""O'zbekistondagi kompyuterda (GitHub self-hosted runner) ishlaydi: chet eldan ochilmaydigan bank saytlarini o'qib,
+"""O'zbekistondagi kompyuter yoki serverda (GitHub self-hosted runner, Windows yoki Linux) ishlaydi: chet eldan ochilmaydigan bank saytlarini o'qib,
 natijani saytga qo'shadi va main ga push qiladi.
 
     python uz_yangilash.py                 # UZ_BANKS dagi banklar
     python uz_yangilash.py --only anorbank # faqat shu bank
+    python uz_yangilash.py --setup         # kutubxonalar va brauzerni o'rnatish
+    python uz_yangilash.py --pages-build   # GitHub Pages'ni qayta joylash (GITHUB_TOKEN kerak)
 
 Push paytida main o'zgargan bo'lsa (boshqa yangilash bilan bir vaqtda), eng so'nggi main dan qayta yasab, yana urinadi.
 """
 import argparse
+import json
+import os
 import subprocess
+import urllib.request
 import sys
 from datetime import date
 from pathlib import Path
@@ -27,9 +32,23 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", default=",".join(UZ_BANKS))
     ap.add_argument("--no-push", action="store_true", help="faqat o'qish va saytni yasash (sinov uchun)")
+    ap.add_argument("--setup", action="store_true", help="kutubxonalar va Chromium'ni o'rnatish")
+    ap.add_argument("--pages-build", action="store_true", help="GitHub Pages'ni qayta joylashni so'rash")
     a = ap.parse_args()
 
     py = sys.executable
+    if a.setup:
+        run(py, "-m", "pip", "install", "-r", "requirements.txt")
+        run(py, "-m", "playwright", "install", "chromium")
+        return
+    if a.pages_build:
+        req = urllib.request.Request(
+            f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/pages/builds", method="POST", data=b"",
+            headers={"Authorization": f"Bearer {os.environ['GH_TOKEN']}", "Accept": "application/vnd.github+json"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            print(json.loads(r.read() or b"{}"))
+        return
+
     run(py, "scrape.py", "--only", a.only, "--out", str(OUT), "--max-pages", "40", "--concurrency", "3",
         "--timeout", "45", "--budget", "420")
     results = OUT / "all.json"
