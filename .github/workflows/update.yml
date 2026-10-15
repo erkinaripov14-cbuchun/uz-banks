@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       only:
-        description: "Faqat shu banklar (vergul bilan, masalan: hamkorbank,nbu). Bo'sh — hammasi"
+        description: "Bo'sh qoldiring — hamma banklar yangilanadi. Faqat ayrim banklar uchun: hamkorbank,nbu"
         required: false
         default: ""
   schedule:
@@ -42,8 +42,9 @@ jobs:
           ONLY: ${{ inputs.only }}
         run: |
           ARGS=(--out output/run --max-pages 40 --concurrency 6 --timeout 45 --budget 420)
+          ONLY=$(printf '%s' "$ONLY" | tr 'A-Z' 'a-z' | tr -d ' ')   # "Hamkorbank, NBU" ham qabul qilinadi
           if [ -n "$ONLY" ]; then
-            [[ "$ONLY" =~ ^[a-z0-9_,]+$ ]] || { echo "Noto'g'ri bank ro'yxati: $ONLY"; exit 1; }
+            [[ "$ONLY" =~ ^[a-z0-9_,]+$ ]] || { echo "Noto'g'ri bank ro'yxati: $ONLY (faqat lotin harflari, raqam va vergul)"; exit 1; }
             ARGS+=(--only "$ONLY")
           fi
           python scrape.py "${ARGS[@]}"

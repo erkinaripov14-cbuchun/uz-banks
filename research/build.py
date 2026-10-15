@@ -132,6 +132,7 @@ def write_markdown(path):
 
 LIVE = Path(__file__).parent / "live" / "latest.json"
 ADMIN_TOKEN = Path(__file__).parent / "admin_token.json"
+I18N = Path(__file__).parent / "i18n_texts.json"
 PAGES_URL = "https://erkinaripov14-cbuchun.github.io/uz-banks/"
 EXCEL_NAME = "banklar_kredit_omonat.xlsx"
 SITE_DIRS = [Path(__file__).parent.parent / "site", Path(__file__).parent.parent / "docs"]
@@ -139,8 +140,14 @@ SITE_DIRS = [Path(__file__).parent.parent / "site", Path(__file__).parent.parent
 
 def write_site():
     """site/index.html — Artifact uchun (skeletsiz); docs/index.html — GitHub Pages uchun to'liq hujjat."""
+    # Bank sayti — banks.json dan (ma'lumot agregatordan olingan bo'lsa ham, bankning o'z sayti ko'rsatiladi)
+    official = {b["name"]: (urlparse(b["site"]).hostname or "").removeprefix("www.")
+                for b in json.loads((Path(__file__).parent.parent / "banks.json").read_text(encoding="utf-8"))}
     sites = {}
     for b in {r["bank"] for r in MERGED}:
+        if official.get(b):
+            sites[b] = official[b]
+            continue
         hosts = Counter(".".join((urlparse(r["url"]).hostname or "").split(".")[-2:]) for r in MERGED if r["bank"] == b)
         sites[b] = hosts.most_common(1)[0][0]
     data = {
@@ -158,6 +165,8 @@ def write_site():
         # Admin paroli bilan shifrlangan GitHub token (PBKDF2 + AES-GCM). Parolsiz ochib bo'lmaydi.
         "adminTokenBlob": json.loads(ADMIN_TOKEN.read_text(encoding="utf-8")) if ADMIN_TOKEN.exists() else None,
         "live": merge.live_meta(),
+        # Ma'lumot matnlarining (izoh, xulosa) rus va ingliz tarjimasi; kirill — saytda avtomatik
+        "i18n": json.loads(I18N.read_text(encoding="utf-8")) if I18N.exists() else {},
     }
     blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     page = (Path(__file__).parent / "site_template.html").read_text(encoding="utf-8").replace("/*DATA*/null", blob)

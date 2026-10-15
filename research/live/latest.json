@@ -2,7 +2,12 @@
  "updated": "2026-10-15 01:51 UTC",
  "banks_ok": 26,
  "banks_total": 30,
- "failed": [],
+ "failed": [
+  "Anorbank",
+  "Asakabank",
+  "Smartbank",
+  "Uzum Bank"
+ ],
  "last_run": {
   "banks": [
    "Agrobank",
