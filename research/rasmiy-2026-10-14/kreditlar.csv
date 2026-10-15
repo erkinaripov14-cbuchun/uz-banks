@@ -316,7 +316,9 @@ Octobank,Jismoniy,Iste'mol,"""Oktobank"" AJ ish haqi loyihasi xodimlari uchun ak
 Octobank,Jismoniy,Mikroqarz,Mikroqarz (PreApprove),37.9,37.9,,12 / 24 / 36 oy,4–100 mln,UZS,Qo'lda tekshirilgan,,,https://octobank.uz/assets/components/widgets_05/pasport_-preapprove_mikroqarzi_uz.pdf
 Octobank,Yuridik,Biznes,Octo-Invest,21,27,,,,UZS,Qo'lda tekshirilgan,,Valyutada 11–15%,https://octobank.uz/bank-haqida/xabarnomalar/uvedomlenie-ob-izmenenii-usloviy-kreditovaniya-dlya-yuridicheskih-lits
 Octobank,Yuridik,Biznes,Octo-Aylanma,20,23,,,,UZS,Qo'lda tekshirilgan,,Valyutada 9–13%,https://octobank.uz/bank-haqida/xabarnomalar/uvedomlenie-ob-izmenenii-usloviy-kreditovaniya-dlya-yuridicheskih-lits
-Openbank,Jismoniy,Iste'mol,Kredit,24.99,25.99,,,,UZS,Qo'lda tekshirilgan,,"Rasmiy daromadli 24.99%, o'zini band qilganlar 25.99%",https://openbank.uz/faq
+Openbank,Jismoniy,Ipoteka,Yangi uy,24.99,25.99,,10 yilgacha,1 mlrd gacha,UZS,Qo'lda tekshirilgan,,"Rasmiy daromadli 24.99%, o'zini band qilganlar 25.99% (FAQ); boshlang'ich to'lov 20% dan; onlayn, jarimasiz",https://openbank.uz/mortgage
+Openbank,Jismoniy,Iste'mol,Open muddatli to'lov (karta),0,29.5,,3 – 12 oy,100 mln gacha,UZS,Qo'lda tekshirilgan,,"Har bir xarid 3–12 oyga bo'linadi, boshlang'ich to'lovsiz; manba: bankxizmatlari.uz (Markaziy bank portali)",https://bankxizmatlari.uz/uz/loans/consumer-loan/265225/
+Openbank,Yuridik,Biznes,Biznes uchun muddatli to'lov,,,,24 oygacha,5 mlrd gacha,UZS,Qo'lda tekshirilgan,,Biznes marketpleysdan tovar xaridi; stavka saytda ko'rsatilmagan; jarima va yashirin to'lov yo'q,https://openbank.uz/business/installment
 Orient Finans Bank,Jismoniy,Avtokredit,Avtokredit Ikkilamchi bozorga,24.9,24.9,,4 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/ikkilamchi-bozor-uchun-avtokredit
 Orient Finans Bank,Jismoniy,Avtokredit,Avtokredit Import,22.9,22.9,,5 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/import-avtokredit
 Orient Finans Bank,Jismoniy,Avtokredit,Avtokredit Foydali,22.0,22.0,,1 yilgacha,800 mln gacha,UZS,Saytdan avtomatik,2026-10-15,,https://ofb.uz/kreditlar/avtokredit-foydali

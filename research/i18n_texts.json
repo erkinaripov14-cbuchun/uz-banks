@@ -172,7 +172,10 @@
   "Sayt 'Openbank' nomida": "Сайт работает под названием 'Openbank'",
   "Yagona kredit tarifi sanasiz": "Единственный кредитный тариф без даты",
   "Kredit hujjati 2024 yilgi": "Кредитный документ — 2024 года",
-  "Rasmiy daromadli 24.99%, o'zini band qilganlar 25.99%": "С официальным доходом 24.99%, самозанятые 25.99%"
+  "Rasmiy daromadli 24.99%, o'zini band qilganlar 25.99%": "С официальным доходом 24.99%, самозанятые 25.99%",
+  "Rasmiy daromadli 24.99%, o'zini band qilganlar 25.99% (FAQ); boshlang'ich to'lov 20% dan; onlayn, jarimasiz": "С официальным доходом 24.99%, самозанятые 25.99% (FAQ); первоначальный взнос от 20%; онлайн, без штрафов",
+  "Har bir xarid 3–12 oyga bo'linadi, boshlang'ich to'lovsiz; manba: bankxizmatlari.uz (Markaziy bank portali)": "Каждая покупка делится на 3–12 месяцев, без первоначального взноса; источник: bankxizmatlari.uz (портал ЦБ)",
+  "Biznes marketpleysdan tovar xaridi; stavka saytda ko'rsatilmagan; jarima va yashirin to'lov yo'q": "Покупка товаров на бизнес-маркетплейсе; ставка на сайте не указана; без штрафов и скрытых комиссий"
  },
  "en": {
   "'Sayohat' krediti: 28%, 12 oy": "'Sayohat' loan: 28%, 12 months",
@@ -347,6 +350,9 @@
   "Sayt 'Openbank' nomida": "The website is branded 'Openbank'",
   "Yagona kredit tarifi sanasiz": "The only loan tariff is undated",
   "Kredit hujjati 2024 yilgi": "The loan document is from 2024",
-  "Rasmiy daromadli 24.99%, o'zini band qilganlar 25.99%": "With official income 24.99%, self-employed 25.99%"
+  "Rasmiy daromadli 24.99%, o'zini band qilganlar 25.99%": "With official income 24.99%, self-employed 25.99%",
+  "Rasmiy daromadli 24.99%, o'zini band qilganlar 25.99% (FAQ); boshlang'ich to'lov 20% dan; onlayn, jarimasiz": "With official income 24.99%, self-employed 25.99% (FAQ); down payment from 20%; online, no penalties",
+  "Har bir xarid 3–12 oyga bo'linadi, boshlang'ich to'lovsiz; manba: bankxizmatlari.uz (Markaziy bank portali)": "Each purchase is split over 3–12 months, no down payment; source: bankxizmatlari.uz (Central Bank portal)",
+  "Biznes marketpleysdan tovar xaridi; stavka saytda ko'rsatilmagan; jarima va yashirin to'lov yo'q": "Purchases on the business marketplace; rate not stated on the site; no penalties or hidden fees"
  }
 }

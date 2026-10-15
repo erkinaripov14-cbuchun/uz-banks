@@ -1,6 +1,6 @@
 # O'zbekiston banklari: kreditlar — asosiy xulosalar
 
-Manba: bank saytlari. 119 ta qo'lda tekshirilgan mahsulot, 30 ta bank. To'liq jadval: [banklar_kredit_omonat_rasmiy.xlsx](banklar_kredit_omonat_rasmiy.xlsx).
+Manba: bank saytlari. 121 ta qo'lda tekshirilgan mahsulot, 30 ta bank. To'liq jadval: [banklar_kredit_omonat_rasmiy.xlsx](banklar_kredit_omonat_rasmiy.xlsx).
 
 ## Asosiy xulosalar
 
@@ -64,8 +64,8 @@ Manba: bank saytlari. 119 ta qo'lda tekshirilgan mahsulot, 30 ta bank. To'liq ja
 | O'zsanoatqurilishbank (SQB) | [Yangicha (ish haqi loyihasi)](https://sqb.uz/uz/individuals/credits/consumer-credit-new-uz/) | 21.99 – 26.99 | 6–60 oy | 200 mln gacha |
 | Biznesni rivojlantirish banki | [Iste'mol krediti](https://brb.uz/jismoniy-shaxslarga/kreditlar/potrebitelskiy-kredit) | 23 – 27 | 5 yilgacha | 200 mln gacha |
 | Madad Invest Bank | [Green Power](https://madadinvestbank.uz/storage/tariflar/%E2%84%96280_0001.pdf) | 24.99 | 60 oygacha | 200 BHM gacha |
-| Openbank | [Kredit](https://openbank.uz/faq) | 24.99 – 25.99 |  |  |
 | Asakabank | [Sayohatchi](https://bank.uz/uz/credit/puteshestvennik) | 25 – 27 | 6 oy – 1 yil | 100 mln gacha |
+| Hamkorbank | [Iste'mol krediti](https://hamkorbank.uz/uz/physical/credits/) | 26 | 36 oygacha | 200 mln gacha |
 
 ## Eng arzon biznes krediti
 
