@@ -128,7 +128,7 @@ va holatini ko'rsatib turadi. Buning uchun har bir qurilmada bir marta GitHub to
 
 Jarayonni GitHub'ning o'zidan ham ishga tushirish mumkin: Actions → **Run workflow** (ixtiyoriy ravishda faqat ayrim banklar, masalan `hamkorbank,nbu`).
 Ayrim banklar uchun yangilaganda faqat o'sha banklarning ma'lumoti almashadi, qolganlari saqlanib qoladi.
-Jarayon har dushanba 08:17 (Toshkent) da o'zi ham ishlaydi.
+Jarayon har kuni 06:47 (Toshkent) da o'zi ham ishlaydi; saytdagi "Ma'lumot holati" sanasi shu kunga yangilanadi.
 
 Jarayon nima qiladi:
 1. `scrape.py` bilan bank saytlarini o'qiydi;

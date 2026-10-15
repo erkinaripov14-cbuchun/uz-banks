@@ -9,7 +9,7 @@ on:
         required: false
         default: ""
   schedule:
-    - cron: "17 3 * * 1"   # har dushanba, 08:17 Toshkent vaqti
+    - cron: "47 1 * * *"   # har kuni, 06:47 Toshkent vaqti
 
 permissions:
   contents: write
