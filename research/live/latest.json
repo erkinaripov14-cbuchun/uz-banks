@@ -1,49 +1,35 @@
 {
- "updated": "2026-10-15 01:51 UTC",
- "banks_ok": 26,
+ "updated": "2026-10-15 07:37 UTC",
+ "banks_ok": 27,
  "banks_total": 30,
  "failed": [
   "Anorbank",
   "Asakabank",
-  "Openbank",
   "Uzum Bank"
  ],
  "last_run": {
   "banks": [
-   "Agrobank",
-   "Aloqabank",
-   "Anorbank",
-   "Asakabank",
-   "Asia Alliance Bank",
-   "Biznesni rivojlantirish banki",
-   "Davr bank",
-   "Garant bank",
-   "Hamkorbank",
-   "InFinBank",
-   "Ipak Yo'li banki",
-   "Ipoteka-bank",
-   "KDB Bank O'zbekiston",
-   "Kapitalbank",
-   "Madad Invest Bank",
-   "Mikrokreditbank",
-   "O'zmilliybank (NBU)",
-   "O'zsanoatqurilishbank (SQB)",
-   "Octobank",
-   "Orient Finans Bank",
-   "Poytaxt bank",
-   "Openbank",
-   "TBC Bank",
-   "Tenge Bank",
-   "Trastbank",
-   "Turonbank",
-   "Universal bank",
-   "Uzum Bank",
-   "Xalq banki",
-   "Ziraat Bank O'zbekiston"
+   "Openbank"
   ],
-  "ok": 30
+  "ok": 1
  },
  "rows": [
+  {
+   "bank": "Openbank",
+   "type": "K",
+   "cat": "Iste'mol",
+   "segment": "jismoniy",
+   "name": "Savollarga javoblar",
+   "lo": 24.99,
+   "hi": 25.99,
+   "term": "0.03 oy – 10 yil",
+   "amount": "100 – 2.5 mlrd",
+   "cur": "UZS",
+   "url": "https://openbank.uz/faq",
+   "date": "2026-10-15",
+   "note": "",
+   "stale": false
+  },
   {
    "bank": "O'zmilliybank (NBU)",
    "type": "K",
