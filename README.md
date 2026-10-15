@@ -101,6 +101,11 @@ ochish mumkin. GitHub Pages'da `main` branch'ining `/docs` papkasidan joylangan:
 https://erkinaripov14-cbuchun.github.io/uz-banks/ — `main` ga push qilingandan keyin avtomatik yangilanadi.
 `site/index.html` — shu sahifaning Claude Artifact uchun versiyasi.
 
+**Tillar:** sahifa tepasida til tanlanadi: O'zbek (lotin), Ўзбек (kirill), Русский, English. Havola orqali ham ochish mumkin:
+`?lang=uz`, `?lang=cy`, `?lang=ru`, `?lang=en`. Kirill matn lotindan avtomatik o'giriladi; rus va ingliz tarjimalari —
+interfeys uchun `research/site_template.html` ichida, ma'lumot matnlari (izohlar, xulosalar) uchun `research/i18n_texts.json` da.
+Yangi izoh yoki xulosa qo'shilsa, uning tarjimasini shu faylga qo'shing (bo'lmasa o'zbekcha ko'rinadi).
+
 ## Avtomatik yangilash
 
 Tashrif buyuruvchilar ma'lumotni yangilay olmaydi: saytda ular uchun faqat ko'rish, grafiklar va **Excel yuklab olish** bor.
