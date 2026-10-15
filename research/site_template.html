@@ -761,17 +761,28 @@ $("#token-form").addEventListener("submit", async (e) => {
   }
 });
 $("#admin-update").addEventListener("click", async () => {
-  let token;
-  try { token = await readToken(); } catch { status("Tokenni ochib bo'lmadi. Uni o'chirib, qayta saqlang."); return; }
-  if (!token) { adminView(); return; }
-  status("Yangilash so'ralmoqda…");
-  const since = new Date(Date.now() - 5000);
+  const btn = $("#admin-update");
+  // Har bir bosishda darhol javob ko'rinsin — telefonda ham
+  const fail = (t) => {
+    status(t + " Hozircha \"GitHub'da ko'rish\" → Run workflow orqali yangilang (banklar maydonini bo'sh qoldiring).");
+    $("#admin-status").scrollIntoView({ block: "nearest" });
+  };
+  btn.disabled = true;
+  status("Tekshirilmoqda…");
+  $("#admin-status").scrollIntoView({ block: "nearest" });
   try {
+    let token;
+    try { token = await readToken(); } catch { return fail("Saqlangan tokenni bu parol bilan ochib bo'lmadi (token eski parol bilan saqlangan bo'lishi mumkin). \"Tokenni bu qurilmadan o'chirish\" ni bosib, tokenni qayta saqlang."); }
+    if (!token) { adminView(); return fail("Bu qurilmada token saqlanmagan."); }
+    status("Yangilash so'ralmoqda…");
+    const since = new Date(Date.now() - 5000);
     await gh(token, "/actions/workflows/update.yml/dispatches", { method: "POST", body: JSON.stringify({ ref: "main", inputs: { only: "" } }) });
+    status("So'rov qabul qilindi. Jarayon boshlanmoqda…");
     watchRun(token, since);
   } catch (err) {
-    status((err.message === "Failed to fetch" ? "GitHub'ga ulanib bo'lmadi. Yangilash faqat asosiy saytda (github.io) ishlaydi." : err.message) +
-      " Hozircha \"GitHub'da ko'rish\" → Run workflow orqali yangilash mumkin.");
+    fail(err.message === "Failed to fetch" || err.name === "TypeError" ? "GitHub'ga ulanib bo'lmadi (yangilash faqat github.io dagi saytda ishlaydi)." : (err.message || String(err)));
+  } finally {
+    btn.disabled = false;
   }
 });
 $("#admin-export").addEventListener("click", () => {
