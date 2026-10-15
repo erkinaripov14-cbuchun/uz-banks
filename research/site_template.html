@@ -335,7 +335,14 @@ footer p { margin: 0; max-width: 80ch; }
         </div>
         <div id="admin-panel" hidden>
           <div id="admin-setup" hidden>
-            <h3>Bir martalik sozlash (shu qurilmada)</h3>
+            <h3>Hozir yangilash (token kerak emas)</h3>
+            <ol>
+              <li>Quyidagi tugmani bosing — GitHub sahifasi ochiladi (GitHub hisobingizga kirgan bo'lishingiz kerak).</li>
+              <li>O'ng tomondagi <b>Run workflow</b> ni, so'ng yashil <b>Run workflow</b> tugmasini bosing.</li>
+              <li>30–40 daqiqadan keyin bu sahifani qayta yuklang.</li>
+            </ol>
+            <div><a class="btn" id="admin-run-gh" target="_blank" rel="noopener">GitHub'da yangilashni boshlash</a></div>
+            <h3 style="margin-top:12px">Bitta tugma bilan yangilash uchun sozlash (ixtiyoriy, bir marta)</h3>
             <p style="margin:0;color:var(--muted);font-size:14px">Saytdan yangilash uchun GitHub ruxsatnomasi (token) kerak. U faqat shu brauzerda, admin paroli bilan shifrlangan holda saqlanadi — saytga ham, repoga ham yuborilmaydi.</p>
             <ol>
               <li><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub'da yangi token yarating</a> (Fine-grained token).</li>
@@ -669,6 +676,7 @@ $("#highlights").addEventListener("click", (e) => {
 /* Administrator: the password unlocks a GitHub token kept only in this browser (AES-GCM, key from the password).
    With it the page starts the update workflow through the GitHub API. Visitors without the password see nothing. */
 $("#admin-runs").href = `https://github.com/${DATA.repo}/actions/workflows/update.yml`;
+$("#admin-run-gh").href = `https://github.com/${DATA.repo}/actions/workflows/update.yml`;
 const TOKEN_KEY = "uzbanks-admin-token";
 const enc = new TextEncoder(), dec = new TextDecoder();
 const b64 = (u8) => btoa(String.fromCharCode(...u8));
@@ -762,7 +770,8 @@ $("#admin-update").addEventListener("click", async () => {
     await gh(token, "/actions/workflows/update.yml/dispatches", { method: "POST", body: JSON.stringify({ ref: "main", inputs: { only: "" } }) });
     watchRun(token, since);
   } catch (err) {
-    status(err.message === "Failed to fetch" ? "GitHub'ga ulanib bo'lmadi. Yangilash faqat asosiy saytda (github.io) ishlaydi." : err.message);
+    status((err.message === "Failed to fetch" ? "GitHub'ga ulanib bo'lmadi. Yangilash faqat asosiy saytda (github.io) ishlaydi." : err.message) +
+      " Hozircha \"GitHub'da ko'rish\" → Run workflow orqali yangilash mumkin.");
   }
 });
 $("#admin-export").addEventListener("click", () => {
