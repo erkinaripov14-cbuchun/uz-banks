@@ -18,7 +18,7 @@ from datetime import date
 from pathlib import Path
 
 # GitHub serveridan (AQSh) o'qib bo'lmaydigan banklar: sahifa bo'sh keladi, ulanish uziladi yoki 403
-UZ_BANKS = ["asakabank", "anorbank", "smartbank"]
+UZ_BANKS = ["asakabank", "anorbank", "openbank"]
 OUT = Path("output/uz")
 BOT = ["-c", "user.name=github-actions[bot]", "-c", "user.email=41898282+github-actions[bot]@users.noreply.github.com"]
 

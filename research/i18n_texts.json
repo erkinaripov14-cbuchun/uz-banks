@@ -100,7 +100,6 @@
   "Qisman yechib bo'lmaydi": "Частичное снятие невозможно",
   "Qoldiq 0.5–5 mln: 2%, 5–20 mln: 1%": "Остаток 0.5–5 млн: 2%, 5–20 млн: 1%",
   "Rasmiy daromad talab qilinadi": "Требуется официальный доход",
-  "Rasmiy daromadli 24.99%, o'zini band qilganlar 25.99%; sahifa 'Openbank' nomida": "С официальным доходом 24.99%, самозанятые 25.99%; страница под названием 'Openbank'",
   "Rasmiy sayt .com domenida": "Официальный сайт на домене .com",
   "Sahifa ~555 kun oldin yangilangan": "Страница обновлена ~555 дней назад",
   "Sahifada 24% va 25.5% — farq bor": "На странице 24% и 25.5% — расхождение",
@@ -172,7 +171,8 @@
   "Eng arzon biznes krediti": "Самый дешёвый бизнес-кредит",
   "Sayt 'Openbank' nomida": "Сайт работает под названием 'Openbank'",
   "Yagona kredit tarifi sanasiz": "Единственный кредитный тариф без даты",
-  "Kredit hujjati 2024 yilgi": "Кредитный документ — 2024 года"
+  "Kredit hujjati 2024 yilgi": "Кредитный документ — 2024 года",
+  "Rasmiy daromadli 24.99%, o'zini band qilganlar 25.99%": "С официальным доходом 24.99%, самозанятые 25.99%"
  },
  "en": {
   "'Sayohat' krediti: 28%, 12 oy": "'Sayohat' loan: 28%, 12 months",
@@ -275,7 +275,6 @@
   "Qisman yechib bo'lmaydi": "No partial withdrawals",
   "Qoldiq 0.5–5 mln: 2%, 5–20 mln: 1%": "Balance 0.5–5 mln: 2%, 5–20 mln: 1%",
   "Rasmiy daromad talab qilinadi": "Official income required",
-  "Rasmiy daromadli 24.99%, o'zini band qilganlar 25.99%; sahifa 'Openbank' nomida": "With official income 24.99%, self-employed 25.99%; page is branded 'Openbank'",
   "Rasmiy sayt .com domenida": "Official website is on a .com domain",
   "Sahifa ~555 kun oldin yangilangan": "Page updated ~555 days ago",
   "Sahifada 24% va 25.5% — farq bor": "Page shows both 24% and 25.5% — inconsistent",
@@ -347,6 +346,7 @@
   "Eng arzon biznes krediti": "Cheapest business loans",
   "Sayt 'Openbank' nomida": "The website is branded 'Openbank'",
   "Yagona kredit tarifi sanasiz": "The only loan tariff is undated",
-  "Kredit hujjati 2024 yilgi": "The loan document is from 2024"
+  "Kredit hujjati 2024 yilgi": "The loan document is from 2024",
+  "Rasmiy daromadli 24.99%, o'zini band qilganlar 25.99%": "With official income 24.99%, self-employed 25.99%"
  }
 }
