@@ -183,7 +183,8 @@ def combine(previous, results, rows, now):
     banks_with_data = {r["bank"] for r in all_rows}
     attempted = {r["bank"] for r in results}
     prev_failed = set((previous or {}).get("failed", []))
-    failed = sorted((attempted - ok - banks_with_data) | (prev_failed - ok - banks_with_data - attempted))
+    # Sahifasi ochilgan, lekin birorta mahsulot chiqmagan bank ham "o'qilmagan" hisoblanadi
+    failed = sorted((attempted - banks_with_data) | (prev_failed - banks_with_data - attempted))
     return {
         "updated": now,
         "banks_ok": len(banks_with_data), "banks_total": max(len(attempted | banks_with_data | prev_failed),
