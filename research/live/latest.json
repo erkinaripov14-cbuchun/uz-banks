@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19 02:27 UTC",
+ "updated": "2026-10-20 02:23 UTC",
  "banks_ok": 27,
  "banks_total": 30,
  "failed": [
@@ -55,7 +55,7 @@
    "amount": "5 mlrd gacha",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/ipoteka-kreditlari",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -71,7 +71,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/talim-krediti-1",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -87,7 +87,7 @@
    "amount": "500 mln gacha",
    "cur": "UZS",
    "url": "https://nbu.uz/kichik-biznes/kreditlar/qayta-moliyalashtirish",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -103,7 +103,7 @@
    "amount": "30 mln – 480 mln",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/standard-ipoteka-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -119,7 +119,7 @@
    "amount": "750 mln gacha",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/tijorat-ipotekasi",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -135,7 +135,7 @@
    "amount": "100 mln – 420 mln",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/gibrid-ipoteka-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -151,7 +151,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/hamkorlik-dasturlari-boyicha-ipoteka-kreditlari",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -167,7 +167,7 @@
    "amount": "75 mln – 800 mln",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/ikkilamchi-bozor-uchun-qulay-ipoteka",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -183,7 +183,7 @@
    "amount": "10 mln – 170 mln",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/ekologik-tamirlash",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -199,7 +199,7 @@
    "amount": "50 mln – 1 mlrd",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/yangi-avtomobillar-uchun-avtokredit",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -215,7 +215,7 @@
    "amount": "50 mln – 300 mln",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/uzauto-motorsdan-avtokredit",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -231,7 +231,7 @@
    "amount": "100 mln – 500 mln",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/elektromobillar-va-gibridlar-uchun-avtokredit",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -247,7 +247,7 @@
    "amount": "50 mln – 1 mlrd",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/avtokredit-kia-haval",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -263,7 +263,7 @@
    "amount": "20 mln – 500 mln",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/changan-avtokrediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -279,7 +279,7 @@
    "amount": "50 mln – 500 mln",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/avtokredit-haval",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -295,7 +295,7 @@
    "amount": "100 mln – 500 mln",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/ikkilamchi-bozor-uchun-avtokredit",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -311,7 +311,7 @@
    "amount": "10 mln – 100 mln",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/onlayn-mikroqarz",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -327,7 +327,7 @@
    "amount": "10 mln – 100 mln",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/mikroqarz",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -343,7 +343,7 @@
    "amount": "10 mln gacha",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/imtiyozli-talim-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -359,7 +359,7 @@
    "amount": "1 mln gacha",
    "cur": "UZS",
    "url": "https://nbu.uz/jismoniy-shaxslarga-kreditlar/talim-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -375,7 +375,7 @@
    "amount": "15 mln – 500 mln",
    "cur": "UZS",
    "url": "https://nbu.uz/kichik-biznes/kreditlar/imkoniyat-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -391,7 +391,7 @@
    "amount": "100 mln – 1 mlrd",
    "cur": "UZS",
    "url": "https://nbu.uz/kichik-biznes/kreditlar/overdraft",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -407,7 +407,7 @@
    "amount": "100 mln – 1.5 mlrd",
    "cur": "UZS",
    "url": "https://nbu.uz/kichik-biznes/kreditlar/tezkor",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -423,7 +423,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://nbu.uz/kichik-biznes/kreditlar/kredit-engil-start",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -439,7 +439,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://xb.uz/page/moliyaviy-ommabop-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -455,7 +455,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/online/online-micro",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -471,7 +471,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/online/avans-plyus",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -487,7 +487,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/green-energy",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -503,7 +503,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/microloan",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -519,7 +519,7 @@
    "amount": "457.211 ming – 1 mlrd",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/oilaviy-tadbirkorlik",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -535,7 +535,7 @@
    "amount": "9.50394 mln – 250 mln",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/tamir-plyus",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -551,7 +551,7 @@
    "amount": "93.114 ming – 50 mln",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/mahalla-loyihasi-mikroqarzi",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -567,7 +567,7 @@
    "amount": "25 mln – 1 mlrd",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/mortgage2",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -583,7 +583,7 @@
    "amount": "77.928 ming – 120 mln",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/ijtimoiy-komak-ipoteka",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -599,7 +599,7 @@
    "amount": "712.795 ming – 900 mln",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/mortgage-bank",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -615,7 +615,7 @@
    "amount": "92.157 ming – 350 mln",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/yashil-ta-mir-ipoteka-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -631,7 +631,7 @@
    "amount": "53.372 ming – 100 mln",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/arzon-mikroqarzi",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -647,7 +647,7 @@
    "amount": "6.94723 mln – 800 mln",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/mortgage-pf70",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -663,7 +663,7 @@
    "amount": "7.7524 mln – 480 mln",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/mortgage",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -679,7 +679,7 @@
    "amount": "97.487 ming – 100 mln",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/credit-karta",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -695,7 +695,7 @@
    "amount": "1.78024 mln – 1 mlrd",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/arzon-ipoteka-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -711,7 +711,7 @@
    "amount": "9.504 ming – 5 mln",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/microloan-self-employed",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -727,7 +727,7 @@
    "amount": "53.875 ming – 50 mln",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/ishonchli-mikroqarzi",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -743,7 +743,7 @@
    "amount": "93.114 ming – 17 mln",
    "cur": "UZS",
    "url": "https://agrobank.uz/uz/person/loans/biznesga-komak",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -759,7 +759,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/ochiq-kredit-liniyasi-bo-yicha-mikroqarz-krediti-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -775,7 +775,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/istiqlol-mikroqarz-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -791,7 +791,7 @@
    "amount": "50 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/mikrokredit-mahalla-ishbilarmoni-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -807,7 +807,7 @@
    "amount": "300 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/mikrokredit-mahalla-tadbirkori-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -823,7 +823,7 @@
    "amount": "300 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/mikrokredit-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -839,7 +839,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/mikromadad-mikroqarz-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -855,7 +855,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/yosh-tadbirkor-mikrozaym-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -871,7 +871,7 @@
    "amount": "15 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/mikrozayem-agroko-makchi-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -887,7 +887,7 @@
    "amount": "50 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/mikrozaym-oila-va-yoshlar-tadbirkori-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -903,7 +903,7 @@
    "amount": "200 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/consumer-credit-new-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -919,7 +919,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/educational-credit-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -935,7 +935,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/qarzni-yangi-qarz-oluvchiga-o-tkazish-xizmati-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -951,7 +951,7 @@
    "amount": "20 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/mikrozaym-bir-kontur-bir-mahsulot-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -967,7 +967,7 @@
    "amount": "15 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/mahalla-mikroqarz-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -983,7 +983,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/mikrozaym-istiqlol-online-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -999,7 +999,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/sqb-mobile-ilovasida-mikroqarz-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1015,7 +1015,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/overdraft-offline-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1031,7 +1031,7 @@
    "amount": "200 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/credits/green-komfort-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1047,7 +1047,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/ipoteka/ipoteka-na-pervichnoe-zhile-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1063,7 +1063,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/autoloans/avtokredit-avto-imkon-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1079,7 +1079,7 @@
    "amount": "1 mlrd gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/ipoteka/hamkor-ipoteka-kredit-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1095,7 +1095,7 @@
    "amount": "1.5 mlrd gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/ipoteka/mulk-ulushdor-krediti-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1111,7 +1111,7 @@
    "amount": "1.5 mlrd gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/ipoteka/balansdagi-turar-joy-ipoteka-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1127,7 +1127,7 @@
    "amount": "1.5 mlrd gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/ipoteka/chimgan-residence-ipoteka-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1143,7 +1143,7 @@
    "amount": "5 mlrd gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/ipoteka/kumushkon-residence-ipoteka-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1159,7 +1159,7 @@
    "amount": "1.5 mlrd gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/ipoteka/mulk-ipoteka-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1175,7 +1175,7 @@
    "amount": "1.5 mlrd gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/ipoteka/ishonchli-ipoteka-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1191,7 +1191,7 @@
    "amount": "1 mlrd gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/ipoteka/ipoteka-universal-hamkor-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1207,7 +1207,7 @@
    "amount": "800 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/ipoteka/yangi-toshkent-ipoteka-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1223,7 +1223,7 @@
    "amount": "1 mlrd gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/ipoteka/exclusive-ipoteka-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1239,7 +1239,7 @@
    "amount": "800 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/ipoteka/ipoteka-na-pervichnoe-zhile-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1255,7 +1255,7 @@
    "amount": "480 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/ipoteka/new-house-ipoteka-2-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1271,7 +1271,7 @@
    "amount": "170 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/ipoteka/ipoteka-yashil-ta-mir-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1287,7 +1287,7 @@
    "amount": "200 mln gacha",
    "cur": "UZS",
    "url": "https://sqb.uz/uz/individuals/ipoteka/ipoteka-na-remont-zhilya-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1303,23 +1303,7 @@
    "amount": "69.438 mln gacha",
    "cur": "UZS",
    "url": "https://www.ipotekabank.uz/crediting/mortgage/tijorat/",
-   "date": "2026-10-19",
-   "note": "",
-   "stale": false
-  },
-  {
-   "bank": "Ipoteka-bank",
-   "type": "K",
-   "cat": "Ipoteka",
-   "segment": "jismoniy",
-   "name": "Oylik to‘lov",
-   "lo": 27.99,
-   "hi": 27.99,
-   "term": "",
-   "amount": "28.0659 mln gacha",
-   "cur": "UZS",
-   "url": "https://www.ipotekabank.uz/crediting/autocredit/avtokredit-r1/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1335,7 +1319,7 @@
    "amount": "1.7 mlrd gacha",
    "cur": "UZS",
    "url": "https://www.ipotekabank.uz/crediting/mortgage/imkoniyat/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1351,7 +1335,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://www.ipotekabank.uz/crediting/mortgage/imkoniyat/botanika-saroyi/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1367,7 +1351,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://www.ipotekabank.uz/crediting/mortgage/imkoniyat/sharq-bahori/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1383,7 +1367,23 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://www.ipotekabank.uz/crediting/mortgage/imkoniyat/dreamland-parkent/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
+   "note": "",
+   "stale": false
+  },
+  {
+   "bank": "Biznesni rivojlantirish banki",
+   "type": "K",
+   "cat": "Iste'mol",
+   "segment": "jismoniy",
+   "name": "Bino qurish krediti",
+   "lo": 24.5,
+   "hi": 26.0,
+   "term": "5 yilgacha",
+   "amount": "400 mlrd gacha",
+   "cur": "UZS",
+   "url": "https://brb.uz/kreditlar/bino-qurish-krediti",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1399,7 +1399,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/brb-avto-classic",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1415,7 +1415,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/milliy-avto-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1431,7 +1431,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/onlayn-mikroqarz",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1447,7 +1447,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/onlayn-overdraft",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1463,7 +1463,7 @@
    "amount": "82.4 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/onlayn-talim-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1479,7 +1479,7 @@
    "amount": "20 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/yangi-yol-tomorqa-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1495,7 +1495,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/orzu-talim-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1511,7 +1511,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/obrazovatelnyy-kredit",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1527,7 +1527,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/talim-orzusi",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1543,7 +1543,7 @@
    "amount": "40 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/sayohat-uchun-mikroqarz",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1559,7 +1559,7 @@
    "amount": "200 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/potrebitelskiy-kredit",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1575,7 +1575,7 @@
    "amount": "200 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/yashil-energiya-istemol-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1591,7 +1591,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/overdraft",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1607,7 +1607,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/korporativ-xodimlari-uchun-mikroqarz",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1623,7 +1623,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/bir-mahalla-bir-biznes",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1639,7 +1639,7 @@
    "amount": "300 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/yangi-biznes-m-300",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1655,7 +1655,7 @@
    "amount": "15 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/mikrokredit-brb-it-start-up",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1671,7 +1671,7 @@
    "amount": "11 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/brb-business-woman-mikroqarz",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1687,7 +1687,7 @@
    "amount": "10 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/mikroqarz-brb-business-man",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1703,7 +1703,7 @@
    "amount": "15 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/mikrozaym-pervyy-shag-k-biznesu",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1719,7 +1719,7 @@
    "amount": "12 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/mikrozaym-brb-start-up",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1735,7 +1735,7 @@
    "amount": "60 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/mahalla-bankiri-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1751,7 +1751,7 @@
    "amount": "17 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/mikrozaym-tomorqa-biznes",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1767,7 +1767,7 @@
    "amount": "480 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/ipoteka/tezkor-ipoteka",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1783,7 +1783,7 @@
    "amount": "1 mlrd gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/ipoteka/ipoteka-na-lyuboe-zhile",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1799,7 +1799,7 @@
    "amount": "4.12 mlrd – 4.4 mlrd",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/ipoteka/ikkilamchi-ipoteka",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1815,7 +1815,7 @@
    "amount": "4.4 mlrd gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/ipoteka/ipoteka-qayta-moliyalashtirish",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1831,7 +1831,7 @@
    "amount": "2.2 mlrd gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/ipoteka/bank-qurayotgan-uylarga-ipoteka",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1847,7 +1847,7 @@
    "amount": "1.1 mlrd gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/ipoteka/ipoteka-madad",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1863,7 +1863,7 @@
    "amount": "480 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/ipoteka/birlamchi-ipoteka",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1879,7 +1879,7 @@
    "amount": "1540 mlrd gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/ipoteka/uy-joy-qurish-va-rekonstruksiya-qilish",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1895,7 +1895,7 @@
    "amount": "350 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/ipoteka/ipoteka-yashil-tamir",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1911,7 +1911,7 @@
    "amount": "440 mln gacha",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/ipoteka/uy-joy-tamiri-uchun-ipoteka",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1927,7 +1927,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/ipoteka",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1943,7 +1943,7 @@
    "amount": "34.104 – 100 mln",
    "cur": "UZS",
    "url": "https://brb.uz/jismoniy-shaxslarga/kreditlar/mikroqarz",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1959,7 +1959,103 @@
    "amount": "10 mlrd gacha",
    "cur": "UZS",
    "url": "https://brb.uz/kreditlar/qurilish-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
+   "note": "",
+   "stale": false
+  },
+  {
+   "bank": "Biznesni rivojlantirish banki",
+   "type": "K",
+   "cat": "Iste'mol",
+   "segment": "jismoniy",
+   "name": "Express krediti",
+   "lo": 27.99,
+   "hi": 27.99,
+   "term": "6 oy – 1 yil",
+   "amount": "300 mln gacha",
+   "cur": "UZS",
+   "url": "https://brb.uz/kreditlar/express-krediti",
+   "date": "2026-10-20",
+   "note": "",
+   "stale": false
+  },
+  {
+   "bank": "Biznesni rivojlantirish banki",
+   "type": "K",
+   "cat": "Mikroqarz",
+   "segment": "jismoniy",
+   "name": "Biznes onlayn krediti",
+   "lo": 27.99,
+   "hi": 27.99,
+   "term": "6 oy – 1 yil",
+   "amount": "300 mln gacha",
+   "cur": "UZS",
+   "url": "https://brb.uz/kreditlar/biznes-onlayn-krediti",
+   "date": "2026-10-20",
+   "note": "",
+   "stale": false
+  },
+  {
+   "bank": "Biznesni rivojlantirish banki",
+   "type": "K",
+   "cat": "Biznes",
+   "segment": "jismoniy",
+   "name": "\"Ayol Tadbirkor\" krediti",
+   "lo": 20.0,
+   "hi": 21.0,
+   "term": "6 oy – 7 yil",
+   "amount": "100 mln – 10.3 mlrd",
+   "cur": "UZS",
+   "url": "https://brb.uz/kreditlar/ayol-tadbirkorkrediti",
+   "date": "2026-10-20",
+   "note": "",
+   "stale": false
+  },
+  {
+   "bank": "Biznesni rivojlantirish banki",
+   "type": "K",
+   "cat": "Mikroqarz",
+   "segment": "jismoniy",
+   "name": "Kichik biznesga mikrokredit",
+   "lo": 19.0,
+   "hi": 23.0,
+   "term": "7 yilgacha",
+   "amount": "300 mln gacha",
+   "cur": "UZS",
+   "url": "https://brb.uz/kreditlar/mikrokredit",
+   "date": "2026-10-20",
+   "note": "",
+   "stale": false
+  },
+  {
+   "bank": "Biznesni rivojlantirish banki",
+   "type": "K",
+   "cat": "Biznes",
+   "segment": "jismoniy",
+   "name": "Yosh tadbirkor",
+   "lo": 18.0,
+   "hi": 18.0,
+   "term": "1 oy – 5 yil",
+   "amount": "100 mln – 2.5 mlrd",
+   "cur": "UZS",
+   "url": "https://brb.uz/kreditlar/yosh-tadbirkor-krediti",
+   "date": "2026-10-20",
+   "note": "",
+   "stale": false
+  },
+  {
+   "bank": "Biznesni rivojlantirish banki",
+   "type": "K",
+   "cat": "Iste'mol",
+   "segment": "jismoniy",
+   "name": "Kelajakka qadam",
+   "lo": 18.0,
+   "hi": 18.0,
+   "term": "6 oy – 7 yil",
+   "amount": "1 mlrd – 5 mlrd",
+   "cur": "UZS",
+   "url": "https://brb.uz/kreditlar/kelajakka-qadam-krediti",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1975,7 +2071,7 @@
    "amount": "200 mln – 10 mlrd",
    "cur": "UZS",
    "url": "https://brb.uz/kreditlar/aral-kelajagi",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -1991,7 +2087,7 @@
    "amount": "1 mlrd – 5 mlrd",
    "cur": "UZS",
    "url": "https://brb.uz/kreditlar/mahalla-loyihasi",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2007,7 +2103,7 @@
    "amount": "50 mln – 500 mln",
    "cur": "UZS",
    "url": "https://brb.uz/kreditlar/mahallada-biznes",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2023,7 +2119,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://brb.uz/kreditlar/yangi-ozbekiston-kelajagi-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2032,14 +2128,30 @@
    "type": "K",
    "cat": "Iste'mol",
    "segment": "jismoniy",
-   "name": "\"Chorvachilikni rivojlantirish\" krediti",
-   "lo": 17.0,
-   "hi": 17.0,
-   "term": "10 yilgacha",
+   "name": "Chorvachilikni rivojlantirish",
+   "lo": 21.0,
+   "hi": 21.0,
+   "term": "9 oy – 10 yil",
    "amount": "",
    "cur": "EUR",
    "url": "https://brb.uz/kreditlar/chorvachilikni-rivojlantirish-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
+   "note": "",
+   "stale": false
+  },
+  {
+   "bank": "Biznesni rivojlantirish banki",
+   "type": "K",
+   "cat": "Iste'mol",
+   "segment": "jismoniy",
+   "name": "Tomorqa revolver",
+   "lo": 14.0,
+   "hi": 14.0,
+   "term": "1 oy – 1 yil",
+   "amount": "",
+   "cur": "UZS",
+   "url": "https://brb.uz/kreditlar/tomorqa-revolver-krediti",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2055,23 +2167,7 @@
    "amount": "68 ming gacha",
    "cur": "UZS",
    "url": "https://brb.uz/tolov-terminallari",
-   "date": "2026-10-19",
-   "note": "",
-   "stale": false
-  },
-  {
-   "bank": "Biznesni rivojlantirish banki",
-   "type": "K",
-   "cat": "Iste'mol",
-   "segment": "jismoniy",
-   "name": "Progressiv samara",
-   "lo": 13.0,
-   "hi": 13.0,
-   "term": "6 oy – 3 yil",
-   "amount": "150 mln – 500 mlrd",
-   "cur": "UZS",
-   "url": "https://brb.uz/kreditlar/progressiv-samara",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2087,7 +2183,7 @@
    "amount": "500 mln gacha",
    "cur": "UZS",
    "url": "https://mkbank.uz/uz/small-business/crediting/naqd-pulda-kredit/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2103,7 +2199,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://mkbank.uz/uz/small-business/crediting/green-energy/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2119,7 +2215,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://mkbank.uz/uz/small-business/crediting/working-capital/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2135,7 +2231,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://mkbank.uz/uz/small-business/crediting/equipment-inventory/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2151,7 +2247,7 @@
    "amount": "2 mlrd gacha",
    "cur": "UZS",
    "url": "https://mkbank.uz/uz/small-business/crediting/business-overdraft/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2167,7 +2263,7 @@
    "amount": "2.5 mlrd gacha",
    "cur": "UZS",
    "url": "https://mkbank.uz/uz/small-business/crediting/young-entrepreneurs-support-fund/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2183,7 +2279,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://mkbank.uz/uz/small-business/crediting/imkoniyat-kredit/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2199,7 +2295,7 @@
    "amount": "300 mln gacha",
    "cur": "UZS",
    "url": "https://mkbank.uz/uz/small-business/crediting/kasanachilarga-yengil-konstruksiyali-joylar-tashkil-etish-uchun/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2215,7 +2311,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://mkbank.uz/uz/small-business/crediting/business-online-2/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2231,7 +2327,7 @@
    "amount": "1.648 mlrd gacha",
    "cur": "UZS",
    "url": "https://mkbank.uz/uz/private/crediting/mortgage-loan-secondary-market/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2247,7 +2343,7 @@
    "amount": "100 ming gacha",
    "cur": "UZS",
    "url": "https://mkbank.uz/uz/private/plastic-cards/list/uzcard-sherdor/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2263,7 +2359,7 @@
    "amount": "",
    "cur": "EUR",
    "url": "https://mkbank.uz/uz/women-enterpreneurship/program/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2279,7 +2375,7 @@
    "amount": "10 mln gacha",
    "cur": "UZS",
    "url": "https://turonbank.uz/upload/iblock/368/2em3p0hf1je11eqqnwzqyl277o5w8gbz/tarif_fiz_uz_12.05..xlsx",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2295,7 +2391,7 @@
    "amount": "1 mln – 100 mln",
    "cur": "UZS",
    "url": "https://turonbank.uz/uz/private/crediting/mikroqarz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2311,7 +2407,7 @@
    "amount": "20.286 ming – 824 mln",
    "cur": "UZS",
    "url": "https://turonbank.uz/uz/private/crediting/avtokredit-ecogreencar/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2327,7 +2423,7 @@
    "amount": "22.817 ming – 494.4 mln",
    "cur": "UZS",
    "url": "https://turonbank.uz/uz/private/crediting/avtokredit-avtoself/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2343,7 +2439,7 @@
    "amount": "842.933 ming – 50 mln",
    "cur": "UZS",
    "url": "https://turonbank.uz/uz/private/crediting/biznesim-maqsadim/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2359,7 +2455,7 @@
    "amount": "1 mln – 81.9771 mln",
    "cur": "UZS",
    "url": "https://turonbank.uz/uz/private/crediting/mahalla-loyihasi-mikrokrediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2375,7 +2471,7 @@
    "amount": "23.4259 ming – 41.2 mln",
    "cur": "UZS",
    "url": "https://turonbank.uz/uz/private/crediting/barakali-limonzor/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2391,7 +2487,7 @@
    "amount": "10.14 ming – 800 mln",
    "cur": "UZS",
    "url": "https://turonbank.uz/uz/private/crediting/ipoteka-krediti-mustaqillikka-uy/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2407,7 +2503,7 @@
    "amount": "9.1 ming – 1.5 mlrd",
    "cur": "UZS",
    "url": "https://turonbank.uz/uz/private/crediting/ipoteka-krediti-yagona-oson/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2423,7 +2519,7 @@
    "amount": "800 mln gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/ipotekani-qayta-moliyalashtirish-kredit-mahsuloti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2439,7 +2535,7 @@
    "amount": "300 mln gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/uy-joy-ta-miri-uchun-kredit-mahsuloti646/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2455,7 +2551,7 @@
    "amount": "350 mln gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/yashil-ta-mir-ipoteka-krediti3482/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2471,7 +2567,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/mening-mahallam-2-mikrokrediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2487,7 +2583,7 @@
    "amount": "500 mln gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/avtokredit-import-/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2503,7 +2599,7 @@
    "amount": "480 mln gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/primary-mortgage/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2519,7 +2615,7 @@
    "amount": "1.28 mlrd gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/yangi-toshkent-ipoteka-krediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2535,7 +2631,7 @@
    "amount": "1.28 mlrd gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/ulushdor-ipoteka-krediti-mahsulotining-asosiy-shartlari/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2551,7 +2647,7 @@
    "amount": "1.18 mlrd gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/chimgan-ipoteka-krediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2567,7 +2663,7 @@
    "amount": "1.18 mlrd gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/qo-qon-ipoteka-krediti-mahsuloti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2583,7 +2679,7 @@
    "amount": "1 mlrd gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/it-park-rezidentlarining-xorijiy-mutaxassislari-uchun-ipoteka-kredit-mahsuloti-6160/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2599,7 +2695,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/education-loan/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2615,7 +2711,7 @@
    "amount": "200 mln gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/yosh-tadbirkor-mikroqarzi7096/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2631,7 +2727,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/onlayn-mikroqarz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2647,7 +2743,7 @@
    "amount": "300 mln gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/corporate/crediting/tadbirkor-ayol-kredit-mahsuloti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2663,7 +2759,7 @@
    "amount": "3 mlrd gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/corporate/crediting/revolver-aylanma-modulli-krediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2679,7 +2775,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/corporate/crediting/loans-in-foreign-currency/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2695,7 +2791,7 @@
    "amount": "3 mlrd gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/corporate/crediting/carloan-qulay40991632/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2711,7 +2807,7 @@
    "amount": "2 mlrd gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/corporate/crediting/start-biznes-modulli-krediti6677/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2727,7 +2823,7 @@
    "amount": "20 mln gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/corporate/crediting/payment-terminal/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2743,7 +2839,7 @@
    "amount": "3 mlrd gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/corporate/crediting/isuzu-auto-modulli-krediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2759,7 +2855,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/corporate/crediting/car-primary-market/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2775,7 +2871,7 @@
    "amount": "3 mlrd gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/corporate/crediting/Pro-tok%20energy/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2791,7 +2887,7 @@
    "amount": "3 mlrd gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/corporate/crediting/muqobil-energiya-modulli-krediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2807,7 +2903,7 @@
    "amount": "3 mlrd gacha",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/corporate/crediting/universal-modulli-krediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2823,7 +2919,7 @@
    "amount": "993.996 ming – 800 mln",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/loan-education/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2839,7 +2935,7 @@
    "amount": "931.138 ming – 800 mln",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/Biznesga%20birinchi%20qadam5913/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2855,7 +2951,7 @@
    "amount": "943.178 ming – 800 mln",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/biznesga-birinchi-qadam-3-mikroqarzi/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2871,7 +2967,7 @@
    "amount": "477.651 ming – 800 mln",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/biznesga-madad-mikroqarzi/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2887,7 +2983,7 @@
    "amount": "960.174 ming – 800 mln",
    "cur": "UZS",
    "url": "https://aloqabank.uz/uz/private/crediting/ichki-turizm-kredit-mahsuloti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2903,7 +2999,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://kapital24.uz/uz/crediting/ecocredit/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2919,7 +3015,7 @@
    "amount": "100 mln – 1 mlrd",
    "cur": "UZS",
    "url": "https://kapital24.uz/uz/crediting/qulay-uy-ipoteka-krediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2935,7 +3031,7 @@
    "amount": "300 mln gacha",
    "cur": "UZS",
    "url": "https://kapital24.uz/uz/crediting/muvaffaqiyatli-biznes/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2951,7 +3047,7 @@
    "amount": "35 mln – 230 mln",
    "cur": "UZS",
    "url": "https://kapital24.uz/uz/crediting/kapitalbankdan-avto-nasiya-ikkilamchi/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2967,7 +3063,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://kapital24.uz/uz/crediting/kapitalbankdan-uzauto-nasiya/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2983,7 +3079,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://hamkorbank.uz/physical/credits/online-credit/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -2999,7 +3095,7 @@
    "amount": "100 ming – 50 mln",
    "cur": "UZS",
    "url": "https://hamkorbank.uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3015,7 +3111,7 @@
    "amount": "300 mln – 600 mln",
    "cur": "UZS",
    "url": "https://hamkorbank.uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3031,7 +3127,7 @@
    "amount": "300 mln – 600 mln",
    "cur": "UZS",
    "url": "https://hamkorbank.uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3047,7 +3143,7 @@
    "amount": "420 mln gacha",
    "cur": "UZS",
    "url": "https://hamkorbank.uz/physical/mortgage/off-plan-mortgage/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3063,7 +3159,7 @@
    "amount": "175 mln – 350 mln",
    "cur": "UZS",
    "url": "https://hamkorbank.uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3079,7 +3175,7 @@
    "amount": "4.60195 mln – 300 mln",
    "cur": "UZS",
    "url": "https://hamkorbank.uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3095,7 +3191,7 @@
    "amount": "477.87 ming – 50 mln",
    "cur": "UZS",
    "url": "https://hamkorbank.uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3111,7 +3207,7 @@
    "amount": "500 mln – 1 mlrd",
    "cur": "UZS",
    "url": "https://hamkorbank.uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3127,7 +3223,7 @@
    "amount": "500 mln – 1 mlrd",
    "cur": "UZS",
    "url": "https://hamkorbank.uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3143,7 +3239,7 @@
    "amount": "210 mln – 420 mln",
    "cur": "UZS",
    "url": "https://hamkorbank.uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3159,7 +3255,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://hamkorbank.uz/uz/physical/credits/online-credit/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3175,7 +3271,7 @@
    "amount": "300 mln – 600 mln",
    "cur": "UZS",
    "url": "https://hamkorbank.uz/uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3191,7 +3287,7 @@
    "amount": "300 mln – 600 mln",
    "cur": "UZS",
    "url": "https://hamkorbank.uz/uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3207,7 +3303,7 @@
    "amount": "50 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/onlayn-mikroqarz",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3223,7 +3319,7 @@
    "amount": "800 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/oson-avtokredit",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3239,7 +3335,7 @@
    "amount": "800 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/import-avtokredit",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3255,7 +3351,7 @@
    "amount": "800 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/byudjet-tashkilotlari-xodimlari-uchun-avtokredit",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3271,7 +3367,7 @@
    "amount": "800 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/avtokredit-foydali",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3287,7 +3383,7 @@
    "amount": "800 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/ikkilamchi-bozor-uchun-avtokredit",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3303,7 +3399,7 @@
    "amount": "1.06 mlrd gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/navroz-ipoteka-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3319,7 +3415,7 @@
    "amount": "1.06 mlrd gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/yangi-toshkent-ipoteka-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3335,7 +3431,7 @@
    "amount": "400 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/tamirlash-uchun-ipoteka-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3351,7 +3447,7 @@
    "amount": "350 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/yashil-ipoteka",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3367,7 +3463,7 @@
    "amount": "800 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/birlamchi-bozor-uchun-2-0",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3383,7 +3479,7 @@
    "amount": "250 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/talim-uchun-istemol-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3399,7 +3495,7 @@
    "amount": "1.72392 mln – 1 mlrd",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/qulay-qayta-moliyalashtirish",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3415,7 +3511,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/ishonch-mikroqarz",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3431,7 +3527,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/corporate-plus",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3447,7 +3543,7 @@
    "amount": "15 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/start-up-mikrozaymi",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3463,7 +3559,7 @@
    "amount": "5 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/kichik-biznesga-qadam-mikrozaymi",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3479,7 +3575,7 @@
    "amount": "50 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/mikroqarz-ichki-turizm",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3495,7 +3591,7 @@
    "amount": "30 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/osimlikchilik-mikrozaymi",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3511,7 +3607,7 @@
    "amount": "20 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/bogbon-mikrozaymi",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3527,7 +3623,7 @@
    "amount": "25 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/oilaviy-biznes-mikrozaymi",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3543,7 +3639,7 @@
    "amount": "1 mlrd gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/biznes/kreditlar/ofb-express",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3559,7 +3655,7 @@
    "amount": "5.33715 mln – 1 mlrd",
    "cur": "UZS",
    "url": "https://ofb.uz/biznes/kreditlar/ofb-start",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3575,7 +3671,7 @@
    "amount": "17.9531 mln – 1 mlrd",
    "cur": "UZS",
    "url": "https://ofb.uz/biznes/kreditlar/ofb-cash",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3591,7 +3687,7 @@
    "amount": "18.0539 mln – 2 mlrd",
    "cur": "UZS",
    "url": "https://ofb.uz/biznes/kreditlar/ofb-ishonchli",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3607,7 +3703,7 @@
    "amount": "17.9028 mln – 1.5 mlrd",
    "cur": "UZS",
    "url": "https://ofb.uz/biznes/kreditlar/biznes-overdraft",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3623,7 +3719,7 @@
    "amount": "9.55301 mln – 3 mlrd",
    "cur": "UZS",
    "url": "https://ofb.uz/biznes/kreditlar/ofb-kapital",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3639,7 +3735,7 @@
    "amount": "17.9028 mln – 500 mln",
    "cur": "UZS",
    "url": "https://ofb.uz/biznes/kreditlar/biznes-karta",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3655,7 +3751,7 @@
    "amount": "93.75 ming – 5 mln",
    "cur": "UZS",
    "url": "https://ofb.uz/biznes/kreditlar/ofb-garant",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3671,7 +3767,7 @@
    "amount": "259.193 ming – 1.64891 mln",
    "cur": "UZS",
    "url": "https://ofb.uz/biznes/kreditlar/ofb-kelajak",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3687,7 +3783,7 @@
    "amount": "50 mln gacha",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/overdraft",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3703,7 +3799,7 @@
    "amount": "3.44506 mln – 50 mln",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/green-mikroqarz",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3719,7 +3815,7 @@
    "amount": "8.26814 mln – 496.088 mln",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/oilaviy-ipoteka",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3735,7 +3831,7 @@
    "amount": "7.82892 mln – 1.06 mlrd",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/foydali-ipoteka",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3751,7 +3847,7 @@
    "amount": "8.26814 mln – 496.088 mln",
    "cur": "UZS",
    "url": "https://ofb.uz/kreditlar/ipoteka-oqituvchi",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3767,7 +3863,7 @@
    "amount": "2 mlrd gacha",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/ipoteka/ipoteka-nrg",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3783,7 +3879,7 @@
    "amount": "1 mln – 950 mln",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/avtokreditlar/avtokredit-uzauto",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3799,7 +3895,7 @@
    "amount": "1 mln – 950 mln",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/avtokreditlar/volkswagen-avtokredit",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3815,7 +3911,7 @@
    "amount": "1 mln – 950 mln",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/avtokreditlar/voyah-avtokredit",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3831,7 +3927,7 @@
    "amount": "1 mln – 950 mln",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/mikroqarzlar/mikrokredit-ozini-ozi-band-qilganlar-uchun",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3847,7 +3943,7 @@
    "amount": "1 mln – 950 mln",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/mikroqarzlar/garov-asosida-mikroqarz",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3863,7 +3959,7 @@
    "amount": "10 mln – 950 mln",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/mikroqarzlar/mikroqarz",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3879,7 +3975,7 @@
    "amount": "1 mln – 950 mln",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/mikroqarzlar/maosh-loyihasi-evaziga-mikroqarz",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3895,7 +3991,7 @@
    "amount": "1 mln – 950 mln",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/mikroqarzlar/oz-ozini-band-qilganlar-uchun-mikroqarz",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3911,7 +4007,7 @@
    "amount": "80 mln – 1.5 mlrd",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/qayta-moliyalashtirish/ipotekani-qayta-moliyalashtirish",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3927,7 +4023,7 @@
    "amount": "1 mln – 950 mln",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/qayta-moliyalashtirish/kafillik-asosida-kreditni-qayta-moliyalashtirish",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3943,7 +4039,7 @@
    "amount": "1 mln – 950 mln",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/uy-tamiri-uchun-kredit",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3959,7 +4055,7 @@
    "amount": "600 mln – 950 mln",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/avtokreditlar/evolution-motors-avtokredit",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3975,7 +4071,7 @@
    "amount": "1 mln – 950 mln",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/davlat-xizmatchilari-uchun-kreditlar/kafillik-asosidagi-mikroqarz",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -3991,7 +4087,7 @@
    "amount": "1 mln – 950 mln",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/davlat-xizmatchilari-uchun-kreditlar/davlat-xizmatchilari-uchun-avtokredit",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4007,7 +4103,7 @@
    "amount": "1 mln – 950 mln",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/davlat-xizmatchilari-uchun-kreditlar/garov-asosidagi-mikroqarz",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4023,7 +4119,7 @@
    "amount": "1 mln – 2 mlrd",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/ipoteka/murad-buildings-ipotekasi",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4039,7 +4135,7 @@
    "amount": "1 mln – 3.48 mlrd",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/ipoteka/ipoteka-nur",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4055,7 +4151,7 @@
    "amount": "1 mln – 950 mln",
    "cur": "UZS",
    "url": "https://ipakyulibank.uz/physical/kreditlar/ipoteka/yangi-qurilgan-uylarga-ipoteka",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4071,7 +4167,7 @@
    "amount": "1 mln gacha",
    "cur": "UZS",
    "url": "https://davrbank.uz/uz/loans/individual-microqarz/individual-microloan-for-payment-2",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4087,7 +4183,7 @@
    "amount": "10 mln gacha",
    "cur": "UZS",
    "url": "https://davrbank.uz/uz/loans/individual-microqarz/individual-mini-loan-3",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4103,7 +4199,7 @@
    "amount": "30 mln gacha",
    "cur": "UZS",
    "url": "https://davrbank.uz/uz/loans/individual-microqarz/individual-davr-online-2",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4119,7 +4215,7 @@
    "amount": "477.894 – 500 mln",
    "cur": "UZS",
    "url": "https://davrbank.uz/uz/loans/individual-microloan/individual-business-microloan",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4135,7 +4231,7 @@
    "amount": "467.566 – 1 mlrd",
    "cur": "UZS",
    "url": "https://davrbank.uz/uz/loans/individual-car-loan/individual-smart-auto",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4151,7 +4247,7 @@
    "amount": "300 mln – 1 mlrd",
    "cur": "UZS",
    "url": "https://davrbank.uz/uz/loans/individual-car-loan/individual-uzauto",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4167,7 +4263,7 @@
    "amount": "166.667 – 1 mlrd",
    "cur": "UZS",
    "url": "https://davrbank.uz/uz/loans/individual-car-loan/individual-comfort-avto",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4183,7 +4279,7 @@
    "amount": "880.522 – 1 mlrd",
    "cur": "UZS",
    "url": "https://davrbank.uz/uz/loans/individual-car-loan/individual-smart-roodell",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4199,7 +4295,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://trustbank.uz/uz/private/crediting/sharq-bahori-ipoteka-krediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4215,7 +4311,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://trustbank.uz/uz/private/crediting/birlamchi-va-ikkilamchi-bozordan-uy-joy-sotib-olish-uchun-ipoteka-krediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4231,7 +4327,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://trustbank.uz/uz/private/crediting/bankning-o-z-mablag-lari-hisobidan-ajratiladigan-ipoteka-krediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4247,7 +4343,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://trustbank.uz/uz/private/crediting/golden-house-property-group-qurilish-kompaniyasi-qoshidagi-korxonalar-tomonidan-qurilayotgan-uy-joy-/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4263,7 +4359,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://trustbank.uz/uz/private/crediting/birlamchi-bozordan-uy-sotib-olish-uchun-ipoteka-krediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4279,7 +4375,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://trustbank.uz/uz/private/crediting/quyosh-panellarini-sotib-olish-va-o-rnatish-uchun-kredit/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4295,7 +4391,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://trustbank.uz/uz/private/crediting/overdraft/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4311,7 +4407,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://trustbank.uz/uz/corporate/leasing/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4327,7 +4423,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://www.infinbank.com/uz/private/credits/overdraft/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4343,7 +4439,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://www.infinbank.com/uz/corporate/credits/autoloan_promo/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4359,7 +4455,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://www.infinbank.com/uz/private/credits/reconstruction_loan/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4375,7 +4471,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://www.infinbank.com/uz/private/credits/microloans/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4391,7 +4487,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://www.infinbank.com/uz/private/credits/Edu_loan/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4407,7 +4503,7 @@
    "amount": "41.2 mln gacha",
    "cur": "UZS",
    "url": "https://www.infinbank.com/uz/private/credits/consumer/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4423,7 +4519,7 @@
    "amount": "170 mln gacha",
    "cur": "UZS",
    "url": "https://www.infinbank.com/uz/private/credits/green_repair/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4439,7 +4535,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://www.infinbank.com/uz/corporate/credits/autoloan_promo/?ELEMENT_CODE=autoloan_promo",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4455,7 +4551,7 @@
    "amount": "100 mln – 200 mln",
    "cur": "UZS",
    "url": "https://www.infinbank.com/uz/corporate/credits/support/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4471,7 +4567,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://www.infinbank.com/uz/corporate/credits/construction/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4487,7 +4583,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://www.infinbank.com/uz/corporate/credits/business_mortgage/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4503,7 +4599,7 @@
    "amount": "100 mln – 1.648 mlrd",
    "cur": "UZS",
    "url": "https://www.infinbank.com/uz/corporate/credits/female_loan/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4519,7 +4615,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://www.infinbank.com/uz/corporate/credits/factoring/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4535,7 +4631,7 @@
    "amount": "25 mln – 500 mln",
    "cur": "UZS",
    "url": "https://www.infinbank.com/uz/corporate/credits/modular_loan/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4551,7 +4647,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://www.infinbank.com/uz/corporate/credits/leasing/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4567,7 +4663,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://aab.uz/uz/private/crediting/avtokredit-vtorichnyy-rynok-/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4583,7 +4679,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://aab.uz/uz/private/crediting/ipotechnyy-kredit/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4599,7 +4695,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://aab.uz/uz/private/crediting/ipotechnyy-kredit-novyy-dom/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4615,7 +4711,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://aab.uz/uz/private/crediting/ipotechnyy-kredit-novyy-dom-gibrid/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4631,7 +4727,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://aab.uz/uz/private/crediting/potrebitelskiy-kredit-alternativnaya-energiya/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4647,7 +4743,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://aab.uz/uz/private/crediting/ipotechnyy-kredit-bashkent/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4663,7 +4759,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://aab.uz/uz/private/crediting/ipotechnyy-kredit-mubaarak/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4679,7 +4775,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://aab.uz/uz/private/crediting/potrebitelskiy-kredit-sayoxatlar-sari-/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4695,7 +4791,7 @@
    "amount": "300 mln gacha",
    "cur": "UZS",
    "url": "https://aab.uz/uz/private/crediting/mikrokredit-mahalla-tadbirkori-/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4711,7 +4807,7 @@
    "amount": "300 mln gacha",
    "cur": "UZS",
    "url": "https://aab.uz/uz/private/crediting/mikrokredit-mening-mahallam-/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4727,7 +4823,7 @@
    "amount": "300 mln gacha",
    "cur": "UZS",
    "url": "https://aab.uz/uz/private/crediting/mikrokredit-biznes-plus/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4743,7 +4839,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://aab.uz/uz/private/crediting/mikrozaym-imkon-/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4759,7 +4855,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://aab.uz/uz/private/crediting/mikrozaym-zalog-/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4775,7 +4871,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://aab.uz/uz/private/crediting/mikrozaym-blagopoluchie-makhalli/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4791,7 +4887,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://aab.uz/uz/private/crediting/overdraft/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4807,7 +4903,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://aab.uz/uz/private/crediting/overdraft-onlayn-/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4823,7 +4919,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://aab.uz/uz/private/crediting/avtokredit-sultanov-motors/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4832,14 +4928,14 @@
    "type": "K",
    "cat": "Ipoteka",
    "segment": "jismoniy",
-   "name": "Ipoteka - Ikkilamchi bozor uchun",
+   "name": "Ipoteka",
    "lo": 24.0,
    "hi": 24.0,
    "term": "10 yilgacha",
    "amount": "",
    "cur": "UZS",
    "url": "https://universalbank.uz/credit/ipoteka-ikkilamchi-bozor-uchun",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4851,11 +4947,11 @@
    "name": "Iste'mol krediti",
    "lo": 26.0,
    "hi": 26.0,
-   "term": "1 oy – 3 yil",
-   "amount": "40.291 – 68 mln",
+   "term": "6 oy – 3 yil",
+   "amount": "",
    "cur": "UZS",
    "url": "https://universalbank.uz/credit/iste'mol-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4867,11 +4963,11 @@
    "name": "Turizm iste'mol krediti",
    "lo": 26.0,
    "hi": 26.0,
-   "term": "1 oy – 3 yil",
-   "amount": "201.453 – 68 mln",
+   "term": "3 yilgacha",
+   "amount": "",
    "cur": "UZS",
    "url": "https://universalbank.uz/credit/turizm-iste'mol-krediti",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4880,30 +4976,30 @@
    "type": "K",
    "cat": "Biznes",
    "segment": "jismoniy",
-   "name": "Biznesga birinchi qadam – “Econom”",
-   "lo": 32.0,
-   "hi": 32.0,
-   "term": "1 oy – 1 yil",
-   "amount": "98.474 – 10 mln",
-   "cur": "UZS",
-   "url": "https://universalbank.uz/credit/biznesga-birinchi-qadam-econom",
-   "date": "2026-10-19",
-   "note": "",
-   "stale": false
-  },
-  {
-   "bank": "Universal bank",
-   "type": "K",
-   "cat": "Biznes",
-   "segment": "jismoniy",
-   "name": "Biznesga birinchi qadam – “Lux”",
+   "name": "Biznesga birinchi qadam",
    "lo": 36.0,
    "hi": 36.0,
    "term": "1 oy – 3 yil",
-   "amount": "45.804 – 100 mln",
+   "amount": "",
    "cur": "UZS",
    "url": "https://universalbank.uz/credit/biznesga-birinchi-qadam-lux",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
+   "note": "",
+   "stale": false
+  },
+  {
+   "bank": "Universal bank",
+   "type": "K",
+   "cat": "Avtokredit",
+   "segment": "jismoniy",
+   "name": "Avtokredit",
+   "lo": 27.0,
+   "hi": 27.0,
+   "term": "3 yil – 5 yil",
+   "amount": "",
+   "cur": "UZS",
+   "url": "https://universalbank.uz/credit/avtokredit-ikkilamchi-bozor-uc",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4912,14 +5008,46 @@
    "type": "K",
    "cat": "Biznes",
    "segment": "jismoniy",
-   "name": "Biznesga birinchi qadam – “Standart”",
+   "name": "Biznesga birinchi qadam",
+   "lo": 32.0,
+   "hi": 32.0,
+   "term": "1 oy – 1 yil",
+   "amount": "",
+   "cur": "UZS",
+   "url": "https://universalbank.uz/credit/biznesga-birinchi-qadam-econom",
+   "date": "2026-10-20",
+   "note": "",
+   "stale": false
+  },
+  {
+   "bank": "Universal bank",
+   "type": "K",
+   "cat": "Biznes",
+   "segment": "jismoniy",
+   "name": "Biznesga birinchi qadam",
    "lo": 34.0,
    "hi": 34.0,
-   "term": "1 oy – 2 yil",
-   "amount": "57.992 – 20 mln",
+   "term": "2 oy – 2 yil",
+   "amount": "",
    "cur": "UZS",
    "url": "https://universalbank.uz/credit/biznesga-birinchi-qadam-standa",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
+   "note": "",
+   "stale": false
+  },
+  {
+   "bank": "Universal bank",
+   "type": "K",
+   "cat": "Iste'mol",
+   "segment": "jismoniy",
+   "name": "Comfort house",
+   "lo": 26.0,
+   "hi": 26.0,
+   "term": "",
+   "amount": "",
+   "cur": "UZS",
+   "url": "https://universalbank.uz/credit/comfort-house-iste'mol-krediti",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4932,26 +5060,10 @@
    "lo": 25.0,
    "hi": 25.0,
    "term": "3 yil – 5 yil",
-   "amount": "100 mln gacha",
+   "amount": "",
    "cur": "UZS",
    "url": "https://universalbank.uz/credit/mikroqarz",
-   "date": "2026-10-19",
-   "note": "",
-   "stale": false
-  },
-  {
-   "bank": "Universal bank",
-   "type": "K",
-   "cat": "Avtokredit",
-   "segment": "jismoniy",
-   "name": "Avtokredit - ikkilamchi bozor uchun",
-   "lo": 27.0,
-   "hi": 27.0,
-   "term": "1 oy – 5 yil",
-   "amount": "204.126 – 1 mlrd",
-   "cur": "UZS",
-   "url": "https://universalbank.uz/credit/avtokredit-ikkilamchi-bozor-uc",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4960,30 +5072,46 @@
    "type": "K",
    "cat": "Mikroqarz",
    "segment": "jismoniy",
-   "name": "Mikrokredit - 300",
-   "lo": 26.0,
-   "hi": 26.0,
-   "term": "1 oy – 5 yil",
-   "amount": "300 mln gacha",
+   "name": "Mikroqarz",
+   "lo": 27.0,
+   "hi": 27.0,
+   "term": "3 yilgacha",
+   "amount": "50 mln gacha",
    "cur": "UZS",
-   "url": "https://universalbank.uz/credit/mikrokredit-300",
-   "date": "2026-10-19",
+   "url": "https://universalbank.uz/credit/mikroqarz-ishonch",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
   {
    "bank": "Universal bank",
    "type": "K",
-   "cat": "Biznes",
+   "cat": "Mikroqarz",
    "segment": "jismoniy",
-   "name": "Biznesga birinchi qadam – “Premium”",
-   "lo": 36.0,
-   "hi": 36.0,
-   "term": "1 oy – 3 yil",
-   "amount": "45.804 – 30 mln",
+   "name": "Mikrokredit",
+   "lo": 26.0,
+   "hi": 26.0,
+   "term": "1 oy – 5 yil",
+   "amount": "300 mln gacha",
    "cur": "UZS",
-   "url": "https://universalbank.uz/credit/biznesga-birinchi-qadam-premiu",
-   "date": "2026-10-19",
+   "url": "https://universalbank.uz/credit/mikrokredit-300",
+   "date": "2026-10-20",
+   "note": "",
+   "stale": false
+  },
+  {
+   "bank": "Universal bank",
+   "type": "K",
+   "cat": "Mikroqarz",
+   "segment": "jismoniy",
+   "name": "Mikroqarz",
+   "lo": 24.0,
+   "hi": 24.0,
+   "term": "1 yilgacha",
+   "amount": "50 mln gacha",
+   "cur": "UZS",
+   "url": "https://universalbank.uz/credit/mikroqarz-byudjet",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -4999,135 +5127,23 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://universalbank.uz/credit/ipotekani-qayta-moliyalashtiri",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
   {
    "bank": "Universal bank",
    "type": "K",
-   "cat": "Iste'mol",
+   "cat": "Ipoteka",
    "segment": "jismoniy",
-   "name": "Comfort house - Iste'mol krediti",
-   "lo": 26.0,
-   "hi": 26.0,
-   "term": "1 oy – 3 yil",
-   "amount": "402.906 – 102 mln",
-   "cur": "UZS",
-   "url": "https://universalbank.uz/credit/comfort-house-iste'mol-krediti",
-   "date": "2026-10-19",
-   "note": "",
-   "stale": false
-  },
-  {
-   "bank": "Universal bank",
-   "type": "K",
-   "cat": "Biznes",
-   "segment": "yuridik",
-   "name": "Good customer 100",
-   "lo": 30.0,
-   "hi": 30.0,
-   "term": "3 oy – 3 yil",
-   "amount": "",
-   "cur": "UZS",
-   "url": "https://universalbank.uz/juristic/credit/good-customer-100",
-   "date": "2026-10-19",
-   "note": "",
-   "stale": false
-  },
-  {
-   "bank": "Universal bank",
-   "type": "K",
-   "cat": "Biznes",
-   "segment": "yuridik",
-   "name": "Good customer 300",
-   "lo": 30.0,
-   "hi": 30.0,
-   "term": "3 oy – 3 yil",
-   "amount": "",
-   "cur": "UZS",
-   "url": "https://universalbank.uz/juristic/credit/good-customer-300",
-   "date": "2026-10-19",
-   "note": "",
-   "stale": false
-  },
-  {
-   "bank": "Universal bank",
-   "type": "K",
-   "cat": "Biznes",
-   "segment": "yuridik",
-   "name": "Qulay",
-   "lo": 28.0,
-   "hi": 28.0,
-   "term": "3 oy – 3 yil",
-   "amount": "3 mlrd gacha",
-   "cur": "UZS",
-   "url": "https://universalbank.uz/juristic/credit/qulay",
-   "date": "2026-10-19",
-   "note": "",
-   "stale": false
-  },
-  {
-   "bank": "Universal bank",
-   "type": "K",
-   "cat": "Biznes",
-   "segment": "yuridik",
-   "name": "Good customer 500",
-   "lo": 30.0,
-   "hi": 30.0,
-   "term": "3 oy – 3 yil",
-   "amount": "",
-   "cur": "UZS",
-   "url": "https://universalbank.uz/juristic/credit/good-customer-500",
-   "date": "2026-10-19",
-   "note": "",
-   "stale": false
-  },
-  {
-   "bank": "Universal bank",
-   "type": "K",
-   "cat": "Biznes",
-   "segment": "yuridik",
-   "name": "BlueOrchard",
-   "lo": 28.0,
-   "hi": 30.0,
-   "term": "6 oy – 5 yil",
-   "amount": "",
-   "cur": "UZS",
-   "url": "https://universalbank.uz/juristic/credit/blueorchard",
-   "date": "2026-10-19",
-   "note": "",
-   "stale": false
-  },
-  {
-   "bank": "Universal bank",
-   "type": "K",
-   "cat": "Biznes",
-   "segment": "yuridik",
-   "name": "Simbiotics",
-   "lo": 28.0,
-   "hi": 30.0,
-   "term": "6 oy – 5 yil",
-   "amount": "",
-   "cur": "UZS",
-   "url": "https://universalbank.uz/juristic/credit/simbiotics",
-   "date": "2026-10-19",
-   "note": "",
-   "stale": false
-  },
-  {
-   "bank": "Universal bank",
-   "type": "K",
-   "cat": "Biznes",
-   "segment": "yuridik",
-   "name": "ESG Finance",
+   "name": "Yashil ta’mir",
    "lo": 24.0,
    "hi": 24.0,
-   "term": "6 oy – 5 yil",
-   "amount": "3 mlrd gacha",
+   "term": "5 yilgacha",
+   "amount": "",
    "cur": "UZS",
-   "url": "https://universalbank.uz/juristic/credit/esg-finance",
-   "date": "2026-10-19",
+   "url": "https://universalbank.uz/credit/yashil-tamir-ipoteka-krediti",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5139,11 +5155,11 @@
    "name": "\"Oktobank\" AJ ish haqi loyihasi xodimlari uchun aksiya stavkasi",
    "lo": 21.0,
    "hi": 21.0,
-   "term": "2.4 oygacha",
+   "term": "2.37 oygacha",
    "amount": "",
    "cur": "UZS",
    "url": "https://octobank.uz/bank-haqida/aktsiyalar/osobye-usloviya-kreditovaniya-dlya-vas-i-vashih-kolleg-ot-octobank",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5159,7 +5175,7 @@
    "amount": "600 mln gacha",
    "cur": "UZS",
    "url": "https://madadinvestbank.uz/credits/physical",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5175,7 +5191,7 @@
    "amount": "50 mln – 600 mln",
    "cur": "UZS",
    "url": "https://madadinvestbank.uz/credit/15",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5191,7 +5207,7 @@
    "amount": "50 mln – 400 mln",
    "cur": "UZS",
    "url": "https://madadinvestbank.uz/credit/16",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5207,7 +5223,7 @@
    "amount": "20 mln – 100 mln",
    "cur": "UZS",
    "url": "https://madadinvestbank.uz/credit/17",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5223,7 +5239,23 @@
    "amount": "600 mln gacha",
    "cur": "UZS",
    "url": "https://garantbank.uz/uz/avtokredit-lixiang",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
+   "note": "",
+   "stale": false
+  },
+  {
+   "bank": "Garant bank",
+   "type": "K",
+   "cat": "Iste'mol",
+   "segment": "jismoniy",
+   "name": "Kredit ochish uchun olnlayn ariza",
+   "lo": 25.0,
+   "hi": 25.0,
+   "term": "",
+   "amount": "",
+   "cur": "UZS",
+   "url": "https://garantbank.uz/uz/onlajn-zayavka-na-kredit",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5239,7 +5271,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/corporate/crediting/faol-tadbirkor-krediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5255,7 +5287,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/corporate/crediting/poytaxt-biznes-2/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5271,7 +5303,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/corporate/crediting/revolver-kreditlar/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5287,7 +5319,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/corporate/crediting/asosiy-vosita-hamda-investitsiya-loyihalarni-moliyalashtirish/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5303,7 +5335,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/corporate/crediting/aylanma-mablag-larni-to-ldirish-/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5319,7 +5351,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/corporate/crediting/avto-kredit-/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5335,7 +5367,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/corporate/crediting/avto-kredit-5-tonnagacha-bo-lgan-yo-lovchi-va-yuk-tashish-uchun/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5351,7 +5383,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/corporate/crediting/ko-p-qavatli-uy-joylar-qurish-va-rekonstruksiya-qilish-uchun/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5367,7 +5399,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/small-business/crediting/asosiy-vosita-hamda-investitsiya-loyihalarni-moliyalashtirish/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5383,7 +5415,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/small-business/crediting/avto-kredit-/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5399,7 +5431,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/private/crediting/tayyor-uy-ipoteka-krediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5415,7 +5447,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/private/crediting/microloan/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5431,7 +5463,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/private/crediting/mikroqarz-bir-to-lov/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5447,7 +5479,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/private/crediting/komfort-avto-avtokrediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5463,7 +5495,7 @@
    "amount": "600 ming – 100 mln",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/private/crediting/oylik-ish-haqi-loyihasida-mikroqarz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5479,7 +5511,7 @@
    "amount": "100 mln – 300 mln",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/private/crediting/milliy-avtokredit/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5495,7 +5527,7 @@
    "amount": "18 ming – 15 mln",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/private/crediting/first-step-to-business/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5511,7 +5543,7 @@
    "amount": "42 ming – 17 mln",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/private/crediting/second-step-to-business/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5527,7 +5559,7 @@
    "amount": "105 ming – 37.5 mln",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/private/crediting/sayohat/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5543,7 +5575,7 @@
    "amount": "1 mln – 450 mln",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/private/crediting/mini-truck-avto-krediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5559,7 +5591,7 @@
    "amount": "18 ming – 30 mln",
    "cur": "UZS",
    "url": "https://poytaxtbank.uz/uz/private/crediting/mahalla-loyihasi-krediti/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5575,7 +5607,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://tengebank.uz/credit/ipoteka-na-novoe-jilyo",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5591,7 +5623,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://tengebank.uz/credit/ipoteka-na-vtorichnoe-zhile",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5607,7 +5639,7 @@
    "amount": "90 mln gacha",
    "cur": "UZS",
    "url": "https://tengebank.uz/credit/mikrozajm-onlajn",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5623,7 +5655,7 @@
    "amount": "30 mln gacha",
    "cur": "UZS",
    "url": "https://tengebank.uz/credit/pervyj-shag-k-biznesu",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5639,7 +5671,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://tengebank.uz/credit/avtokredit-na-novyj-avtomobil",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5655,7 +5687,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://tengebank.uz/credit/avtokredit-drive-plus",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5671,7 +5703,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://tengebank.uz/credit/avtokredit-drive-dlya-samozanyatyh",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5687,7 +5719,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://tengebank.uz/credit/avtokredit-drive-labo",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5703,7 +5735,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://tengebank.uz/credit/avtokredit-roodell-i",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5719,7 +5751,7 @@
    "amount": "300 mln gacha",
    "cur": "UZS",
    "url": "https://tengebank.uz/business/smelending/online-business",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5735,7 +5767,7 @@
    "amount": "5 mlrd gacha",
    "cur": "UZS",
    "url": "https://tengebank.uz/business/smelending/biznes-uskorennyj",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5751,7 +5783,23 @@
    "amount": "106.514 mln – 12 mlrd",
    "cur": "UZS",
    "url": "https://tbcbank.uz/business/product/secured-loan-12-billion/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
+   "note": "",
+   "stale": false
+  },
+  {
+   "bank": "TBC Bank",
+   "type": "K",
+   "cat": "Iste'mol",
+   "segment": "jismoniy",
+   "name": "Sahifani yangilang yoki biz bilan bog‘laning",
+   "lo": 20.0,
+   "hi": 20.0,
+   "term": "",
+   "amount": "",
+   "cur": "UZS",
+   "url": "https://tbcbank.uz/product/kredity/kredit-olish/",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5767,7 +5815,7 @@
    "amount": "1 mlrd gacha",
    "cur": "UZS",
    "url": "https://tbcbank.uz/product/avtokredit/tariffs/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5783,7 +5831,7 @@
    "amount": "100 mln gacha",
    "cur": "UZS",
    "url": "https://tbcbank.uz/blog/articles/pochemu-banki-otkazivayut-v-kredite-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5799,7 +5847,7 @@
    "amount": "10 mln – 300 mln",
    "cur": "UZS",
    "url": "https://tbcbank.uz/blog/articles/kredit-dlya-biznesa-uz/",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5815,7 +5863,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://kdb.uz/cn/individuals/credit",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5831,7 +5879,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://ziraatbank.uz/uz/%D1%88%D0%B8%D0%BD%D0%B0%D0%BC-%D1%83%D0%B9",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5847,7 +5895,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://ziraatbank.uz/uz/iste-mol-kredit----yashil-komfort---",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5863,7 +5911,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://ziraatbank.uz/uz/mikroqarz",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
@@ -5879,7 +5927,7 @@
    "amount": "",
    "cur": "UZS",
    "url": "https://ziraatbank.uz/uz/eco-sarmoya",
-   "date": "2026-10-19",
+   "date": "2026-10-20",
    "note": "",
    "stale": false
   },
